@@ -130,43 +130,16 @@ const API = {
       sample.trigger('change:location');
     }
 
-    const currentVal = sample.get('location') || {};
-    const locationIsLocked = appModel.isAttrLocked('location', currentVal);
-
     function onPageExit() {
       sample.save()
         .then(() => {
-          const attr = 'location';
-          let location = sample.get('location') || {};
-          const lockedValue = appModel.getAttrLock('location');
+          const location = sample.get('location') || {};
 
           if ((location.latitude && location.longitude) || location.name) {
-            // we can lock loaction and name on their own
-            // don't lock GPS though, because it varies more than a map or gridref
-
             // save to past locations
             const locationID = appModel.setLocation(sample.get('location'));
             location.id = locationID;
             sample.set('location', location);
-
-            // update locked value if attr is locked
-            if (lockedValue) {
-              // check if previously the value was locked and we are updating
-              if (locationIsLocked || lockedValue === true) {
-                Log('Updating lock.', 'd');
-
-                if (location.source === 'gps') {
-                  // on GPS don't lock other than name
-                  location = {
-                    name: location.name,
-                  };
-                }
-                appModel.setAttrLock(attr, location);
-              }
-            }
-          } else if (lockedValue === true) {
-            // reset if no location or location name selected but locked is clicked
-            appModel.setAttrLock(attr, null);
           }
 
           window.history.back();
