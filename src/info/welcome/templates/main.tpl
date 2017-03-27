@@ -11,12 +11,7 @@
   into contact with, or swallow, the water
 </div>
 
-<ul id="buttons" class="table-view buttons">
-  <li class="table-view-cell">
-    <button id="exit" class="icon icon-ok">
-      <span class="media-object pull-left icon icon-ok"></span>
-      Understand
-    </button>
-  </li>
-</ul>
+<button id="exit" class="btn btn-block">
+  Understand
+</button>
 
