@@ -2,7 +2,17 @@
 <div class="main-header training"></div>
 <% } %>
 
+<div class="app-logo">
+  <img src="images/app_logo.png">
+</div>
+
 <ul class="table-view core inputs no-top <%- obj.isSynchronising ? 'disabled' : '' %>">
+  <li class="table-view-cell">
+    <a href="#info/guide" class="navigate-right">
+      <span class="media-object pull-left icon icon-calendar"></span>
+      Algal guide
+    </a>
+  </li>
   <li class="table-view-cell">
     <a href="#samples/<%- obj.id %>/edit/location" id="location-button"
        class="navigate-right">
@@ -35,11 +45,19 @@
     </a>
   </li>
   <li class="table-view-cell">
-    <a href="#samples/<%- obj.id %>/edit/number" id="number-button"
+    <a href="#samples/<%- obj.id %>/edit/size" id="number-button"
        class="navigate-right">
       <span class="media-object pull-left icon icon-number"></span>
-      <span class="media-object pull-right descript"><%- obj.number %></span>
-      Number
+      <span class="media-object pull-right descript"><%- obj.size %></span>
+      Bloom size
+    </a>
+  </li>
+  <li class="table-view-cell">
+    <a href="#samples/<%- obj.id %>/edit/activities" id="number-button"
+       class="navigate-right">
+      <span class="media-object pull-left icon icon-number"></span>
+      <span class="media-object pull-right descript"><%- obj.activities %></span>
+      Activities
     </a>
   </li>
   <li class="table-view-cell">

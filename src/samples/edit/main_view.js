@@ -6,6 +6,8 @@ import Indicia from 'indicia';
 import JST from 'JST';
 import DateHelp from 'helpers/date';
 import StringHelp from 'helpers/string';
+import './images/app_logo.png';
+
 
 import './styles.scss';
 

@@ -19,7 +19,7 @@ import HeaderView from './header_view';
 import FooterView from './footer_view';
 
 const API = {
-  show(sampleID) {
+  show(sampleID, draft) {
     // wait till savedSamples is fully initialized
     if (savedSamples.fetching) {
       const that = this;

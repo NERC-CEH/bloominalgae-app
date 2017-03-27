@@ -48,7 +48,13 @@ const Router = Marionette.AppRouter.extend({
     },
     'info/risks(/)': () => {
       CommonController.show({
-        title: 'Privacy Policy', App, route: 'info/risks/main',
+        title: 'Risks', App, route: 'info/risks/main',
+      });
+    },
+    'info/guide(/)': () => {
+      radio.trigger('app:footer:hide');
+      CommonController.show({
+        title: 'Identify', App, route: 'info/guide/main',
       });
     },
     'info/brc-approved(/)': () => {

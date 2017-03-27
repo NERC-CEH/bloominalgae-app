@@ -1,9 +1,9 @@
 {
   "name": "bloominalgae-app",
-  "id": "uk.ac.ceh.ir",
-  "title": "iRecord App",
-  "description": "iRecord application.",
-  "version": "1.2.2",
+  "id": "uk.ac.ceh.algae",
+  "title": "BloominAlgae",
+  "description": "BloominAlgae application.",
+  "version": "1.0.0",
   "build": "1",
   "homepage": "https://irecord.org.uk",
   "author": {
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NERC-CEH/irecord-app"
+    "url": "https://github.com/NERC-CEH/bloominalgae-app"
   },
   "bugs": {
-    "url": "https://github.com/NERC-CEH/irecord-app/issues"
+    "url": "https://github.com/NERC-CEH/bloominalgae-app/issues"
   },
   "licenses": [
     {
@@ -100,6 +100,7 @@
   "keywords": [
     "irecord",
     "biological",
+    "algae",
     "recording",
     "mobile",
     "app",

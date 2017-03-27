@@ -110,32 +110,41 @@ const CONFIG = {
           return DateHelp.print(date);
         },
       },
+      size: {
+        id: 106,
+        default: 'Doormat',
+        values: {
+          'Doormat': 1949,
+          'Parking space': 1950,
+          'Tennis court': 1951,
+          'Even bigger': 1952,
+        },
+      },
+      activities: {
+        id: 106,
+        values() {
+
+        },
+        _values: {
+          'Walking / Running': 234,
+          'Dog-walking': 234,
+          'Cycling': 234,
+          'Birdwatching': 234,
+          'Fishing': 234,
+          'Swimming': 234,
+          'Boats / Watersports': 234,
+          'Other': 234,
+        },
+      },
     },
     occurrence: {
       training: {
         id: 'training',
       },
-
       taxon: {
-        values(taxon) {
-          return taxon.warehouse_id;
+        values() {
+          return 12312;
         },
-      },
-      number: {
-        id: 16,
-      },
-      stage: {
-        id: 106,
-        default: 'Not Recorded',
-        values: {
-          'Not Recorded': 1949,
-          Adult: 1950,
-          'Pre-adult': 1951,
-          Other: 1952,
-        },
-      },
-      identifiers: {
-        id: 18,
       },
     },
   },
