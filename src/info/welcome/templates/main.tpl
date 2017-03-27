@@ -3,6 +3,7 @@
 </div>
 
 <div id="intro-snippet">
+  <h1>Warning</h1>
   Blue-Green algae (also known as Cyanobacteria) can
   be harmful to the health of people and animals.
   Do NOT touch or ingest anything you suspect to be
@@ -12,10 +13,10 @@
 
 <ul id="buttons" class="table-view buttons">
   <li class="table-view-cell">
-    <a id="exit" class="navigate-right">
+    <button id="exit" class="icon icon-ok">
       <span class="media-object pull-left icon icon-ok"></span>
       Understand
-    </a>
+    </button>
   </li>
 </ul>
 
