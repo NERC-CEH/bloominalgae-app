@@ -13,6 +13,14 @@ import WelcomeController from './welcome/controller';
 import './brc_approved/BRC_approved_logo.png';
 import './brc_approved/styles.scss';
 import './credits/sponsor_logo.png';
+import './guide/images/Picture1.png';
+import './guide/images/Picture2.png';
+import './guide/images/Picture3.png';
+import './guide/images/Picture4.png';
+import './guide/images/Picture5.png';
+import './guide/images/Picture6.png';
+import './guide/images/Picture7.png';
+import './guide/images/Picture8.png';
 
 App.info = {};
 

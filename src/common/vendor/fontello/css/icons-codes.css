@@ -42,4 +42,6 @@
 .icon-star:before { content: '\e828'; } /* '' */
 .icon-statistics:before { content: '\e829'; } /* '' */
 .icon-training:before { content: '\e82a'; } /* '' */
+.icon-stop:before { content: '\e82b'; } /* '' */
+.icon-dog:before { content: '\e82c'; } /* '' */
 .icon-link-ext:before { content: '\f08e'; } /* '' */

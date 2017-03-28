@@ -9,7 +9,7 @@
 <ul class="table-view core inputs <%- obj.isSynchronising ? 'disabled' : '' %>">
   <li class="table-view-cell">
     <a href="#info/guide" class="navigate-right">
-      <span class="media-object pull-left icon icon-calendar"></span>
+      <span class="media-object pull-left icon icon-info"></span>
       Algal guide
     </a>
   </li>
@@ -47,7 +47,7 @@
   <li class="table-view-cell">
     <a href="#samples/<%- obj.id %>/edit/size"
        class="navigate-right">
-      <span class="media-object pull-left icon icon-number"></span>
+      <span class="media-object pull-left icon icon-stop"></span>
       <span class="media-object pull-right descript"><%- obj.size %></span>
       Bloom size
     </a>
@@ -55,7 +55,7 @@
   <li class="table-view-cell">
     <a href="#samples/<%- obj.id %>/edit/activities"
        class="navigate-right">
-      <span class="media-object pull-left icon icon-number"></span>
+      <span class="media-object pull-left icon icon-dog"></span>
       <span class="media-object pull-right descript"><%- obj.activitiesText %></span>
       Activities
     </a>
