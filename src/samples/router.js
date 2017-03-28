@@ -39,11 +39,9 @@ const Router = Marionette.AppRouter.extend({
         scroll = $mainRegion.scrollTop();
       },
     },
+    'samples/draft(/)': EditController.show,
     'samples/:id': ShowController.show,
     'samples/:id/edit(/)': EditController.show,
-    'samples/:id/edit/draft(/)'(sampleID) {
-      EditController.show(sampleID, true);
-    },
     'samples/:id/edit/location(/)': EditLocationController.show,
     'samples/:id/edit/:attr(/)': EditAttrController.show,
     'samples/*path': () => { radio.trigger('app:404:show'); },
@@ -60,12 +58,12 @@ radio.on('samples:show', (sampleID, options) => {
   ShowController.show(sampleID);
 });
 
-radio.on('samples:edit:draft', (sampleID, options) => {
-  App.navigate(`samples/${sampleID}/edit/draft`, options);
-  EditController.show(sampleID, true);
-});
 radio.on('samples:edit', (sampleID, options) => {
-  App.navigate(`samples/${sampleID}/edit`, options);
+  if (!sampleID){
+    App.navigate(`samples/draft`, options);
+  } else {
+    App.navigate(`samples/${sampleID}/edit`, options);
+  }
   EditController.show(sampleID);
 });
 

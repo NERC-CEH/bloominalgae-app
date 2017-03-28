@@ -40,14 +40,6 @@ export default Marionette.View.extend({
         this.template = JST['common/radio'];
         break;
 
-      case 'activities':
-        this.template = JST['common/checkbox'];
-        break;
-
-      case 'identifiers':
-        this.template = JST['common/input'];
-        break;
-
       default:
         this.template = JST[`samples/attr/${options.attr}`];
     }
@@ -92,12 +84,16 @@ export default Marionette.View.extend({
         values[attr] = StringHelp.escape(value);
         break;
 
-      case 'management':
-        values[attr] = [];
+      case 'activities':
+        values[attr] = {
+          personal: [],
+          others: [],
+        };
         $inputs = this.$el.find('input');
         $inputs.each((int, elem) => {
           if ($(elem).prop('checked')) {
-            values[attr].push($(elem).val());
+            const type = $(elem).hasClass('personal') ? 'personal' : 'others';
+            values[attr][type].push($(elem).val());
           }
         });
         break;
@@ -127,16 +123,10 @@ export default Marionette.View.extend({
         };
         break;
 
-      case 'lichens':
-        selected = this.model.get(this.options.attr);
-        templateData.selection = Object.keys(CONFIG.indicia.sample[this.options.attr].values);
-        templateData.selected = selected;
-        break;
-
-      case 'management':
-        selected = this.model.get('management') || [];
+      case 'activities':
+        selected = this.model.get('activities') || { personal: [], others: [] };
         templateData = {
-          selection: Object.keys(CONFIG.indicia.sample.management._values),
+          selection: Object.keys(CONFIG.indicia.sample.activities._values),
           selected,
         };
         break;

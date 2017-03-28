@@ -14,12 +14,14 @@ import appModel from 'app_model';
 import userModel from 'user_model';
 import savedSamples from 'saved_samples';
 import ImageModel from '../../common/models/image';
+import Sample from '../../common/models/sample';
+import Occurrence from '../../common/models/occurrence';
 import MainView from './main_view';
 import HeaderView from './header_view';
 import FooterView from './footer_view';
 
 const API = {
-  show(sampleID, draft) {
+  show(sampleID) {
     // wait till savedSamples is fully initialized
     if (savedSamples.fetching) {
       const that = this;
@@ -31,12 +33,24 @@ const API = {
 
     Log('Samples:Edit:Controller: showing.');
 
-    const sample = savedSamples.get(sampleID);
-    // Not found
-    if (!sample) {
-      Log('No sample model found.', 'e');
-      radio.trigger('app:404:show', { replace: true });
-      return;
+    let sample;
+    if (sampleID) {
+      sample = savedSamples.get(sampleID);
+      // Not found
+      if (!sample) {
+        Log('No sample model found.', 'e');
+        radio.trigger('app:404:show', { replace: true });
+        return;
+      }
+    } else {
+      const draftSampleID = appModel.get('draftSampleID');
+      sample = savedSamples.get(draftSampleID);
+      // Not found
+      if (!sample) {
+        Log('No sample model found.', 'e');
+        radio.trigger('app:404:show', { replace: true });
+        return;
+      }
     }
 
     // can't edit a saved one - to be removed when sample update
@@ -122,7 +136,7 @@ const API = {
         }
 
         if (!userModel.hasLogIn()) {
-          radio.trigger('user:login', { replace: true });
+          radio.trigger('user:login');
           return;
         }
 
@@ -142,6 +156,22 @@ const API = {
             }
           });
         radio.trigger('sample:saved');
+
+        // create new sample
+        const draft = new Sample();
+        const occurrence = new Occurrence();
+        draft.addOccurrence(occurrence);
+        draft.save().then(() => {
+          savedSamples.add(draft);
+
+          draft.startGPS();
+
+          appModel.set('draftSampleID', draft.cid);
+          appModel.save();
+
+          // navigate to sample edit
+          radio.trigger('samples:list');
+        });
       })
       .catch((err) => {
         Log(err, 'e');

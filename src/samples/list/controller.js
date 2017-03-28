@@ -1,16 +1,13 @@
 /** ****************************************************************************
  * Sample List controller.
  *****************************************************************************/
+import Backbone from 'backbone';
 import Indicia from 'indicia';
 import radio from 'radio';
 import Log from 'helpers/log';
 import Analytics from 'helpers/analytics';
-import ImageHelp from 'helpers/image';
 import appModel from 'app_model';
 import savedSamples from 'saved_samples';
-import Sample from 'sample';
-import Occurrence from 'occurrence';
-import ImageModel from '../../common/models/image';
 import MainView from './main_view';
 import HeaderView from './header_view';
 
@@ -19,8 +16,13 @@ const API = {
     Log(`Samples:List:Controller: showing ${savedSamples.length}.`);
 
     // MAIN
+    // do not show drafts, only ready to send
+    const setToSendSamples = savedSamples.filter((sample) => {
+      return sample.metadata.saved;
+    });
+
     const mainView = new MainView({
-      collection: savedSamples,
+      collection: new Backbone.Collection(setToSendSamples),
       appModel,
     });
 
@@ -36,15 +38,6 @@ const API = {
 
     // HEADER
     const headerView = new HeaderView({ model: appModel });
-
-    headerView.on('photo:upload', (e) => {
-      const photo = e.target.files[0];
-      API.photoUpload(photo);
-    });
-
-    // android gallery/camera selection
-    headerView.on('photo:selection', API.photoSelect);
-
     radio.trigger('app:header', headerView);
 
     // FOOTER
@@ -83,69 +76,6 @@ const API = {
         },
       ],
     });
-  },
-
-  photoUpload(photo) {
-    Log('Samples:List:Controller: photo upload.');
-
-    // todo: show loader
-    API.createNewSample(photo).catch((err) => {
-      Log(err, 'e');
-      radio.trigger('app:dialog:error', err);
-    });
-  },
-
-  photoSelect() {
-    Log('Samples:List:Controller: photo select.');
-
-    radio.trigger('app:dialog', {
-      title: 'Choose a method to upload a photo',
-      buttons: [
-        {
-          title: 'Camera',
-          onClick() {
-            ImageHelp.getImage((entry) => {
-              API.createNewSample(entry.nativeURL, () => {});
-            });
-            radio.trigger('app:dialog:hide');
-          },
-        },
-        {
-          title: 'Gallery',
-          onClick() {
-            ImageHelp.getImage((entry) => {
-              API.createNewSample(entry.nativeURL, () => {});
-            }, {
-              sourceType: window.Camera.PictureSourceType.PHOTOLIBRARY,
-              saveToPhotoAlbum: false,
-            });
-            radio.trigger('app:dialog:hide');
-          },
-        },
-      ],
-    });
-  },
-
-  /**
-   * Creates a new sample with an image passed as an argument.
-   */
-  createNewSample(photo) {
-    return ImageHelp.getImageModel(ImageModel, photo)
-      .then((image) => {
-        const occurrence = new Occurrence();
-        occurrence.addMedia(image);
-
-        const sample = new Sample();
-        sample.addOccurrence(occurrence);
-
-        return sample.save().then(() => {
-          savedSamples.add(sample);
-          // no previous location
-          sample.startGPS();
-
-          return sample;
-        });
-      });
   },
 };
 

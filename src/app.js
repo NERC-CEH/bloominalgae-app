@@ -67,7 +67,7 @@ App.on('start', () => {
         if (appModel.get('showWelcome')) {
           radio.trigger('info:welcome');
         } else {
-          radio.trigger('samples:list');
+          radio.trigger('samples:edit');
         }
       }
 

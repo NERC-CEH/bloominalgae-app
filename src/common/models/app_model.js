@@ -11,8 +11,12 @@ const AppModel = Backbone.Model.extend({
 
   defaults: {
     showWelcome: true,
+    draftSampleID: null,
 
     locations: [],
+    autosync: true,
+    useGridRef: true,
+    useGridMap: true,
     useTraining: process.env.TRAINING,
   },
 

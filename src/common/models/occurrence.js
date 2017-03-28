@@ -8,6 +8,10 @@ export default Indicia.Occurrence.extend({
 
   keys: CONFIG.indicia.occurrence, // warehouse attribute keys
 
+  defaults: {
+    taxon: 12,
+  },
+
   metadata() {
     return {
       training: appModel.get('useTraining'),

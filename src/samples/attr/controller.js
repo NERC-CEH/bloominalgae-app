@@ -83,37 +83,20 @@ const API = {
   save(attr, values, sample, callback) {
     Log('Samples:Attr:Controller: saving.');
 
-    let newVal;
     const occ = sample.getOccurrence();
 
     switch (attr) {
       case 'date':
         // validate before setting up
         if (values.date && values.date.toString() !== 'Invalid Date') {
-          newVal = values.date;
-          sample.set('date', newVal);
+          sample.set('date', values.date);
         }
         break;
-      case 'number':
-        // todo: validate before setting up
-        if (values.number) {
-          // specific number
-          newVal = values.number;
-          occ.set('number', newVal);
-          occ.unset('number-ranges');
-        } else if (values['number-ranges']) {
-          // number ranges
-          attr = 'number-ranges'; // eslint-disable-line
-          newVal = values[attr];
-          occ.set('number-ranges', newVal);
-          occ.unset('number');
-        }
+      case 'size':
+      case 'activities':
+        sample.set(attr, values[attr]);
         break;
-      case 'stage':
-      case 'identifiers':
       case 'comment':
-        newVal = values[attr];
-
         // todo:validate before setting up
         occ.set(attr, values[attr]);
         break;

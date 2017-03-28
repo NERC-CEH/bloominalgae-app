@@ -3,10 +3,10 @@
 <% } %>
 
 <div class="app-logo">
-  <img src="images/app_logo.png">
+  <img src="images/app_logo_dark.png">
 </div>
 
-<ul class="table-view core inputs no-top <%- obj.isSynchronising ? 'disabled' : '' %>">
+<ul class="table-view core inputs <%- obj.isSynchronising ? 'disabled' : '' %>">
   <li class="table-view-cell">
     <a href="#info/guide" class="navigate-right">
       <span class="media-object pull-left icon icon-calendar"></span>
@@ -45,7 +45,7 @@
     </a>
   </li>
   <li class="table-view-cell">
-    <a href="#samples/<%- obj.id %>/edit/size" id="number-button"
+    <a href="#samples/<%- obj.id %>/edit/size"
        class="navigate-right">
       <span class="media-object pull-left icon icon-number"></span>
       <span class="media-object pull-right descript"><%- obj.size %></span>
@@ -53,10 +53,10 @@
     </a>
   </li>
   <li class="table-view-cell">
-    <a href="#samples/<%- obj.id %>/edit/activities" id="number-button"
+    <a href="#samples/<%- obj.id %>/edit/activities"
        class="navigate-right">
       <span class="media-object pull-left icon icon-number"></span>
-      <span class="media-object pull-right descript"><%- obj.activities %></span>
+      <span class="media-object pull-right descript"><%- obj.activitiesText %></span>
       Activities
     </a>
   </li>
