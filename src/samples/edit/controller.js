@@ -127,51 +127,57 @@ const API = {
 
     promise
       .then(() => {
-        // should we sync?
-        if (!Device.isOnline()) {
-          radio.trigger('app:dialog:error', {
-            message: 'Looks like you are offline!',
-          });
-          return;
-        }
-
-        if (!userModel.hasLogIn()) {
-          radio.trigger('user:login');
-          return;
-        }
-
-        // sync
-        sample.save(null, { remote: true })
-          .catch((err = {}) => {
-            Log(err, 'e');
-
-            const visibleDialog = App.regions.getRegion('dialog').$el.is(':visible');
-            // we don't want to close any other dialog
-            if (err.message && !visibleDialog) {
-              radio.trigger('app:dialog:error',
-                `Sorry, we have encountered a problem while sending the record.
-                
-                 <p><i>${err.message}</i></p>`
-              );
-            }
-          });
-        radio.trigger('sample:saved');
-
         // create new sample
         const draft = new Sample();
         const occurrence = new Occurrence();
         draft.addOccurrence(occurrence);
-        draft.save().then(() => {
-          savedSamples.add(draft);
+        draft.save()
+          .then(() => {
+            savedSamples.add(draft);
 
-          draft.startGPS();
+            draft.startGPS();
 
-          appModel.set('draftSampleID', draft.cid);
-          appModel.save();
+            appModel.set('draftSampleID', draft.cid);
+            appModel.save();
 
-          // navigate to sample edit
-          radio.trigger('samples:list');
-        });
+            // navigate to sample edit
+            radio.trigger('samples:edit');
+          })
+          .then(() => {
+            // send old one
+            if (!Device.isOnline()) {
+              radio.trigger('app:dialog:error', {
+                message: 'Looks like you are offline!',
+              });
+              return;
+            }
+
+            if (!userModel.hasLogIn()) {
+              radio.trigger('user:login');
+              return;
+            }
+
+            radio.trigger('app:dialog', {
+              title: 'Sending the record',
+              timeout: 1500,
+            });
+
+            // sync
+            sample.save(null, { remote: true })
+              .catch((err = {}) => {
+                Log(err, 'e');
+
+                const visibleDialog = App.regions.getRegion('dialog').$el.is(':visible');
+                // we don't want to close any other dialog
+                if (err.message && !visibleDialog) {
+                  radio.trigger('app:dialog:error',
+                    `Sorry, we have encountered a problem while sending the record.
+                
+                 <p><i>${err.message}</i></p>`
+                  );
+                }
+              });
+          });
       })
       .catch((err) => {
         Log(err, 'e');
