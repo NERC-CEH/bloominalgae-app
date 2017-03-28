@@ -58,7 +58,7 @@ const CONFIG = {
     host: HOST,
     api_key: API_KEY,
     website_id: 23,
-    survey_id: 455,
+    survey_id: 445,
     input_form: 'enter-app-record',
 
     sample: {
@@ -123,8 +123,22 @@ const CONFIG = {
       activities: {
         id: 1016,
         id_user: 1015,
-        values() {
+        values(value, submission) {
+          const that = this;
+          let values = [];
 
+          // personal
+          value.personal.forEach((option) => {
+            values.push(that._values[option]);
+          });
+          submission.fields[that.id_user] = values; // eslint-disable-line
+
+          // others
+          values = [];
+          value.others.forEach((option) => {
+            values.push(that._values[option]);
+          });
+          return values;
         },
         _values: {
           'Walking / Running': 10638,
@@ -144,7 +158,7 @@ const CONFIG = {
       },
       taxon: {
         values() {
-          return 12312;
+          return 400349; // Cyanobacteria
         },
       },
     },
