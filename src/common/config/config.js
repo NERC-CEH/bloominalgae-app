@@ -58,7 +58,7 @@ const CONFIG = {
     host: HOST,
     api_key: API_KEY,
     website_id: 23,
-    survey_id: 374,
+    survey_id: 455,
     input_form: 'enter-app-record',
 
     sample: {
@@ -111,29 +111,30 @@ const CONFIG = {
         },
       },
       size: {
-        id: 106,
+        id: 1014,
         default: 'Doormat',
         values: {
-          'Doormat': 1949,
-          'Parking space': 1950,
-          'Tennis court': 1951,
-          'Even bigger': 1952,
+          Doormat: 10634,
+          'Parking space': 10635,
+          'Tennis court': 10636,
+          'Even bigger': 10637,
         },
       },
       activities: {
-        id: 106,
+        id: 1016,
+        id_user: 1015,
         values() {
 
         },
         _values: {
-          'Walking / Running': 234,
-          'Dog-walking': 234,
-          'Cycling': 234,
-          'Birdwatching': 234,
-          'Fishing': 234,
-          'Swimming': 234,
-          'Boats / Watersports': 234,
-          'Other': 234,
+          'Walking / Running': 10638,
+          'Dog-walking': 10639,
+          Cycling: 10640,
+          Birdwatching: 10641,
+          Fishing: 10642,
+          Swimming: 10643,
+          'Boats / Watersports': 10644,
+          Other: 10645,
         },
       },
     },
