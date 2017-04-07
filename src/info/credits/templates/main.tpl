@@ -8,7 +8,18 @@
     <p>
     <ul style="list-style-type: none;">
       <li>Karolis Kazlauskis (CEH)</li>
-     //TODO
+      <li>Laurence Carvalho< (CEH)/li>
+      <li>Phil Taylor (CEH)</li>
+      <li>Helen Woods (CEH)</li>
+    </ul>
+    <ul style="list-style-type: none;">
+      <li>
+        Thanks to Julia Ferguson for the logo design.
+        Julia can be contacted at:
+        <br>www.paintingbiology.com
+        <br>Twitter: @JuliaFpaintsbio
+        <br>email: paintingbiology@gmail.com
+      </li>
     </ul>
     </p>
     <p>

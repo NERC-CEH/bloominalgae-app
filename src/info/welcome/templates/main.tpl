@@ -12,6 +12,6 @@
 </div>
 
 <button id="exit" class="btn btn-block">
-  Understand
+  I understand
 </button>
 

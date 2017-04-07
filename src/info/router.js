@@ -59,6 +59,16 @@ const Router = Marionette.AppRouter.extend({
         title: 'Risks', App, route: 'info/risks/main',
       });
     },
+    'info/about-bg(/)': () => {
+      CommonController.show({
+        title: 'About B-G Algae', App, route: 'info/about-bg/main',
+      });
+    },
+    'info/report(/)': () => {
+      CommonController.show({
+        title: 'Report', App, route: 'info/report/main',
+      });
+    },
     'info/guide(/)': () => {
       radio.trigger('app:footer:hide');
       CommonController.show({
