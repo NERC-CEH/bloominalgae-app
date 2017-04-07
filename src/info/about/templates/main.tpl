@@ -36,8 +36,8 @@
   <li>
     <p>
       For more information and advice on algal blooms see:
-      <a href="www.gov.uk/government/publications/algal-blooms-advice-for-the-public-and-landowners">England & Wales</a>
-      <a href="www.gov.scot/Resource/0039/00391470.pdf">Scotland</a>
+      <br><a href="http://www.gov.uk/government/publications/algal-blooms-advice-for-the-public-and-landowners">England & Wales</a>
+      <br><a href="http://www.gov.scot/Resource/0039/00391470.pdf">Scotland</a>
     </p>
   </li>
   <li>
