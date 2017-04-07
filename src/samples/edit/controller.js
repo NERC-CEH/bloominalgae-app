@@ -153,35 +153,48 @@ const API = {
             }
 
             if (!userModel.hasLogIn()) {
-              radio.trigger('user:login');
+              radio.trigger('user:login', {
+                onSuccess() {
+                  setTimeout(() => {
+                    API._send(sample);
+                  }, 200);
+                },
+              });
               return;
             }
 
-            radio.trigger('app:dialog', {
-              title: 'Sending the record',
-              timeout: 1500,
-            });
-
-            // sync
-            sample.save(null, { remote: true })
-              .catch((err = {}) => {
-                Log(err, 'e');
-
-                const visibleDialog = App.regions.getRegion('dialog').$el.is(':visible');
-                // we don't want to close any other dialog
-                if (err.message && !visibleDialog) {
-                  radio.trigger('app:dialog:error',
-                    `Sorry, we have encountered a problem while sending the record.
-                
-                 <p><i>${err.message}</i></p>`
-                  );
-                }
-              });
+            API._send(sample);
           });
       })
       .catch((err) => {
         Log(err, 'e');
         radio.trigger('app:dialog:error', err);
+      });
+  },
+
+  _send(sample) {
+    radio.trigger('app:dialog', {
+      title: '<span class="icon icon-check" style="color:green"></span>' +
+      ' Sending the record',
+      body: '<p>It has been moved and can be viewed clicking top-right <b>Account</b> button' +
+      '<span class="icon icon-user"></span></p>',
+      timeout: 10000,
+    });
+
+    // sync
+    sample.save(null, { remote: true })
+      .catch((err = {}) => {
+        Log(err, 'e');
+
+        const visibleDialog = App.regions.getRegion('dialog').$el.is(':visible');
+        // we don't want to close any other dialog
+        if (err.message && !visibleDialog) {
+          radio.trigger('app:dialog:error',
+            `Sorry, we have encountered a problem while sending the record.
+                
+                 <p><i>${err.message}</i></p>`
+          );
+        }
       });
   },
 
