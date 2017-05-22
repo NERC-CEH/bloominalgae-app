@@ -8,10 +8,11 @@
     <p>
     <ul style="list-style-type: none;">
       <li>Karolis Kazlauskis (CEH)</li>
-      <li>Laurence Carvalho< (CEH)/li>
+      <li>Laurence Carvalho (CEH)</li>
       <li>Phil Taylor (CEH)</li>
       <li>Helen Woods (CEH)</li>
     </ul>
+    <br>
     <ul style="list-style-type: none;">
       <li>
         Thanks to Julia Ferguson for the logo design.
