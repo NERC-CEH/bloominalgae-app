@@ -7,7 +7,7 @@
 <li class="table-view-cell">
   <a href="#info/about-bg" class="navigate-right">
     <span class="media-object pull-left icon icon-info"></span>
-    About B-G Algae
+    Algal bloom info
   </a>
 </li>
 <li class="table-view-cell">
