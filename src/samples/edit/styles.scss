@@ -7,6 +7,10 @@
   overflow: visible;
 }
 
+#samples-list-btn.on {
+  color: $color-yellow;
+}
+
 #sample-save-btn {
   min-width: 70% !important;
   max-width: 100px;

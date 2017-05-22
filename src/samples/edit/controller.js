@@ -34,6 +34,7 @@ const API = {
     Log('Samples:Edit:Controller: showing.');
 
     let sample;
+    const draftSampleID = appModel.get('draftSampleID');
     if (sampleID) {
       sample = savedSamples.get(sampleID);
       // Not found
@@ -43,7 +44,6 @@ const API = {
         return;
       }
     } else {
-      const draftSampleID = appModel.get('draftSampleID');
       sample = savedSamples.get(draftSampleID);
       // Not found
       if (!sample) {
@@ -81,8 +81,15 @@ const API = {
 
 
     // HEADER
+    let unsent = false;
+    savedSamples.each((model) => {
+      if (model.cid !== draftSampleID && model.getSyncStatus() !== Indicia.SYNCED) {
+        unsent = true;
+      }
+    });
     const headerView = new HeaderView({
       model: sample,
+      unsent,
     });
 
     headerView.on('save', () => {

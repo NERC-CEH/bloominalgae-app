@@ -1,7 +1,7 @@
 <div class="pull-left">
   <% if (obj.draft) { %>
   <a href="#info" class="icon icon-menu"></a>
-  <a href="#samples" class="icon icon-user"></a>
+  <a href="#samples" id="samples-list-btn" class="icon icon-user <%- obj.unsent ? 'on' : '' %>"></a>
   <% } else {%>
   <a data-rel="back" class="icon icon-left-nav"></a>
   <% } %>
