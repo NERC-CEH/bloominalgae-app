@@ -28,7 +28,7 @@ const SavedImageView = Marionette.View.extend({
 
   serializeData() {
     return {
-      data: this.model.get('thumbnail')[0],
+      data: this.model.get('thumbnail'),
     };
   },
 });

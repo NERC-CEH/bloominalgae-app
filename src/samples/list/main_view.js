@@ -106,7 +106,7 @@ const SampleView = Marionette.View.extend({
     const occ = sample.getOccurrence();
     const date = DateHelp.print(sample.get('date'), true);
     const media = occ.media;
-    const img = media.length && media.at(0).get('thumbnail')[0];
+    const img = media.length && media.at(0).get('thumbnail');
 
     const syncStatus = this.model.getSyncStatus();
 
