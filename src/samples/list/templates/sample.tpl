@@ -9,7 +9,7 @@
       <% if (obj.isSynchronising) { %>
       <div class="online-status icon icon-plus spin"></div>
       <% } else { %>
-      <div class="online-status icon icon-send <%- obj.onDatabase ? 'cloud' : 'local' %>"></div>
+      <div class="online-status icon icon-send <%- obj.onDatabase ? 'cloud' : 'local' %>"><%- obj.onDatabase ? '' : 'unsent' %></div>
       <% } %>
       <% } %>
     </div>
