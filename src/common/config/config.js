@@ -58,7 +58,7 @@ const CONFIG = {
     host: HOST,
     api_key: API_KEY,
     website_id: 23,
-    survey_id: 374,
+    survey_id: 445,
     input_form: 'enter-app-record',
 
     sample: {
@@ -110,32 +110,56 @@ const CONFIG = {
           return DateHelp.print(date);
         },
       },
+      size: {
+        id: 1014,
+        default: 'Doormat',
+        values: {
+          Doormat: 10634,
+          'Parking space': 10635,
+          'Tennis court': 10636,
+          'Even bigger': 10637,
+        },
+      },
+      activities: {
+        id: 1016,
+        id_user: 1015,
+        values(value, submission) {
+          const that = this;
+          let values = [];
+
+          // personal
+          value.personal.forEach((option) => {
+            values.push(that._values[option]);
+          });
+          submission.fields[that.id_user] = values; // eslint-disable-line
+
+          // others
+          values = [];
+          value.others.forEach((option) => {
+            values.push(that._values[option]);
+          });
+          return values;
+        },
+        _values: {
+          'Walking / Running': 10638,
+          'Dog-walking': 10639,
+          Cycling: 10640,
+          Birdwatching: 10641,
+          Fishing: 10642,
+          Swimming: 10643,
+          'Boats / Watersports': 10644,
+          Other: 10645,
+        },
+      },
     },
     occurrence: {
       training: {
         id: 'training',
       },
-
       taxon: {
-        values(taxon) {
-          return taxon.warehouse_id;
+        values() {
+          return 400349; // Cyanobacteria
         },
-      },
-      number: {
-        id: 16,
-      },
-      stage: {
-        id: 106,
-        default: 'Not Recorded',
-        values: {
-          'Not Recorded': 1949,
-          Adult: 1950,
-          'Pre-adult': 1951,
-          Other: 1952,
-        },
-      },
-      identifiers: {
-        id: 18,
       },
     },
   },

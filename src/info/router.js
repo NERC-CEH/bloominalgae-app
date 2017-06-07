@@ -13,6 +13,14 @@ import WelcomeController from './welcome/controller';
 import './brc_approved/BRC_approved_logo.png';
 import './brc_approved/styles.scss';
 import './credits/sponsor_logo.png';
+import './guide/images/Picture1.png';
+import './guide/images/Picture2.png';
+import './guide/images/Picture3.png';
+import './guide/images/Picture4.png';
+import './guide/images/Picture5.png';
+import './guide/images/Picture6.png';
+import './guide/images/Picture7.png';
+import './guide/images/Picture8.png';
 
 App.info = {};
 
@@ -48,7 +56,23 @@ const Router = Marionette.AppRouter.extend({
     },
     'info/risks(/)': () => {
       CommonController.show({
-        title: 'Privacy Policy', App, route: 'info/risks/main',
+        title: 'Risks', App, route: 'info/risks/main',
+      });
+    },
+    'info/about-bg(/)': () => {
+      CommonController.show({
+        title: 'About B-G Algae', App, route: 'info/about-bg/main',
+      });
+    },
+    'info/report(/)': () => {
+      CommonController.show({
+        title: 'Report', App, route: 'info/report/main',
+      });
+    },
+    'info/guide(/)': () => {
+      radio.trigger('app:footer:hide');
+      CommonController.show({
+        title: 'Identify', App, route: 'info/guide/main',
       });
     },
     'info/brc-approved(/)': () => {
@@ -67,9 +91,7 @@ const Router = Marionette.AppRouter.extend({
 
 radio.on('info:welcome', (options) => {
   App.navigate('info/welcome', options);
-  CommonController.show({
-    route: 'info/welcome/main',
-  });
+  WelcomeController.show();
 });
 
 App.on('before:start', () => {

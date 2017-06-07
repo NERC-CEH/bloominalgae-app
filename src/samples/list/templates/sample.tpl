@@ -9,7 +9,7 @@
       <% if (obj.isSynchronising) { %>
       <div class="online-status icon icon-plus spin"></div>
       <% } else { %>
-      <div class="online-status icon icon-send <%- obj.onDatabase ? 'cloud' : 'local' %>"></div>
+      <div class="online-status icon icon-send <%- obj.onDatabase ? 'cloud' : 'local' %>"><%- obj.onDatabase ? '' : 'unsent' %></div>
       <% } %>
       <% } %>
     </div>
@@ -25,11 +25,7 @@
         @
 
         <% if (obj.location) { %>
-          <% if (obj.location_name) { %>
-          <span class="location"><%= obj.location_name %></span>
-          <%  } else { %>
-            <span class="location error">No location name</span>
-          <% } %>
+          <span class="location"><%= obj.location %></span>
         <% } else { %>
           <% if (obj.isLocating) { %>
           <span class="location warn">Locating...</span>

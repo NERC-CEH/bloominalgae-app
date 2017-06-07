@@ -1,9 +1,4 @@
 <div class="pull-left">
-  <a href="#info" class="icon icon-menu"></a>
+  <a data-rel="back" class="icon icon-left-nav"></a>
 </div>
-<div class="pull-right">
-  <div class="img-picker icon icon-camera">
-    <input type="file" accept="image/*"/>
-  </div>
-  <a href="#samples/new" class="icon icon-plus"></a>
-</div>
+<h1 class="title">Your Records</h1>

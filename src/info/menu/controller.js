@@ -18,6 +18,7 @@ const API = {
       }),
     });
     radio.trigger('app:header', headerView);
+    radio.trigger('app:footer:hide');
   },
 
   logout() {

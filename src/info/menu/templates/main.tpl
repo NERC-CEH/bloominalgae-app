@@ -5,15 +5,21 @@
   </a>
 </li>
 <li class="table-view-cell">
-  <a href="#info/risks" class="navigate-right">
+  <a href="#info/about-bg" class="navigate-right">
     <span class="media-object pull-left icon icon-info"></span>
+    Algal bloom info
+  </a>
+</li>
+<li class="table-view-cell">
+  <a href="#info/risks" class="navigate-right">
+    <span class="media-object pull-left icon icon-help"></span>
     Risks
   </a>
 </li>
 <li class="table-view-cell">
-  <a href="#info/sepa" class="navigate-right">
-    <span class="media-object pull-left icon icon-info"></span>
-    SEPA / EA
+  <a href="#info/report" class="navigate-right">
+    <span class="media-object pull-left icon icon-users"></span>
+    Report a bloom
   </a>
 </li>
 <li class="table-view-cell">

@@ -36,12 +36,8 @@ const logsl = new LogSlider({ maxpos: 100, minval: 1, maxval: 500 });
 export default Marionette.View.extend({
   initialize(options) {
     switch (options.attr) {
-      case 'stage':
+      case 'size':
         this.template = JST['common/radio'];
-        break;
-
-      case 'identifiers':
-        this.template = JST['common/input'];
         break;
 
       default:
@@ -51,8 +47,6 @@ export default Marionette.View.extend({
 
   events: {
     'click input[type="radio"]': 'saveNumber',
-    'input input[type="range"]': 'updateRangeInputValue',
-    'change input[type="number"]': 'updateRangeSliderValue',
   },
 
   saveNumber() {
@@ -76,49 +70,34 @@ export default Marionette.View.extend({
         }
         break;
       }
-      case 'number':
-        const numberRangesConfig = CONFIG.indicia.occurrence['number-ranges'];
-
-        value = this.$el.find('#rangeVal').val();
-        if (value) {
-          // slider
-          values[attr] = value;
-        } else {
-          // ranges selection
-          $inputs = this.$el.find('input[type="radio"]');
-          $inputs.each((int, elem) => {
-            if ($(elem).prop('checked')) {
-              const newVal = $(elem).val();
-              // don't set default
-              if (newVal !== numberRangesConfig.default) {
-                values['number-ranges'] = newVal;
-              }
-            }
-          });
-        }
-        break;
-      case 'stage':
-        const stageConfig = CONFIG.indicia.occurrence.stage;
-
+      case 'size':
         $inputs = this.$el.find('input');
         $inputs.each((int, elem) => {
           if ($(elem).prop('checked')) {
-            const newVal = $(elem).val();
-            // don't set default
-            if (newVal !== stageConfig.default) {
-              values[attr] = newVal;
-            }
+            values[attr] = $(elem).val();
           }
         });
         break;
-      case 'identifiers':
-        value = this.$el.find('input').val();
-        values[attr] = StringHelp.escape(value);
-        break;
+
       case 'comment':
         value = this.$el.find('textarea').val();
         values[attr] = StringHelp.escape(value);
         break;
+
+      case 'activities':
+        values[attr] = {
+          personal: [],
+          others: [],
+        };
+        $inputs = this.$el.find('input');
+        $inputs.each((int, elem) => {
+          if ($(elem).prop('checked')) {
+            const type = $(elem).hasClass('personal') ? 'personal' : 'others';
+            values[attr][type].push($(elem).val());
+          }
+        });
+        break;
+
       default:
     }
 
@@ -126,7 +105,6 @@ export default Marionette.View.extend({
   },
 
   serializeData() {
-    const occ = this.model.getOccurrence();
     let templateData = {};
     let selected;
 
@@ -135,33 +113,26 @@ export default Marionette.View.extend({
         templateData.date = DateHelp.toDateInputValue(this.model.get('date'));
         templateData.maxDate = DateHelp.toDateInputValue(new Date());
         break;
-      case 'number': {
-        const numberRangesConfig = CONFIG.indicia.occurrence['number-ranges'];
-        let number = occ.get('number');
-        if (number) {
-          templateData.number = number;
-          templateData.numberPosition = logsl.position(number).toFixed(0);
-        } else {
-          number = occ.get('number-ranges') || numberRangesConfig.default;
-          templateData[number] = true;
-        }
-        break;
-      }
-      case 'stage':
-        const stageConfig = CONFIG.indicia.occurrence.stage;
-        selected = occ.get('stage') || stageConfig.default;
+
+      case 'size':
+        selected = this.model.get('size');
         templateData = {
-          message: 'Please pick the life stage.',
-          selection: Object.keys(stageConfig.values),
+          message: 'Select the closest match below.',
+          selection: Object.keys(CONFIG.indicia.sample.size.values),
           selected,
         };
         break;
-      case 'identifiers':
-        templateData.message = 'If anyone helped with the identification please enter their name here.';
-        templateData.value = occ.get(this.options.attr);
+
+      case 'activities':
+        selected = this.model.get('activities') || { personal: [], others: [] };
+        templateData = {
+          selection: Object.keys(CONFIG.indicia.sample.activities._values),
+          selected,
+        };
         break;
+
       case 'comment':
-        templateData.value = occ.get(this.options.attr);
+        templateData.value = this.model.get(this.options.attr);
         break;
 
       default:
@@ -225,15 +196,6 @@ export default Marionette.View.extend({
         break;
       case 'comment':
         $input = this.$el.find('textarea').focus();
-        if (window.cordova && Device.isAndroid()) {
-          window.Keyboard.show();
-          $input.focusout(() => {
-            window.Keyboard.hide();
-          });
-        }
-        break;
-      case 'identifiers':
-        $input = this.$el.find('input').focus();
         if (window.cordova && Device.isAndroid()) {
           window.Keyboard.show();
           $input.focusout(() => {

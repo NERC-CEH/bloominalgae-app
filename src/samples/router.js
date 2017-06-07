@@ -39,6 +39,7 @@ const Router = Marionette.AppRouter.extend({
         scroll = $mainRegion.scrollTop();
       },
     },
+    'samples/draft(/)': EditController.show,
     'samples/:id': ShowController.show,
     'samples/:id/edit(/)': EditController.show,
     'samples/:id/edit/location(/)': EditLocationController.show,
@@ -58,7 +59,11 @@ radio.on('samples:show', (sampleID, options) => {
 });
 
 radio.on('samples:edit', (sampleID, options) => {
-  App.navigate(`samples/${sampleID}/edit`, options);
+  if (!sampleID){
+    App.navigate(`samples/draft`, options);
+  } else {
+    App.navigate(`samples/${sampleID}/edit`, options);
+  }
   EditController.show(sampleID);
 });
 
@@ -71,10 +76,6 @@ radio.on('samples:edit:attr', (sampleID, attrID, options) => {
     default:
       EditAttrController.show(sampleID, attrID);
   }
-});
-
-radio.on('sample:saved', () => {
-  window.history.back();
 });
 
 function syncSamples() {

@@ -7,6 +7,10 @@
   overflow: visible;
 }
 
+#samples-list-btn.on {
+  color: $color-yellow;
+}
+
 #sample-save-btn {
   min-width: 70% !important;
   max-width: 100px;
@@ -35,7 +39,7 @@ ul.table-view.inputs {
 }
 
 .descript {
-  width: 55%;
+  width: 51%;
   min-height: 21px;
   font-size: $text-font-size;
 

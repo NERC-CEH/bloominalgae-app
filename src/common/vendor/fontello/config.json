@@ -277,6 +277,18 @@
       "css": "link-ext",
       "code": 61582,
       "src": "fontawesome"
+    },
+    {
+      "uid": "b624a1e512819d410ddbee84e6918b9d",
+      "css": "stop",
+      "code": 59435,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "88ae7d00391a440ac7ccd009bcb34e4e",
+      "css": "dog",
+      "code": 59436,
+      "src": "elusive"
     }
   ]
 }

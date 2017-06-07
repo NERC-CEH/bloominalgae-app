@@ -32,9 +32,10 @@ const API = {
       sample.startGPS();
 
       appModel.set('draftSampleID', sample.cid);
+      appModel.save();
 
       // navigate to sample edit
-      radio.trigger('samples:edit', sample.cid);
+      radio.trigger('samples:edit');
     });
   },
 };

@@ -27,6 +27,8 @@ export default Marionette.View.extend({
 
   serializeData() {
     return {
+      draft: !this.model.metadata.saved,
+      unsent: this.options.unsent,
       isSynchronising: this.model.getSyncStatus() === Indicia.SYNCHRONISING,
     };
   },

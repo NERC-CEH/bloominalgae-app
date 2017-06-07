@@ -1,10 +1,10 @@
 {
   "name": "bloominalgae-app",
-  "id": "uk.ac.ceh.ir",
-  "title": "iRecord App",
-  "description": "iRecord application.",
-  "version": "1.2.2",
-  "build": "1",
+  "id": "uk.ac.ceh.algae",
+  "title": "BloominAlgae",
+  "description": "BloominAlgae application.",
+  "version": "1.0.0",
+  "build": "3",
   "homepage": "https://irecord.org.uk",
   "author": {
     "name": "Karolis Kazlauskis",
@@ -13,10 +13,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/NERC-CEH/irecord-app"
+    "url": "https://github.com/NERC-CEH/bloominalgae-app"
   },
   "bugs": {
-    "url": "https://github.com/NERC-CEH/irecord-app/issues"
+    "url": "https://github.com/NERC-CEH/bloominalgae-app/issues"
   },
   "licenses": [
     {
@@ -37,7 +37,6 @@
     "backbone.localstorage": "^1.1.16",
     "backbone.marionette": "3.0.0",
     "backbone.radio": "^2.0.0",
-    "bower": "^1.7.9",
     "circular-dependency-plugin": "^2.0.0",
     "core-js": "^2.4.1",
     "css-loader": "^0.25.0",
@@ -47,7 +46,6 @@
     "fastclick": "^1.0.3",
     "file-loader": "^0.9.0",
     "grunt": "^1.0.1",
-    "grunt-bower-task": "^0.4.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-copy": "^1.0.0",
@@ -59,7 +57,7 @@
     "hammerjs": "2.0.6",
     "html-webpack-plugin": "^2.22.0",
     "indexeddbshim": "^2.2.1",
-    "indicia": "Indicia-Team/indicia-js#v4.0.0",
+    "indicia": "Indicia-Team/indicia-js#v4.1.0",
     "jquery": "^3.1.0",
     "jquery-touchswipe": "^1.6.15",
     "json-loader": "^0.5.4",
@@ -88,7 +86,6 @@
     "webpack-merge": "^0.14.1"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
     "eslint-import-resolver-webpack": "^0.6.0",
@@ -96,26 +93,12 @@
     "eslint-plugin-jsx-a11y": "^2.1.0",
     "eslint-plugin-react": "^6.1.2",
     "express": "^4.14.0",
-    "grunt-karma": "^2.0.0",
-    "karma": "^1.2.0",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^2.0.0",
-    "karma-firefox-launcher": "^1.0.0",
-    "karma-mocha": "^1.1.1",
-    "karma-mocha-reporter": "^2.1.0",
-    "karma-phantomjs-launcher": "^1.0.1",
-    "karma-safari-launcher": "^1.0.0",
-    "karma-sauce-launcher": "^1.0.0",
-    "karma-sinon": "^1.0.5",
-    "karma-webpack": "^1.8.0",
-    "lodash": "^4.15.0",
-    "mocha": "^3.0.2",
-    "phantomjs-prebuilt": "^2.1.12",
-    "sinon": "^1.17.5"
+    "lodash": "^4.15.0"
   },
   "keywords": [
     "irecord",
     "biological",
+    "algae",
     "recording",
     "mobile",
     "app",
