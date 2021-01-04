@@ -1,1 +1,0 @@
-<p>No records to show.</p>
