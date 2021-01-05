@@ -1,0 +1,21 @@
+ion-tab-bar {
+  --background: var(--ion-color-primary);
+  --color-selected: var(--ion-color-secondary);
+
+  ion-tab-button {
+    ion-label {
+      color: var(--ion-color-primary-contrast);
+    }
+    ion-icon {
+      color: var(--ion-color-primary-contrast);
+    }
+
+    &.tab-selected {
+      ion-icon,
+      ion-label {
+        color: var(--ion-color-secondary) !important;
+        --ion-color-base: var(--ion-color-secondary) !important;
+      }
+    }
+  }
+}
