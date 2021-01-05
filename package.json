@@ -53,7 +53,7 @@
     "i18next": "19.8.4",
     "ionicons": "5.2.3",
     "json-loader": "0.5.7",
-    "leaflet": "1.6.0",
+    "leaflet": "1.7.1",
     "leaflet.markercluster": "1.4.1",
     "mobx": "5.15.1",
     "mobx-react": "6.1.4",
@@ -61,7 +61,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-i18next": "11.7.3",
-    "react-leaflet": "^3.0.5",
+    "react-leaflet": "2.7.0",
     "react-router": "5.1.0",
     "react-router-dom": "5.2.0",
     "yup": "0.32.8"

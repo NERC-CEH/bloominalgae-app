@@ -3,7 +3,7 @@ const checkEnv = require('@flumens/has-env');
 
 checkEnv({
   warn: ['APP_MANUAL_TESTING', 'APP_HOST'],
-  required: ['APP_SENTRY_KEY'],
+  required: ['APP_SENTRY_KEY', 'APP_MAPBOX_MAP_KEY'],
 });
 
 // eslint-disable-next-line import/no-extraneous-dependencies

@@ -1,0 +1,10 @@
+#custom-header {
+  ion-toolbar {
+    --ion-toolbar-background: transparent;
+    position: fixed;
+
+    ion-menu-button {
+      color: #fff;
+    }
+  }
+}
