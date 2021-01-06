@@ -3,7 +3,9 @@ import { Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, NavContext } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Menu from 'Components/Menu';
+import appModel from 'appModel';
 import Info from './Info/router';
+import SplashScreenRequired from './Info/SplashScreenRequired';
 // import Survey from './Survey/router';
 import Settings from './Settings/router';
 import Home from './Home';
@@ -18,16 +20,18 @@ const HomeRedirect = () => {
 
 const App = () => (
   <IonApp>
-    <IonReactRouter>
-      <Menu />
-      <IonRouterOutlet id="main">
-        <Route exact path="/" component={HomeRedirect} />
-        <Route path="/home" component={Home} />
-        {Info}
+    <SplashScreenRequired appModel={appModel}>
+      <IonReactRouter>
+        <Menu />
+        <IonRouterOutlet id="main">
+          <Route exact path="/" component={HomeRedirect} />
+          <Route path="/home" component={Home} />
+          {Info}
         {/* {Survey} */}
-        {Settings}
-      </IonRouterOutlet>
-    </IonReactRouter>
+          {Settings}
+        </IonRouterOutlet>
+      </IonReactRouter>
+    </SplashScreenRequired>
   </IonApp>
 );
 
