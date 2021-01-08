@@ -1,0 +1,19 @@
+#guide {
+  ion-item-divider {
+    background: #ffffff;
+    color: #5f6d43;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: none;
+  }
+
+  ion-item-divider.ios {
+    padding-bottom: 0px;
+  }
+
+  .info-message {
+    margin-bottom: 10px;
+  }
+}
