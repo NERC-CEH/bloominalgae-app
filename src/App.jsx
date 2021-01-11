@@ -6,7 +6,7 @@ import Menu from 'Components/Menu';
 import appModel from 'appModel';
 import Info from './Info/router';
 import SplashScreenRequired from './Info/SplashScreenRequired';
-// import Survey from './Survey/router';
+import Survey from './Survey/router';
 import Settings from './Settings/router';
 import Home from './Home';
 
@@ -27,7 +27,7 @@ const App = () => (
           <Route exact path="/" component={HomeRedirect} />
           <Route path="/home" component={Home} />
           {Info}
-        {/* {Survey} */}
+            {Survey}
           {Settings}
         </IonRouterOutlet>
       </IonReactRouter>

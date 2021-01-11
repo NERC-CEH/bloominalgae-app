@@ -8,6 +8,8 @@ export { default as Section } from '@bit/flumens.apps.section';
 export { default as RouteWithModels } from '@bit/flumens.apps.route-with-models';
 export { default as PhotoPicker } from '@bit/flumens.apps.photo-picker';
 export { default as MenuAttrItemFromModel } from '@bit/flumens.apps.menu-attr-item-from-model';
+export { default as MenuAttrItem } from '@bit/flumens.apps.menu-attr-item';
+export { default as ModelLocation } from '@bit/flumens.apps.model-location-map';
 
 export { default as device } from '@bit/flumens.apps.device';
 export { default as alert } from '@bit/flumens.apps.helpers.alert';
