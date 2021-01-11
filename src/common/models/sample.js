@@ -1,6 +1,6 @@
 import { Sample } from '@apps';
 import GPSExtension from './sampleGPSExt';
-// import surveyConfig from '../../Survey/config';
+import surveyConfig from '../../Survey/config';
 import { modelStore } from './store';
 
 class AppSample extends Sample {
@@ -10,29 +10,14 @@ class AppSample extends Sample {
     super(...args);
 
     Object.assign(this, GPSExtension);
+    this.survey = surveyConfig;
+
     this.gpsExtensionInit();
   }
 
-  // getSurvey() {
-  //   const survey = surveyConfig;
-
-  //   if (!survey) {
-  //     throw new Error('No survey config was found');
-  //   }
-
-  //   if (this.parent) {
-  //     return survey.smp;
-  //   }
-
-  //   return survey;
-  // }
-
+  // TODO:  rename disable
   isDisabled() {
-    if (this.parent) {
-      return this.parent.isDisabled();
-    }
-
-    return !!this.metadata.synced_on;
+    return this.isUploaded();
   }
 }
 
