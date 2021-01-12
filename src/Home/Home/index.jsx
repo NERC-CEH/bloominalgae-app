@@ -16,7 +16,7 @@ function Home() {
         <div className="app-home-background">
           <img className="app-logo" src={appLogo} alt="" />
           <IonItemGroup>
-            <IonRouterLink routerLink="/survey/start">
+            <IonRouterLink routerLink="/survey/start" routerDirection="none">
               <IonItem className="pretty-button" detail>
                 <IonLabel>
                   <T>Record</T>
