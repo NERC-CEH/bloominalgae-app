@@ -24,16 +24,16 @@ const Report = () => (
 
         <P>
           <a href="http://www.sepa.org.uk/contact/">
-            Scottish Environment Protection Agency (SEPA)
+            Scottish Environment Protection Agency (SEPA){' '}
           </a>
           <a href="https://www.daera-ni.gov.uk/articles/niea-and-water-pollution">
-            Northern Ireland Environment Agency
+            Northern Ireland Environment Agency{' '}
           </a>
           <a href="https://naturalresources.wales/about-us/contact-us/report-it/">
-            Natural Resources Wales
+            Natural Resources Wales{' '}
           </a>
           <a href="http://apps.environment-agency.gov.uk/contact/">
-            England: Environment Agency (EA)
+            England: Environment Agency (EA){' '}
           </a>
           <a href="http://www.gov.scot/Resource/0039/00391470.pdf">
             Scottish Government Guidance (based on World Health Authority
