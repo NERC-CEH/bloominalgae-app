@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Sample from 'sample';
 import savedSamples from 'savedSamples';
 import { alert, Page } from '@apps';
+import { Trans as T } from 'react-i18next';
 import { NavContext } from '@ionic/react';
 import { withRouter } from 'react-router';
 
@@ -11,7 +12,9 @@ async function showDraftAlert() {
   const alertWrap = resolve => {
     alert({
       header: 'Draft',
-      message: 'Previous survey draft exists, would you like to continue it?',
+      message: (
+        <T>Previous survey draft exists, would you like to continue it?</T>
+      ),
       backdropDismiss: false,
       buttons: [
         {

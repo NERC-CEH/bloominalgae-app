@@ -7,6 +7,7 @@ import {
   IonHeader,
   IonTitle,
 } from '@ionic/react';
+import { Trans as T } from 'react-i18next';
 import './styles.scss';
 
 const Header = props => {
@@ -19,8 +20,10 @@ const Header = props => {
       <IonToolbar>
         <IonButtons slot="start">
           <IonMenuButton />
-          <IonTitle>{title}</IonTitle>
         </IonButtons>
+        <IonTitle>
+          <T>{title}</T>
+        </IonTitle>
       </IonToolbar>
     </IonHeader>
   );
