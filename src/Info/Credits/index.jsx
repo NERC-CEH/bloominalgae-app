@@ -10,13 +10,13 @@ const Credits = () => (
     <Header title="Credits" />
     <Main className="ion-padding">
       <Section>
-        <H>
+        <H skipTranslation>
           <img src={sponsorLogo} alt="sponsor-logo" />
         </H>
         <P>
           We are grateful for all the people that helped to create this app:
         </P>
-        <P>
+        <P skipTranslation>
           <ul>
             <li>Laurence Carvalho (CEH)</li>
             <li>Karolis Kazlauskis (Flumens)</li>
