@@ -2,8 +2,7 @@ import React from 'react';
 import { observer } from 'mobx-react';
 import { Main, alert } from '@apps';
 import PropTypes from 'prop-types';
-import { IonIcon, IonList, IonItemDivider, IonItem } from '@ionic/react';
-import { arrowUndoSharp } from 'ionicons/icons';
+import { IonIcon, IonList, IonItem, IonLabel } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
 import './styles.scss';
 
@@ -36,19 +35,28 @@ function resetDialog(resetApp) {
 class Component extends React.Component {
   static propTypes = {
     resetApp: PropTypes.func.isRequired,
+    sendAnalytics: PropTypes.bool.isRequired,
+    onToggle: PropTypes.func.isRequired,
   };
 
   render() {
-    const { resetApp } = this.props;
+    const { resetApp, sendAnalytics, onToggle } = this.props;
 
     const showAlertDialog = () => resetDialog(resetApp);
+    const onSendAnalyticsToggle = checked => onToggle('sendAnalytics', checked);
 
     return (
       <Main className="app-settings">
         <IonList lines="full">
-          <IonItemDivider mode="ios">
-            <T>Application</T>
-          </IonItemDivider>
+          <IonItem>
+            <IonIcon icon={shareSocialOutline} size="small" slot="start" />
+            <IonLabel>Share App Analytics</IonLabel>
+            <Toggle onToggle={onSendAnalyticsToggle} checked={sendAnalytics} />
+          </IonItem>
+          <MenuNote>
+            Share app crash data so we can make the app more reliable.
+          </MenuNote>
+
           <IonItem id="app-reset-btn" onClick={showAlertDialog}>
             <IonIcon icon={arrowUndoSharp} size="small" slot="start" />
             <T>Reset App</T>
