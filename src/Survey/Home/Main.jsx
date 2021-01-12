@@ -51,6 +51,7 @@ class Component extends React.Component {
             value={activities.length}
             label="Activities"
             icon={bicycleOutline}
+            skipValueTranslation
           />
 
           <MenuAttrItemFromModel attr="comment" model={sample} />
