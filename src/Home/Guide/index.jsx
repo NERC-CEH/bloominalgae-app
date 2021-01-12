@@ -16,8 +16,7 @@ import './styles.scss';
 
 const bgCards = [
   {
-    text:
-      'If you are still not sure after looking at this guide please submit the record anyway',
+    text: 'Usually green or blue-green in colour',
     image: img1,
   },
   {
