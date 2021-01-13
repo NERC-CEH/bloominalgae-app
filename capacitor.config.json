@@ -1,6 +1,6 @@
 {
   "appId": "uk.ac.ceh.algae",
-  "appName": "Bloominalgae-app",
+  "appName": "Bloomin' algae",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
