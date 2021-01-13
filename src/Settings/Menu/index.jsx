@@ -34,6 +34,8 @@ const MenuController = props => {
   return (
     <Page id="settings">
       <Header title="Settings" />
+      <Main
+        resetApp={resetApplication}
         sendAnalytics={sendAnalytics}
         onToggle={onToggleWrap}
       />
