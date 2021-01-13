@@ -92,3 +92,21 @@ ion-toolbar {
 a {
   text-decoration: none;
 }
+
+ion-textarea {
+  --padding-start: 10px !important;
+}
+
+ion-item-divider {
+  background-color: #f9f9f9d9;
+  color: var(--ion-color-primary);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.menu-note-item {
+  --inner-padding-start: 20px;
+  --inner-padding-end: 20px;
+  --inner-padding-top: 10px;
+  --inner-padding-bottom: 10px;
+}

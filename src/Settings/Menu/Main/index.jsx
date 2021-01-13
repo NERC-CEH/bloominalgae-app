@@ -1,19 +1,20 @@
 import React from 'react';
 import { observer } from 'mobx-react';
-import { alert, Main, Toggle, MenuNote } from '@apps';
+import { alert, Main, Toggle, MenuNote, MenuAttrItem } from '@apps';
 import {
   shareSocialOutline,
   arrowUndoSharp,
+  flagOutline,
 } from 'ionicons/icons';
 import PropTypes from 'prop-types';
 import { IonIcon, IonList, IonItem, IonLabel } from '@ionic/react';
+import languages from 'common/config/languages';
 import { Trans as T } from 'react-i18next';
 import './styles.scss';
 
 function resetDialog(resetApp) {
   alert({
     header: 'Reset',
-    skipTranslation: true,
     message: (
       <>
         <T>
@@ -41,17 +42,28 @@ class Component extends React.Component {
     resetApp: PropTypes.func.isRequired,
     sendAnalytics: PropTypes.bool.isRequired,
     onToggle: PropTypes.func.isRequired,
+    language: PropTypes.string,
   };
 
   render() {
-    const { resetApp, sendAnalytics, onToggle } = this.props;
+    const { resetApp, language, sendAnalytics, onToggle } = this.props;
 
     const showAlertDialog = () => resetDialog(resetApp);
     const onSendAnalyticsToggle = checked => onToggle('sendAnalytics', checked);
 
+    const languageNameByISO = ({ value }) => value === language;
+    const selectedLanguage = languages.find(languageNameByISO) || {};
+
     return (
       <Main className="app-settings">
         <IonList lines="full">
+          <MenuAttrItem
+            routerLink="/settings/language"
+            value={selectedLanguage.label}
+            label="Language"
+            icon={flagOutline}
+          />
+
           <IonItem>
             <IonIcon icon={shareSocialOutline} size="small" slot="start" />
             <IonLabel>Share App Analytics</IonLabel>
