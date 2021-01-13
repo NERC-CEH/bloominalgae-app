@@ -29,7 +29,7 @@
     "@bit/flumens.apps.menu-attr-item-from-model": "0.1.0",
     "@bit/flumens.apps.menu-note-item": "^0.2.2",
     "@bit/flumens.apps.modal-header": "0.1.1",
-    "@bit/flumens.apps.model-location-map": "1.1.0",
+    "@bit/flumens.apps.model-location-map": "1.2.0",
     "@bit/flumens.apps.models.init-stored-samples": "0.1.0",
     "@bit/flumens.apps.models.media": "0.2.4",
     "@bit/flumens.apps.models.model": "0.1.0",
