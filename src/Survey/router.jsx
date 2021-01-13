@@ -17,6 +17,7 @@ const ModelLocationWrap = props => (
     useGridRef
     useGridMap
     onLocationNameChange={ModelLocation.utils.onLocationNameChange}
+    placeholder="Location name e.g. lake, reservoir or pond name"
     onGPSClick={ModelLocation.utils.onGPSClick}
     {...props}
   />
