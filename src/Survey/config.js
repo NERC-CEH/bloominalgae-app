@@ -39,18 +39,33 @@ const activitiesValues = [
 const survey = {
   name: 'survey',
   label: 'Record',
-  id: -1,
+  id: 445,
 
   getDraftIdKey: () => `draftId:${survey.name}`,
 
   attrs: {
+    location_accuracy: { remote: { id: 282 } },
+    location_source: { remote: { id: 760 } },
+    location_gridref: { remote: { id: 335 } },
+
     location: {
       remote: {
         id: 'entered_sref',
-        values(location) {
-          return `${parseFloat(location.latitude).toFixed(7)}, ${parseFloat(
-            location.longitude
-          ).toFixed(7)}`;
+        values(location, submission) {
+          const { accuracy, source, gridref, name } = location;
+
+          const keys = survey.attrs;
+          const locationAttributes = {
+            location_name: name, 
+            [keys.location_source.remote.id]: source,
+            [keys.location_gridref.remote.id]: gridref,
+            [keys.location_accuracy.remote.id]: accuracy,
+          };
+          Object.assign(submission.values, locationAttributes);
+
+          const lat = parseFloat(location.latitude);
+          const lon = parseFloat(location.longitude);
+          return `${lat.toFixed(7)}, ${lon.toFixed(7)}`;
         },
       },
     },
@@ -73,34 +88,29 @@ const survey = {
       info: 'Select the closest match below.',
       values: bloomSizeValues,
       remote: {
-        id: -1,
+        id: 1014,
         values: bloomSizeValues,
       },
     },
 
     activities: {
-      id: 1016,
       type: 'checkbox',
       label: 'Activities',
       icon: bicycleOutline,
       info: 'Please select the activities type for this record.',
       values: activitiesValues,
       remote: {
-        id: -1,
+        id: 1016,
         values: activitiesValues,
       },
     },
 
     comment: {
       icon: chatboxEllipsesOutline,
-      required: false,
       label: 'Comment',
       type: 'textarea',
       info: 'Please add any extra info about this record.',
       skipValueTranslation: true,
-      remote: {
-        id: -1,
-      },
     },
   },
 
