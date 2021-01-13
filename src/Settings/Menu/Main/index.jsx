@@ -1,6 +1,10 @@
 import React from 'react';
 import { observer } from 'mobx-react';
-import { Main, alert } from '@apps';
+import { alert, Main, Toggle, MenuNote } from '@apps';
+import {
+  shareSocialOutline,
+  arrowUndoSharp,
+} from 'ionicons/icons';
 import PropTypes from 'prop-types';
 import { IonIcon, IonList, IonItem, IonLabel } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
