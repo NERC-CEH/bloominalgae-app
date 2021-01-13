@@ -7,6 +7,7 @@ import initAnalytics from 'helpers/analytics';
 import { Plugins, StatusBarStyle } from '@capacitor/core';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import 'common/translations/translator';
 import App from './App';
 
 import '@ionic/core/css/core.css';
