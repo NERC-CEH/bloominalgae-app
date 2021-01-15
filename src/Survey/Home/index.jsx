@@ -2,12 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import { IonButton, NavContext, withIonLifeCycle } from '@ionic/react';
-import { Page, Header, alert } from '@apps';
 import { Trans as T } from 'react-i18next';
+import { Page, Header, showInvalidsMessage, alert, device, toast } from '@apps';
+import MapComponent from '../Components/Map';
 import Main from './Main';
-// import MapComponent from '../../Home/Map/Main';
-// import 'leaflet/dist/leaflet.css';
 import './styles.scss';
+
+const { warn } = toast;
 
 @observer
 class Controller extends React.Component {
@@ -16,35 +17,65 @@ class Controller extends React.Component {
   static propTypes = {
     sample: PropTypes.object.isRequired,
     appModel: PropTypes.object.isRequired,
+    match: PropTypes.object.isRequired,
   };
 
   askToVerifyLocation = () => {
-    alert({
-      header: 'Location',
-      message: (
-        <>
-          <div>
+    const { sample, match } = this.props;
+
+    const askToVerifyLocationWrap = resolve => {
+      alert({
+        header: 'Location',
+        message: (
+          <>
             <T>Please confirm this is your correct location</T>
-          </div>
-          <br />
-          {/* <MapComponent /> */}
-        </>
-      ),
-      buttons: [
-        {
-          text: 'Incorrect',
-          role: 'blue',
-          cssClass: 'primary',
-        },
-        {
-          text: 'Correct',
-          cssClass: 'primary',
-        },
-      ],
-    });
+
+            <br />
+            <br />
+
+            <MapComponent sample={sample} />
+          </>
+        ),
+        buttons: [
+          {
+            text: 'Incorrect',
+            role: 'blue',
+            cssClass: 'primary',
+            handler: () => {
+              this.context.navigate(`${match.url}/location`);
+            },
+          },
+          {
+            text: 'Correct',
+            cssClass: 'primary',
+            handler: () => resolve(true),
+          },
+        ],
+      });
+    };
+
+    return new Promise(askToVerifyLocationWrap);
   };
 
-  onUpload = () => {};
+  onUpload = async () => {
+    const { sample } = this.props;
+
+    const invalids = sample.validateRemote();
+
+    if (invalids) {
+      showInvalidsMessage(invalids);
+      return;
+    }
+
+    if (!device.isOnline()) {
+      warn('Looks like you are offline!');
+      return;
+    }
+
+    await this.askToVerifyLocation();
+
+    this.context.navigate('/home/info', 'root');
+  };
 
   resetGPS = () => {
     const { sample } = this.props;
