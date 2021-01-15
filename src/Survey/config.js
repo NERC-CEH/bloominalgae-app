@@ -144,7 +144,7 @@ const survey = {
         attrs: Yup.object()
           .shape({
             media: Yup.array()
-              .length(1, 'Please add at least 1 image')
+              .length(1, 'Please add a photo of the bloom')
               .required(),
 
             attrs: Yup.object().shape({
