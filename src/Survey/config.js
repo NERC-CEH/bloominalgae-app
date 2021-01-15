@@ -5,6 +5,26 @@ import {
   chatboxEllipsesOutline,
   bicycleOutline,
 } from 'ionicons/icons';
+import * as Yup from 'yup';
+
+const fixedLocationSchema = Yup.object().shape({
+  latitude: Yup.number().required(),
+  longitude: Yup.number().required('Please select location'),
+});
+
+const validateLocation = val => {
+  if (!val) {
+    return false;
+  }
+  fixedLocationSchema.validateSync(val);
+  return true;
+};
+
+export const verifyLocationSchema = Yup.mixed().test(
+  'location',
+  'Please select location.',
+  validateLocation
+);
 
 const bloomSizeValues = [
   { value: 'Doormat', id: 10634 },
@@ -61,7 +81,7 @@ const survey = {
 
           const keys = survey.attrs;
           const locationAttributes = {
-            location_name: name, 
+            location_name: name,
             [keys.location_source.remote.id]: source,
             [keys.location_gridref.remote.id]: gridref,
             [keys.location_accuracy.remote.id]: accuracy,
@@ -118,7 +138,27 @@ const survey = {
     },
   },
 
-  verify() {},
+  verify(_, sample) {
+    try {
+      Yup.object().shape({
+        attrs: Yup.object()
+          .shape({
+            media: Yup.array()
+              .length(1, 'Please add at least 1 image')
+              .required(),
+
+            attrs: Yup.object().shape({
+              location: verifyLocationSchema,
+            }),
+          })
+
+          .validateSync(sample, { abortEarly: false }),
+      });
+    } catch (attrError) {
+      return attrError;
+    }
+    return null;
+  },
 
   create(Sample) {
     const sample = new Sample({
