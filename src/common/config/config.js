@@ -1,8 +1,7 @@
 const CONFIG = {
   // variables replaced on build
-  version: 1,
-  build: 1,
-  name: 1,
+  version: process.env.APP_VERSION,
+  build: process.env.APP_BUILD,
 
   log: !__TEST__,
 
