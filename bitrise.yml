@@ -42,6 +42,7 @@ workflows:
   deploy:
     steps:
       - npm@1:
+          title: Deploy to demo site
           inputs:
             - command: run deploy
       - deploy-to-bitrise-io@1:
