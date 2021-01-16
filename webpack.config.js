@@ -2,6 +2,7 @@ require('dotenv').config({ silent: true });
 const webpack = require('webpack');
 const checkEnv = require('@flumens/has-env');
 const appConfig = require('@flumens/webpack-config');
+const pkg = require('./package.json');
 
 checkEnv({
   warn: ['APP_MANUAL_TESTING'],
@@ -14,6 +15,7 @@ appConfig.plugins.unshift(
       APP_BUILD: JSON.stringify(
         process.env.BUILD_NUMBER || process.env.BITRISE_BUILD_NUMBER
       ),
+      APP_VERSION: JSON.stringify(pkg.version),
       APP_MAPBOX_MAP_KEY: JSON.stringify(process.env.APP_MAPBOX_MAP_KEY || ''),
       APP_SENTRY_KEY: JSON.stringify(process.env.APP_SENTRY_KEY || ''),
     },
