@@ -1,14 +1,12 @@
 const CONFIG = {
-  // variables replaced on build
+  environment: __ENV__,
   version: process.env.APP_VERSION,
   build: process.env.APP_BUILD,
 
   log: !__TEST__,
 
-  // error analytics
-  sentry: !__TEST__ && process.env.APP_SENTRY_KEY,
+  sentryDNS: !__TEST__ && process.env.APP_SENTRY_KEY,
 
-  // mapping
   map: {
     mapboxApiKey: process.env.APP_MAPBOX_MAP_KEY,
     mapboxOsmId: 'cehapps/ckghr3uxz01xb19udplq7wi6x',

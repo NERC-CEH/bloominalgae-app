@@ -4,6 +4,7 @@ import { genericStore } from './store';
 class AppModel extends Model {}
 
 const defaults = {
+  appSession: 0,
   showedWelcome: false,
   language: null,
   sendAnalytics: true,
