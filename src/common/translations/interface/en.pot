@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
@@ -40,23 +40,23 @@ msgstr "Identify"
 msgid "If you are still not sure after looking at this guide please submit the record anyway"
 msgstr "If you are still not sure after looking at this guide please submit the record anyway"
 
-# Guide page label 
+# Guide page label
 msgid "Blue-Green Algae Blooms"
 msgstr "Blue-Green Algae Blooms"
 
-# Guide page card label 
+# Guide page card label
 msgid "Usually green or blue-green in colour"
 msgstr "Usually green or blue-green in colour"
 
-# Guide page card label 
+# Guide page card label
 msgid "Form paint-like surface scums often along shorelines"
 msgstr "Form paint-like surface scums often along shorelines"
 
-# Guide page card label 
+# Guide page card label
 msgid "Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be small and round or tiny grass like flakes"
 msgstr "Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be small and round or tiny grass like flakes"
 
-# Guide page card label 
+# Guide page card label
 msgid "Turquoise colour sometimes visible when decaying"
 msgstr "Turquoise colour sometimes visible when decaying"
 
@@ -64,35 +64,35 @@ msgstr "Turquoise colour sometimes visible when decaying"
 msgid "Non Blue-Green Algae"
 msgstr "Non Blue-Green Algae"
 
-# Guide page card label  
+# Guide page card label
 msgid "Plants that float but have solid structure such as leaves"
 msgstr "Plants that float but have solid structure such as leaves"
 
-# Guide page card label  
+# Guide page card label
 msgid "Others are long and tubular the size of a little finger"
 msgstr "Others are long and tubular the size of a little finger"
 
-# Guide page card label  
+# Guide page card label
 msgid "Some have very stringy, long hair-like strands"
 msgstr "Some have very stringy, long hair-like strands"
 
-# Guide page card label  
+# Guide page card label
 msgid "Or fine green hairs attached to rocks and pebbles"
 msgstr "Or fine green hairs attached to rocks and pebbles"
 
-# My Surveys page header title 
+# My Surveys page header title
 msgid "Pending"
 msgstr "Pending"
 
-# My Surveys page header title 
+# My Surveys page header title
 msgid "Uploaded"
 msgstr "Uploaded"
 
-# My Surveys page survey info message 
+# My Surveys page survey info message
 msgid "Draft"
 msgstr "Draft"
 
-# My Surveys page survey info message  
+# My Surveys page survey info message
 msgid "To delete any surveys swipe it to the left."
 msgstr "To delete any surveys swipe it to the left."
 
@@ -152,31 +152,31 @@ msgstr "Reporting algal blooms and water pollution incidents"
 msgid "<0>Scottish Environment Protection Agency (SEPA) </0><1>Northern Ireland Environment Agency </1><2>Natural Resources Wales </2><3>England: Environment Agency (EA) </3><4>Scottish Government Guidance (based on World Health Authority guidance)</4>"
 msgstr "<0>Scottish Environment Protection Agency (SEPA) </0><1>Northern Ireland Environment Agency </1><2>Natural Resources Wales </2><3>England: Environment Agency (EA) </3><4>Scottish Government Guidance (based on World Health Authority guidance)</4>"
 
-# BRC info page title 
+# BRC info page title
 msgid "BRC Approved"
 msgstr "BRC Approved"
 
-# BRC info page content 
+# BRC info page content
 msgid "Wherever you see this logo on a biological recording app you can be assured that the data you submit will be: made available to experts for quality assurance; made available for conservation and research and preserved for long-term use."
 msgstr "Wherever you see this logo on a biological recording app you can be assured that the data you submit will be: made available to experts for quality assurance; made available for conservation and research and preserved for long-term use."
 
-# BRC info page content 
+# BRC info page content
 msgid "This logo indicates that your data is:<1><0>Sent to the Biological Record Centre’s data warehouse linked to the iRecord system where it is accessible to you as the recorder, to an expert community of verifiers and other users of iRecord.</0><1>Quality assured data is passed onto Local Environmental Records Centres, National Recording Schemes and to the NBN Gateway.</1></1>"
 msgstr "This logo indicates that your data is:<1><0>Sent to the Biological Record Centre’s data warehouse linked to the iRecord system where it is accessible to you as the recorder, to an expert community of verifiers and other users of iRecord.</0><1>Quality assured data is passed onto Local Environmental Records Centres, National Recording Schemes and to the NBN Gateway.</1></1>"
 
-# BRC info page label 
+# BRC info page label
 msgid "About BRC"
 msgstr "About BRC"
 
-# BRC info page content 
+# BRC info page content
 msgid "The <1>Biological Records Centre</1> (BRC), established in 1964, is a national focus in the UK for terrestrial and freshwater species recording. BRC works closely with the voluntary recording community, principally through support of national recording schemes and societies. BRC is supported by the Joint Nature Conservation Committee (JNCC) and the Centre for Ecology & Hydrology (CEH) within the Natural Environment Research Council (NERC). The work of BRC is a major BRC of the National Biodiversity Network (NBN)."
 msgstr "The <1>Biological Records Centre</1> (BRC), established in 1964, is a national focus in the UK for terrestrial and freshwater species recording. BRC works closely with the voluntary recording community, principally through support of national recording schemes and societies. BRC is supported by the Joint Nature Conservation Committee (JNCC) and the Centre for Ecology & Hydrology (CEH) within the Natural Environment Research Council (NERC). The work of BRC is a major BRC of the National Biodiversity Network (NBN)."
 
-# BRC info page content 
+# BRC info page content
 msgid "Which app should I use?"
 msgstr "Which app should I use?"
 
-# BRC info page content 
+# BRC info page content
 msgid "You might have noticed that several of<1> BRC apps</1> feature some of the same species? We have introduced the BRC Approved logo to signify that data from our apps all go to the same place. Therefore, you are free to choose which app you use to record a given species. All records will be sent to the same place, treated in the same way and will meet the established standards required by the Biological Record Centre."
 msgstr "You might have noticed that several of<1> BRC apps</1> feature some of the same species? We have introduced the BRC Approved logo to signify that data from our apps all go to the same place. Therefore, you are free to choose which app you use to record a given species. All records will be sent to the same place, treated in the same way and will meet the established standards required by the Biological Record Centre."
 
@@ -197,23 +197,23 @@ msgid "The project would like to thank staff in the Environment Agency, Scottish
 msgstr "The project would like to thank staff in the Environment Agency, Scottish Environment Protection Agency, Public Health England & Health Protection Scotland for their support, advice and guidance during the development of this app."
 
 
-# Settings page header title 
+# Settings page header title
 msgid "Settings"
 msgstr "Settings"
 
-# Settings page label 
+# Settings page label
 msgid "English"
 msgstr "English"
 
-# Settings page label 
+# Settings page label
 msgid "Language"
 msgstr "Language"
 
-# Settings page message 
+# Settings page message
 msgid "Share app crash data so we can make the app more reliable."
 msgstr "Share app crash data so we can make the app more reliable."
 
-# Settings page label 
+# Settings page label
 msgid "Reset App"
 msgstr "Reset App"
 
@@ -221,11 +221,11 @@ msgstr "Reset App"
 msgid "Cancel"
 msgstr "Cancel"
 
-# Reset app alert button label 
+# Reset app alert button label
 msgid "Reset"
 msgstr "Reset"
 
-# Reset app alert message 
+# Reset app alert message
 msgid "Are you sure you want to reset the application to its initial state?<1><0>This will wipe all the locally stored app data!</0></1>"
 msgstr "Are you sure you want to reset the application to its initial state?<1><0>This will wipe all the locally stored app data!</0></1>"
 
@@ -329,23 +329,23 @@ msgstr "What activities are done at this location?"
 msgid "Please select the activities type for this record."
 msgstr "Please select the activities type for this record."
 
-# Survey bloom size content 
+# Survey bloom size content
 msgid "Doormat"
 msgstr "Doormat"
 
-# Survey bloom size content 
+# Survey bloom size content
 msgid "Parking space"
 msgstr "Parking space"
 
-# Survey bloom size content 
+# Survey bloom size content
 msgid "Tennis court"
 msgstr "Tennis court"
 
-# Survey bloom size content 
+# Survey bloom size content
 msgid "Even bigger"
 msgstr "Even bigger"
 
-# Survey bloom size information message 
+# Survey bloom size information message
 msgid "Select the closest match below."
 msgstr "Select the closest match below."
 
@@ -360,3 +360,39 @@ msgstr "Blue-Green algae (also known as Cyanobacteria) can be harmful to the hea
 # Splash screen content
 msgid "Got it!"
 msgstr "Got it!"
+
+# Button label
+msgid "Delete"
+msgstr "Delete"
+
+# My surveys page background message
+msgid "No finished pending surveys."
+msgstr "No finished pending surveys."
+
+# Survey location name message
+msgid "Location name e.g. lake, reservoir or pond name"
+msgstr "Location name e.g. lake, reservoir or pond name"
+
+# Survey incomplete pop up survey message
+msgid "Please add a photo of the bloom"
+msgstr "Please add a photo of the bloom"
+
+# Survey incomplete pop up survey message
+msgid "Please select location."
+msgstr "Please select location."
+
+# Survey incomplete pop up button label
+msgid "Got it"
+msgstr "Got it"
+
+# Survey incomplete pop up title
+msgid "Survey incomplete"
+msgstr "Survey incomplete"
+
+# Survey verify location button label
+msgid "Incorrect"
+msgstr "Incorrect"
+
+# Survey verify location button label
+msgid "Correct"
+msgstr "Correct"

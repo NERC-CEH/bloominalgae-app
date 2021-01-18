@@ -1,0 +1,485 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: temp\n"
+"Language-Team: French (https://www.transifex.com/ceh/teams/116164/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: POEditor.com\n"
+
+# Button title
+msgid "Back"
+msgstr ""
+
+# Home page toolbar menu label
+msgid "Home"
+msgstr ""
+
+# Home page toolbar menu label
+msgid "Map"
+msgstr ""
+
+# Home page toolbar menu label
+msgid "Guide"
+msgstr ""
+
+# Home page toolbar menu label
+msgid "My Surveys"
+msgstr ""
+
+# Home page start survey button label
+msgid "Record"
+msgstr ""
+
+# Guide page header title
+msgid "Identify"
+msgstr ""
+
+# Guide page information message
+msgid ""
+"If you are still not sure after looking at this guide please submit the "
+"record anyway"
+msgstr ""
+
+# Guide page label
+msgid "Blue-Green Algae Blooms"
+msgstr ""
+
+# Guide page card label
+msgid "Usually green or blue-green in colour"
+msgstr ""
+
+# Guide page card label
+msgid "Form paint-like surface scums often along shorelines"
+msgstr ""
+
+# Guide page card label
+msgid ""
+"Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be "
+"small and round or tiny grass like flakes"
+msgstr ""
+
+# Guide page card label
+msgid "Turquoise colour sometimes visible when decaying"
+msgstr ""
+
+# Guide page label
+msgid "Non Blue-Green Algae"
+msgstr ""
+
+# Guide page card label
+msgid "Plants that float but have solid structure such as leaves"
+msgstr ""
+
+# Guide page card label
+msgid "Others are long and tubular the size of a little finger"
+msgstr ""
+
+# Guide page card label
+msgid "Some have very stringy, long hair-like strands"
+msgstr ""
+
+# Guide page card label
+msgid "Or fine green hairs attached to rocks and pebbles"
+msgstr ""
+
+# My Surveys page header title
+msgid "Pending"
+msgstr ""
+
+# My Surveys page header title
+msgid "Uploaded"
+msgstr ""
+
+# My Surveys page survey info message
+msgid "Draft"
+msgstr ""
+
+# My Surveys page survey info message
+msgid "To delete any surveys swipe it to the left."
+msgstr ""
+
+# About info page title
+msgid "About"
+msgstr ""
+
+# About info page content
+msgid ""
+"Both the Environment Agency (EA) and the Scottish Environment Protection "
+"Agency (SEPA) provide a blue-green algae analytical service and advice to "
+"local authorities, water body owners, managers etc. However there is no "
+"routine national algal bloom monitoring system, and so records of past bloom"
+" events are patchy. By recording blue-green algal blooms through this app, "
+"we hope to get a better overall picture of the timing and location of algal "
+"blooms across the UK, to help inform local authorities and relevant health "
+"agencies of potential public health risks and aid the EA & SEPA in bloom "
+"management and prevention in the future."
+msgstr ""
+
+# About info page content
+msgid ""
+"The app also asks you for details of what activities you are carrying out in"
+" or around the water, as blue-green algal blooms pose a greater risk to "
+"water-based activities, such as swimming or windsurfing, compared to non-"
+"contact activities such as walking. By gathering details of activities "
+"undertaken we hope to gain a better understanding of how algal blooms are "
+"impacting recreational use of freshwaters in the UK."
+msgstr ""
+
+# About info page content
+msgid ""
+"When you submit a record the data is stored within the iRecord website, "
+"where it will be displayed to users and be examined and verified by an "
+"expert. Only your records are available publically, not your contact "
+"details. These records may be collated and disseminated for environmental "
+"decision-making, education, scientific research and other public benefit "
+"uses. Many thanks for taking part!"
+msgstr ""
+
+# About info page content
+msgid ""
+"For more information and advice on algal blooms see:<br/><br/><3>England & "
+"Wales</3><br/><br/><6>Scotland</6>"
+msgstr ""
+
+# Algal bloom info page title
+msgid "About B-G Algae"
+msgstr ""
+
+# Algal bloom info page content
+msgid ""
+"Blue-green algae naturally occur in lakes, ponds, canals, rivers and "
+"reservoirs around the world. However they can produce toxins that are "
+"harmful to the health of people and animals. These algae are most commonly "
+"seen during the summer months, particularly in calm warm conditions. They "
+"are microscopic but clump together in visible colonies up to a few "
+"millimetres in size that can rise to the surface and form thin wispy blooms "
+"or thick paint-like scums if the numbers are very large."
+msgstr ""
+
+# Risk info page title
+msgid "Risks"
+msgstr ""
+
+# Risk info page content
+msgid ""
+"Blue-Green algae (also known as Cyanobacteria) can be harmful to the health "
+"of people and animals. Do NOT touch or ingest anything you suspect to be a "
+"bloom and do not allow pets or children to come into contact with, or "
+"swallow, the water"
+msgstr ""
+
+# Report info page title
+msgid "Report"
+msgstr ""
+
+# Report info page content
+msgid "Further action"
+msgstr ""
+
+# Report info page content
+msgid ""
+"The responsibility to manage algal blooms lies with the owner of the water "
+"concerned. However, for enquiries relating to Blue-Green Algae "
+"(cyanobacteria), please contact the Environmental Health department in your "
+"local authority. Environmental Health will assess any action required "
+"against the relevant guidance and may contact the regulatory authority (EA, "
+"SEPA, NRW, EANI) for further water tests. You may also report incidents of "
+"algal blooms or water pollution incidents to your environment regulatory "
+"authority."
+msgstr ""
+
+# Report info page content
+msgid "Reporting algal blooms and water pollution incidents"
+msgstr ""
+
+# Report info page content
+msgid ""
+"<0>Scottish Environment Protection Agency (SEPA) </0><1>Northern Ireland "
+"Environment Agency </1><2>Natural Resources Wales </2><3>England: "
+"Environment Agency (EA) </3><4>Scottish Government Guidance (based on World "
+"Health Authority guidance)</4>"
+msgstr ""
+
+# BRC info page title
+msgid "BRC Approved"
+msgstr ""
+
+# BRC info page content
+msgid ""
+"Wherever you see this logo on a biological recording app you can be assured "
+"that the data you submit will be: made available to experts for quality "
+"assurance; made available for conservation and research and preserved for "
+"long-term use."
+msgstr ""
+
+# BRC info page content
+msgid ""
+"This logo indicates that your data is:<1><0>Sent to the Biological Record "
+"Centre’s data warehouse linked to the iRecord system where it is accessible "
+"to you as the recorder, to an expert community of verifiers and other users "
+"of iRecord.</0><1>Quality assured data is passed onto Local Environmental "
+"Records Centres, National Recording Schemes and to the NBN Gateway.</1></1>"
+msgstr ""
+
+# BRC info page label
+msgid "About BRC"
+msgstr ""
+
+# BRC info page content
+msgid ""
+"The <1>Biological Records Centre</1> (BRC), established in 1964, is a "
+"national focus in the UK for terrestrial and freshwater species recording. "
+"BRC works closely with the voluntary recording community, principally "
+"through support of national recording schemes and societies. BRC is "
+"supported by the Joint Nature Conservation Committee (JNCC) and the Centre "
+"for Ecology & Hydrology (CEH) within the Natural Environment Research "
+"Council (NERC). The work of BRC is a major BRC of the National Biodiversity "
+"Network (NBN)."
+msgstr ""
+
+# BRC info page content
+msgid "Which app should I use?"
+msgstr ""
+
+# BRC info page content
+msgid ""
+"You might have noticed that several of<1> BRC apps</1> feature some of the "
+"same species? We have introduced the BRC Approved logo to signify that data "
+"from our apps all go to the same place. Therefore, you are free to choose "
+"which app you use to record a given species. All records will be sent to the"
+" same place, treated in the same way and will meet the established standards"
+" required by the Biological Record Centre."
+msgstr ""
+
+# Credit info page title
+msgid "Credits"
+msgstr ""
+
+# Credit info page content
+msgid "We are grateful for all the people that helped to create this app:"
+msgstr ""
+
+# Credit info page content
+msgid ""
+"<0><0>Thanks to Julia Ferguson for the logo design. Julia can be contacted "
+"at: www.paintingbiology.com Twitter: @JuliaFpaintsbio email: "
+"paintingbiology@gmail.com</0></0>"
+msgstr ""
+
+# Credit info page content
+msgid ""
+"The project would like to thank staff in the Environment Agency, Scottish "
+"Environment Protection Agency, Public Health England & Health Protection "
+"Scotland for their support, advice and guidance during the development of "
+"this app."
+msgstr ""
+
+# Settings page header title
+msgid "Settings"
+msgstr ""
+
+# Settings page label
+msgid "English"
+msgstr ""
+
+# Settings page label
+msgid "Language"
+msgstr ""
+
+# Settings page message
+msgid "Share app crash data so we can make the app more reliable."
+msgstr ""
+
+# Settings page label
+msgid "Reset App"
+msgstr ""
+
+# Reset app alert button label
+msgid "Cancel"
+msgstr ""
+
+# Reset app alert button label
+msgid "Reset"
+msgstr ""
+
+# Reset app alert message
+msgid ""
+"Are you sure you want to reset the application to its initial "
+"state?<1><0>This will wipe all the locally stored app data!</0></1>"
+msgstr ""
+
+# Start survey draft title
+msgid "No uploaded surveys"
+msgstr ""
+
+# Start survey draft button label
+msgid "Discard"
+msgstr ""
+
+# Start survey draft button label
+msgid "Continue"
+msgstr ""
+
+# Start survey draft button message
+msgid "Previous survey draft exists, would you like to continue it?"
+msgstr ""
+
+# Survey page label
+msgid "No photo has been added."
+msgstr ""
+
+# Survey page label
+msgid "Press <1></1> to add."
+msgstr ""
+
+# Survey page label
+msgid "Location"
+msgstr ""
+
+# Survey page label
+msgid "Today"
+msgstr ""
+
+# Survey page label
+msgid "Date"
+msgstr ""
+
+# Survey page label
+msgid "Boom Size"
+msgstr ""
+
+# Survey page label
+msgid "Activities"
+msgstr ""
+
+# Survey page label
+msgid "Comment"
+msgstr ""
+
+# Survey comment information message
+msgid "Please add any extra info about this record."
+msgstr ""
+
+# Survey comment placeholder message
+msgid "Enter more information here..."
+msgstr ""
+
+# Survey activities information message
+msgid "What activities were you doing?"
+msgstr ""
+
+# Survey activities content
+msgid "Walking / Running"
+msgstr ""
+
+# Survey activities content
+msgid "Dog-walking"
+msgstr ""
+
+# Survey activities content
+msgid "Cycling"
+msgstr ""
+
+# Survey activities content
+msgid "Birdwatching"
+msgstr ""
+
+# Survey activities content
+msgid "Fishing"
+msgstr ""
+
+# Survey activities content
+msgid "Swimming"
+msgstr ""
+
+# Survey activities content
+msgid "Boats / Water sports"
+msgstr ""
+
+# Survey activities content
+msgid "Other"
+msgstr ""
+
+# Survey activities content divider
+msgid "What activities are done at this location?"
+msgstr ""
+
+# Survey activities divider content
+msgid "Please select the activities type for this record."
+msgstr ""
+
+# Survey bloom size content
+msgid "Doormat"
+msgstr ""
+
+# Survey bloom size content
+msgid "Parking space"
+msgstr ""
+
+# Survey bloom size content
+msgid "Tennis court"
+msgstr ""
+
+# Survey bloom size content
+msgid "Even bigger"
+msgstr ""
+
+# Survey bloom size information message
+msgid "Select the closest match below."
+msgstr ""
+
+# Splash screen content
+msgid "Warning"
+msgstr ""
+
+# Splash screen content
+msgid ""
+"Blue-Green algae (also known as Cyanobacteria) can be harmful to the health "
+"of people and animals. Do NOT touch or ingest anything you suspect to be a "
+"bloom and do not allow pets or children to come into contact with, or "
+"swallow, the water."
+msgstr ""
+
+# Splash screen content
+msgid "Got it!"
+msgstr ""
+
+# Button label
+msgid "Delete"
+msgstr ""
+
+# My surveys page background message
+msgid "No finished pending surveys."
+msgstr ""
+
+# Survey location name message
+msgid "Location name e.g. lake, reservoir or pond name"
+msgstr ""
+
+# Survey incomplete pop up survey message
+msgid "Please add a photo of the bloom"
+msgstr ""
+
+# Survey incomplete pop up survey message
+msgid "Please select location."
+msgstr ""
+
+# Survey incomplete pop up button label
+msgid "Got it"
+msgstr ""
+
+# Survey incomplete pop up title
+msgid "Survey incomplete"
+msgstr ""
+
+# Survey verify location button label
+msgid "Incorrect"
+msgstr ""
+
+# Survey verify location button label
+msgid "Correct"
+msgstr ""
