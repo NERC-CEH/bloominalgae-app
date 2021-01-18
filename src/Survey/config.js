@@ -6,6 +6,7 @@ import {
   bicycleOutline,
 } from 'ionicons/icons';
 import * as Yup from 'yup';
+import Occurrence from 'common/models/occurrence';
 
 const fixedLocationSchema = Yup.object().shape({
   latitude: Yup.number().required(),
@@ -138,6 +139,26 @@ const survey = {
     },
   },
 
+  occ: {
+    attrs: {
+      taxon: {
+        remote: {
+          values: taxon => taxon.Cyanobacteria,
+        },
+      },
+    },
+
+    create() {
+      return new Occurrence({
+        attrs: {
+          taxon: {
+            Cyanobacteria: 400349,
+          },
+        },
+      });
+    },
+  },
+
   verify(_, sample) {
     try {
       Yup.object().shape({
@@ -174,6 +195,9 @@ const survey = {
         activities: [],
       },
     });
+
+    const occurrence = survey.occ.create(Occurrence);
+    sample.occurrences.push(occurrence);
 
     sample.startGPS();
 
