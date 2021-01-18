@@ -3,14 +3,8 @@
 /* eslint-disable camelcase */
 import en from './interface/en.pot';
 
-// Adding some context, reference and other in po files:
-
-// #: Some reference!!
-// msgctxt "this is my context!!!!"
-// msgid "Select your country"
-// msgid_plural "plural!!!"
-// msgstr[0] "Selecciona tu pais"
-// msgstr[1] ""
+import fr from './interface/fr.po';
+import nl from './interface/nl_BE.po';
 
 const rawToKeyVal = lang =>
   Object.entries(lang).reduce((agg, pair) => {
@@ -40,5 +34,11 @@ const rawToKeyVal = lang =>
 export default {
   en: {
     interface: rawToKeyVal(en),
+  },
+  nl: {
+    interface: rawToKeyVal(nl),
+  },
+  fr: {
+    interface: rawToKeyVal(fr),
   },
 };
