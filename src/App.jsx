@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
-import { Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, NavContext } from '@ionic/react';
+import React from 'react';
+import { Route, Redirect } from 'react-router-dom';
+import { IonApp, IonRouterOutlet } from '@ionic/react';
 import LanguageSelectRequired from 'common/Components/LanguageSelectRequire';
 import { IonReactRouter } from '@ionic/react-router';
 import Menu from 'Components/Menu';
@@ -14,9 +14,7 @@ import Home from './Home';
 console.log('🚩 App starting.'); // eslint-disable-line
 
 const HomeRedirect = () => {
-  const { navigate } = useContext(NavContext);
-  navigate('/home/info', 'root'); // simple redirect component doesn't work when back from login
-  return null;
+  return <Redirect to="home/info" />;
 };
 
 const App = () => (
