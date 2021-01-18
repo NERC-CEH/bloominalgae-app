@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header, Page, Main, Section } from '@apps';
 import sponsorLogo from './sponsorLogo.png';
+import cehLogo from './ceh_logo.png';
 import './styles.scss';
 
 const { H, P } = Section;
@@ -12,6 +13,9 @@ const Credits = () => (
       <Section>
         <H skipTranslation>
           <img src={sponsorLogo} alt="sponsor-logo" />
+          <br />
+          <br />
+          <img src={cehLogo} alt="sponsor-logo" />
         </H>
         <P>
           We are grateful for all the people that helped to create this app:
