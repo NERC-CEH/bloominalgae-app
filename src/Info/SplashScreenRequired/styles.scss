@@ -17,10 +17,14 @@
       --border-color: transparent;
 
       ion-button {
-        border-radius: 3px;
-        padding: 0px 9px;
-        background: #ffffff7a;
-        color: var(--ion-color-light);
+        border-radius: 50%;
+        background: #ffffffe0;
+        color: #4d380a;
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+        color: var(--ion-color-dark);
+        --border-radius: 50%;
       }
     }
   }
