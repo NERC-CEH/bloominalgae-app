@@ -110,3 +110,12 @@ ion-item-divider {
   --inner-padding-top: 10px;
   --inner-padding-bottom: 10px;
 }
+
+.location-map .alert-wrapper .alert-message {
+  padding: 0;
+
+  p {
+    padding: 0 10px;
+    margin: 0;
+  }
+}

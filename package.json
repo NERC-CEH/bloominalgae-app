@@ -20,7 +20,7 @@
     "@bit/flumens.apps.date": "0.2.1",
     "@bit/flumens.apps.device": "0.2.1",
     "@bit/flumens.apps.header": "0.6.3",
-    "@bit/flumens.apps.helpers.alert": "0.4.1",
+    "@bit/flumens.apps.helpers.alert": "0.4.2",
     "@bit/flumens.apps.helpers.loader": "0.1.1",
     "@bit/flumens.apps.helpers.toast": "0.2.0",
     "@bit/flumens.apps.info-background-message": "0.1.2",
