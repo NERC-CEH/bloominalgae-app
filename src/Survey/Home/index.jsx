@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import { IonButton, NavContext, withIonLifeCycle } from '@ionic/react';
-import { Trans as T } from 'react-i18next';
 import { Page, Header, showInvalidsMessage, alert, device, toast } from '@apps';
 import MapComponent from '../Components/Map';
 import Main from './Main';
@@ -26,13 +25,11 @@ class Controller extends React.Component {
     const askToVerifyLocationWrap = resolve => {
       alert({
         header: 'Location',
+        cssClass: 'location-map',
         message: (
           <>
-            <T>Please confirm this is your correct location</T>
-
+            <p>Please confirm this is your correct location</p>
             <br />
-            <br />
-
             <MapComponent sample={sample} />
           </>
         ),
