@@ -62,6 +62,7 @@ class Component extends React.Component {
             value={selectedLanguage.label}
             label="Language"
             icon={flagOutline}
+            skipValueTranslation
           />
 
           <IonItem>
