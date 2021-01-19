@@ -1,11 +1,13 @@
+const isTestEnv = process.env.NODE_ENV === 'test';
+
 const CONFIG = {
-  environment: __ENV__,
+  environment: process.env.NODE_ENV,
   version: process.env.APP_VERSION,
   build: process.env.APP_BUILD,
 
-  log: !__TEST__,
+  log: !isTestEnv,
 
-  sentryDNS: !__TEST__ && process.env.APP_SENTRY_KEY,
+  sentryDNS: !isTestEnv && process.env.APP_SENTRY_KEY,
 
   map: {
     mapboxApiKey: process.env.APP_MAPBOX_MAP_KEY,
