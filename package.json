@@ -107,7 +107,7 @@
   },
   "browserslist": [
     "Android >= 5.1",
-    "iOS >= 12"
+    "iOS >= 10"
   ],
   "engines": {
     "node": ">=14",
