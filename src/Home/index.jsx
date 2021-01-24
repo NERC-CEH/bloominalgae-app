@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import savedSamples from 'savedSamples';
 import { observer } from 'mobx-react';
@@ -26,11 +26,9 @@ import './styles.scss';
 const UserSurveys = () => <Surveys savedSamples={savedSamples} />;
 
 const HomeComponent = () => {
-  const tabsRef = useRef();
-
   return (
     <>
-      <IonTabs ref={tabsRef}>
+      <IonTabs>
         <IonRouterOutlet>
           <Redirect exact path="/home" to="/home/info" />
           <Route path="/home/info" component={Home} exact />

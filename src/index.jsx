@@ -13,9 +13,6 @@ import App from './App';
 
 import '@ionic/core/css/core.css';
 import '@ionic/core/css/ionic.bundle.css';
-import '@ionic/react/css/normalize.css';
-import '@ionic/react/css/structure.css';
-import '@ionic/react/css/typography.css';
 import 'common/theme.scss';
 
 const { App: AppPlugin, StatusBar, SplashScreen } = Plugins;
