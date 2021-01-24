@@ -1,4 +1,5 @@
 import { observer } from 'mobx-react';
+import config from 'config';
 import React from 'react';
 import { Main, MenuAttrItemFromModel, MenuAttrItem, PhotoPicker } from '@apps';
 import PropTypes from 'prop-types';
@@ -32,6 +33,7 @@ class Component extends React.Component {
             model={sample}
             ImageClass={image}
             isDisabled={isDisabled}
+            dataDirPath={config.dataPath}
           />
 
           <MenuAttrItem

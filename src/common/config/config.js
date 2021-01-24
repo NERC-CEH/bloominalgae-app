@@ -1,3 +1,6 @@
+import { Plugins, FilesystemDirectory } from '@capacitor/core';
+import { isPlatform } from '@ionic/react';
+
 const isTestEnv = process.env.NODE_ENV === 'test';
 
 const CONFIG = {
@@ -15,5 +18,15 @@ const CONFIG = {
     mapboxSatelliteId: 'cehapps/cipqvo0c0000jcknge1z28ejp',
   },
 };
+
+(async function getMediaDirectory() {
+  if (isPlatform('hybrid')) {
+    const { uri } = await Plugins.Filesystem.getUri({
+      path: '',
+      directory: FilesystemDirectory.Data,
+    });
+    CONFIG.dataPath = uri;
+  }
+})();
 
 export default CONFIG;
