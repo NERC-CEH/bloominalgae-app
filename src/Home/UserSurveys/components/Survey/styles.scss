@@ -1,20 +1,49 @@
 .survey-list-item {
-  ion-item {
-    --padding-start: 0;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  background: white;
+
+  .record-info {
+    margin: 10px 10px;
+
+    span {
+      margin-right: 10px;
+    }
   }
 
-  ion-avatar {
-    width: 50px;
-    height: 50px;
-    background: #d8760538;
-    margin: 0 10px;
+  ion-label {
+    margin-left: 20px;
+  }
 
-    ion-icon {
-      width: calc(100% - 20px);
-      height: calc(100% - 20px);
-      padding: 10px;
+  h3 {
+    font-size: 1.1em;
+    font-weight: 500;
+  }
 
-      --ionicon-stroke-width: 20px;
+  .record-photo-profile {
+    position: relative;
+    height: 67px;
+    min-width: 81px;
+    max-width: 60px;
+    background-color: #098b5c29;
+    overflow: hidden;
+    text-align: center;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
+
+    .default-logo {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  ion-item {
+    --padding-start: 0;
+    box-shadow: 0 0 10px #dcdcdc;
   }
 }

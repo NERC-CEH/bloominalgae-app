@@ -8,9 +8,8 @@ import {
   IonItemSliding,
   IonItemOptions,
   IonItemOption,
-  IonBadge,
-  IonAvatar,
 } from '@ionic/react';
+import logo from './logo.png';
 import OnlineStatus from './components/OnlineStatus';
 import ErrorMessage from './components/ErrorMessage';
 import './styles.scss';
@@ -37,18 +36,25 @@ function deleteSurvey(sample) {
 const Survey = ({ sample }) => {
   const survey = sample.getSurvey();
 
+  const speciesPhoto = sample.media.length ? sample.media[0].getURL() : null;
+
+  const href = `/${survey.name}/start/${sample.cid}`;
+
+  const getProfilePhoto = () => {
+    const photo = speciesPhoto ? (
+      <img src={speciesPhoto} />
+    ) : (
+      <img src={logo} className="default-logo" />
+    );
+
+    return <div className="record-photo-profile">{photo}</div>;
+  };
+
   function getSampleInfo() {
     return (
-      <>
-        <IonAvatar />
-
-        <IonLabel class="ion-text-wrap">
-          <h3>
-            <b>{survey.label}</b>
-          </h3>
-          <IonBadge color="medium" />
-        </IonLabel>
-      </>
+      <div className="record-info">
+        <h3>{survey.label}</h3>
+      </div>
     );
   }
 
@@ -56,8 +62,11 @@ const Survey = ({ sample }) => {
   return (
     <IonItemSliding class="survey-list-item">
       <ErrorMessage sample={sample} />
-      <IonItem>
-        {getSampleInfo()}
+
+      <IonItem routerLink={href} detail lines="none">
+        {getProfilePhoto(speciesPhoto)}
+
+        <IonLabel>{getSampleInfo()}</IonLabel>
         <OnlineStatus sample={sample} />
       </IonItem>
       <IonItemOptions side="end">

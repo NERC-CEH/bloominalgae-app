@@ -1,4 +1,9 @@
 #home-user-surveys {
+  ion-content {
+    --background: #f0f0f0;
+    --padding-top: 10%;
+  }
+
   ion-header {
     ion-badge {
       display: inline;
@@ -15,5 +20,8 @@
       margin: 0 5px 0 8px;
       margin-bottom: -7px;
     }
+  }
+  ion-item-sliding {
+    box-shadow: 0 0 6px #b3b3b3;
   }
 }
