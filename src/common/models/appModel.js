@@ -9,6 +9,10 @@ const defaults = {
   language: null,
   sendAnalytics: true,
   recordDraftId: null,
+
+  // tips
+  showSurveysDeleteTip: true,
+  showSurveyUploadTip: true,
 };
 
 const appModel = new AppModel(genericStore, 'app', defaults);
