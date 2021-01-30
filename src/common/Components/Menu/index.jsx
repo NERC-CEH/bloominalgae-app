@@ -7,7 +7,6 @@ import {
   IonItem,
   IonLabel,
   IonList,
-  IonListHeader,
   IonMenu,
   IonMenuToggle,
   IonFooter,
@@ -21,28 +20,44 @@ import {
   lockClosedOutline,
 } from 'ionicons/icons';
 import { observer } from 'mobx-react';
+import { Trans as T } from 'react-i18next';
 import 'common/images/flumens.svg';
 import './styles.scss';
 
 const routes = {
   appPages: [
     {
-      title: 'About',
+      title: 'About Bloomin’ Algae',
       path: '/info/about',
       icon: informationCircleOutline,
     },
     {
-      title: 'Algal bloom info',
+      title: 'More information on using the app',
+      path: '/info/more-information',
+      icon: informationCircleOutline,
+    },
+    {
+      title: 'What do we use your records for?',
+      path: '/info/record-usage',
+      icon: informationCircleOutline,
+    },
+    {
+      title: 'What are blue-green algae?',
       path: '/info/info',
       icon: informationCircleOutline,
     },
     {
-      title: 'Risks',
+      title: 'When do they occur?',
+      path: '/info/occur',
+      icon: informationCircleOutline,
+    },
+    {
+      title: 'Health Risks',
       path: '/info/risks',
       icon: helpBuoyOutline,
     },
     {
-      title: 'Report a bloom',
+      title: 'Further action and reporting harmful algal blooms',
       path: '/info/report',
       icon: people,
     },
@@ -77,7 +92,9 @@ function renderMenuRoutes(list, location) {
         }
       >
         <IonIcon slot="start" icon={p.icon} />
-        <IonLabel color="light">{p.title}</IonLabel>
+        <IonLabel color="light">
+          <T>{p.title}</T>
+        </IonLabel>
       </IonItem>
     </IonMenuToggle>
   );
@@ -93,10 +110,7 @@ const Menu = () => {
   return (
     <IonMenu type="overlay" contentId="main">
       <IonContent forceOverscroll={false}>
-        <IonList lines="none">
-          <IonListHeader>Navigate</IonListHeader>
-          {getRoutes(routes.appPages)}
-        </IonList>
+        <IonList lines="none">{getRoutes(routes.appPages)}</IonList>
       </IonContent>
 
       <IonFooter className="ion-no-border">
@@ -105,7 +119,10 @@ const Menu = () => {
             <img src="/images/flumens.svg" alt="" />
           </a>
 
-          <p className="app-version">{`App version: v${config.version} (${config.build})`}</p>
+          <p className="app-version">
+            <T>App version</T>
+            {`: v${config.version} (${config.build})`}
+          </p>
         </div>
       </IonFooter>
     </IonMenu>

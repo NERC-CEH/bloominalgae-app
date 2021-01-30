@@ -6,51 +6,45 @@ const { P } = Section;
 
 const About = () => (
   <Page id="about">
-    <Header title="About" />
+    <Header title="About Bloomin’ Algae" />
     <Main className="ion-padding">
       <Section>
         <P>
-          Both the Environment Agency (EA) and the Scottish Environment
-          Protection Agency (SEPA) provide a blue-green algae analytical service
-          and advice to local authorities, water body owners, managers etc.
-          However there is no routine national algal bloom monitoring system,
-          and so records of past bloom events are patchy. By recording
-          blue-green algal blooms through this app, we hope to get a better
-          overall picture of the timing and location of algal blooms across the
-          UK, to help inform local authorities and relevant health agencies of
-          potential public health risks and aid the EA & SEPA in bloom
-          management and prevention in the future.
+          Bloomin’ Algae is a Citizen Science app for reporting the presence of
+          harmful algal blooms of blue-green algae (also known as
+          cyanobacteria). The records you send in help speed up warnings to
+          minimise risks to public and animal health. You will receive feedback
+          on the records you submit which can help you learn how to recognise
+          the risks to you and pets.
         </P>
 
         <P>
-          The app also asks you for details of what activities you are carrying
-          out in or around the water, as blue-green algal blooms pose a greater
-          risk to water-based activities, such as swimming or windsurfing,
-          compared to non-contact activities such as walking. By gathering
+          As well as submitting a photo and location details, we ask you to
+          confirm what general activities you, or others, are carrying out in,
+          or around, the water (such as dog walking). This is because blue-green
+          algae pose a greater risk to water-based activities, such as swimming
+          or windsurfing, compared to non-contact activities such as walking.
+          They can pose a very high risk to pets and livestock. By gathering
           details of activities undertaken we hope to gain a better
           understanding of how algal blooms are impacting recreational use of
-          freshwaters in the UK.
+          freshwaters.
         </P>
 
         <P>
-          When you submit a record the data is stored within the iRecord
-          website, where it will be displayed to users and be examined and
-          verified by an expert. Only your records are available publically, not
-          your contact details. These records may be collated and disseminated
-          for environmental decision-making, education, scientific research and
-          other public benefit uses. Many thanks for taking part!
+          When you submit a record the data is stored within the{' '}
+          <a href="https://www.brc.ac.uk/irecord/">iRecord website</a>, where it
+          will be displayed to users and be examined and verified by an expert.
+          Only your records are available publically, not your contact details.
+          These records may be collated and disseminated for education,
+          scientific research and other public benefit uses but contact details
+          will not be shared.
         </P>
 
         <P>
-          For more information and advice on algal blooms see:
-          <br />
-          <br />
-          <a href="http://www.gov.uk/government/publications/algal-blooms-advice-for-the-public-and-landowners">
-            England & Wales
+          Privacy policy:{' '}
+          <a href="https://www.brc.ac.uk/irecord/node/8097">
+            https://www.brc.ac.uk/irecord/node/8097
           </a>
-          <br />
-          <br />
-          <a href="http://www.gov.scot/Resource/0039/00391470.pdf">Scotland</a>
         </P>
       </Section>
     </Main>

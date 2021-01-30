@@ -1,7 +1,6 @@
 import React from 'react';
 import { Header, Page, Main, Section } from '@apps';
-import sponsorLogo from './sponsorLogo.png';
-import cehLogo from './ceh_logo.png';
+import cehLogo from './ceh_logo.jpg';
 import './styles.scss';
 
 const { H, P } = Section;
@@ -11,40 +10,49 @@ const Credits = () => (
     <Header title="Credits" />
     <Main className="ion-padding">
       <Section>
-        <H skipTranslation>
-          <img src={sponsorLogo} alt="sponsor-logo" />
-          <br />
-          <br />
-          <img src={cehLogo} alt="sponsor-logo" />
-        </H>
+        <P>
+          The project would also like to thank UKCEH, NERC and the Scottish
+          Government for funding the app development and staff in the Scottish
+          Environment Protection Agency, Health Protection Scotland, Environment
+          Agency and Public Health England for their support, advice and
+          guidance during the development of the app.
+        </P>
         <P>
           We are grateful for all the people that helped to create this app:
         </P>
         <P skipTranslation>
           <ul>
-            <li>Laurence Carvalho (CEH)</li>
+            <li>Laurence Carvalho (UKCEH)</li>
+            <li>Anne Dobel (UKCEH)</li>
+            <li>Gemma Nash (UKCEH)</li>
+            <li>Ellie Macka (UKCEH)</li>
+            <li>David Roy (UKCEH)</li>
+            <li>Phil Taylor (UKCEH)</li>
+            <li>Helen Woods (UKCEH)</li>
             <li>Karolis Kazlauskis (Flumens)</li>
             <li>Vilius Stankaitis (Flumens)</li>
-            <li>Phil Taylor (CEH)</li>
-            <li>Helen Woods (CEH)</li>
+            <li>Jan Krokowski (SEPA)</li>
           </ul>
         </P>
         <P>
-          <ul>
-            <li>
-              Thanks to Julia Ferguson for the logo design. Julia can be
-              contacted at: www.paintingbiology.com Twitter: @JuliaFpaintsbio
-              email: paintingbiology@gmail.com
-            </li>
-          </ul>
-        </P>
-        <P>
-          The project would like to thank staff in the Environment Agency,
-          Scottish Environment Protection Agency, Public Health England & Health
-          Protection Scotland for their support, advice and guidance during the
-          development of this app.
+          Thanks also to Julia Ferguson for the logo design. Julia can be
+          contacted at:
+          <br />
+          <br />
+          <a href="http://www.paintingbiology.com">
+            www.paintingbiology.com
+            <br />
+          </a>{' '}
+          <br />
+          Twitter: @JuliaFpaintsbio
+          <br />
+          email: paintingbiology@gmail.com
         </P>
       </Section>
+
+      <H skipTranslation lines="none">
+        <img src={cehLogo} alt="sponsor-logo" />
+      </H>
     </Main>
   </Page>
 );

@@ -5,14 +5,38 @@ const { P } = Section;
 
 const Risks = () => (
   <Page id="risks">
-    <Header title="Risks" />
+    <Header title="Health Risks" />
     <Main className="ion-padding">
       <Section>
         <P>
           Blue-Green algae (also known as Cyanobacteria) can be harmful to the
           health of people and animals. Do NOT touch or ingest anything you
           suspect to be a bloom and do not allow pets or children to come into
-          contact with, or swallow, the water
+          contact with, or swallow, the water.
+        </P>
+
+        <P>
+          The toxins that blue-green algae produce can result in a range of
+          health effects in people and animals. They cause skin rashes and much
+          more severe symptoms (fever, vomiting, liver damage) if swallowed.
+          Dogs are especially at risk if they drink contaminated water, or lick
+          their coat after swimming, with severe symptoms requiring very rapid
+          vet treatment. Blue-green algae have also caused the deaths of horses,
+          cattle, birds and fish.
+        </P>
+        <P>
+          If you are a pet owner you can find further information from the{' '}
+          <a href="https://www.bluecross.org.uk/pet-advice/blue-green-algae-and-its-dangers-dogs">
+            Blue Cross
+          </a>
+          .
+        </P>
+        <P>
+          <b>
+            If you, or your pet, become unwell after contact with water that may
+            be contaminated with blue-green algae, we’d recommend you seek
+            immediate medical or veterinary advice.
+          </b>
         </P>
       </Section>
     </Main>

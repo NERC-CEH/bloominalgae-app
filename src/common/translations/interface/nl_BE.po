@@ -1,4 +1,4 @@
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
@@ -102,106 +102,121 @@ msgstr ""
 msgid "To delete any surveys swipe it to the left."
 msgstr ""
 
-# About info page title
-msgid "About"
+# About Bloomin’ Algae info page title
+msgid "About Bloomin’ Algae"
 msgstr ""
 
-# About info page content
+# About Bloomin’ Algae info page content
 msgid ""
-"Both the Environment Agency (EA) and the Scottish Environment Protection "
-"Agency (SEPA) provide a blue-green algae analytical service and advice to "
-"local authorities, water body owners, managers etc. However there is no "
-"routine national algal bloom monitoring system, and so records of past bloom"
-" events are patchy. By recording blue-green algal blooms through this app, "
-"we hope to get a better overall picture of the timing and location of algal "
-"blooms across the UK, to help inform local authorities and relevant health "
-"agencies of potential public health risks and aid the EA & SEPA in bloom "
-"management and prevention in the future."
+"Bloomin’ Algae is a Citizen Science app for reporting the presence of "
+"harmful algal blooms of blue-green algae (also known as cyanobacteria). The "
+"records you send in help speed up warnings to minimise risks to public and "
+"animal health. You will receive feedback on the records you submit which can"
+" help you learn how to recognise the risks to you and pets."
 msgstr ""
 
-# About info page content
+# About Bloomin’ Algae info page content
 msgid ""
-"The app also asks you for details of what activities you are carrying out in"
-" or around the water, as blue-green algal blooms pose a greater risk to "
-"water-based activities, such as swimming or windsurfing, compared to non-"
-"contact activities such as walking. By gathering details of activities "
-"undertaken we hope to gain a better understanding of how algal blooms are "
-"impacting recreational use of freshwaters in the UK."
+"As well as submitting a photo and location details, we ask you to confirm "
+"what general activities you, or others, are carrying out in, or around, the "
+"water (such as dog walking). This is because blue-green algae pose a greater"
+" risk to water-based activities, such as swimming or windsurfing, compared "
+"to non-contact activities such as walking. They can pose a very high risk to"
+" pets and livestock. By gathering details of activities undertaken we hope "
+"to gain a better understanding of how algal blooms are impacting "
+"recreational use of freshwaters."
 msgstr ""
 
-# About info page content
+# About Bloomin’ Algae info page content
 msgid ""
-"When you submit a record the data is stored within the iRecord website, "
-"where it will be displayed to users and be examined and verified by an "
-"expert. Only your records are available publically, not your contact "
-"details. These records may be collated and disseminated for environmental "
-"decision-making, education, scientific research and other public benefit "
-"uses. Many thanks for taking part!"
+"When you submit a record the data is stored within the <2>iRecord "
+"website</2>, where it will be displayed to users and be examined and "
+"verified by an expert. Only your records are available publically, not your "
+"contact details. These records may be collated and disseminated for "
+"education, scientific research and other public benefit uses but contact "
+"details will not be shared."
 msgstr ""
 
-# About info page content
+# About Bloomin’ Algae info page content
+msgid "Privacy policy: <2>https://www.brc.ac.uk/irecord/node/8097</2>"
+msgstr ""
+
+# What are blue-green algae info page title
+msgid "What are blue-green algae?"
+msgstr ""
+
+# What are blue-green algae info page content
+msgid ""
+"Blue-green algae are actually a type of bacteria, known as cyanobacteria, "
+"which produce toxic chemicals that are very harmful to the health of people "
+"and animals. These algae naturally occur in all freshwaters, especially "
+"lakes, reservoirs, canals and slow-moving rivers. They are microscopic but "
+"clump together in visible colonies that can rise to the surface and form "
+"thin wispy blooms or thick paint-like scums on the water surface if they get"
+" very abundant. Shoreline scums and surface blooms (see ID guide in app) "
+"pose severe health risks, particularly to animals that swim or drink the "
+"water."
+msgstr ""
+
+# Health Risk info page title
+msgid "Health Risks"
+msgstr ""
+
+# Health Risk info page title
+msgid ""
+"The toxins that blue-green algae produce can result in a range of health "
+"effects in people and animals. They cause skin rashes and much more severe "
+"symptoms (fever, vomiting, liver damage) if swallowed. Dogs are especially "
+"at risk if they drink contaminated water, or lick their coat after swimming,"
+" with severe symptoms requiring very rapid vet treatment. Blue-green algae "
+"have also caused the deaths of horses, cattle, birds and fish."
+msgstr ""
+
+# Health Risk info page title
+msgid ""
+"If you are a pet owner you can find further information from the <2>Blue "
+"Cross</2>."
+msgstr ""
+
+# Health Risk info page title
+msgid ""
+"<0>If you, or your pet, become unwell after contact with water that may be "
+"contaminated with blue-green algae, we’d recommend you seek immediate "
+"medical or veterinary advice.</0>"
+msgstr ""
+
+# Further action and reporting harmful algal blooms info page title
+msgid "Report"
+msgstr ""
+
+# Further action and reporting harmful algal blooms info page content
+msgid "Further action and reporting harmful algal blooms"
+msgstr ""
+
+# Further action and reporting harmful algal blooms info page content
 msgid ""
 "For more information and advice on algal blooms see:<br/><br/><3>England & "
 "Wales</3><br/><br/><6>Scotland</6>"
 msgstr ""
 
-# Algal bloom info page title
-msgid "About B-G Algae"
-msgstr ""
-
-# Algal bloom info page content
-msgid ""
-"Blue-green algae naturally occur in lakes, ponds, canals, rivers and "
-"reservoirs around the world. However they can produce toxins that are "
-"harmful to the health of people and animals. These algae are most commonly "
-"seen during the summer months, particularly in calm warm conditions. They "
-"are microscopic but clump together in visible colonies up to a few "
-"millimetres in size that can rise to the surface and form thin wispy blooms "
-"or thick paint-like scums if the numbers are very large."
-msgstr ""
-
-# Risk info page title
-msgid "Risks"
-msgstr ""
-
-# Risk info page content
-msgid ""
-"Blue-Green algae (also known as Cyanobacteria) can be harmful to the health "
-"of people and animals. Do NOT touch or ingest anything you suspect to be a "
-"bloom and do not allow pets or children to come into contact with, or "
-"swallow, the water"
-msgstr ""
-
-# Report info page title
-msgid "Report"
-msgstr ""
-
-# Report info page content
-msgid "Further action"
-msgstr ""
-
-# Report info page content
+# Further action and reporting harmful algal blooms info page content
 msgid ""
 "The responsibility to manage algal blooms lies with the owner of the water "
-"concerned. However, for enquiries relating to Blue-Green Algae "
-"(cyanobacteria), please contact the Environmental Health department in your "
-"local authority. Environmental Health will assess any action required "
-"against the relevant guidance and may contact the regulatory authority (EA, "
-"SEPA, NRW, EANI) for further water tests. You may also report incidents of "
+"concerned. If a bloom is present and no warning signs are visible, we "
+"recommend you contact the environmental health department in your local "
+"authority. Environmental health will assess any action required against the "
+"relevant guidance and may contact the regulatory authority (EA, SEPA, NRW, "
+"EANI) for further water tests. You may also directly report incidents of "
 "algal blooms or water pollution incidents to your environment regulatory "
-"authority."
+"authority:"
 msgstr ""
 
-# Report info page content
-msgid "Reporting algal blooms and water pollution incidents"
-msgstr ""
-
-# Report info page content
+# Further action and reporting harmful algal blooms info page content
 msgid ""
-"<0>Scottish Environment Protection Agency (SEPA) </0><1>Northern Ireland "
-"Environment Agency </1><2>Natural Resources Wales </2><3>England: "
-"Environment Agency (EA) </3><4>Scottish Government Guidance (based on World "
-"Health Authority guidance)</4>"
+"<0><0><0>Scottish Environment Protection Agency "
+"(SEPA)</0></0><br/><2><0>Northern Ireland Environment Agency "
+"(NIEA)</0></2><br/><4><0>Natural Resources Wales "
+"(NRW)</0></4><br/><6><0>England: Environment Agency (EA)</0></6></0>"
 msgstr ""
 
 # BRC info page title
@@ -260,22 +275,23 @@ msgid "Credits"
 msgstr ""
 
 # Credit info page content
+msgid ""
+"The project would also like to thank UKCEH, NERC and the Scottish Government"
+" for funding the app development and staff in the Scottish Environment "
+"Protection Agency, Health Protection Scotland, Environment Agency and Public"
+" Health England for their support, advice and guidance during the "
+"development of the app."
+msgstr ""
+
+# Credit info page content
 msgid "We are grateful for all the people that helped to create this app:"
 msgstr ""
 
 # Credit info page content
 msgid ""
-"<0><0>Thanks to Julia Ferguson for the logo design. Julia can be contacted "
-"at: www.paintingbiology.com Twitter: @JuliaFpaintsbio email: "
-"paintingbiology@gmail.com</0></0>"
-msgstr ""
-
-# Credit info page content
-msgid ""
-"The project would like to thank staff in the Environment Agency, Scottish "
-"Environment Protection Agency, Public Health England & Health Protection "
-"Scotland for their support, advice and guidance during the development of "
-"this app."
+"Thanks also to Julia Ferguson for the logo design. Julia can be contacted "
+"at:<br/><br/><3>www.paintingbiology.com<br/></3> <br/>Twitter: "
+"@JuliaFpaintsbio<br/>email: paintingbiology@gmail.com"
 msgstr ""
 
 # Settings page header title
@@ -296,6 +312,10 @@ msgstr ""
 
 # Settings page label
 msgid "Reset App"
+msgstr ""
+
+# Settings page label
+msgid "Share App Analytics"
 msgstr ""
 
 # Reset app alert button label
@@ -482,4 +502,96 @@ msgstr ""
 
 # Survey verify location button label
 msgid "Correct"
+msgstr ""
+
+# Side menu label
+msgid "Navigate"
+msgstr ""
+
+# Side menu label
+msgid "Algal bloom info"
+msgstr ""
+
+# Side menu label
+msgid "Report a bloom"
+msgstr ""
+
+# Side menu content
+msgid "App version"
+msgstr ""
+
+# Delete survey alert message
+msgid "Are you sure you want to delete this survey ?"
+msgstr ""
+
+# More information info page title
+msgid "More information on using the app"
+msgstr ""
+
+# More information info page content
+msgid ""
+"For more information on using the app, including setting up a notification "
+"service for records submitted in your area, please see the section on “Using"
+" the app” on the <2>Bloomin’ Algae website</2>."
+msgstr ""
+
+# What do we use your records for info page title
+msgid "What do we use your records for?"
+msgstr ""
+
+# What do we use your records for info page content
+msgid ""
+"By recording blue-green algal blooms through this app, we hope to rapidly "
+"inform local authorities and landowners and speed up the erection of public "
+"warning signs. We use the data in scientific research to get a better "
+"understanding of the timing and location of algal blooms across the UK, to "
+"understand how climate change is impacting water quality now, and predicting"
+" the future. We also use the data to support the UK environment agencies and"
+" water companies in risk management and prevention."
+msgstr ""
+
+# When do they occur? info page title
+msgid "When do they occur?"
+msgstr ""
+
+# When do they occur? info page content
+msgid ""
+"Blooms of blue-green algae are most commonly seen during summer months, "
+"particularly in calm and sunny conditions, but they can linger in "
+"freshwaters into the autumn. They occasionally occur in winter and spring "
+"months."
+msgstr ""
+
+# Survey upload button label
+msgid "Upload"
+msgstr ""
+
+# Survey button label
+msgid "OK"
+msgstr ""
+
+# part of survey
+msgid "DD/MM/YYYY"
+msgstr ""
+
+# part of survey
+msgid "Survey"
+msgstr ""
+
+# onBoarding page content
+msgid ""
+"By clicking “I Understand” you agree that you have read and understood this "
+"warning"
+msgstr ""
+
+# onBoarding page content
+msgid "I Understand"
+msgstr ""
+
+# Settings reset alert message
+msgid "Done"
+msgstr ""
+
+# Info background message button label
+msgid "Hide"
 msgstr ""
