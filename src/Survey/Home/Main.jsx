@@ -8,6 +8,7 @@ import { bicycleOutline, locationOutline } from 'ionicons/icons';
 import { IonList, withIonLifeCycle } from '@ionic/react';
 import GridRefValue from '../Components/GridRefValue';
 import logo from './app_logo_dark.png';
+import './styles.scss';
 
 @observer
 class Component extends React.Component {
@@ -27,7 +28,7 @@ class Component extends React.Component {
     return (
       <Main>
         <IonList lines="full">
-          <img src={logo} alt="" />
+          <img className="app-logo" src={logo} alt="logo" />
 
           <PhotoPicker
             model={sample}
