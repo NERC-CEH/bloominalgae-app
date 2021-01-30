@@ -75,12 +75,54 @@
       .slide-header {
         background-image: url('/images/third.jpg');
         background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .message-warning {
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px 20px;
+        background: var(--ion-color-warning);
+
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+
+        background-color: rgba(255, 255, 255, 0.62%);
+        backdrop-filter: blur(12px);
+        bottom: 0;
+
+        h2 {
+          color: var(--ion-color-warning);
+        }
+
+        p {
+          color: var(--ion-color-dark);
+        }
+
+        .alert-header {
+          background: var(--ion-color-dark);
+          position: relative;
+          color: var(--ion-color-warning);
+          margin: 0;
+          padding: 10px;
+
+          ion-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: var(--ion-color-warning);
+          }
+        }
       }
 
       ion-button {
+        margin-bottom: 30px;
         font-size: 1.2rem;
         font-weight: 500;
-        color: var(--ion-color-secondary);
+        color: var(--ion-color-dark);
       }
     }
 
@@ -98,9 +140,6 @@
       padding: 0 20px;
       font-weight: bold;
       color: #d7ffb3;
-    }
-    .warning {
-      color: #ff8a8a;
     }
 
     p {
@@ -121,7 +160,7 @@
 
       .swiper-pagination-bullet-active {
         opacity: 0.8;
-        --bullet-background-active: var(--ion-color-secondary);
+        --bullet-background-active: var(--ion-color-warning);
       }
     }
   }
