@@ -11,7 +11,8 @@ import {
   IonBadge,
 } from '@ionic/react';
 import { observer } from 'mobx-react';
-import { Page, Main, InfoBackgroundMessage } from '@apps';
+import { Page, Main } from '@apps';
+import InfoBackgroundMessage from 'Components/InfoBackgroundMessage';
 import { Trans as T } from 'react-i18next';
 import Survey from './components/Survey';
 import './styles.scss';
@@ -77,7 +78,7 @@ class UserSurveyComponent extends React.Component {
         <>
           {this.getSurveys(surveys)}
 
-          <InfoBackgroundMessage>
+          <InfoBackgroundMessage name="showSurveyUploadTip">
             Please do not forget to upload any pending surveys!
           </InfoBackgroundMessage>
         </>
@@ -88,7 +89,7 @@ class UserSurveyComponent extends React.Component {
       <>
         {this.getSurveys(surveys)}
 
-        <InfoBackgroundMessage>
+        <InfoBackgroundMessage name="showSurveysDeleteTip">
           To delete any surveys swipe it to the left.
         </InfoBackgroundMessage>
       </>
