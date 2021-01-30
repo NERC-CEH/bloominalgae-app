@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { alert } from '@apps';
+import { alert, date as dateUtils } from '@apps';
 import { observer } from 'mobx-react';
 import {
   IonItem,
@@ -51,9 +51,16 @@ const Survey = ({ sample }) => {
   };
 
   function getSampleInfo() {
+    const { date } = sample.attrs;
+
+    const prettyDate = dateUtils.print(date);
+
     return (
       <div className="record-info">
-        <h3>{survey.label}</h3>
+        <h3>
+          <T>Survey</T>
+        </h3>
+        <p>{prettyDate}</p>
       </div>
     );
   }
