@@ -9,6 +9,7 @@ import {
   IonItemOptions,
   IonItemOption,
 } from '@ionic/react';
+import { Trans as T } from 'react-i18next';
 import logo from './logo.png';
 import OnlineStatus from './components/OnlineStatus';
 import ErrorMessage from './components/ErrorMessage';
@@ -17,7 +18,7 @@ import './styles.scss';
 function deleteSurvey(sample) {
   alert({
     header: 'Delete',
-    message: 'Are you sure you want to delete this survey?',
+    message: <T>Are you sure you want to delete this survey ?</T>,
     buttons: [
       {
         text: 'Cancel',
@@ -73,12 +74,12 @@ const Survey = ({ sample }) => {
       <IonItem routerLink={href} detail lines="none">
         {getProfilePhoto(speciesPhoto)}
 
-        <IonLabel>{getSampleInfo()}</IonLabel>
+        <IonLabel className="ion-no-margin">{getSampleInfo()}</IonLabel>
         <OnlineStatus sample={sample} />
       </IonItem>
       <IonItemOptions side="end">
         <IonItemOption color="danger" onClick={deleteSurveyWrap}>
-          Delete
+          <T>Delete</T>
         </IonItemOption>
       </IonItemOptions>
     </IonItemSliding>

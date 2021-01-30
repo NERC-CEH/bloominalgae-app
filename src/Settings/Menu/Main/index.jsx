@@ -67,7 +67,9 @@ class Component extends React.Component {
 
           <IonItem>
             <IonIcon icon={shareSocialOutline} size="small" slot="start" />
-            <IonLabel>Share App Analytics</IonLabel>
+            <IonLabel>
+              <T>Share App Analytics</T>
+            </IonLabel>
             <Toggle onToggle={onSendAnalyticsToggle} checked={sendAnalytics} />
           </IonItem>
           <MenuNote>
