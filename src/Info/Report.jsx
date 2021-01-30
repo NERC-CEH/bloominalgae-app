@@ -1,43 +1,65 @@
 import React from 'react';
 import { Page, Main, Header, Section } from '@apps';
 
-const { H, P } = Section;
+const { P } = Section;
 
 const Report = () => (
   <Page id="report">
-    <Header title="Report" />
+    <Header title="Further action and reporting harmful algal blooms" />
     <Main className="ion-padding">
       <Section>
-        <H>Further action</H>
         <P>
           The responsibility to manage algal blooms lies with the owner of the
-          water concerned. However, for enquiries relating to Blue-Green Algae
-          (cyanobacteria), please contact the Environmental Health department in
-          your local authority. Environmental Health will assess any action
+          water concerned. If a bloom is present and no warning signs are
+          visible, we recommend you contact the environmental health department
+          in your local authority. Environmental health will assess any action
           required against the relevant guidance and may contact the regulatory
           authority (EA, SEPA, NRW, EANI) for further water tests. You may also
-          report incidents of algal blooms or water pollution incidents to your
-          environment regulatory authority.
+          directly report incidents of algal blooms or water pollution incidents
+          to your environment regulatory authority:
         </P>
 
-        <H>Reporting algal blooms and water pollution incidents</H>
+        <P>
+          <ul>
+            <li>
+              <a href="http://www.sepa.org.uk/contact/">
+                Scottish Environment Protection Agency (SEPA)
+              </a>
+            </li>
+            <br />
+
+            <li>
+              <a href="https://www.daera-ni.gov.uk/articles/niea-and-water-pollution">
+                Northern Ireland Environment Agency (NIEA)
+              </a>
+            </li>
+            <br />
+
+            <li>
+              <a href="https://naturalresources.wales/about-us/contact-us/report-it/">
+                Natural Resources Wales (NRW)
+              </a>
+            </li>
+            <br />
+            <li>
+              <a href="http://apps.environment-agency.gov.uk/contact/">
+                England: Environment Agency (EA)
+              </a>
+            </li>
+          </ul>
+        </P>
 
         <P>
-          <a href="http://www.sepa.org.uk/contact/">
-            Scottish Environment Protection Agency (SEPA){' '}
+          For more information and advice on algal blooms see:
+          <br />
+          <br />
+          <a href="www.gov.uk/government/publications/algal-blooms-advice-for-the-public-and-landowners">
+            England & Wales
           </a>
-          <a href="https://www.daera-ni.gov.uk/articles/niea-and-water-pollution">
-            Northern Ireland Environment Agency{' '}
-          </a>
-          <a href="https://naturalresources.wales/about-us/contact-us/report-it/">
-            Natural Resources Wales{' '}
-          </a>
-          <a href="http://apps.environment-agency.gov.uk/contact/">
-            England: Environment Agency (EA){' '}
-          </a>
-          <a href="http://www.gov.scot/Resource/0039/00391470.pdf">
-            Scottish Government Guidance (based on World Health Authority
-            guidance)
+          <br />
+          <br />
+          <a href="https://www.gov.scot/publications/cyanobacteria-blue-green-algae-inland-inshore-waters-assessment-minimisation-risks-public-health/">
+            Scotland
           </a>
         </P>
       </Section>

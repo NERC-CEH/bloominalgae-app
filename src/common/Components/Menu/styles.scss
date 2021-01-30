@@ -40,6 +40,10 @@ ion-menu ion-item,
 ion-menu ion-list {
   background: none !important;
   --background: none !important;
+
+  ion-label {
+    white-space: normal !important;
+  }
 }
 
 /* Remove background transitions for switching themes */
@@ -66,10 +70,6 @@ ion-menu ion-item.selected ion-icon {
 }
 
 ion-menu.md {
-  ion-list {
-    padding: 20px 0;
-  }
-
   ion-list-header {
     padding-left: 18px;
     padding-right: 18px;
@@ -102,10 +102,6 @@ ion-menu.ios {
   ion-list-header {
     padding-left: 16px;
     padding-right: 16px;
-  }
-
-  ion-list {
-    padding: 20px 0 0;
   }
 
   ion-item {

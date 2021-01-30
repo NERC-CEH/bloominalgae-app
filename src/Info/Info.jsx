@@ -5,18 +5,19 @@ const { P } = Section;
 
 const Info = () => (
   <Page id="info">
-    <Header title="About B-G Algae" />
+    <Header title="What are blue-green algae?" />
     <Main className="ion-padding">
       <Section>
         <P>
-          Blue-green algae naturally occur in lakes, ponds, canals, rivers and
-          reservoirs around the world. However they can produce toxins that are
-          harmful to the health of people and animals. These algae are most
-          commonly seen during the summer months, particularly in calm warm
-          conditions. They are microscopic but clump together in visible
-          colonies up to a few millimetres in size that can rise to the surface
-          and form thin wispy blooms or thick paint-like scums if the numbers
-          are very large.
+          Blue-green algae are actually a type of bacteria, known as
+          cyanobacteria, which produce toxic chemicals that are very harmful to
+          the health of people and animals. These algae naturally occur in all
+          freshwaters, especially lakes, reservoirs, canals and slow-moving
+          rivers. They are microscopic but clump together in visible colonies
+          that can rise to the surface and form thin wispy blooms or thick
+          paint-like scums on the water surface if they get very abundant.
+          Shoreline scums and surface blooms (see ID guide in app) pose severe
+          health risks, particularly to animals that swim or drink the water.
         </P>
       </Section>
     </Main>
