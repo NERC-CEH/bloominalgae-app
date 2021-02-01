@@ -15,8 +15,6 @@ import {
   heartOutline,
   settingsOutline,
   informationCircleOutline,
-  helpBuoyOutline,
-  people,
   lockClosedOutline,
 } from 'ionicons/icons';
 import { observer } from 'mobx-react';
@@ -54,12 +52,12 @@ const routes = {
     {
       title: 'Health Risks',
       path: '/info/risks',
-      icon: helpBuoyOutline,
+      icon: informationCircleOutline,
     },
     {
       title: 'Further action and reporting harmful algal blooms',
       path: '/info/report',
-      icon: people,
+      icon: informationCircleOutline,
     },
     {
       title: 'BRC Approved',
