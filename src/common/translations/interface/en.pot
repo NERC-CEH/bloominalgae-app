@@ -431,8 +431,8 @@ msgid "Are you sure you want to delete this survey ?"
 msgstr "Are you sure you want to delete this survey ?"
 
 # More information info page title
-msgid "More information on using the app"
-msgstr "More information on using the app"
+msgid "Using the app"
+msgstr "Using the app"
 
 # More information info page content
 msgid "For more information on using the app, including setting up a notification service for records submitted in your area, please see the section on “Using the app” on the <2>Bloomin’ Algae website</2>."
