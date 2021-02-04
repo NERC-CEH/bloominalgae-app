@@ -194,8 +194,8 @@ msgid "Credits"
 msgstr "Credits"
 
 # Credit info page content
-msgid "The project would also like to thank UKCEH, NERC and the Scottish Government for funding the app development and staff in the Scottish Environment Protection Agency, Health Protection Scotland, Environment Agency and Public Health England for their support, advice and guidance during the development of the app."
-msgstr "The project would also like to thank UKCEH, NERC and the Scottish Government for funding the app development and staff in the Scottish Environment Protection Agency, Health Protection Scotland, Environment Agency and Public Health England for their support, advice and guidance during the development of the app."
+msgid "The project would like to thank UKCEH, NERC and the Scottish Government for funding the app development and staff in the Scottish Environment Protection Agency, Health Protection Scotland, Environment Agency and Public Health England for their support, advice and guidance during the development of the app."
+msgstr "The project would like to thank UKCEH, NERC and the Scottish Government for funding the app development and staff in the Scottish Environment Protection Agency, Health Protection Scotland, Environment Agency and Public Health England for their support, advice and guidance during the development of the app."
 
 # Credit info page content
 msgid "We are grateful for all the people that helped to create this app:"
@@ -278,8 +278,8 @@ msgid "Date"
 msgstr "Date"
 
 # Survey page label
-msgid "Boom Size"
-msgstr "Boom Size"
+msgid "Bloom Size"
+msgstr "Bloom Size"
 
 # Survey page label
 msgid "Activities"
