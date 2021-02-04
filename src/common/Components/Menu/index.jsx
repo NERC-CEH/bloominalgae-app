@@ -55,7 +55,7 @@ const routes = {
       icon: informationCircleOutline,
     },
     {
-      title: 'Further action and reporting harmful algal blooms',
+      title: 'Further action',
       path: '/info/report',
       icon: informationCircleOutline,
     },
