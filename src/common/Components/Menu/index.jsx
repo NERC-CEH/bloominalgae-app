@@ -45,7 +45,7 @@ const routes = {
       icon: informationCircleOutline,
     },
     {
-      title: 'Health Risks',
+      title: 'Health risks',
       path: '/info/risks',
       icon: informationCircleOutline,
     },
@@ -55,7 +55,7 @@ const routes = {
       icon: informationCircleOutline,
     },
     {
-      title: 'BRC Approved',
+      title: 'BRC approved',
       path: '/info/brc-approved',
       icon: lockClosedOutline,
     },
