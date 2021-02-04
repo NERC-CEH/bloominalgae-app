@@ -24,10 +24,10 @@ const About = () => (
           or around, the water (such as dog walking). This is because blue-green
           algae pose a greater risk to water-based activities, such as swimming
           or windsurfing, compared to non-contact activities such as walking.
-          They can pose a very high risk to pets and livestock. By gathering
-          details of activities undertaken we hope to gain a better
-          understanding of how algal blooms are impacting recreational use of
-          freshwaters.
+          Blue-green algae can pose a very high risk to pets and livestock. By
+          gathering details of activities undertaken we hope to gain a better
+          understanding of how harmful algal blooms are impacting recreational
+          use of freshwaters.
         </P>
 
         <P>
@@ -41,10 +41,7 @@ const About = () => (
         </P>
 
         <P>
-          Privacy policy:{' '}
-          <a href="https://www.brc.ac.uk/irecord/node/8097">
-            https://www.brc.ac.uk/irecord/node/8097
-          </a>
+          <a href="https://www.brc.ac.uk/irecord/node/8097">Privacy policy</a>
         </P>
       </Section>
     </Main>
