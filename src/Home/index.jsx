@@ -62,7 +62,7 @@ const HomeComponent = () => {
           <IonTabButton tab="/home/surveys" href="/home/surveys">
             <IonIcon icon={layersOutline} />
             <IonLabel>
-              <T>My Surveys</T>
+              <T>My Records</T>
             </IonLabel>
           </IonTabButton>
         </IonTabBar>
