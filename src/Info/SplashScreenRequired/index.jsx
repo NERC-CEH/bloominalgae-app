@@ -85,7 +85,7 @@ const SplashScreen = ({ appModel }) => {
 
                 <p>
                   <T>
-                    Blue-Green algae (also known as Cyanobacteria) can be
+                    Blue-Green algae (also known as cyanobacteria) can be
                     harmful to the health of people and animals. Do NOT touch or
                     ingest anything you suspect to be a bloom and do not allow
                     pets or children to come into contact with, or swallow, the

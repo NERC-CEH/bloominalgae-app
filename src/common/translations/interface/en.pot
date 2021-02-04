@@ -129,8 +129,8 @@ msgid "Blooms of blue-green algae are most commonly seen during summer and early
 msgstr "Blooms of blue-green algae are most commonly seen during summer and early autumn months, particularly in calm and sunny weather, but they can linger in freshwaters into late autumn. They occasionally occur in winter and spring months. Most blooms are green but sometimes turquoise blue patches are seen on the water or along shorelines when the blooms start to decay. Some blooms are coloured red, dark brown or black."
 
 # Health Risk info page title
-msgid "Health Risks"
-msgstr "Health Risks"
+msgid "Health risks"
+msgstr "Health risks"
 
 # Health Risk info page title
 msgid "The toxins that blue-green algae produce can result in a range of health effects in people and animals. They cause skin rashes and much more severe symptoms if swallowed (fever, vomiting, liver damage)."
@@ -169,8 +169,8 @@ msgid "<0><0><0>Scottish Environment Protection Agency (SEPA)</0></0><br/><2><0>
 msgstr "<0><0><0>Scottish Environment Protection Agency (SEPA)</0></0><br/><2><0>Northern Ireland Environment Agency (NIEA)</0></2><br/><4><0>Natural Resources Wales (NRW)</0></4><br/><6><0>England: Environment Agency (EA)</0></6></0>"
 
 # BRC info page title
-msgid "BRC Approved"
-msgstr "BRC Approved"
+msgid "BRC approved"
+msgstr "BRC approved"
 
 # BRC info page content
 msgid "Wherever you see this logo on a biological recording app you can be assured that the data you submit will be: made available to experts for quality assurance; made available for conservation and research and preserved for long-term use."
@@ -374,8 +374,8 @@ msgid "Warning"
 msgstr "Warning"
 
 # Splash screen content
-msgid "Blue-Green algae (also known as Cyanobacteria) can be harmful to the health of people and animals. Do NOT touch or ingest anything you suspect to be a bloom and do not allow pets or children to come into contact with, or swallow, the water."
-msgstr "Blue-Green algae (also known as Cyanobacteria) can be harmful to the health of people and animals. Do NOT touch or ingest anything you suspect to be a bloom and do not allow pets or children to come into contact with, or swallow, the water."
+msgid "Blue-Green algae (also known as cyanobacteria) can be harmful to the health of people and animals. Do NOT touch or ingest anything you suspect to be a bloom and do not allow pets or children to come into contact with, or swallow, the water."
+msgstr "Blue-Green algae (also known as cyanobacteria) can be harmful to the health of people and animals. Do NOT touch or ingest anything you suspect to be a bloom and do not allow pets or children to come into contact with, or swallow, the water."
 
 # Splash screen content
 msgid "Got it!"
