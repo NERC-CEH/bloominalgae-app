@@ -18,12 +18,16 @@ const Risks = () => (
         <P>
           The toxins that blue-green algae produce can result in a range of
           health effects in people and animals. They cause skin rashes and much
-          more severe symptoms (fever, vomiting, liver damage) if swallowed.
+          more severe symptoms if swallowed (fever, vomiting, liver damage).
+        </P>
+
+        <P>
           Dogs are especially at risk if they drink contaminated water, or lick
           their coat after swimming, with severe symptoms requiring very rapid
-          vet treatment. Blue-green algae have also caused the deaths of horses,
-          cattle, birds and fish.
+          vet treatment to avoid death. Blue-green algae have also caused the
+          deaths of horses, cattle, birds and fish.
         </P>
+
         <P>
           If you are a pet owner you can find further information from the{' '}
           <a href="https://www.bluecross.org.uk/pet-advice/blue-green-algae-and-its-dangers-dogs">
@@ -31,6 +35,7 @@ const Risks = () => (
           </a>
           .
         </P>
+
         <P>
           <b>
             If you, or your pet, become unwell after contact with water that may
