@@ -10,7 +10,7 @@ class Container extends React.Component {
   render() {
     return (
       <Page id="home-map">
-        <Header />
+        <Header title="All Records" styleId="none" />
         <Main />
       </Page>
     );
