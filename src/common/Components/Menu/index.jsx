@@ -30,7 +30,7 @@ const routes = {
       icon: informationCircleOutline,
     },
     {
-      title: 'More information on using the app',
+      title: 'Using the app',
       path: '/info/more-information',
       icon: informationCircleOutline,
     },

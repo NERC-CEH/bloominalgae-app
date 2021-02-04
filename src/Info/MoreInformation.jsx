@@ -5,7 +5,7 @@ const { P } = Section;
 
 const MoreInformation = () => (
   <Page id="moreInformation">
-    <Header title="More information on using the app" />
+    <Header title="Using the app" />
     <Main className="ion-padding">
       <Section>
         <P>
