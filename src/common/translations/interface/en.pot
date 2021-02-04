@@ -178,8 +178,9 @@ msgid "About BRC"
 msgstr "About BRC"
 
 # BRC info page content
-msgid "The <1>Biological Records Centre</1> (BRC), established in 1964, is a national focus in the UK for terrestrial and freshwater species recording. BRC works closely with the voluntary recording community, principally through support of national recording schemes and societies. BRC is supported by the Joint Nature Conservation Committee (JNCC) and the Centre for Ecology & Hydrology (CEH) within the Natural Environment Research Council (NERC). The work of BRC is a major BRC of the National Biodiversity Network (NBN)."
-msgstr "The <1>Biological Records Centre</1> (BRC), established in 1964, is a national focus in the UK for terrestrial and freshwater species recording. BRC works closely with the voluntary recording community, principally through support of national recording schemes and societies. BRC is supported by the Joint Nature Conservation Committee (JNCC) and the Centre for Ecology & Hydrology (CEH) within the Natural Environment Research Council (NERC). The work of BRC is a major BRC of the National Biodiversity Network (NBN)."
+# Context term
+msgid "The <1>Biological Records Centre</1> (BRC), established in 1964, is a national focus in the UK for terrestrial and freshwater species recording. BRC works closely with the voluntary recording community, principally through support of national recording schemes and societies. BRC is supported by the Joint Nature Conservation Committee (JNCC) and the Centre for Ecology & Hydrology (UKCEH). The work of BRC is a major BRC of the National Biodiversity Network (NBN)."
+msgstr "The <1>Biological Records Centre</1> (BRC), established in 1964, is a national focus in the UK for terrestrial and freshwater species recording. BRC works closely with the voluntary recording community, principally through support of national recording schemes and societies. BRC is supported by the Joint Nature Conservation Committee (JNCC) and the Centre for Ecology & Hydrology (UKCEH). The work of BRC is a major BRC of the National Biodiversity Network (NBN)."
 
 # BRC info page content
 msgid "Which app should I use?"

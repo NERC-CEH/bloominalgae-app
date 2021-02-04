@@ -44,9 +44,8 @@ const BRC = () => (
           the voluntary recording community, principally through support of
           national recording schemes and societies. BRC is supported by the
           Joint Nature Conservation Committee (JNCC) and the Centre for Ecology
-          & Hydrology (CEH) within the Natural Environment Research Council
-          (NERC). The work of BRC is a major BRC of the National Biodiversity
-          Network (NBN).
+          & Hydrology (UKCEH). The work of BRC is a major BRC of the National
+          Biodiversity Network (NBN).
         </P>
 
         <H>Which app should I use?</H>
