@@ -484,3 +484,11 @@ msgstr "Done"
 # Info background message button label
 msgid "Hide"
 msgstr "Hide"
+
+# Map page header label
+msgid "All Records"
+msgstr "All Records"
+
+# Survey activites info message
+msgid "Please select the activities type for this record."
+msgstr "Please select the activities type for this record."
