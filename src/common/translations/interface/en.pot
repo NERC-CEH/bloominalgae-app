@@ -122,8 +122,12 @@ msgid "What are blue-green algae?"
 msgstr "What are blue-green algae?"
 
 # What are blue-green algae info page content
-msgid "Blue-green algae are actually a type of bacteria, known as cyanobacteria, which produce toxic chemicals that are very harmful to the health of people and animals. These algae naturally occur in all freshwaters, especially lakes, reservoirs, canals and slow-moving rivers. They are microscopic but clump together in visible colonies that can rise to the surface and form thin wispy blooms or thick paint-like scums on the water surface if they get very abundant. Shoreline scums and surface blooms (see ID guide in app) pose severe health risks, particularly to animals that swim or drink the water."
-msgstr "Blue-green algae are actually a type of bacteria, known as cyanobacteria, which produce toxic chemicals that are very harmful to the health of people and animals. These algae naturally occur in all freshwaters, especially lakes, reservoirs, canals and slow-moving rivers. They are microscopic but clump together in visible colonies that can rise to the surface and form thin wispy blooms or thick paint-like scums on the water surface if they get very abundant. Shoreline scums and surface blooms (see ID guide in app) pose severe health risks, particularly to animals that swim or drink the water."
+msgid "Blue-green algae are a type of bacteria, known as cyanobacteria, which can produce toxic chemicals that are very harmful to the health of people and animals. These algae naturally occur in all freshwaters, especially lakes, reservoirs, canals and slow-moving rivers. They are microscopic but, when abundant, grow to be visible small green particles or flakes. In calm sunny weather, they can rise to the surface and form thin wispy streaks, or thick paint-like scums on the water surface if they get very abundant. Shoreline scums and surface blooms (see ID guide in app) pose severe health risks, particularly to animals that swim or drink the affected water."
+msgstr "Blue-green algae are a type of bacteria, known as cyanobacteria, which can produce toxic chemicals that are very harmful to the health of people and animals. These algae naturally occur in all freshwaters, especially lakes, reservoirs, canals and slow-moving rivers. They are microscopic but, when abundant, grow to be visible small green particles or flakes. In calm sunny weather, they can rise to the surface and form thin wispy streaks, or thick paint-like scums on the water surface if they get very abundant. Shoreline scums and surface blooms (see ID guide in app) pose severe health risks, particularly to animals that swim or drink the affected water."
+
+# What are blue-green algae info page content
+msgid "Blooms of blue-green algae are most commonly seen during summer and early autumn months, particularly in calm and sunny weather, but they can linger in freshwaters into late autumn. They occasionally occur in winter and spring months. Most blooms are green but sometimes turquoise blue patches are seen on the water or along shorelines when the blooms start to decay. Some blooms are coloured red, dark brown or black."
+msgstr "Blooms of blue-green algae are most commonly seen during summer and early autumn months, particularly in calm and sunny weather, but they can linger in freshwaters into late autumn. They occasionally occur in winter and spring months. Most blooms are green but sometimes turquoise blue patches are seen on the water or along shorelines when the blooms start to decay. Some blooms are coloured red, dark brown or black."
 
 # Health Risk info page title
 msgid "Health Risks"
@@ -449,15 +453,6 @@ msgstr "What do we use your records for?"
 # What do we use your records for info page content
 msgid "<0><0>Informing local authorities and landowners to help speed up the erection of public warning signs.</0><br/><2>We use the data in scientific research to get a better understanding of the timing and location of algal blooms across the UK, to understand how climate change is impacting water quality now, and to predict future impacts.</2><br/><4>We also use the data to support the UK environment agencies and water companies in water quality risk management and prevention.</4></0>"
 msgstr "<0><0>Informing local authorities and landowners to help speed up the erection of public warning signs.</0><br/><2>We use the data in scientific research to get a better understanding of the timing and location of algal blooms across the UK, to understand how climate change is impacting water quality now, and to predict future impacts.</2><br/><4>We also use the data to support the UK environment agencies and water companies in water quality risk management and prevention.</4></0>"
-
-# When do they occur? info page title
-msgid "When do they occur?"
-msgstr "When do they occur?"
-
-# When do they occur? info page content
-msgid "Blooms of blue-green algae are most commonly seen during summer months, particularly in calm and sunny conditions, but they can linger in freshwaters into the autumn. They occasionally occur in winter and spring months."
-msgstr "Blooms of blue-green algae are most commonly seen during summer months, particularly in calm and sunny conditions, but they can linger in freshwaters into the autumn. They occasionally occur in winter and spring months."
-
 
 # Survey upload button label
 msgid "Upload"

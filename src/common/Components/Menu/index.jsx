@@ -45,11 +45,6 @@ const routes = {
       icon: informationCircleOutline,
     },
     {
-      title: 'When do they occur?',
-      path: '/info/occur',
-      icon: informationCircleOutline,
-    },
-    {
       title: 'Health Risks',
       path: '/info/risks',
       icon: informationCircleOutline,
