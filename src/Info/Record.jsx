@@ -9,14 +9,25 @@ const Record = () => (
     <Main className="ion-padding">
       <Section>
         <P>
-          By recording blue-green algal blooms through this app, we hope to
-          rapidly inform local authorities and landowners and speed up the
-          erection of public warning signs. We use the data in scientific
-          research to get a better understanding of the timing and location of
-          algal blooms across the UK, to understand how climate change is
-          impacting water quality now, and predicting the future. We also use
-          the data to support the UK environment agencies and water companies in
-          risk management and prevention.
+          <ul>
+            <li>
+              Informing local authorities and landowners to help speed up the
+              erection of public warning signs.
+            </li>
+            <br />
+            <li>
+              We use the data in scientific research to get a better
+              understanding of the timing and location of algal blooms across
+              the UK, to understand how climate change is impacting water
+              quality now, and to predict future impacts.
+            </li>
+            <br />
+
+            <li>
+              We also use the data to support the UK environment agencies and
+              water companies in water quality risk management and prevention.
+            </li>
+          </ul>
         </P>
       </Section>
     </Main>
