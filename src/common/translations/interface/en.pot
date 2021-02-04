@@ -130,8 +130,12 @@ msgid "Health Risks"
 msgstr "Health Risks"
 
 # Health Risk info page title
-msgid "The toxins that blue-green algae produce can result in a range of health effects in people and animals. They cause skin rashes and much more severe symptoms (fever, vomiting, liver damage) if swallowed. Dogs are especially at risk if they drink contaminated water, or lick their coat after swimming, with severe symptoms requiring very rapid vet treatment. Blue-green algae have also caused the deaths of horses, cattle, birds and fish."
-msgstr "The toxins that blue-green algae produce can result in a range of health effects in people and animals. They cause skin rashes and much more severe symptoms (fever, vomiting, liver damage) if swallowed. Dogs are especially at risk if they drink contaminated water, or lick their coat after swimming, with severe symptoms requiring very rapid vet treatment. Blue-green algae have also caused the deaths of horses, cattle, birds and fish."
+msgid "The toxins that blue-green algae produce can result in a range of health effects in people and animals. They cause skin rashes and much more severe symptoms if swallowed (fever, vomiting, liver damage)."
+msgstr "The toxins that blue-green algae produce can result in a range of health effects in people and animals. They cause skin rashes and much more severe symptoms if swallowed (fever, vomiting, liver damage)."
+
+# Health Risk info page title
+msgid "Dogs are especially at risk if they drink contaminated water, or lick their coat after swimming, with severe symptoms requiring very rapid vet treatment to avoid death. Blue-green algae have also caused the deaths of horses, cattle, birds and fish."
+msgstr "Dogs are especially at risk if they drink contaminated water, or lick their coat after swimming, with severe symptoms requiring very rapid vet treatment to avoid death. Blue-green algae have also caused the deaths of horses, cattle, birds and fish."
 
 # Health Risk info page title
 msgid "If you are a pet owner you can find further information from the <2>Blue Cross</2>."
