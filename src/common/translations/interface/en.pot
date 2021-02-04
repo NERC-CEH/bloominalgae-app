@@ -145,19 +145,19 @@ msgstr "<0>If you, or your pet, become unwell after contact with water that may 
 msgid "Report"
 msgstr "Report"
 
-# Further action and reporting harmful algal blooms info page content
-msgid "Further action and reporting harmful algal blooms"
-msgstr "Further action and reporting harmful algal blooms"
+# Further action info page content
+msgid "Further action"
+msgstr "Further action"
 
-# Further action and reporting harmful algal blooms info page content
+# Further action info page content
+msgid "The responsibility to manage algal blooms lies with the owner of the water concerned. If a bloom is present and no warning signs are visible, we recommend you contact the environmental health department in your local authority. Environmental health will assess any action required against the relevant guidance and may contact the regulatory authority (EA, SEPA, NRW, NIEA) for further water tests. You may also directly report incidents of algal blooms or water pollution incidents to your environment regulatory authority:"
+msgstr "The responsibility to manage algal blooms lies with the owner of the water concerned. If a bloom is present and no warning signs are visible, we recommend you contact the environmental health department in your local authority. Environmental health will assess any action required against the relevant guidance and may contact the regulatory authority (EA, SEPA, NRW, NIEA) for further water tests. You may also directly report incidents of algal blooms or water pollution incidents to your environment regulatory authority:"
+
+# Further action info page content
 msgid "For more information and advice on algal blooms see:<br/><br/><3>England & Wales</3><br/><br/><6>Scotland</6>"
 msgstr "For more information and advice on algal blooms see:<br/><br/><3>England & Wales</3><br/><br/><6>Scotland</6>"
 
-# Further action and reporting harmful algal blooms info page content
-msgid "The responsibility to manage algal blooms lies with the owner of the water concerned. If a bloom is present and no warning signs are visible, we recommend you contact the environmental health department in your local authority. Environmental health will assess any action required against the relevant guidance and may contact the regulatory authority (EA, SEPA, NRW, EANI) for further water tests. You may also directly report incidents of algal blooms or water pollution incidents to your environment regulatory authority:"
-msgstr "The responsibility to manage algal blooms lies with the owner of the water concerned. If a bloom is present and no warning signs are visible, we recommend you contact the environmental health department in your local authority. Environmental health will assess any action required against the relevant guidance and may contact the regulatory authority (EA, SEPA, NRW, EANI) for further water tests. You may also directly report incidents of algal blooms or water pollution incidents to your environment regulatory authority:"
-
-# Further action and reporting harmful algal blooms info page content
+# Further action info page content
 msgid "<0><0><0>Scottish Environment Protection Agency (SEPA)</0></0><br/><2><0>Northern Ireland Environment Agency (NIEA)</0></2><br/><4><0>Natural Resources Wales (NRW)</0></4><br/><6><0>England: Environment Agency (EA)</0></6></0>"
 msgstr "<0><0><0>Scottish Environment Protection Agency (SEPA)</0></0><br/><2><0>Northern Ireland Environment Agency (NIEA)</0></2><br/><4><0>Natural Resources Wales (NRW)</0></4><br/><6><0>England: Environment Agency (EA)</0></6></0>"
 

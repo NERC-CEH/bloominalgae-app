@@ -5,7 +5,7 @@ const { P } = Section;
 
 const Report = () => (
   <Page id="report">
-    <Header title="Further action and reporting harmful algal blooms" />
+    <Header title="Further action" />
     <Main className="ion-padding">
       <Section>
         <P>
@@ -14,7 +14,7 @@ const Report = () => (
           visible, we recommend you contact the environmental health department
           in your local authority. Environmental health will assess any action
           required against the relevant guidance and may contact the regulatory
-          authority (EA, SEPA, NRW, EANI) for further water tests. You may also
+          authority (EA, SEPA, NRW, NIEA) for further water tests. You may also
           directly report incidents of algal blooms or water pollution incidents
           to your environment regulatory authority:
         </P>
@@ -53,7 +53,7 @@ const Report = () => (
           For more information and advice on algal blooms see:
           <br />
           <br />
-          <a href="www.gov.uk/government/publications/algal-blooms-advice-for-the-public-and-landowners">
+          <a href="https://www.gov.uk/government/publications/algal-blooms-advice-for-the-public-and-landowners">
             England & Wales
           </a>
           <br />
