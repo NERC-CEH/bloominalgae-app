@@ -5,7 +5,7 @@ const { P } = Section;
 
 const Risks = () => (
   <Page id="risks">
-    <Header title="Health Risks" />
+    <Header title="Health risks" />
     <Main className="ion-padding">
       <Section>
         <P>

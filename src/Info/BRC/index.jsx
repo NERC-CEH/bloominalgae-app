@@ -6,7 +6,7 @@ const { H, P } = Section;
 
 const BRC = () => (
   <Page id="brc">
-    <Header title="BRC Approved" />
+    <Header title="BRC approved" />
     <Main className="ion-padding">
       <Section>
         <img
