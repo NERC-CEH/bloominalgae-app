@@ -108,7 +108,7 @@ const survey = {
 
     'bloom-size': {
       type: 'radio',
-      label: 'Boom Size',
+      label: 'Bloom Size',
       icon: expandOutline,
       info: 'Select the closest match below.',
       options: bloomSizeValues,
