@@ -65,15 +65,6 @@
 
       .slide-header {
         background-image: url('/images/second.jpg');
-        background-position: bottom;
-      }
-    }
-
-    ion-slide.third {
-      @include slide;
-
-      .slide-header {
-        background-image: url('/images/third.jpg');
         background-position: center;
         display: flex;
         align-items: center;

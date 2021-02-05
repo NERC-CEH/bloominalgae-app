@@ -8,7 +8,6 @@ import { alertCircle, arrowForward } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
 import './images/first.jpg';
 import './images/second.jpg';
-import './images/third.jpg';
 import './styles.scss';
 
 const SplashScreen = ({ appModel }) => {
@@ -40,13 +39,14 @@ const SplashScreen = ({ appModel }) => {
               <div className="message-blur-container">
                 <div className="message">
                   <h2>
-                    <T>Lorrum ipsum</T>
+                    <T>Welcome to Bloomin’ Algae!</T>
                   </h2>
                   <p>
                     <T>
-                      Vero eos et accusamus et iusto odio dignissimos ducimus
-                      qui blanditiis praesentium voluptatum deleniti atque
-                      corrupti quos dolores et quas m.
+                      Bloomin’ Algae is a Citizen Science app for reporting the
+                      presence of harmful blooms of blue-green algae . The
+                      records you send in help speed up warnings to minimise
+                      risks to public and animal health. Thanks for taking part!
                     </T>
                   </p>
                 </div>
@@ -55,25 +55,6 @@ const SplashScreen = ({ appModel }) => {
           </IonSlide>
 
           <IonSlide className="second">
-            <div className="slide-header">
-              <div className="message-blur-container">
-                <div className="message">
-                  <h2>
-                    <T>Lorrum ipsum</T>
-                  </h2>
-                  <p>
-                    <T>
-                      Vero eos et accusamus et iusto odio dignissimos ducimus
-                      qui blanditiis praesentium voluptatum deleniti atque
-                      corrupti quos dolores et quas m.
-                    </T>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </IonSlide>
-
-          <IonSlide className="third">
             <div className="slide-header">
               <div className="message-warning">
                 <div className="alert-header">
