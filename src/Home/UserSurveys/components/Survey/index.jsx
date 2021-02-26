@@ -18,7 +18,7 @@ import './styles.scss';
 function deleteSurvey(sample) {
   alert({
     header: 'Delete',
-    message: <T>Are you sure you want to delete this survey ?</T>,
+    message: <T>Are you sure you want to delete this record ?</T>,
     buttons: [
       {
         text: 'Cancel',
@@ -59,7 +59,7 @@ const Survey = ({ sample }) => {
     return (
       <div className="record-info">
         <h3>
-          <T>Survey</T>
+          <T>Record</T>
         </h3>
         <p>{prettyDate}</p>
       </div>

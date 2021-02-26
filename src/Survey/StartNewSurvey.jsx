@@ -13,7 +13,7 @@ async function showDraftAlert() {
     alert({
       header: 'Draft',
       message: (
-        <T>Previous survey draft exists, would you like to continue it?</T>
+        <T>Previous record draft exists, would you like to continue it?</T>
       ),
       backdropDismiss: false,
       buttons: [
