@@ -48,7 +48,7 @@ const HomeComponent = () => {
           <IonTabButton tab="home/map " href="/home/map">
             <IonIcon icon={mapOutline} />
             <IonLabel>
-              <T>Map</T>
+              <T>All Records</T>
             </IonLabel>
           </IonTabButton>
 

@@ -6,8 +6,6 @@ import { IonSlides, IonSlide, IonButton, IonIcon } from '@ionic/react';
 import Log from 'helpers/log';
 import { alertCircle, arrowForward } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
-import './images/first.jpg';
-import './images/second.jpg';
 import './styles.scss';
 
 const SplashScreen = ({ appModel }) => {

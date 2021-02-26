@@ -5,7 +5,6 @@ import { IonItem, IonItemGroup, IonLabel, IonRouterLink } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
 import appLogo from './appLogo.png';
 import './styles.scss';
-import './homePageBackground.jpg';
 
 function Home() {
   return (

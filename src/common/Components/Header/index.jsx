@@ -10,10 +10,10 @@ import {
 import { Trans as T } from 'react-i18next';
 import './styles.scss';
 
-const Header = props => {
-  const title = props.title || '';
+const Header = ({ title: titleProp, styleId: styleIdProp, rightSlot }) => {
+  const title = titleProp || '';
 
-  const styleId = props.styleId || 'custom-header';
+  const styleId = styleIdProp || 'custom-header';
 
   return (
     <IonHeader className="ion-no-border" id={styleId}>
@@ -24,6 +24,8 @@ const Header = props => {
         <IonTitle>
           <T>{title}</T>
         </IonTitle>
+
+        {rightSlot && <IonButtons slot="end">{rightSlot}</IonButtons>}
       </IonToolbar>
     </IonHeader>
   );
@@ -32,6 +34,7 @@ const Header = props => {
 Header.propTypes = {
   title: PropTypes.string,
   styleId: PropTypes.string,
+  rightSlot: PropTypes.any,
 };
 
 export default Header;
