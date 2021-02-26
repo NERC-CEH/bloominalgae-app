@@ -55,7 +55,7 @@ class UserSurveyComponent extends React.Component {
     const surveys = this.getSamplesList(true);
 
     if (!surveys.length) {
-      return <InfoBackgroundMessage>No uploaded surveys</InfoBackgroundMessage>;
+      return <InfoBackgroundMessage>No uploaded records</InfoBackgroundMessage>;
     }
     return this.getSurveys(surveys);
   };
@@ -68,7 +68,7 @@ class UserSurveyComponent extends React.Component {
     if (!surveys.length) {
       return (
         <InfoBackgroundMessage>
-          No finished pending surveys.
+          No finished pending records.
         </InfoBackgroundMessage>
       );
     }
@@ -90,7 +90,7 @@ class UserSurveyComponent extends React.Component {
         {this.getSurveys(surveys)}
 
         <InfoBackgroundMessage name="showSurveysDeleteTip">
-          To delete any surveys swipe it to the left.
+          To delete any records swipe it to the left.
         </InfoBackgroundMessage>
       </>
     );

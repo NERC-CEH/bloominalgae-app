@@ -28,10 +28,6 @@ msgstr "Guide"
 msgid "My Records"
 msgstr "My Records"
 
-# Home page start survey button label
-msgid "Record"
-msgstr "Record"
-
 # Guide page header title
 msgid "Identify"
 msgstr "Identify"
@@ -80,21 +76,21 @@ msgstr "Some have very stringy, long hair-like strands"
 msgid "Or fine green hairs attached to rocks and pebbles"
 msgstr "Or fine green hairs attached to rocks and pebbles"
 
-# My Surveys page header title
+# My Records page header title
 msgid "Pending"
 msgstr "Pending"
 
-# My Surveys page header title
+# My Records page header title
 msgid "Uploaded"
 msgstr "Uploaded"
 
-# My Surveys page survey info message
+# My Records page record info message
 msgid "Draft"
 msgstr "Draft"
 
-# My Surveys page survey info message
-msgid "To delete any surveys swipe it to the left."
-msgstr "To delete any surveys swipe it to the left."
+# My Records page record info message
+msgid "To delete any records swipe it to the left."
+msgstr "To delete any records swipe it to the left."
 
 # About Bloomin’ Algae info page title
 msgid "About Bloomin’ Algae"
@@ -249,123 +245,123 @@ msgstr "Reset"
 msgid "Are you sure you want to reset the application to its initial state?<1><0>This will wipe all the locally stored app data!</0></1>"
 msgstr "Are you sure you want to reset the application to its initial state?<1><0>This will wipe all the locally stored app data!</0></1>"
 
-# Start survey draft title
-msgid "No uploaded surveys"
-msgstr "No uploaded surveys"
+# Start record draft title
+msgid "No uploaded records"
+msgstr "No uploaded records"
 
-# Start survey draft button label
+# Start record draft button label
 msgid "Discard"
 msgstr "Discard"
 
-# Start survey draft button label
+# Start record draft button label
 msgid "Continue"
 msgstr "Continue"
 
-# Start survey draft button message
-msgid "Previous survey draft exists, would you like to continue it?"
-msgstr "Previous survey draft exists, would you like to continue it?"
+# Start record draft button message
+msgid "Previous record draft exists, would you like to continue it?"
+msgstr "Previous record draft exists, would you like to continue it?"
 
-# Survey page label
+# Record page label
 msgid "No photo has been added."
 msgstr "No photo has been added."
 
-# Survey page label
+# Record page label
 msgid "Press <1></1> to add."
 msgstr "Press <1></1> to add."
 
-# Survey page label
+# Record page label
 msgid "Location"
 msgstr "Location"
 
-# Survey page label
+# Record page label
 msgid "Today"
 msgstr "Today"
 
-# Survey page label
+# Record page label
 msgid "Date"
 msgstr "Date"
 
-# Survey page label
+# Record page label
 msgid "Bloom Size"
 msgstr "Bloom Size"
 
-# Survey page label
+# Record page label
 msgid "Activities"
 msgstr "Activities"
 
-# Survey page label
+# Record page label
 msgid "Comment"
 msgstr "Comment"
 
-# Survey comment information message
+# Record comment information message
 msgid "Please add any extra info about this record."
 msgstr "Please add any extra info about this record."
 
-# Survey comment placeholder message
+# Record comment placeholder message
 msgid "Enter more information here..."
 msgstr "Enter more information here..."
 
-# Survey activities information message
+# Record activities information message
 msgid "What activities were you doing?"
 msgstr "What activities were you doing?"
 
-# Survey activities content
+# Record activities content
 msgid "Walking / Running"
 msgstr "Walking / Running"
 
-# Survey activities content
+# Record activities content
 msgid "Dog-walking"
 msgstr "Dog-walking"
 
-# Survey activities content
+# Record activities content
 msgid "Cycling"
 msgstr "Cycling"
 
-# Survey activities content
+# Record activities content
 msgid "Birdwatching"
 msgstr "Birdwatching"
 
-# Survey activities content
+# Record activities content
 msgid "Fishing"
 msgstr "Fishing"
 
-# Survey activities content
+# Record activities content
 msgid "Swimming"
 msgstr "Swimming"
 
-# Survey activities content
+# Record activities content
 msgid "Boats / Water sports"
 msgstr "Boats / Water sports"
 
-# Survey activities content
+# Record activities content
 msgid "Other"
 msgstr "Other"
 
-# Survey activities content divider
+# Record activities content divider
 msgid "What activities are done at this location?"
 msgstr "What activities are done at this location?"
 
-# Survey activities divider content
+# Record activities divider content
 msgid "Please select the activities type for this record."
 msgstr "Please select the activities type for this record."
 
-# Survey bloom size content
+# Record bloom size content
 msgid "Doormat"
 msgstr "Doormat"
 
-# Survey bloom size content
+# Record bloom size content
 msgid "Parking space"
 msgstr "Parking space"
 
-# Survey bloom size content
+# Record bloom size content
 msgid "Tennis court"
 msgstr "Tennis court"
 
-# Survey bloom size content
+# Record bloom size content
 msgid "Even bigger"
 msgstr "Even bigger"
 
-# Survey bloom size information message
+# Record bloom size information message
 msgid "Select the closest match below."
 msgstr "Select the closest match below."
 
@@ -385,35 +381,35 @@ msgstr "Got it!"
 msgid "Delete"
 msgstr "Delete"
 
-# My surveys page background message
-msgid "No finished pending surveys."
-msgstr "No finished pending surveys."
+# My records page background message
+msgid "No finished pending records."
+msgstr "No finished pending records."
 
-# Survey location name message
+# Record location name message
 msgid "Location name e.g. lake, reservoir or pond name"
 msgstr "Location name e.g. lake, reservoir or pond name"
 
-# Survey incomplete pop up survey message
+# Record incomplete pop up record message
 msgid "Please add a photo of the bloom"
 msgstr "Please add a photo of the bloom"
 
-# Survey incomplete pop up survey message
+# Record incomplete pop up record message
 msgid "Please select location."
 msgstr "Please select location."
 
-# Survey incomplete pop up button label
+# Record incomplete pop up button label
 msgid "Got it"
 msgstr "Got it"
 
-# Survey incomplete pop up title
-msgid "Survey incomplete"
-msgstr "Survey incomplete"
+# Record incomplete pop up title
+msgid "Record incomplete"
+msgstr "Record incomplete"
 
-# Survey verify location button label
+# Record verify location button label
 msgid "Incorrect"
 msgstr "Incorrect"
 
-# Survey verify location button label
+# Record verify location button label
 msgid "Correct"
 msgstr "Correct"
 
@@ -433,9 +429,9 @@ msgstr "Report a bloom"
 msgid "App version"
 msgstr "App version"
 
-# Delete survey alert message
-msgid "Are you sure you want to delete this survey ?"
-msgstr "Are you sure you want to delete this survey ?"
+# Delete record alert message
+msgid "Are you sure you want to delete this record ?"
+msgstr "Are you sure you want to delete this record ?"
 
 # More information info page title
 msgid "Using the app"
@@ -453,21 +449,21 @@ msgstr "What do we use your records for?"
 msgid "<0><0>Informing local authorities and landowners to help speed up the erection of public warning signs.</0><br/><2>We use the data in scientific research to get a better understanding of the timing and location of algal blooms across the UK, to understand how climate change is impacting water quality now, and to predict future impacts.</2><br/><4>We also use the data to support the UK environment agencies and water companies in water quality risk management and prevention.</4></0>"
 msgstr "<0><0>Informing local authorities and landowners to help speed up the erection of public warning signs.</0><br/><2>We use the data in scientific research to get a better understanding of the timing and location of algal blooms across the UK, to understand how climate change is impacting water quality now, and to predict future impacts.</2><br/><4>We also use the data to support the UK environment agencies and water companies in water quality risk management and prevention.</4></0>"
 
-# Survey upload button label
+# Record upload button label
 msgid "Upload"
 msgstr "Upload"
 
-# Survey button label
+# Record button label
 msgid "OK"
 msgstr "OK"
 
-# part of survey
+# part of record
 msgid "DD/MM/YYYY"
 msgstr "DD/MM/YYYY"
 
-# part of survey
-msgid "Survey"
-msgstr "Survey"
+# part of record
+msgid "Record"
+msgstr "Record"
 
 # onBoarding page content
 msgid "By clicking “I Understand” you agree that you have read and understood this warning"
@@ -496,3 +492,11 @@ msgstr "Welcome to Bloomin’ Algae!"
 # onBoarding content
 msgid "Bloomin’ Algae is a Citizen Science app for reporting the presence of harmful blooms of blue-green algae . The records you send in help speed up warnings to minimise risks to public and animal health. Thanks for taking part!"
 msgstr "Bloomin’ Algae is a Citizen Science app for reporting the presence of harmful blooms of blue-green algae . The records you send in help speed up warnings to minimise risks to public and animal health. Thanks for taking part!"
+
+# Record map toggle
+msgid "Use longer period"
+msgstr "Use longer period"
+
+# Record map toggle
+msgid "Please confirm this is your correct location."
+msgstr "Please confirm this is your correct location."

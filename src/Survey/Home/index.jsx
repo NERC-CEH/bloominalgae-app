@@ -29,7 +29,9 @@ class Controller extends React.Component {
         cssClass: 'location-map',
         message: (
           <>
-            <p>Please confirm this is your correct location</p>
+            <p>
+              <T>Please confirm this is your correct location.</T>
+            </p>
             <br />
             <MapComponent sample={sample} />
           </>
