@@ -84,11 +84,6 @@ ion-toolbar {
   --min-height: 54px;
 }
 
-.leaflet-bottom {
-  bottom: 0;
-  display: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -122,4 +117,9 @@ ion-item-divider {
 
 .info-background-message {
   --background: white;
+}
+
+// Fix mapbox attribution
+#location-page-content {
+  height: 100% !important;
 }

@@ -56,7 +56,7 @@
       @include slide;
 
       .slide-header {
-        background-image: url('/images/first.jpg');
+        background-image: url('./images/first.jpg');
       }
     }
 
@@ -64,7 +64,7 @@
       @include slide;
 
       .slide-header {
-        background-image: url('/images/second.jpg');
+        background-image: url('./images/second.jpg');
         background-position: center;
         display: flex;
         align-items: center;

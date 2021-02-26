@@ -1,8 +1,71 @@
 #home-map {
+  ion-header {
+    .long-period-toggle {
+      margin-left: 10px;
+    }
+  }
   .leaflet-container {
     height: 100%;
     background-color: #5d5d5d;
     z-index: 1;
+
+    .leaflet-control-zoom.leaflet-control a,
+    .leaflet-control .leaflet-draw-toolbar a {
+      width: 40px !important;
+      height: 40px !important;
+      line-height: 40px !important;
+      background-size: 400px 40px !important;
+
+      &.leaflet-draw-draw-polygon {
+        background-position: -39px -1px;
+      }
+      &.leaflet-draw-edit-edit {
+        background-position: -200px -1px;
+      }
+      &.leaflet-draw-edit-remove {
+        background-position: -240px -1px;
+      }
+    }
+
+    .leaflet-control .geolocate-btn {
+      border-radius: 4px;
+      background: white;
+      width: 42px;
+      height: 42px;
+      margin-left: 1px;
+      border: 2px solid rgba(0, 0, 0, 0.2);
+      background-clip: padding-box;
+      text-align: center;
+      padding: 0;
+
+      ion-icon {
+        width: 21px;
+        height: 21px;
+        margin-top: 4px;
+      }
+    }
+    .leaflet-control .geolocate-btn.spin ion-icon {
+      -webkit-animation: spin 4s linear infinite;
+      -moz-animation: spin 4s linear infinite;
+      animation: spin 4s linear infinite;
+    }
+
+    @-moz-keyframes spin {
+      100% {
+        -moz-transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    @keyframes spin {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
   }
 
   .mapbox-wordmark {
@@ -20,5 +83,36 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 65px 20px;
+  }
+
+  .markercluster-map {
+    height: 90vh;
+  }
+
+  .my-custom-pin {
+    span {
+      background-color: #0ba533;
+      width: 1.4rem;
+      height: 1.4rem;
+      display: block;
+      position: relative;
+      border-radius: 3rem 3rem 0;
+      transform: rotate(45deg);
+      border: 1px solid #ffffff;
+    }
+
+    &.rejected span {
+      background-color: #a52a0b;
+    }
+  }
+
+  ion-spinner {
+    z-index: 1000000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    margin: 10px;
+    background: radial-gradient(#000000af 0%, #00000048 55%, transparent 75%);
   }
 }

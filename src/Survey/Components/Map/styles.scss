@@ -1,6 +1,10 @@
 #verify-location-map {
   .leaflet-container {
     height: 10rem;
+
+    .leaflet-bottom {
+      display: none;
+    }
   }
 
   .my-custom-pin span {
