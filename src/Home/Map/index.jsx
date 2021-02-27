@@ -105,6 +105,10 @@ class Container extends React.Component {
   };
 
   stopGPS = () => {
+    if (!this.state.locating) {
+      return;
+    }
+
     GPS.stop(this.state.locating);
     this.setState({ locating: false });
   };
@@ -116,7 +120,14 @@ class Container extends React.Component {
     }
 
     const currentLocation = await this.startGPS();
-    this.setState({ currentLocation });
+    const currentLocationWithTimestamp = {
+      ...currentLocation,
+      timestamp: Date.now(),
+    }; // map re-centering - cache-busting
+
+    this.setState({
+      currentLocation: currentLocationWithTimestamp,
+    });
   };
 
   render() {
