@@ -750,6 +750,10 @@ msgstr ""
 msgid "Please confirm this is your correct location."
 msgstr ""
 
+# Record alert image on a map
+msgid "This record has no images."
+msgstr ""
+
 # Record status on a map
 msgid "rejected"
 msgstr ""
