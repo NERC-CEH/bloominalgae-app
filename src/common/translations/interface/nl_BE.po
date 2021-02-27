@@ -749,3 +749,15 @@ msgstr ""
 # Record map toggle
 msgid "Please confirm this is your correct location."
 msgstr ""
+
+# Record status on a map
+msgid "rejected"
+msgstr ""
+
+# Record status on a map
+msgid "complete"
+msgstr ""
+
+# Record status on a map
+msgid "verified"
+msgstr ""

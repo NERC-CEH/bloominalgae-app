@@ -116,3 +116,24 @@
     background: radial-gradient(#000000af 0%, #00000048 55%, transparent 75%);
   }
 }
+
+.location-map {
+  .alert-title {
+    text-align: left;
+  }
+  .missing-image {
+    padding: 30px 10px;
+    background: #ececec;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  .alert-record-status {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    padding: 22px;
+    top: 0;
+    right: 0;
+    text-transform: capitalize;
+  }
+}
