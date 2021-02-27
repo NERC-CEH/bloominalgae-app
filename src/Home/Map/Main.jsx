@@ -34,7 +34,7 @@ function showRecord(record) {
   } else {
     image = (
       <div className="missing-image">
-        <T>No image is available.</T>
+        <T>This record has no images.</T>
       </div>
     );
   }

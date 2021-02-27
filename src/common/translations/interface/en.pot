@@ -502,8 +502,8 @@ msgid "Please confirm this is your correct location."
 msgstr "Please confirm this is your correct location."
 
 # Record alert image on a map
-msgid "No image is available."
-msgstr "No image is available."
+msgid "This record has no images."
+msgstr "This record has no images."
 
 # Record status on a map
 msgid "rejected"
