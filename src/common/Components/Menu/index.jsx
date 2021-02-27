@@ -19,7 +19,7 @@ import {
 } from 'ionicons/icons';
 import { observer } from 'mobx-react';
 import { Trans as T } from 'react-i18next';
-import 'common/images/flumens.svg';
+import flumensLogo from 'common/images/flumens.svg';
 import './styles.scss';
 
 const routes = {
@@ -109,7 +109,7 @@ const Menu = () => {
       <IonFooter className="ion-no-border">
         <div>
           <a href="https://flumens.io">
-            <img src="/images/flumens.svg" alt="" />
+            <img src={flumensLogo} alt="" />
           </a>
 
           <p className="app-version">
