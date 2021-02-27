@@ -500,3 +500,19 @@ msgstr "Use longer period"
 # Record map toggle
 msgid "Please confirm this is your correct location."
 msgstr "Please confirm this is your correct location."
+
+# Record alert image on a map
+msgid "No image is available."
+msgstr "No image is available."
+
+# Record status on a map
+msgid "rejected"
+msgstr "rejected"
+
+# Record status on a map
+msgid "complete"
+msgstr "complete"
+
+# Record status on a map
+msgid "verified"
+msgstr "verified"

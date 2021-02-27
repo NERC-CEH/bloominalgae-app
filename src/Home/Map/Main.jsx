@@ -7,6 +7,7 @@ import appModel from 'common/models/appModel';
 import CONFIG from 'config';
 import L from 'leaflet';
 import { Map, TileLayer } from 'react-leaflet';
+import { Trans as T } from 'react-i18next';
 import LeafletControl from 'react-leaflet-control';
 import 'leaflet.markercluster';
 import { observer } from 'mobx-react';
@@ -26,9 +27,16 @@ const getIcon = ({ verification }) =>
 
 function showRecord(record) {
   let image;
+
   if (record.images.length) {
     const imagePath = record.images[0].path;
     image = <img src={`${CONFIG.backend.mediaUrl}${imagePath}`} />;
+  } else {
+    image = (
+      <div className="missing-image">
+        <T>No image is available.</T>
+      </div>
+    );
   }
 
   alert({
@@ -36,9 +44,9 @@ function showRecord(record) {
     cssClass: 'location-map',
     message: (
       <>
-        <b>
-          <i>{record.verification.status_text}</i>
-        </b>
+        <div className="alert-record-status">
+          <T>{record.verification.status_text}</T>
+        </div>
         {image}
       </>
     ),
