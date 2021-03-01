@@ -1,0 +1,11 @@
+.pending-surveys-badge {
+  font-size: 0.8em;
+  color: var(--ion-color-light);
+
+  padding: 4px;
+  font-weight: bold;
+
+  &.ios {
+    padding: 0 4px;
+  }
+}
