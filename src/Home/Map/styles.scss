@@ -115,6 +115,20 @@
     margin: 10px;
     background: radial-gradient(#000000af 0%, #00000048 55%, transparent 75%);
   }
+
+  .marker-cluster {
+    background-color: var(--ion-color-light);
+
+    div {
+      background-color: var(--ion-color-primary);
+      color: var(--ion-color-light);
+      transform: scale(1.2);
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
 }
 
 .location-map {
