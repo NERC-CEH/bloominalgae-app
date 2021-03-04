@@ -44,7 +44,7 @@ msgid ""
 "record anyway"
 msgstr ""
 "Indien je na het bekijken van de fotogids nog niet zeker bent van de "
-"identificatie, graag de waarneming toch invoeren."
+"identificatie, gelieve de waarneming toch in te voeren."
 
 # Guide page label
 msgid "Blue-Green Algae Blooms"
@@ -63,7 +63,7 @@ msgid ""
 "Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be "
 "small and round or tiny grass like flakes"
 msgstr ""
-"Kleine ( <3 mm), onregelmatig gevormde vlokken in het water. die ofwel "
+"Kleine ( <3 mm), onregelmatig gevormde vlokken in het water, die ofwel "
 "bolvormig ofwel langgerekt tot spoelvormig (precies kleine grassprietjes) "
 "van uitzicht kunnen zijn"
 
@@ -98,7 +98,7 @@ msgstr "In behandeling"
 
 # My Records page header title
 msgid "Uploaded"
-msgstr "geüpload"
+msgstr "Opgeladen"
 
 # My Records page record info message
 msgid "Draft"
@@ -106,7 +106,7 @@ msgstr "Concept"
 
 # My Records page record info message
 msgid "To delete any records swipe it to the left."
-msgstr ""
+msgstr "Veeg naar links om een waarneming te verwijderen."
 
 # About Bloomin’ Algae info page title
 msgid "About Bloomin’ Algae"
@@ -338,7 +338,6 @@ msgid "About BRC"
 msgstr "Over BRC"
 
 # BRC info page content
-# Context term
 msgid ""
 "The <1>Biological Records Centre</1> (BRC), established in 1964, is a "
 "national focus in the UK for terrestrial and freshwater species recording. "
@@ -372,7 +371,7 @@ msgid ""
 msgstr ""
 "Mogelijks heb je gemerkt dat verschillende <1>BRC apps</1>kunnen gebruikt "
 "worden om dezelfde soorten te registreren? Om aan te tonen dat de data van "
-"all onze apps op dezelfde plaats worden samengebracht, hebben we het 'BRC "
+"al onze apps op dezelfde plaats worden samengebracht, hebben we het 'BRC "
 "goedgekeurd' logo geïntroduceerd. Het staat je daarom vrij om een app te "
 "kiezen waarmee je een bepaalde soort wenst te registreren. Alle waarnemingen"
 " worden naar dezelfde locatie gestuurd, op dezelfde manier behandeld en  "
@@ -456,7 +455,7 @@ msgstr ""
 
 # Start record draft title
 msgid "No uploaded records"
-msgstr ""
+msgstr "Geen opgeladen waarnemingen"
 
 # Start record draft button label
 msgid "Discard"
@@ -469,6 +468,8 @@ msgstr "Ga verder"
 # Start record draft button message
 msgid "Previous record draft exists, would you like to continue it?"
 msgstr ""
+"Er is een eerdere conceptversie van de waarneming beschikbaar, wil je daar "
+"graag mee verder gaan?"
 
 # Record page label
 msgid "No photo has been added."
@@ -492,7 +493,7 @@ msgstr "Datum"
 
 # Record page label
 msgid "Bloom Size"
-msgstr "Bloei grootte"
+msgstr "Bloeigrootte"
 
 # Record page label
 msgid "Activities"
@@ -548,7 +549,7 @@ msgstr "Andere"
 
 # Record activities content divider
 msgid "What activities are done at this location?"
-msgstr "Welke activiteiten worden hier gehouden?"
+msgstr "Welke activiteiten worden hier doorgaans gehouden?"
 
 # Record activities divider content
 msgid "Please select the activities type for this record."
@@ -600,7 +601,7 @@ msgstr "Wissen"
 
 # My records page background message
 msgid "No finished pending records."
-msgstr ""
+msgstr "Geen reeds afgewerkte lopende waarnemingen."
 
 # Record location name message
 msgid "Location name e.g. lake, reservoir or pond name"
@@ -620,7 +621,7 @@ msgstr "Ik begrijp het"
 
 # Record incomplete pop up title
 msgid "Record incomplete"
-msgstr ""
+msgstr "Onvolledige waarneming"
 
 # Record verify location button label
 msgid "Incorrect"
@@ -648,7 +649,7 @@ msgstr "App versie"
 
 # Delete record alert message
 msgid "Are you sure you want to delete this record ?"
-msgstr ""
+msgstr "Ben je zeker om deze waarneming te wissen?"
 
 # More information info page title
 msgid "Using the app"
@@ -744,24 +745,138 @@ msgstr ""
 
 # Record map toggle
 msgid "Use longer period"
-msgstr ""
+msgstr "Gebruik een langere periode"
 
 # Record map toggle
 msgid "Please confirm this is your correct location."
-msgstr ""
+msgstr "Bevestig a.u.b. of uw locatie correct is."
 
 # Record alert image on a map
 msgid "This record has no images."
-msgstr ""
+msgstr "Deze waarneming bevat geen foto's."
 
 # Record status on a map
 msgid "rejected"
-msgstr ""
+msgstr "afgewezen"
 
 # Record status on a map
 msgid "complete"
-msgstr ""
+msgstr "volledig"
 
 # Record status on a map
 msgid "verified"
+msgstr "geverifieerd"
+
+# Part of User authentication page
+msgid "Register/Login"
+msgstr ""
+
+# Part of User authentication page
+msgid "Create a free account"
+msgstr ""
+
+# Part of User authentication page
+msgid "First name"
+msgstr ""
+
+# Part of User authentication page
+msgid "Last name"
+msgstr ""
+
+# Part of User authentication page
+msgid "Email"
+msgstr ""
+
+# Part of User authentication page
+msgid "Password"
+msgstr ""
+
+# Part of User authentication page
+msgid ""
+"By clicking Sign Up, you agree to our <2>Privacy Policy</2> and <6>Terms and"
+" Conditions</6>"
+msgstr ""
+
+# Part of User authentication page
+msgid "Sign Up"
+msgstr ""
+
+# Part of User authentication page
+msgid "I am already a member"
+msgstr ""
+
+# Part of User authentication page
+msgid "Sign In"
+msgstr ""
+
+# part of User authentication page
+msgid "Welcome back"
+msgstr ""
+
+# Part of User authentication page
+msgid "Sign in to your account to start"
+msgstr ""
+
+# Part of User authentication page
+msgid "Forgot password?"
+msgstr ""
+
+# Part of User authentication page
+msgid "firstName is a required field"
+msgstr ""
+
+# Part of User authentication page
+msgid "Enter your email address to request a password reset."
+msgstr ""
+
+# Part of User authentication page
+msgid "email is a required field"
+msgstr ""
+
+# Part of User authentication page
+msgid "password is a required field"
+msgstr ""
+
+# Part of User authentication page
+msgid "secondName is a required field"
+msgstr ""
+
+# User authentication alert
+msgid "Logout"
+msgstr ""
+
+# User authentication alert
+msgid "Are you sure you want to logout?"
+msgstr ""
+
+# User authentication alert
+msgid "Discard local data"
+msgstr ""
+
+# User authentication alert
+msgid "Please wait..."
+msgstr ""
+
+# Survey header button
+msgid "Finish"
+msgstr ""
+
+# Survey camera options
+msgid "Survey incomplete"
+msgstr ""
+
+# Survey camera options
+msgid "Choose a method to upload a photo"
+msgstr ""
+
+# Survey camera options
+msgid "Gallery"
+msgstr ""
+
+# Survey camera options
+msgid "Camera"
+msgstr ""
+
+# User-surveys page background message
+msgid "Please do not forget to upload any pending surveys!"
 msgstr ""
