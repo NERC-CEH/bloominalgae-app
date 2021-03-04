@@ -1,10 +1,15 @@
 ion-menu ion-content {
   --padding-top: 20px;
   --padding-bottom: 20px;
-
-  // --background: var(--ion-item-background, var(--ion-background-color, #fff));
-
   --background: linear-gradient(to bottom, #a4cc38 0%, #098b5c 100%);
+
+  ion-item {
+    --inner-border-width: 0;
+    --border-width: 0 0 2px 0;
+    --border-color: #fff;
+    width: 110%;
+    color: #fff;
+  }
 
   ion-icon {
     color: white;
@@ -32,10 +37,11 @@ ion-menu ion-footer {
   }
 }
 
-ion-alert .log-out-checkbox {
-  --padding-start: 0;
-  border-top: 1px solid var(--ion-color-light);
-  border-bottom: 1px solid var(--ion-color-light);
+.logout-alert .alert-wrapper {
+  ion-item {
+    --background: transparent;
+    border: none;
+  }
 }
 
 ion-menu ion-item,
@@ -83,11 +89,8 @@ ion-menu.md {
 
   ion-item {
     --padding-start: 18px;
-
     margin-right: 10px;
-
     border-radius: 0 50px 50px 0;
-
     font-weight: 500;
   }
 

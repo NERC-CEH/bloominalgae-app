@@ -12,6 +12,7 @@ export { default as MenuAttrItem } from '@bit/flumens.apps.menu-attr-item';
 export { default as ModelLocation } from '@bit/flumens.apps.model-location-map';
 export { default as MenuNote } from '@bit/flumens.apps.menu-note-item';
 export { default as Toggle } from '@bit/flumens.apps.toggle';
+export { default as InputWithValidation } from '@bit/flumens.apps.input-with-validation';
 
 export { default as device } from '@bit/flumens.apps.device';
 export { default as alert } from '@bit/flumens.apps.helpers.alert';

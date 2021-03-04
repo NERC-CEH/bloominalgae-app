@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import exact from 'prop-types-exact';
 import config from 'config';
-import { withRouter, useLocation } from 'react-router';
+import { useLocation } from 'react-router';
+import { alert } from '@apps';
 import {
   IonContent,
   IonIcon,
@@ -10,17 +13,63 @@ import {
   IonMenu,
   IonMenuToggle,
   IonFooter,
+  IonCheckbox,
 } from '@ionic/react';
 import {
   heartOutline,
   settingsOutline,
   informationCircleOutline,
   lockClosedOutline,
+  personOutline,
+  logOut,
 } from 'ionicons/icons';
 import { observer } from 'mobx-react';
 import { Trans as T } from 'react-i18next';
 import flumensLogo from 'common/images/flumens.svg';
 import './styles.scss';
+
+function showLogoutConfirmationDialog(callback) {
+  let deleteData = true;
+
+  const onCheckboxChange = e => {
+    deleteData = e.detail.checked;
+  };
+
+  alert({
+    header: 'Logout',
+    cssClass: 'logout-alert',
+    message: (
+      <>
+        <T>Are you sure you want to logout?</T>
+        <br />
+        <br />
+        <IonItem
+          lines="none"
+          className="log-out-checkbox"
+          style={{ background: 'transperant' }}
+        >
+          <IonLabel>
+            <T>Discard local data</T>
+          </IonLabel>
+          <IonCheckbox checked onIonChange={onCheckboxChange} />
+        </IonItem>
+      </>
+    ),
+    buttons: [
+      {
+        text: 'Cancel',
+        role: 'cancel',
+        cssClass: 'secondary',
+      },
+
+      {
+        text: 'Logout',
+        cssClass: 'primary',
+        handler: () => callback(deleteData),
+      },
+    ],
+  });
+}
 
 const routes = {
   appPages: [
@@ -70,6 +119,13 @@ const routes = {
       icon: settingsOutline,
     },
   ],
+  loggedOutPages: [
+    {
+      title: 'Register/Login',
+      path: '/user/register',
+      icon: personOutline,
+    },
+  ],
 };
 
 function renderMenuRoutes(list, location) {
@@ -95,14 +151,49 @@ function renderMenuRoutes(list, location) {
   return list.map(getMenuItem);
 }
 
-const Menu = () => {
+function loggingOut(userModel, savedSamples) {
+  const onReset = async reset => {
+    if (reset) {
+      await savedSamples.resetDefaults();
+    }
+
+    userModel.logOut();
+  };
+
+  showLogoutConfirmationDialog(onReset);
+}
+
+const getLogoutButton = (userModel, savedSamples) => {
+  const { firstName, secondName } = userModel.attrs; // Log('Home:Info: logging out.');
+
+  const loggingOutWrap = () => loggingOut(userModel, savedSamples);
+
+  return (
+    <IonItem detail={false} routerDirection="none" onClick={loggingOutWrap}>
+      <IonIcon slot="start" icon={logOut} />
+      <IonLabel>
+        <T>Logout</T>: {firstName} {secondName}
+      </IonLabel>
+    </IonItem>
+  );
+};
+
+const Menu = ({ userModel, savedSamples }) => {
   const location = useLocation();
 
   const getRoutes = routesList => renderMenuRoutes(routesList, location);
 
+  const isLoggedIn = !!userModel.attrs.id;
+
+  const isUserLoggedIn = isLoggedIn
+    ? getLogoutButton(userModel, savedSamples)
+    : getRoutes(routes.loggedOutPages);
+
   return (
     <IonMenu type="overlay" contentId="main">
       <IonContent forceOverscroll={false}>
+        {isUserLoggedIn}
+
         <IonList lines="none">{getRoutes(routes.appPages)}</IonList>
       </IonContent>
 
@@ -122,4 +213,9 @@ const Menu = () => {
   );
 };
 
-export default withRouter(observer(Menu));
+Menu.propTypes = exact({
+  userModel: PropTypes.object.isRequired,
+  savedSamples: PropTypes.array.isRequired,
+});
+
+export default observer(Menu);

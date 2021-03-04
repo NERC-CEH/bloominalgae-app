@@ -3,6 +3,9 @@ import { isPlatform } from '@ionic/react';
 
 const isTestEnv = process.env.NODE_ENV === 'test';
 
+const backendUrl =
+  process.env.APP_BACKEND_URL || 'https://www.brc.ac.uk/irecord';
+
 const indiciaUrl =
   process.env.APP_BACKEND_INDICIA_URL || 'https://warehouse1.indicia.org.uk';
 
@@ -22,7 +25,9 @@ const CONFIG = {
   },
 
   backend: {
+    url: backendUrl,
     mediaUrl: `${indiciaUrl}/upload/`,
+    apiKey: process.env.APP_INDICIA_API_KEY,
   },
 };
 
