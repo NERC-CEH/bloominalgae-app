@@ -24,9 +24,9 @@ export * from '@bit/flumens.apps.utils.location';
 export * from '@bit/flumens.apps.utils.validation';
 
 export { default as Model } from '@bit/flumens.apps.models.model';
-export { default as Sample } from '@bit/flumens.apps.models.sample';
-export { default as Media } from '@bit/flumens.apps.models.media';
-export { default as Occurrence } from '@bit/flumens.apps.models.occurrence';
+export { default as Sample } from '@bit/flumens.apps.models.sample-with-drupal-remote';
+export { default as Occurrence } from '@bit/flumens.apps.models.occurrence-with-drupal-remote';
+export { default as Media } from '@bit/flumens.apps.models.media-with-drupal-remote';
 
 export { default as Store } from '@bit/flumens.apps.models.store';
 export { default as initStoredSamples } from '@bit/flumens.apps.models.init-stored-samples';
