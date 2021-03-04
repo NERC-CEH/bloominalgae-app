@@ -22,7 +22,7 @@ class Controller extends React.Component {
   };
 
   askToVerifyLocation = () => {
-    const { sample, match } = this.props;
+    const { sample } = this.props;
 
     const askToVerifyLocationWrap = resolve => {
       alert({
@@ -43,7 +43,7 @@ class Controller extends React.Component {
             role: 'blue',
             cssClass: 'primary',
             handler: () => {
-              this.context.navigate(`${match.url}/location`);
+              resolve(false);
             },
           },
           {
@@ -80,10 +80,7 @@ class Controller extends React.Component {
   };
 
   _processDraft = async () => {
-    const { appModel, sample } = this.props;
-
-    appModel.attrs['draftId:point'] = null;
-    await appModel.save();
+    const { appModel, sample, match } = this.props;
 
     const invalids = sample.validateRemote();
     if (invalids) {
@@ -91,10 +88,19 @@ class Controller extends React.Component {
       return;
     }
 
-    await this.askToVerifyLocation();
+    const isLocationValid = await this.askToVerifyLocation();
+    if (!isLocationValid) {
+      this.context.navigate(`${match.url}/location`);
+
+      return;
+    }
+
+    appModel.attrs['draftId:point'] = null;
+    await appModel.save();
 
     sample.metadata.saved = true;
     sample.save();
+
     this.context.navigate(`/home/surveys`, 'root');
   };
 
