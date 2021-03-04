@@ -4,6 +4,7 @@ import {
   calendarOutline,
   chatboxEllipsesOutline,
   bicycleOutline,
+  locationOutline,
 } from 'ionicons/icons';
 import * as Yup from 'yup';
 import Occurrence from 'common/models/occurrence';
@@ -70,27 +71,37 @@ const survey = {
   getDraftIdKey: () => `draftId:${survey.name}`,
 
   attrs: {
-    location_accuracy: { remote: { id: 282 } },
-    location_source: { remote: { id: 760 } },
-    location_gridref: { remote: { id: 335 } },
-
+    locationAccuracy: { remote: { id: 282 } },
+    locationSource: { remote: { id: 760 } },
+    locationGridref: { remote: { id: 335 } },
     location: {
+      label: 'Location',
+      icon: locationOutline,
       remote: {
         id: 'entered_sref',
         values(location, submission) {
+          // convert accuracy for map and gridref sources
           const { accuracy, source, gridref, name } = location;
 
           const keys = survey.attrs;
           const locationAttributes = {
             location_name: name,
-            [keys.location_source.remote.id]: source,
-            [keys.location_gridref.remote.id]: gridref,
-            [keys.location_accuracy.remote.id]: accuracy,
+            [keys.locationSource.remote.id]: source,
+            [keys.locationGridref.remote.id]: gridref,
+            [keys.locationAccuracy.remote.id]: accuracy,
           };
-          Object.assign(submission.values, locationAttributes);
+
+          // add other location related attributes
+          // eslint-disable-next-line
+          submission.fields = { ...submission.fields, ...locationAttributes };
 
           const lat = parseFloat(location.latitude);
           const lon = parseFloat(location.longitude);
+
+          if (Number.isNaN(lat) || Number.isNaN(lat)) {
+            return null;
+          }
+
           return `${lat.toFixed(7)}, ${lon.toFixed(7)}`;
         },
       },
@@ -143,6 +154,7 @@ const survey = {
     attrs: {
       taxon: {
         remote: {
+          id: 'taxa_taxon_list_id',
           values: taxon => taxon.Cyanobacteria,
         },
       },

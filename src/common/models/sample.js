@@ -1,9 +1,12 @@
 import { Sample } from '@apps';
-import GPSExtension from './sampleGPSExt';
-import Media from './media';
+import userModel from 'userModel';
+import config from 'common/config/config';
+import { observable } from 'mobx';
 import surveyConfig from '../../Survey/config';
-import Occurrence from './occurrence';
+import GPSExtension from './sampleGPSExt';
 import { modelStore } from './store';
+import Occurrence from './occurrence';
+import Media from './media';
 
 class AppSample extends Sample {
   static fromJSON(json) {
@@ -15,15 +18,18 @@ class AppSample extends Sample {
   constructor(...args) {
     super(...args);
 
-    Object.assign(this, GPSExtension);
+    this.remote = observable({
+      api_key: config.backend.apiKey,
+      host_url: `${config.backend.url}/`,
+      user: userModel.getUser.bind(userModel),
+      password: userModel.getPassword.bind(userModel),
+      synchronising: false,
+    });
+
     this.survey = surveyConfig;
 
+    Object.assign(this, GPSExtension);
     this.gpsExtensionInit();
-  }
-
-  // TODO:  rename disable
-  isDisabled() {
-    return this.isUploaded();
   }
 }
 

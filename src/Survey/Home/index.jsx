@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import { IonButton, NavContext, withIonLifeCycle } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
-import { Page, Header, showInvalidsMessage, alert, device, toast } from '@apps';
+import { Page, Header, showInvalidsMessage, alert, toast } from '@apps';
 import MapComponent from '../Components/Map';
 import Main from './Main';
 import './styles.scss';
@@ -17,6 +17,7 @@ class Controller extends React.Component {
   static propTypes = {
     sample: PropTypes.object.isRequired,
     appModel: PropTypes.object.isRequired,
+    userModel: PropTypes.object.isRequired,
     match: PropTypes.object.isRequired,
   };
 
@@ -57,8 +58,8 @@ class Controller extends React.Component {
     return new Promise(askToVerifyLocationWrap);
   };
 
-  onUpload = async () => {
-    const { sample } = this.props;
+  _processSubmission = () => {
+    const { sample, userModel } = this.props;
 
     const invalids = sample.validateRemote();
 
@@ -67,14 +68,45 @@ class Controller extends React.Component {
       return;
     }
 
-    if (!device.isOnline()) {
-      warn('Looks like you are offline!');
+    const isLoggedIn = !!userModel.attrs.id;
+    if (!isLoggedIn) {
+      warn('Please log in first to upload the record.');
+      return;
+    }
+
+    sample.saveRemote();
+
+    this.context.navigate(`/home/surveys`, 'root');
+  };
+
+  _processDraft = async () => {
+    const { appModel, sample } = this.props;
+
+    appModel.attrs['draftId:point'] = null;
+    await appModel.save();
+
+    const invalids = sample.validateRemote();
+    if (invalids) {
+      showInvalidsMessage(invalids);
       return;
     }
 
     await this.askToVerifyLocation();
 
-    this.context.navigate('/home/info', 'root');
+    sample.metadata.saved = true;
+    sample.save();
+    this.context.navigate(`/home/surveys`, 'root');
+  };
+
+  onFinish = async () => {
+    const { sample } = this.props;
+
+    if (!sample.metadata.saved) {
+      await this._processDraft();
+      return;
+    }
+
+    await this._processSubmission();
   };
 
   resetGPS = () => {
@@ -85,17 +117,25 @@ class Controller extends React.Component {
 
   render() {
     const { sample } = this.props;
+
+    const isEditing = sample.metadata.saved;
+
     const isDisabled = sample.isDisabled();
 
-    const uploadButton = !isDisabled ? (
-      <IonButton onClick={this.onUpload}>
-        <T>Upload</T>
+    const finishButton = (
+      <IonButton
+        onClick={this.onFinish}
+        color="primary"
+        fill="solid"
+        shape="round"
+      >
+        {isEditing ? 'Upload' : 'Finish'}
       </IonButton>
-    ) : null;
+    );
 
     return (
       <Page id="survey-edit">
-        <Header title="Record" rightSlot={uploadButton} />
+        <Header title="Record" rightSlot={finishButton} />
         <Main
           resetGPS={this.resetGPS}
           isDisabled={isDisabled}

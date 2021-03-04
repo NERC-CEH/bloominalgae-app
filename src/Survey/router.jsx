@@ -1,6 +1,7 @@
 import React from 'react';
 import { AttrPage as Attr, RouteWithModels, ModelLocation } from '@apps';
 import appModel from 'appModel';
+import userModel from 'userModel';
 import config from 'config';
 import savedSamples from 'savedSamples';
 import StartNewSurvey from './StartNewSurvey';
@@ -9,7 +10,9 @@ import Home from './Home';
 
 const baseURL = `/survey/start`;
 
-const HomeWrap = props => <Home appModel={appModel} {...props} />;
+const HomeWrap = props => (
+  <Home appModel={appModel} userModel={userModel} {...props} />
+);
 
 const ModelLocationWrap = props => (
   <ModelLocation
