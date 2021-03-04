@@ -108,13 +108,16 @@ const survey = {
     },
 
     date: {
+      type: 'date',
       label: 'Date',
       icon: calendarOutline,
-      values: d => date.print(d),
       isValid: val => val && val.toString() !== 'Invalid Date',
-      type: 'date',
       max: () => new Date(),
-      skipValueTranslation: true,
+      required: true,
+      remote: {
+        id: 'date',
+        values: d => date.print(d, false),
+      },
     },
 
     'bloom-size': {
