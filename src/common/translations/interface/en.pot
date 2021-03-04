@@ -577,10 +577,6 @@ msgid "Enter your email address to request a password reset."
 msgstr "Enter your email address to request a password reset."
 
 # Part of User authentication page
-msgid "firstName is a required field"
-msgstr "firstName is a required field"
-
-# Part of User authentication page
 msgid "email is a required field"
 msgstr "email is a required field"
 
@@ -611,3 +607,23 @@ msgstr "Please wait..."
 # Survey header button
 msgid "Finish"
 msgstr "Finish"
+
+# Survey camera options
+msgid "Survey incomplete"
+msgstr "Survey incomplete"
+
+# Survey camera options
+msgid "Choose a method to upload a photo"
+msgstr "Choose a method to upload a photo"
+
+# Survey camera options
+msgid "Gallery"
+msgstr "Gallery"
+
+# Survey camera options
+msgid "Camera"
+msgstr "Camera"
+
+# User-surveys page background message
+msgid "Please do not forget to upload any pending surveys!"
+msgstr "Please do not forget to upload any pending surveys!"
