@@ -41,10 +41,16 @@ const Report = () => (
               </a>
             </li>
             <br />
+
             <li>
               <a href="http://apps.environment-agency.gov.uk/contact/">
                 England: Environment Agency (EA)
               </a>
+            </li>
+            <br />
+
+            <li>
+              <a href="http://www.epa.ie/enforcement/report/">Ireland: EPA</a>
             </li>
           </ul>
         </P>
