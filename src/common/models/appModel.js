@@ -13,6 +13,7 @@ const defaults = {
   // tips
   showSurveysDeleteTip: true,
   showSurveyUploadTip: true,
+  showDurationOfRecordsTip: true,
 };
 
 const appModel = new AppModel(genericStore, 'app', defaults);
