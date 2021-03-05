@@ -3,12 +3,10 @@ import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import { IonButton, NavContext, withIonLifeCycle } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
-import { Page, Header, showInvalidsMessage, alert, toast } from '@apps';
+import { Page, Header, showInvalidsMessage, alert } from '@apps';
 import MapComponent from '../Components/Map';
 import Main from './Main';
 import './styles.scss';
-
-const { warn } = toast;
 
 @observer
 class Controller extends React.Component {
