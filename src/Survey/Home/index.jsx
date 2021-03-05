@@ -95,7 +95,7 @@ class Controller extends React.Component {
       return;
     }
 
-    appModel.attrs['draftId:point'] = null;
+    appModel.attrs['draftId:survey'] = null;
     await appModel.save();
 
     sample.metadata.saved = true;
