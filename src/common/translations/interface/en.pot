@@ -493,8 +493,8 @@ msgid "Bloomin’ Algae is a Citizen Science app for reporting the presence of h
 msgstr "Bloomin’ Algae is a Citizen Science app for reporting the presence of harmful blooms of blue-green algae . The records you send in help speed up warnings to minimise risks to public and animal health. Thanks for taking part!"
 
 # Record map toggle
-msgid "Use longer period"
-msgstr "Use longer period"
+msgid "See past 12 months"
+msgstr "See past 12 months"
 
 # Record map toggle
 msgid "Please confirm this is your correct location."
@@ -627,3 +627,11 @@ msgstr "Camera"
 # User-surveys page background message
 msgid "Please do not forget to upload any pending surveys!"
 msgstr "Please do not forget to upload any pending surveys!"
+
+# All records page tit
+msgid "OK, got it"
+msgstr "OK, got it"
+
+# All records page tit
+msgid "Tip: Duration of records"
+msgstr "Tip: Duration of records"

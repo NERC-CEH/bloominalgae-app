@@ -1,13 +1,27 @@
 import React from 'react';
+import appModel from 'common/models/appModel';
 import { IonLabel } from '@ionic/react';
 import Header from 'Components/Header';
 import { observer } from 'mobx-react';
-import { Page, Toggle } from '@apps';
+import { Page, Toggle, alert } from '@apps';
 import { Trans as T } from 'react-i18next';
 import axios from 'axios';
 import GPS from 'helpers/GPS';
 import Main from './Main';
 import './styles.scss';
+
+const showDurationOfRecordsAlertTip = () =>
+  alert({
+    header: 'Tip: Duration of records',
+    message: 'The default setting is the past 4 weeks of records',
+    buttons: [
+      {
+        text: 'OK, got it',
+        role: 'cancel',
+        cssClass: 'primary',
+      },
+    ],
+  });
 
 @observer
 class Container extends React.Component {
@@ -17,6 +31,16 @@ class Container extends React.Component {
     isLongPeriod: false,
     locating: false,
     records: [],
+  };
+
+  showDurationOfRecordsAlertTip = () => {
+    if (!appModel.attrs.showDurationOfRecordsTip) {
+      return;
+    }
+
+    showDurationOfRecordsAlertTip();
+    appModel.attrs.showDurationOfRecordsTip = false;
+    appModel.save();
   };
 
   toggleLongPeriodReporting = () => {
@@ -130,11 +154,15 @@ class Container extends React.Component {
     });
   };
 
+  componentDidMount = async () => {
+    this.showDurationOfRecordsAlertTip();
+  };
+
   render() {
     const longPeriodToggle = (
       <>
         <IonLabel>
-          <T>Use longer period</T>
+          <T>See past 12 months</T>
         </IonLabel>
         <Toggle
           className="long-period-toggle"
