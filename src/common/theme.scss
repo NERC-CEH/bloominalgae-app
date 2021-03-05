@@ -1,17 +1,17 @@
 :root {
   --ion-color-primary: #098b5c;
-  --ion-color-primary-rgb: 145, 167, 28;
-  --ion-color-primary-contrast: #fff;
+  --ion-color-primary-rgb: 9, 139, 92;
+  --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #884906;
-  --ion-color-primary-tint: #c07a30;
+  --ion-color-primary-shade: #087a51;
+  --ion-color-primary-tint: #22976c;
 
   --ion-color-secondary: #a4cc38;
-  --ion-color-secondary-rgb: 0, 142, 236;
-  --ion-color-secondary-contrast: #ffffff;
-  --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #d48c16;
-  --ion-color-secondary-tint: #ffc364;
+  --ion-color-secondary-rgb: 164, 204, 56;
+  --ion-color-secondary-contrast: #000000;
+  --ion-color-secondary-contrast-rgb: 0, 0, 0;
+  --ion-color-secondary-shade: #90b431;
+  --ion-color-secondary-tint: #add14c;
 
   --ion-color-tertiary: #7044ff;
   --ion-color-tertiary-rgb: 112, 68, 255;
@@ -48,23 +48,21 @@
   --ion-color-dark-shade: #1e2023;
   --ion-color-dark-tint: #383a3e;
 
-  --ion-color-medium: #989aa2;
-  --ion-color-medium-rgb: 152, 154, 162;
+  --ion-color-medium: #92949c;
+  --ion-color-medium-rgb: 146, 148, 156;
   --ion-color-medium-contrast: #ffffff;
   --ion-color-medium-contrast-rgb: 255, 255, 255;
-  --ion-color-medium-shade: #86888f;
-  --ion-color-medium-tint: #a2a4ab;
+  --ion-color-medium-shade: #808289;
+  --ion-color-medium-tint: #9d9fa6;
 
   --ion-color-light: #f4f5f8;
-  --ion-color-light-rgb: 244, 244, 244;
+  --ion-color-light-rgb: 244, 245, 248;
   --ion-color-light-contrast: #000000;
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
-  --custom-color-complex-survey: #a77d11;
-  --custom-color-complex-survey-shade: #6d520c;
-  --custom-color-complex-survey-tint: #b98b14;
+  --ion-page-background: #fbfffc;
 }
 
 :root {
@@ -116,10 +114,68 @@ ion-item-divider {
 }
 
 .info-background-message {
-  --background: white;
+  --background: var(--ion-color-light-tint);
 }
 
 // Fix mapbox attribution
 #location-page-content {
   height: 100% !important;
+}
+
+ion-content {
+  --background: var(--ion-page-background);
+}
+
+ion-list.apps-section {
+  background: transparent;
+  padding: 0; // not working
+}
+
+.apps-section * {
+  --background: transparent;
+}
+
+ion-list {
+  padding: 0 !important;
+}
+
+ion-list,
+ion-item-divider {
+  background: transparent !important;
+}
+
+.photo-picker {
+  --inner-padding-end: 0;
+
+  #img-picker-array .img {
+    margin-right: 5px;
+    .delete {
+      background-color: #80808085;
+    }
+  }
+
+  #img-picker-array .img-picker {
+    border-right: none;
+
+    ion-button {
+      background: #3aa3644a;
+      margin: 5px;
+      height: calc(80px - 10px);
+      width: calc(80px - 10px);
+      border-radius: 15px;
+      transform: none;
+    }
+  }
+}
+
+/* Tablet-friendly */
+html.plt-tablet {
+  .info-message,
+  .item-datetime,
+  ion-list,
+  ion-textarea {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
