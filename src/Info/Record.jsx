@@ -17,15 +17,15 @@ const Record = () => (
             <br />
             <li>
               We use the data in scientific research to get a better
-              understanding of the timing and location of algal blooms across
-              the UK, to understand how climate change is impacting water
-              quality now, and to predict future impacts.
+              understanding of the timing and location of algal blooms, to
+              understand how climate change is impacting water quality now, and
+              to predict future impacts.
             </li>
             <br />
 
             <li>
-              We also use the data to support the UK environment agencies and
-              water companies in water quality risk management and prevention.
+              We also use the data to support environment agencies and water
+              companies in water quality risk management and prevention.
             </li>
           </ul>
         </P>
