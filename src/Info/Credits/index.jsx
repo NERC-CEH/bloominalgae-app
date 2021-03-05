@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Page, Main, Section } from '@apps';
-import cehLogo from './ceh_logo.jpg';
+import cehLogo from './ceh_logo.png';
 import './styles.scss';
 
 const { H, P } = Section;
