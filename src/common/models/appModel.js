@@ -14,6 +14,9 @@ const defaults = {
   showSurveysDeleteTip: true,
   showSurveyUploadTip: true,
   showDurationOfRecordsTip: true,
+
+  // draft survey pointers
+  'draftId:survey': null,
 };
 
 const appModel = new AppModel(genericStore, 'app', defaults);
