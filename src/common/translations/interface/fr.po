@@ -298,7 +298,8 @@ msgid ""
 "<0><0><0>Scottish Environment Protection Agency "
 "(SEPA)</0></0><br/><2><0>Northern Ireland Environment Agency "
 "(NIEA)</0></2><br/><4><0>Natural Resources Wales "
-"(NRW)</0></4><br/><6><0>England: Environment Agency (EA)</0></6></0>"
+"(NRW)</0></4><br/><6><0>England: Environment Agency "
+"(EA)</0></6><br/><8><0>Ireland: EPA</0></8></0>"
 msgstr ""
 
 # BRC info page title
@@ -625,10 +626,10 @@ msgid ""
 "<0><0>Informing local authorities and landowners to help speed up the "
 "erection of public warning signs.</0><br/><2>We use the data in scientific "
 "research to get a better understanding of the timing and location of algal "
-"blooms across the UK, to understand how climate change is impacting water "
-"quality now, and to predict future impacts.</2><br/><4>We also use the data "
-"to support the UK environment agencies and water companies in water quality "
-"risk management and prevention.</4></0>"
+"blooms, to understand how climate change is impacting water quality now, and"
+" to predict future impacts.</2><br/><4>We also use the data to support "
+"environment agencies and water companies in water quality risk management "
+"and prevention.</4></0>"
 msgstr ""
 
 # Record upload button label
@@ -682,7 +683,7 @@ msgid ""
 msgstr ""
 
 # Record map toggle
-msgid "Use longer period"
+msgid "See past 12 months"
 msgstr ""
 
 # Record map toggle
@@ -817,4 +818,12 @@ msgstr ""
 
 # User-surveys page background message
 msgid "Please do not forget to upload any pending surveys!"
+msgstr ""
+
+# All records page tit
+msgid "OK, got it"
+msgstr ""
+
+# All records page tit
+msgid "Tip: Duration of records"
 msgstr ""

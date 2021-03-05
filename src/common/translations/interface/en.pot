@@ -445,8 +445,8 @@ msgid "What do we use your records for?"
 msgstr "What do we use your records for?"
 
 # What do we use your records for info page content
-msgid "<0><0>Informing local authorities and landowners to help speed up the erection of public warning signs.</0><br/><2>We use the data in scientific research to get a better understanding of the timing and location of algal blooms across the UK, to understand how climate change is impacting water quality now, and to predict future impacts.</2><br/><4>We also use the data to support the UK environment agencies and water companies in water quality risk management and prevention.</4></0>"
-msgstr "<0><0>Informing local authorities and landowners to help speed up the erection of public warning signs.</0><br/><2>We use the data in scientific research to get a better understanding of the timing and location of algal blooms across the UK, to understand how climate change is impacting water quality now, and to predict future impacts.</2><br/><4>We also use the data to support the UK environment agencies and water companies in water quality risk management and prevention.</4></0>"
+msgid "<0><0>Informing local authorities and landowners to help speed up the erection of public warning signs.</0><br/><2>We use the data in scientific research to get a better understanding of the timing and location of algal blooms, to understand how climate change is impacting water quality now, and to predict future impacts.</2><br/><4>We also use the data to support environment agencies and water companies in water quality risk management and prevention.</4></0>"
+msgstr "<0><0>Informing local authorities and landowners to help speed up the erection of public warning signs.</0><br/><2>We use the data in scientific research to get a better understanding of the timing and location of algal blooms, to understand how climate change is impacting water quality now, and to predict future impacts.</2><br/><4>We also use the data to support environment agencies and water companies in water quality risk management and prevention.</4></0>"
 
 # Record upload button label
 msgid "Upload"
