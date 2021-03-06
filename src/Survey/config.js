@@ -11,15 +11,16 @@ import Occurrence from 'common/models/occurrence';
 
 const fixedLocationSchema = Yup.object().shape({
   latitude: Yup.number().required(),
-  longitude: Yup.number().required('Please select location'),
+  longitude: Yup.number().required(),
 });
 
 const validateLocation = val => {
-  if (!val) {
+  try {
+    fixedLocationSchema.validateSync(val);
+    return true;
+  } catch (e) {
     return false;
   }
-  fixedLocationSchema.validateSync(val);
-  return true;
 };
 
 export const verifyLocationSchema = Yup.mixed().test(
