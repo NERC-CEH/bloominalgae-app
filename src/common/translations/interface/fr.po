@@ -827,3 +827,19 @@ msgstr ""
 # All records page tip
 msgid "OK, got it"
 msgstr ""
+
+# Error messages from server for user account actions
+msgid "Sorry"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Unauthorized"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Not found"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Bad Request"
+msgstr ""

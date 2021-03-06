@@ -635,3 +635,19 @@ msgstr "Please do not forget to upload any pending surveys!"
 # All records page tip
 msgid "OK, got it"
 msgstr "OK, got it"
+
+# Error messages from server for user account actions
+msgid "Sorry"
+msgstr "Sorry"
+
+# Error messages from server for user account actions
+msgid "Unauthorized"
+msgstr "Unauthorized"
+
+# Error messages from server for user account actions
+msgid "Not found"
+msgstr "Not found"
+
+# Error messages from server for user account actions
+msgid "Bad Request"
+msgstr "Bad Request"
