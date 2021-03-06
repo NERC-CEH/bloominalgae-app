@@ -497,6 +497,10 @@ msgid "See past 12 months"
 msgstr "See past 12 months"
 
 # Record map toggle
+msgid "The default setting is the past 4 weeks of records."
+msgstr "The default setting is the past 4 weeks of records."
+
+# Record map toggle
 msgid "Please confirm this is your correct location."
 msgstr "Please confirm this is your correct location."
 
@@ -628,10 +632,6 @@ msgstr "Camera"
 msgid "Please do not forget to upload any pending surveys!"
 msgstr "Please do not forget to upload any pending surveys!"
 
-# All records page tit
+# All records page tip
 msgid "OK, got it"
 msgstr "OK, got it"
-
-# All records page tit
-msgid "Tip: Duration of records"
-msgstr "Tip: Duration of records"
