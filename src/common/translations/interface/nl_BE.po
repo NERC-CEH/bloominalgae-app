@@ -1,11 +1,12 @@
 # 
 # Translators:
 # Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021
+# Karolis, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021\n"
+"Last-Translator: Karolis, 2021\n"
 "Language-Team: Dutch (Belgium) (https://www.transifex.com/ceh/teams/116164/nl_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -882,4 +883,20 @@ msgstr ""
 
 # All records page tip
 msgid "OK, got it"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Sorry"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Unauthorized"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Not found"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Bad Request"
 msgstr ""
