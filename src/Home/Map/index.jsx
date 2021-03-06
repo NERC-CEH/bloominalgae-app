@@ -1,19 +1,18 @@
 import React from 'react';
-import appModel from 'common/models/appModel';
-import { IonLabel } from '@ionic/react';
+import { IonLabel, IonIcon, IonButton } from '@ionic/react';
 import Header from 'Components/Header';
 import { observer } from 'mobx-react';
 import { Page, Toggle, alert } from '@apps';
 import { Trans as T } from 'react-i18next';
 import axios from 'axios';
+import { helpCircleOutline } from 'ionicons/icons';
 import GPS from 'helpers/GPS';
 import Main from './Main';
 import './styles.scss';
 
-const showDurationOfRecordsAlertTip = () =>
+const showDurationOfRecordsAlert = () =>
   alert({
-    header: 'Tip: Duration of records',
-    message: 'The default setting is the past 4 weeks of records',
+    message: <T>The default setting is the past 4 weeks of records.</T>,
     buttons: [
       {
         text: 'OK, got it',
@@ -31,16 +30,6 @@ class Container extends React.Component {
     isLongPeriod: false,
     locating: false,
     records: [],
-  };
-
-  showDurationOfRecordsAlertTip = () => {
-    if (!appModel.attrs.showDurationOfRecordsTip) {
-      return;
-    }
-
-    showDurationOfRecordsAlertTip();
-    appModel.attrs.showDurationOfRecordsTip = false;
-    appModel.save();
   };
 
   toggleLongPeriodReporting = () => {
@@ -154,13 +143,12 @@ class Container extends React.Component {
     });
   };
 
-  componentDidMount = async () => {
-    this.showDurationOfRecordsAlertTip();
-  };
-
   render() {
     const longPeriodToggle = (
       <>
+        <IonButton onClick={showDurationOfRecordsAlert}>
+          <IonIcon slot="icon-only" icon={helpCircleOutline} />
+        </IonButton>
         <IonLabel>
           <T>See past 12 months</T>
         </IonLabel>
