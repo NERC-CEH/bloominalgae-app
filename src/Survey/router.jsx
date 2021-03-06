@@ -14,17 +14,21 @@ const HomeWrap = props => (
   <Home appModel={appModel} userModel={userModel} {...props} />
 );
 
-const ModelLocationWrap = props => (
-  <ModelLocation
-    mapProviderOptions={config.map}
-    useGridRef
-    useGridMap
-    onLocationNameChange={ModelLocation.utils.onLocationNameChange}
-    placeholder="Location name e.g. lake, reservoir or pond name"
-    onGPSClick={ModelLocation.utils.onGPSClick}
-    {...props}
-  />
-);
+const ModelLocationWrap = props => {
+  const isInUK = appModel.attrs.language === 'en';
+
+  return (
+    <ModelLocation
+      mapProviderOptions={config.map}
+      useGridRef={isInUK}
+      useGridMap={isInUK}
+      onLocationNameChange={ModelLocation.utils.onLocationNameChange}
+      placeholder="Location name e.g. lake, reservoir or pond name"
+      onGPSClick={ModelLocation.utils.onGPSClick}
+      {...props}
+    />
+  );
+};
 
 const routes = [
   [`${baseURL}`, StartNewSurvey.with(survey), true],
