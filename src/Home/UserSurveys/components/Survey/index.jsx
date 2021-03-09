@@ -9,6 +9,7 @@ import {
   IonItemOptions,
   IonItemOption,
 } from '@ionic/react';
+import { checkmarkCircle, helpCircle, closeCircle } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
 import logo from './logo.png';
 import OnlineStatus from './components/OnlineStatus';
@@ -68,11 +69,34 @@ const Survey = ({ sample }) => {
   }
 
   const deleteSurveyWrap = () => deleteSurvey(sample);
+
+  let detailIcon;
+  let idClass;
+  const { verification } = sample.metadata;
+  if (verification) {
+    if (verification === 'V') {
+      idClass = 'id-green';
+      detailIcon = checkmarkCircle;
+    } else if (verification === 'C') {
+      idClass = 'id-amber';
+      detailIcon = helpCircle;
+    } else {
+      idClass = 'id-red';
+      detailIcon = closeCircle;
+    }
+  }
+
   return (
     <IonItemSliding class="survey-list-item">
       <ErrorMessage sample={sample} />
 
-      <IonItem routerLink={href} detail lines="none">
+      <IonItem
+        routerLink={href}
+        lines="none"
+        detail
+        detailIcon={detailIcon}
+        className={idClass}
+      >
         {getProfilePhoto(speciesPhoto)}
 
         <IonLabel className="ion-no-margin">{getSampleInfo()}</IonLabel>

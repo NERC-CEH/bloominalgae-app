@@ -1,10 +1,23 @@
 import { observer } from 'mobx-react';
 import config from 'config';
 import React from 'react';
-import { Main, MenuAttrItemFromModel, MenuAttrItem, PhotoPicker } from '@apps';
+import {
+  Main,
+  MenuAttrItemFromModel,
+  MenuAttrItem,
+  PhotoPicker,
+  InfoMessage,
+} from '@apps';
 import PropTypes from 'prop-types';
 import image from 'common/models/media';
-import { bicycleOutline, locationOutline } from 'ionicons/icons';
+import {
+  bicycleOutline,
+  locationOutline,
+  checkmarkCircle,
+  helpCircle,
+  closeCircle,
+} from 'ionicons/icons';
+import clsx from 'clsx';
 import { IonList, withIonLifeCycle } from '@ionic/react';
 import GridRefValue from '../Components/GridRefValue';
 import logo from './app_logo_dark.png';
@@ -18,6 +31,36 @@ class Component extends React.Component {
     match: PropTypes.object.isRequired,
   };
 
+  getVerificationMessage = () => {
+    const { sample } = this.props;
+
+    const { verification } = sample.metadata;
+    if (!verification) {
+      return null;
+    }
+
+    const icons = {
+      V: checkmarkCircle,
+      C: helpCircle,
+      R: closeCircle,
+    };
+
+    const verificationTexts = {
+      V: 'This record was verified as correct.',
+      C: 'This record was verified as plausible.',
+      R: 'This record was verified as incorrect.',
+    };
+
+    return (
+      <InfoMessage
+        className={clsx('verification-message', verification)}
+        icon={icons[verification]}
+      >
+        {verificationTexts[verification]}
+      </InfoMessage>
+    );
+  };
+
   render() {
     const { sample, isDisabled, match } = this.props;
 
@@ -29,7 +72,9 @@ class Component extends React.Component {
     return (
       <Main>
         <IonList lines="full">
-          <img className="app-logo" src={logo} alt="logo" />
+          {!isDisabled && <img className="app-logo" src={logo} alt="logo" />}
+
+          {this.getVerificationMessage()}
 
           <PhotoPicker
             model={occ}

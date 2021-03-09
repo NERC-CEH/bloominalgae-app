@@ -41,5 +41,19 @@
   ion-item {
     --padding-start: 0;
     box-shadow: 0 0 10px #dcdcdc;
+
+    --detail-icon-opacity: 0.8;
+
+    &.id-green {
+      --detail-icon-color: green;
+    }
+
+    &.id-amber {
+      --detail-icon-color: orange;
+    }
+
+    &.id-red {
+      --detail-icon-color: red;
+    }
   }
 }

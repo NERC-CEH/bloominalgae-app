@@ -1,0 +1,37 @@
+{
+  "data": {
+    "data": [
+      {
+        "id": "1",
+        "sample_date": "2018-08-19 11:00:38.000",
+        "notes": "",
+        "verification": {
+          "status_code": "V",
+          "status_text": "verified",
+          "substatus_code": "1",
+          "substatus_text": "correct"
+        }
+      },
+      {
+        "id": "2",
+        "sample_date": "2018-08-21 17:24:52.000",
+        "verification": {
+          "status_code": "C",
+          "status_text": "complete",
+          "substatus_code": "3",
+          "substatus_text": "plausible"
+        }
+      },
+      {
+        "id": "3",
+        "sample_date": "2018-08-22 15:16:32.000",
+        "verification": {
+          "status_code": "R",
+          "status_text": "rejected",
+          "substatus_code": "5",
+          "substatus_text": "incorrect"
+        }
+      }
+    ]
+  }
+}
