@@ -113,10 +113,11 @@ const survey = {
       label: 'Date',
       icon: calendarOutline,
       isValid: val => val && val.toString() !== 'Invalid Date',
-      max: () => new Date(),
       required: true,
+      componentProps: {
+        max: () => new Date(),
+      },
       remote: {
-        id: 'date',
         values: d => date.print(d, false),
       },
     },
@@ -126,7 +127,9 @@ const survey = {
       label: 'Bloom Size',
       icon: expandOutline,
       info: 'Select the closest match below.',
-      options: bloomSizeValues,
+      componentProps: {
+        options: bloomSizeValues,
+      },
       remote: {
         id: 1014,
         values: bloomSizeValues,
@@ -138,7 +141,9 @@ const survey = {
       label: 'Activities',
       icon: bicycleOutline,
       info: 'Please select the activities type for this record.',
-      options: activitiesValues,
+      componentProps: {
+        options: activitiesValues,
+      },
       remote: {
         id: 1016,
         values: activitiesValues,
