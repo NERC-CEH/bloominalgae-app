@@ -38,30 +38,38 @@ const bloomSizeValues = [
 
 const activitiesValues = [
   { isPlaceholder: true, label: 'What activities were you doing?' },
+  {
+    value: 'user_Walking / Running',
+    label: 'Walking / Running',
+    id: 10638,
+  },
+  { value: 'user_Dog-walking', label: 'Dog-walking', id: 10639 },
+  { value: 'user_Cycling', label: 'Cycling', id: 10640 },
+  { value: 'user_Birdwatching', label: 'Birdwatching', id: 10641 },
+  { value: 'user_Fishing', label: 'Fishing', id: 10642 },
+  { value: 'user_Swimming', label: 'Swimming', id: 10643 },
+  {
+    value: 'user_Boats / Water sports',
+    label: 'Boats / Water sports',
+    id: 10644,
+  },
+  { value: 'user_Other', label: 'Other', id: 10645 },
+  {
+    isPlaceholder: true,
+    label: 'What activities are done at this location?',
+  },
   { value: 'Walking / Running', label: 'Walking / Running', id: 10638 },
   { value: 'Dog-walking', label: 'Dog-walking', id: 10639 },
   { value: 'Cycling', label: 'Cycling', id: 10640 },
   { value: 'Birdwatching', label: 'Birdwatching', id: 10641 },
   { value: 'Fishing', label: 'Fishing', id: 10642 },
   { value: 'Swimming', label: 'Swimming', id: 10643 },
-  { value: 'Boats / Water sports', label: 'Boats / Water sports', id: 10644 },
-  { value: 'Other', label: 'Other', id: 10645 },
   {
-    isPlaceholder: true,
-    label: 'What activities are done at this location?',
-  },
-  { value: 'act Walking / Running', label: 'Walking / Running', id: 10638 },
-  { value: 'act Dog-walking', label: 'Dog-walking', id: 10639 },
-  { value: 'act Cycling', label: 'Cycling', id: 10640 },
-  { value: 'act Birdwatching', label: 'Birdwatching', id: 10641 },
-  { value: 'act Fishing', label: 'Fishing', id: 10642 },
-  { value: 'act Swimming', label: 'Swimming', id: 10643 },
-  {
-    value: 'act Boats / Water sports ',
+    value: 'Boats / Water sports ',
     label: 'Boats / Water sports',
     id: 10644,
   },
-  { value: 'act Other', label: 'Other', id: 10645 },
+  { value: 'Other', label: 'Other', id: 10645 },
 ];
 
 const survey = {
@@ -146,7 +154,27 @@ const survey = {
       },
       remote: {
         id: 1016,
-        values: activitiesValues,
+        id_user: 1015,
+        values(allValues, submission) {
+          const { remote } = survey.attrs.activities;
+
+          const reg = /^user_/;
+          const getId = val => {
+            const byValue = ({ value }) => value === val;
+            return activitiesValues.find(byValue).id;
+          };
+
+          // personal
+          const isPersonal = val => reg.test(val);
+          submission.fields[remote.id_user] = allValues // eslint-disable-line
+            .filter(isPersonal)
+            .map(getId);
+
+          // others
+          const isNotPersonal = val => !reg.test(val);
+          const other = allValues.filter(isNotPersonal).map(getId);
+          return other;
+        },
       },
     },
 
