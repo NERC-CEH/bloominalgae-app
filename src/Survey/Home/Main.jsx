@@ -22,6 +22,7 @@ class Component extends React.Component {
     const { sample, isDisabled, match } = this.props;
 
     const { activities } = sample.attrs;
+    const [occ] = sample.occurrences;
 
     const prettyGridRef = <GridRefValue sample={sample} />;
 
@@ -31,7 +32,7 @@ class Component extends React.Component {
           <img className="app-logo" src={logo} alt="logo" />
 
           <PhotoPicker
-            model={sample}
+            model={occ}
             ImageClass={image}
             isDisabled={isDisabled}
             dataDirPath={config.dataPath}
