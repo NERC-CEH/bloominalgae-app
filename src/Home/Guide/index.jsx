@@ -1,7 +1,8 @@
 import React from 'react';
-import { Page } from '@apps';
+import { Page, InfoMessage } from '@apps';
 import { IonItemDivider, IonContent } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
+import { informationCircle } from 'ionicons/icons';
 import Header from 'Components/Header';
 import Card from './Component/Card';
 import img1 from './images/image1.jpg';
@@ -64,14 +65,10 @@ function Guide() {
     <Page id="guide">
       <Header title="Identify" styleId="none" />
       <IonContent>
-        <div className="info-message">
-          <p>
-            <T>
-              If you are still not sure after looking at this guide please
-              submit the record anyway
-            </T>
-          </p>
-        </div>
+        <InfoMessage icon={informationCircle}>
+          If you are still not sure after looking at this guide please submit
+          the record anyway
+        </InfoMessage>
 
         <IonItemDivider>
           <T>Blue-Green Algae Blooms</T>
