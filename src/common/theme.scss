@@ -13,12 +13,12 @@
   --ion-color-secondary-shade: #90b431;
   --ion-color-secondary-tint: #add14c;
 
-  --ion-color-tertiary: #7044ff;
-  --ion-color-tertiary-rgb: 112, 68, 255;
+  --ion-color-tertiary: #008eec;
+  --ion-color-tertiary-rgb: 82, 96, 255;
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #633ce0;
-  --ion-color-tertiary-tint: #7e57ff;
+  --ion-color-tertiary-shade: #1574b3;
+  --ion-color-tertiary-tint: #5bbdff;
 
   --ion-color-success: #00bd1a;
   --ion-color-success-rgb: 0, 189, 26;
@@ -59,7 +59,7 @@
   --ion-color-light-rgb: 244, 245, 248;
   --ion-color-light-contrast: #000000;
   --ion-color-light-contrast-rgb: 0, 0, 0;
-  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-shade: #e6e6e6;
   --ion-color-light-tint: #f5f6f9;
 
   --ion-page-background: #fbfffc;
@@ -115,6 +115,16 @@ ion-item-divider {
 
 .info-background-message {
   --background: var(--ion-color-light-tint);
+}
+
+.attr-page .info-message {
+  --background: var(--ion-color-tertiary);
+  ion-note {
+    color: var(--ion-color-tertiary-contrast);
+  }
+  ion-icon {
+    color: var(--ion-color-tertiary-contrast) !important;
+  }
 }
 
 // Fix mapbox attribution
