@@ -37,7 +37,8 @@ function deleteSurvey(sample) {
 const Survey = ({ sample }) => {
   const survey = sample.getSurvey();
 
-  const speciesPhoto = sample.media.length ? sample.media[0].getURL() : null;
+  const [occ] = sample.occurrences;
+  const speciesPhoto = occ.media.length ? occ.media[0].getURL() : null;
 
   const href = `/${survey.name}/start/${sample.cid}`;
 
