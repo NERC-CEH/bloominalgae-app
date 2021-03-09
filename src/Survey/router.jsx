@@ -14,18 +14,19 @@ const HomeWrap = props => (
   <Home appModel={appModel} userModel={userModel} {...props} />
 );
 
-const ModelLocationWrap = props => {
+// eslint-disable-next-line
+const ModelLocationWrap = ({ sample }) => {
   const isInUK = appModel.attrs.language === 'en';
 
   return (
     <ModelLocation
+      model={sample}
       mapProviderOptions={config.map}
       useGridRef={isInUK}
       useGridMap={isInUK}
       onLocationNameChange={ModelLocation.utils.onLocationNameChange}
-      placeholder="Location name e.g. lake, reservoir or pond name"
+      namePlaceholder="Location name e.g. lake, reservoir or pond name"
       onGPSClick={ModelLocation.utils.onGPSClick}
-      {...props}
     />
   );
 };
