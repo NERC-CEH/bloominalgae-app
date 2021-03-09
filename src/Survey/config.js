@@ -206,24 +206,32 @@ const survey = {
         },
       });
     },
-  },
 
-  verify(_, sample) {
-    try {
-      Yup.object().shape({
-        attrs: Yup.object()
+    verify(_, occ) {
+      try {
+        Yup.object()
           .shape({
             media: Yup.array()
               .min(1, 'Please add a photo of the bloom')
               .required(),
-
-            attrs: Yup.object().shape({
-              location: verifyLocationSchema,
-            }),
           })
+          .validateSync(occ, { abortEarly: false });
+      } catch (attrError) {
+        return attrError;
+      }
+      return null;
+    },
+  },
 
-          .validateSync(sample, { abortEarly: false }),
-      });
+  verify(_, sample) {
+    try {
+      Yup.object()
+        .shape({
+          attrs: Yup.object().shape({
+            location: verifyLocationSchema,
+          }),
+        })
+        .validateSync(sample, { abortEarly: false });
     } catch (attrError) {
       return attrError;
     }
