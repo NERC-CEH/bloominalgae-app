@@ -1,4 +1,5 @@
 import axios from 'axios';
+import i18n from 'i18next';
 import { alert } from '@apps';
 
 export default function init(savedSamples, userModel) {
@@ -44,6 +45,10 @@ export default function init(savedSamples, userModel) {
 
       // eslint-disable-next-line
       sample.metadata.verification = newVerificationStatus;
+      // eslint-disable-next-line
+      sample.metadata.verification_substatus =
+        updatedSample.verification.substatus_code;
+
       updatedSamples.push(sample);
     };
 
@@ -62,8 +67,10 @@ export default function init(savedSamples, userModel) {
     const updatedSamples = await _fetchUpdatedSamples();
     if (updatedSamples.length) {
       alert({
-        message: `Some of your records have been verified. Please check your records list.`,
-        buttons: [{ text: 'OK' }],
+        message: i18n.t(
+          `Some of your records have been verified. Please check your records list.`
+        ),
+        buttons: [{ text: i18n.t('OK') }],
       });
     }
   }

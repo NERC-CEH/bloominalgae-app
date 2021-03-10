@@ -3,30 +3,36 @@
     --border-width: 0;
 
     ion-label {
-      padding: 20px 0;
+      padding: 10px 0;
     }
 
     &.V {
       --background: #d0e4d8;
       ion-icon,
+      .info-button,
       ion-label ion-note {
         color: #295a1d !important;
+        --border-color: #295a1d;
       }
     }
 
     &.C {
       --background: #e4e3d0;
       ion-icon,
+      .info-button,
       ion-label ion-note {
         color: #5f4e2a !important;
+        --border-color: #5f4e2a;
       }
     }
 
     &.R {
       --background: #e4d0d0;
       ion-icon,
+      .info-button,
       ion-label ion-note {
         color: #7e1d1d !important;
+        --border-color: #7e1d1d;
       }
     }
   }

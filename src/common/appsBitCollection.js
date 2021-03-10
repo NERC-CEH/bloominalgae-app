@@ -14,6 +14,7 @@ export { default as MenuNote } from '@bit/flumens.apps.menu-note-item';
 export { default as Toggle } from '@bit/flumens.apps.toggle';
 export { default as InputWithValidation } from '@bit/flumens.apps.input-with-validation';
 export { default as InfoMessage } from '@bit/flumens.apps.info-message';
+export { default as InfoButton } from '@bit/flumens.apps.info-button';
 export { default as device } from '@bit/flumens.apps.device';
 export { default as alert } from '@bit/flumens.apps.helpers.alert';
 export { default as loader } from '@bit/flumens.apps.helpers.loader';
