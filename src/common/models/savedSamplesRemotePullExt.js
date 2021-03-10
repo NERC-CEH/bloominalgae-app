@@ -33,7 +33,8 @@ export default function init(savedSamples, userModel) {
     response.data.forEach(normalizeResponse);
 
     const findMatchingLocalSamples = sample => {
-      const updatedSample = normalizedResponse[sample.id];
+      const occ = sample.occurrences[0] || {};
+      const updatedSample = normalizedResponse[occ.id];
       if (!updatedSample) {
         return;
       }
