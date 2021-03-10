@@ -50,6 +50,8 @@ export default function init(savedSamples, userModel) {
       sample.metadata.verification_substatus =
         updatedSample.verification.substatus_code;
 
+      sample.save();
+
       updatedSamples.push(sample);
     };
 
