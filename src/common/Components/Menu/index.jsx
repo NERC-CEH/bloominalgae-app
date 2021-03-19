@@ -190,7 +190,7 @@ const Menu = ({ userModel, savedSamples }) => {
     : getRoutes(routes.loggedOutPages);
 
   return (
-    <IonMenu type="overlay" contentId="main">
+    <IonMenu type="overlay" contentId="main" swipeGesture={false}>
       <IonContent forceOverscroll={false}>
         {isUserLoggedIn}
 
