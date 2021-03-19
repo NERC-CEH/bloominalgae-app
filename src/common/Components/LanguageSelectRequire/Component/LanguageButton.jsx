@@ -17,11 +17,11 @@ function LanguageItem(props) {
       className="first"
       onClick={selectLanguage}
     >
-      <IonLabel>{label}</IonLabel>
-
       <div className="icon-wrapper">
         <img className="language-icons" src={flag} />
       </div>
+
+      <IonLabel>{label}</IonLabel>
     </IonItem>
   );
 }
