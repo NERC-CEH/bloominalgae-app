@@ -89,6 +89,7 @@ ion-menu.md {
 
   ion-item {
     --padding-start: 18px;
+    --padding-end: 18px;
     margin-right: 10px;
     border-radius: 0 50px 50px 0;
     font-weight: 500;
@@ -111,6 +112,7 @@ ion-menu.ios {
 
   ion-item {
     --padding-start: 16px;
+    --padding-end: 16px;
     --min-height: 50px;
   }
 
