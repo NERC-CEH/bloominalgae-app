@@ -15,7 +15,6 @@ import {
   informationCircleOutline,
   layersOutline,
 } from 'ionicons/icons';
-import { Trans as T } from 'react-i18next';
 import PendingSurveysBadge from 'common/Components/PendingSurveysBadge';
 import Home from './Home';
 import Guide from './Guide';
