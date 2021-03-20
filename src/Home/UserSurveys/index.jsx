@@ -104,7 +104,7 @@ class UserSurveyComponent extends React.Component {
     }
 
     return (
-      <IonBadge color="danger" slot="end">
+      <IonBadge color="warning" slot="end">
         {pendingSurveys.length}
       </IonBadge>
     );
