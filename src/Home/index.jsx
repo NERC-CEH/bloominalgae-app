@@ -6,14 +6,13 @@ import {
   IonTabs,
   IonTabButton,
   IonIcon,
-  IonLabel,
   IonTabBar,
   IonRouterOutlet,
 } from '@ionic/react';
 import {
   homeOutline,
   mapOutline,
-  bookOutline,
+  informationCircleOutline,
   layersOutline,
 } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
@@ -41,31 +40,19 @@ const HomeComponent = () => {
         <IonTabBar slot="bottom" className="home-tab-bar">
           <IonTabButton tab="/home/info" href="/home/info">
             <IonIcon icon={homeOutline} />
-            <IonLabel>
-              <T>Home</T>
-            </IonLabel>
           </IonTabButton>
 
           <IonTabButton tab="home/map " href="/home/map">
             <IonIcon icon={mapOutline} />
-            <IonLabel>
-              <T>All Records</T>
-            </IonLabel>
-          </IonTabButton>
-
-          <IonTabButton tab="/home/guide" href="/home/guide">
-            <IonIcon icon={bookOutline} />
-            <IonLabel>
-              <T>Guide</T>
-            </IonLabel>
           </IonTabButton>
 
           <IonTabButton tab="/home/surveys" href="/home/surveys">
             <IonIcon icon={layersOutline} />
-            <IonLabel>
-              <T>My Records</T>
-            </IonLabel>
             <PendingSurveysBadge savedSamples={savedSamples} />
+          </IonTabButton>
+
+          <IonTabButton tab="/home/guide" href="/home/guide">
+            <IonIcon icon={informationCircleOutline} />
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
