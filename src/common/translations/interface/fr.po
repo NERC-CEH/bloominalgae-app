@@ -927,3 +927,11 @@ msgid ""
 "again for using the app!</p><p>The Bloomin'Algae team at the UK Centre for "
 "Ecology & Hydrology</p></2></0>"
 msgstr ""
+
+# Context term
+msgid "Are you sure you want to remove this photo?"
+msgstr ""
+
+# Context term
+msgid "Note: it will remain in the gallery."
+msgstr ""

@@ -1,12 +1,12 @@
 # 
 # Translators:
-# Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021
 # Karolis, 2021
+# Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Karolis, 2021\n"
+"Last-Translator: Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021\n"
 "Language-Team: Dutch (Belgium) (https://www.transifex.com/ceh/teams/116164/nl_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -44,7 +44,7 @@ msgid ""
 "If you are still not sure after looking at this guide please submit the "
 "record anyway"
 msgstr ""
-"Indien je na het bekijken van de fotogids nog niet zeker bent van de "
+"Indien u na het bekijken van de fotogids nog niet zeker bent van de "
 "identificatie, gelieve de waarneming toch in te voeren."
 
 # Guide page label
@@ -74,7 +74,7 @@ msgstr "Soms turquoise kleur zichtbaar tijdens de ontbinding van de bloei"
 
 # Guide page label
 msgid "Non Blue-Green Algae"
-msgstr "op blauwalg lijkende 'bloeien'"
+msgstr "Op blauwalg lijkende 'bloeien'"
 
 # Guide page card label
 msgid "Plants that float but have solid structure such as leaves"
@@ -91,7 +91,7 @@ msgstr "Sommige bestaan uit lange, vezelige, haarachtige strengen"
 # Guide page card label
 msgid "Or fine green hairs attached to rocks and pebbles"
 msgstr ""
-"of zien eruit als fijne groene haren vastgehecht aan rotsblokken en stenen"
+"Of zien eruit als fijne groene haren vastgehecht aan rotsblokken en stenen"
 
 # My Records page header title
 msgid "Pending"
@@ -121,12 +121,12 @@ msgid ""
 "animal health. You will receive feedback on the records you submit which can"
 " help you learn how to recognise the risks to you and pets."
 msgstr ""
-"Bloomin’ Algae is een Citizen Science app waarmee je de aanwezigheid van "
+"Bloomin’ Algae is een Citizen Science app waarmee u de aanwezigheid van "
 "blauwalgenbloei (ook gekend als cyanobacteriën) kan rapporteren. De "
-"waarnemingen die je doorgeeft helpen niet alleen het algemene bewustzijn te "
+"waarnemingen die u doorgeeft helpen niet alleen het algemene bewustzijn te "
 "vergroten maar ook het waarschuwingsproces te versnellen zodat de risico’s "
-"voor mens en dier worden beperkt. Over elke doorgegeven waarneming zal je "
-"feedback ontvangen zodat je zelf de risico’s beter leert inschatten.  "
+"voor mens en dier worden beperkt. Over elke doorgegeven waarneming zal u "
+"feedback ontvangen zodat u zelf de risico’s beter leert inschatten.  "
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -137,12 +137,12 @@ msgid ""
 "education, scientific research and other public benefit uses but contact "
 "details will not be shared."
 msgstr ""
-"Wanneer je een waarneming ingeeft, zal deze worden bewaard in <2>iRecod</2>,"
-" waar ze zichtbaar zal zijn voor andere gebruikers en tevens kan "
-"geverifieerd worden door een expert. Enkel de waarneming zal publiek "
-"beschikbaar worden gesteld, contactdetails van de gebruikers worden nooit "
-"gedeeld. Alle waarnemingen kunnen verzameld en verspreid worden voor "
-"educatieve, wetenschappelijke en andere publieke doeleinden. "
+"Wanneer u een waarneming ingeeft, zal deze worden bewaard in <2>iRecod</2>, "
+"waar ze zichtbaar zal zijn voor andere gebruikers en tevens kan geverifieerd"
+" worden door een expert. Enkel de waarneming zal publiek beschikbaar worden "
+"gesteld, contactdetails van de gebruikers worden nooit gedeeld. Alle "
+"waarnemingen kunnen verzameld en verspreid worden voor educatieve, "
+"wetenschappelijke en andere publieke doeleinden. "
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -155,18 +155,18 @@ msgid ""
 "undertaken we hope to gain a better understanding of how harmful algal "
 "blooms are impacting recreational use of freshwaters."
 msgstr ""
-"Naast het insturen van foto’s en details van de locatie vragen we je om aan "
-"te geven welke activiteiten jij en eventueel anderen in en rond het besmette"
-" water uitvoeren (bv. hond uitlaten, vissen, joggen, etc.). Blauwalgen "
-"vormen met name een groter risico voor zwemmers of windsurfers (rechtstreeks"
-" contact met water) dan voor wandelaars of joggers. Ze kunnen tevens een "
+"Naast het insturen van foto’s en details van de locatie vragen we u om aan "
+"te geven welke activiteiten u en eventueel anderen in en rond het besmette "
+"water uitvoeren (bv. hond uitlaten, vissen, joggen, etc.). Blauwalgen vormen"
+" met name een groter risico voor zwemmers of windsurfers (rechtstreeks "
+"contact met water) dan voor wandelaars of joggers. Ze kunnen tevens een "
 "groot risico vormen voor huisdieren of vee die van het besmette water "
 "drinken. Door dit soort informatie te verzamelen, pogen we beter te "
 "begrijpen hoe erg blauwalgenbloei de waterrecreatie beïnvloedt. "
 
 # About Bloomin’ Algae info page content
 msgid "<0>Privacy policy</0>"
-msgstr "<0>Privacy beleid</0>"
+msgstr "<0>Privacybeleid</0>"
 
 # What are blue-green algae info page title
 msgid "What are blue-green algae?"
@@ -245,7 +245,7 @@ msgid ""
 "If you are a pet owner you can find further information from the <2>Blue "
 "Cross</2>."
 msgstr ""
-"Wanneer je de eigenaar bent van een huisdier kan je voor meer informatie "
+"Wanneer u de eigenaar bent van een huisdier kan u voor meer informatie "
 "terecht bij <2>Vet Emergency</2>."
 
 # Health Risk info page title
@@ -254,7 +254,7 @@ msgid ""
 "contaminated with blue-green algae, we’d recommend you seek immediate "
 "medical or veterinary advice.</0>"
 msgstr ""
-"Als jijzelf of je huisdier onwel wordt na contact met blauwalgen wordt "
+"Als uzelf of uw huisdier onwel wordt na contact met blauwalgen wordt "
 "aangeraden om direct medisch of veterinair advies in te winnen. "
 
 # Further action and reporting harmful algal blooms info page title
@@ -277,9 +277,9 @@ msgid ""
 "authority:"
 msgstr ""
 "De verantwoordelijkheid in het bestrijden van blauwalgenbloei ligt bij de "
-"eigenaar van het besmette water. Als je een blauwalgenbloei waarneemt en er "
+"eigenaar van het besmette water. Als u een blauwalgenbloei waarneemt en er "
 "zich nog geen waarschuwingsborden in de omgeving bevinden, wordt aangeraden "
-"om zo snel mogelijk de milieudienst van je stad of gemeente te contacteren. "
+"om zo snel mogelijk de milieudienst van uw stad of gemeente te contacteren. "
 
 # Further action info page content
 msgid ""
@@ -315,7 +315,7 @@ msgid ""
 "assurance; made available for conservation and research and preserved for "
 "long-term use."
 msgstr ""
-"Wanneer je dit logo opmerkt in een biologische waarnemingen app kan je er "
+"Wanneer u dit logo opmerkt in een biologische waarnemingen app kan u er "
 "zeker van zijn dat de ingestuurde data: voor kwaliteitscontrole ter "
 "beschikking worden gesteld aan experten, worden gebruikt voor onderzoek en "
 "worden bewaard voor langdurig gebruik."
@@ -328,9 +328,9 @@ msgid ""
 "of iRecord.</0><1>Quality assured data is passed onto Local Environmental "
 "Records Centres, National Recording Schemes and to the NBN Gateway.</1></1>"
 msgstr ""
-"Dit logo geeft aan dat je informatie: <1><0>naar de Biological Record "
+"Dit logo geeft aan dat uw informatie: <1><0>naar de Biological Record "
 "Centre's dataopslagplaats in het iRecord systeem wordt gestuurd waar het "
-"voor jezelf als waarnemer, voor een expertenpanel van beoordelaars en voor "
+"voor uzelf als waarnemer, voor een expertenpanel van beoordelaars en voor "
 "andere gebruikers van iRecord raadpleegbaar is.</0><1>Geverifieerde "
 "waarnemingen worden doorgestuurd naar Local Environmental Records Centres, "
 "National Recording Schemes en de NBN Gateway.</1></1>"
@@ -371,12 +371,12 @@ msgid ""
 " same place, treated in the same way and will meet the established standards"
 " required by the Biological Record Centre."
 msgstr ""
-"Mogelijks heb je gemerkt dat verschillende <1>BRC apps</1>kunnen gebruikt "
+"Mogelijks hebt u gemerkt dat verschillende <1>BRC apps</1>kunnen gebruikt "
 "worden om dezelfde soorten te registreren? Om aan te tonen dat de data van "
 "al onze apps op dezelfde plaats worden samengebracht, hebben we het 'BRC "
-"goedgekeurd' logo geïntroduceerd. Het staat je daarom vrij om een app te "
-"kiezen waarmee je een bepaalde soort wenst te registreren. Alle waarnemingen"
-" worden naar dezelfde locatie gestuurd, op dezelfde manier behandeld en  "
+"goedgekeurd' logo geïntroduceerd. Het staat u daarom vrij om een app te "
+"kiezen waarmee u een bepaalde soort wenst te registreren. Alle waarnemingen "
+"worden naar dezelfde locatie gestuurd, op dezelfde manier behandeld en  "
 "voldoen aldus aan de gevestigde kwaliteitseisen van het BRC."
 
 # Credit info page title
@@ -451,7 +451,7 @@ msgid ""
 "Are you sure you want to reset the application to its initial "
 "state?<1><0>This will wipe all the locally stored app data!</0></1>"
 msgstr ""
-"Ben je er zeker van dat je de app in zijn oorspronkelijke toestand wil "
+"Bent u er zeker van dat u de app in zijn oorspronkelijke toestand wilt "
 "herstellen?<1><0>Dit zal alle lokaal opgeslagen app data "
 "verwijderen!</0></1>"
 
@@ -470,7 +470,7 @@ msgstr "Ga verder"
 # Start record draft button message
 msgid "Previous record draft exists, would you like to continue it?"
 msgstr ""
-"Er is een eerdere conceptversie van de waarneming beschikbaar, wil je daar "
+"Er is een eerdere conceptversie van de waarneming beschikbaar, wilt u daar "
 "graag mee verder gaan?"
 
 # Record page label
@@ -515,7 +515,7 @@ msgstr "Voer hier meer informatie in..."
 
 # Record activities information message
 msgid "What activities were you doing?"
-msgstr "Welke activiteiten was je aan het uitvoeren?"
+msgstr "Welke activiteiten was u aan het uitvoeren?"
 
 # Record activities content
 msgid "Walking / Running"
@@ -589,7 +589,7 @@ msgid ""
 "swallow, the water."
 msgstr ""
 "Blauwalgen (ook gekend als cyanobacteriën) kunnen de gezondheid van mens en "
-"dier ernstig schaden. Vermijd contact met water waarvan je vermoedt dat het "
+"dier ernstig schaden. Vermijd contact met water waarvan u vermoedt dat het "
 "met blauwalgen is besmet en verhinder dat kinderen of huisdieren deze "
 "bloeien aanraken of inslikken!"
 
@@ -651,7 +651,7 @@ msgstr "App versie"
 
 # Delete record alert message
 msgid "Are you sure you want to delete this record ?"
-msgstr "Ben je zeker om deze waarneming te wissen?"
+msgstr "Bent u zeker om deze waarneming te wissen?"
 
 # More information info page title
 msgid "Using the app"
@@ -664,7 +664,7 @@ msgid ""
 " the app” on the <2>Bloomin’ Algae website</2>."
 msgstr ""
 "Meer informatie over het gebruik van de app, inclusief het installeren van "
-"een notificatiesysteem voor waarnemingen in je buurt, kan je vinden in de "
+"een notificatiesysteem voor waarnemingen in uw buurt, kan u vinden in de "
 "sectie  “Using the app” op de <2>Bloomin’ Algae website</2> (in het Engels)."
 
 # What do we use your records for info page title
@@ -681,6 +681,12 @@ msgid ""
 "environment agencies and water companies in water quality risk management "
 "and prevention.</4></0>"
 msgstr ""
+"<0><0>Voor het inlichten van de lokale autoriteiten zodat snel publieke "
+"waarschuwingsborden kunnen worden geplaatst. </0><br/><2>Voor "
+"wetenschappelijk onderzoek om de kennis over het tijdstip en de locatie van "
+"blauwalgenbloei te vergroten en om beter te begrijpen hoe klimaatverandering"
+" hierop inspeelt. </2><br/><4>Voor het ondersteunen van de bevoegde "
+"instanties inzake waterkwaliteitsrisicobeheer en preventie. </4></0>"
 
 # Record upload button label
 msgid "Upload"
@@ -703,8 +709,8 @@ msgid ""
 "By clicking “I Understand” you agree that you have read and understood this "
 "warning"
 msgstr ""
-"Door op “Ik begrijp het” te klikken geef je aan dat je deze waarschuwing "
-"hebt gelezen en begrepen. "
+"Door op “Ik begrijp het” te klikken geeft u aan dat u deze waarschuwing hebt"
+" gelezen en begrepen. "
 
 # onBoarding page content
 msgid "I Understand"
@@ -733,19 +739,19 @@ msgid ""
 "warnings to minimise risks to public and animal health. Thanks for taking "
 "part!"
 msgstr ""
-"Bloomin’ Algae is een Citizen Science app waarmee je de aanwezigheid van "
+"Bloomin’ Algae is een Citizen Science app waarmee u de aanwezigheid van "
 "blauwalgenbloei (ook gekend als cyanobacteriën) kan rapporteren. De "
-"waarnemingen die je doorgeeft helpen niet alleen het algemene bewustzijn te "
-"vergroten maar ook het waarschuwingsproces te versnellen zodat de risico’s "
-"voor mens en dier worden beperkt. Bedankt om hieraan mee te helpen!"
+"waarnemingen die u doorgeeft helpen het waarschuwingsproces te versnellen "
+"zodat de risico’s voor mens en dier worden beperkt. Bedankt om hieraan mee "
+"te helpen!"
 
 # Record map toggle
 msgid "See past 12 months"
-msgstr ""
+msgstr "Laatste 12 maanden"
 
 # Record map toggle
 msgid "The default setting is the past 4 weeks of records."
-msgstr ""
+msgstr "Waarnemingen van de laatste 4 weken is de standaardinstelling."
 
 # Record map toggle
 msgid "Please confirm this is your correct location."
@@ -769,146 +775,151 @@ msgstr "geverifieerd"
 
 # Part of User authentication page
 msgid "Register/Login"
-msgstr ""
+msgstr "Registreer/Login"
 
 # Part of User authentication page
 msgid "Create a free account"
-msgstr ""
+msgstr "Creëer een gratis account"
 
 # Part of User authentication page
 msgid "First name"
-msgstr ""
+msgstr "Voornaam"
 
 # Part of User authentication page
 msgid "Last name"
-msgstr ""
+msgstr "Achternaam"
 
 # Part of User authentication page
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 # Part of User authentication page
 msgid "Password"
-msgstr ""
+msgstr "Paswoord"
 
 # Part of User authentication page
 msgid ""
 "By clicking Sign Up, you agree to our <2>Privacy Policy</2> and <6>Terms and"
 " Conditions</6>"
 msgstr ""
+"Door te klikken op Aanmelden gaat u akkoord met <2>ons Privacybeleid</2> en "
+"<6>onze Voorwaarden</6>"
 
 # Part of User authentication page
 msgid "Sign Up"
-msgstr ""
+msgstr "Aanmelden"
 
 # Part of User authentication page
 msgid "I am already a member"
-msgstr ""
+msgstr "Ik ben al lid."
 
 # Part of User authentication page
 msgid "Sign In"
-msgstr ""
+msgstr "Inloggen"
 
 # part of User authentication page
 msgid "Welcome back"
-msgstr ""
+msgstr "Welkom terug"
 
 # Part of User authentication page
 msgid "Sign in to your account to start"
-msgstr ""
+msgstr "Log in op uw account om te beginnen"
 
 # Part of User authentication page
 msgid "Forgot password?"
-msgstr ""
+msgstr "Paswoord vergeten?"
 
 # Part of User authentication page
 msgid "firstName is a required field"
-msgstr ""
+msgstr "Voornaam is een verplicht veld"
 
 # Part of User authentication page
 msgid "Enter your email address to request a password reset."
 msgstr ""
+"Voer uw e-mailadres in om het resetten van uw ​​wachtwoord aan te vragen."
 
 # Part of User authentication page
 msgid "email is a required field"
-msgstr ""
+msgstr "e-mail is een verplicht veld"
 
 # Part of User authentication page
 msgid "password is a required field"
-msgstr ""
+msgstr "paswoord is een verplicht veld"
 
 # Part of User authentication page
 msgid "secondName is a required field"
-msgstr ""
+msgstr "Achternaam is een verplicht veld"
 
 # User authentication alert
 msgid "Logout"
-msgstr ""
+msgstr "Uitloggen"
 
 # User authentication alert
 msgid "Are you sure you want to logout?"
-msgstr ""
+msgstr "Weet u zeker dat u wilt uitloggen?"
 
 # User authentication alert
 msgid "Discard local data"
-msgstr ""
+msgstr "Verwijder lokale gegevens"
 
 # User authentication alert
 msgid "Please wait..."
-msgstr ""
+msgstr "Wacht even a.u.b."
 
 # Survey header button
 msgid "Finish"
-msgstr ""
+msgstr "Afronden"
 
 # Survey camera options
 msgid "Survey incomplete"
-msgstr ""
+msgstr "Onvolledige waarneming"
 
 # Survey camera options
 msgid "Choose a method to upload a photo"
-msgstr ""
+msgstr "Kies een methode om een foto op te laden"
 
 # Survey camera options
 msgid "Gallery"
-msgstr ""
+msgstr "Gallerij"
 
 # Survey camera options
 msgid "Camera"
-msgstr ""
+msgstr "Camera"
 
 # User-surveys page background message
 msgid "Please do not forget to upload any pending surveys!"
-msgstr ""
+msgstr "Vergeet a.u.b. niet om de lopende waarnemingen op te laden!"
 
 # All records page tip
 msgid "OK, got it"
-msgstr ""
+msgstr "Ok, begrepen"
 
 # Error messages from server for user account actions
 msgid "Sorry"
-msgstr ""
+msgstr "Sorry"
 
 # Error messages from server for user account actions
 msgid "Unauthorized"
-msgstr ""
+msgstr "Niet toegestaan"
 
 # Error messages from server for user account actions
 msgid "Not found"
-msgstr ""
+msgstr "Niet gevonden"
 
 # Error messages from server for user account actions
 msgid "Bad Request"
-msgstr ""
+msgstr "Foutief verzoek"
 
 # Verification message
 msgid ""
 "Some of your records have been verified. Please check your records list."
 msgstr ""
+"Sommige van uw waarnemingen zijn geverifieerd. Controleer uw lijst met "
+"waarnemingen."
 
 # Record date stamp
 msgid "Yesterday"
-msgstr ""
+msgstr "Gisteren"
 
 # Verification message
 msgid ""
@@ -926,14 +937,26 @@ msgid ""
 "app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
 "Hydrology</p></1></0>"
 msgstr ""
+"<0><p>Hartelijk dank voor het doorsturen van uw waarneming - dit lijkt zeer "
+"sterk op een blauwalgenbloei (ook gekend als cyanobacteriën), we hebben uw "
+"waarneming dan ook als \"correct beschouwd\" beoordeeld. </p><1><p>Deze "
+"drijflagen vormen een hoog gezondheidsrisico voor mens en dier - in het "
+"bijzonder voor honden. Als dit een openbare plaats betreft, controleer dan "
+"of er reeds waarschuwingsborden zijn geplaatst. Als dit niet het geval is, "
+"neem dan zo snel mogelijk contact op met de plaatselijke "
+"milieudienst.</p><p>Vermijd alle contact met het water of de drijflaag langs"
+" of op de oever. Als u of uw huisdier onwel wordt na contact met het water, "
+"raden we u aan onmiddellijk medisch of veterinair advies in te "
+"winnen.</p><p>Nogmaals bedankt voor het gebruik van de app!</p><p>Het "
+"Bloomin'Algae team van het UK Centre for Ecology & Hydrology</p></1></0>"
 
 # Verification message
 msgid "READ MORE"
-msgstr ""
+msgstr "LEES MEER"
 
 # Verification message header
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 # Verification message
 msgid ""
@@ -952,6 +975,20 @@ msgid ""
 "advice.</p><p>Thanks again for using the app!</p><p>The Bloomin'Algae team "
 "at the UK Centre for Ecology & Hydrology</p></2></0>"
 msgstr ""
+"<0><p>Hartelijk dank voor het doorsturen van uw waarneming via de "
+"Bloomin'Algae app.</p><p>Op basis van uw foto's denken we niet dat het "
+"blauwalgen (cyanobacteriën) betreft.</p><2><p>We kunnen natuurlijk niet "
+"uitsluiten dat er blauwalgen aanwezig zijn op de locatie, maar ze zijn "
+"alleszins niet duidelijk zichtbaar op de foto.</p><p>Onze fotogids in de app"
+" kan helpen bij de identificatie. Op onze website wordt ook een eenvoudige "
+"stoktest beschreven die u kan gebruiken om eendenkroos of draadalgen, die "
+"dikwijls worden verward met blauwalgen, uit te sluiten:  "
+"https://www.ceh.ac.uk/algal-blooms/bloomin-algae</p><p>Als u ergens een "
+"bloei vermoedt, vermijd dan a.u.b. elk contact met het water of de drijflaag"
+" langs de oever. Als u of uw huisdier onwel wordt na contact met het water, "
+"raden we u aan onmiddellijk medisch of veterinair advies in te "
+"winnen.</p><p>Nogmaals bedankt voor het gebruik van de app!</p><p>Het "
+"Bloomin'Algae team van het UK Centre for Ecology & Hydrology</p></2></0>"
 
 # Verification message
 msgid ""
@@ -968,6 +1005,18 @@ msgid ""
 "app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
 "Hydrology</p></2></0>"
 msgstr ""
+"<0><p>Hartelijk dank voor het doorsturen van uw waarneming via de "
+"Bloomin'Algae app.</p><p>We hebben deze waarneming verworpen omdat we "
+"vermoeden dat de locatie niet correct is. Kan u uw waarneming controleren en"
+" een nieuwe waarneming  met de correcte locatie indienen "
+"a.u.b.?</p><2><p>Bekijk a.u.b. onze website voor verdere hulp bij het "
+"gebruik van de app en bij het identificeren van blauwalgenbloeien: "
+"https://www.ceh.ac.uk/algal-blooms/bloomin-algae</p><p>Als u ergens een "
+"bloei vermoedt, vermijd dan a.u.b. elk contact met het water of de drijflaag"
+" langs de oever. Als u of uw huisdier onwel wordt na contact met het water, "
+"raden we u aan onmiddellijk medisch of veterinair advies in te "
+"winnen.</p><p>Nogmaals bedankt voor het gebruik van de app!</p><p>Het "
+"Bloomin'Algae team van het UK Centre for Ecology & Hydrology</p></2></0>"
 
 # Verification message
 msgid ""
@@ -983,4 +1032,24 @@ msgid ""
 "recommend you seek immediate medical or veterinary advice.</p><p>Thanks "
 "again for using the app!</p><p>The Bloomin'Algae team at the UK Centre for "
 "Ecology & Hydrology</p></2></0>"
+msgstr ""
+"<0><p>Hartelijk dank voor het doorsturen van uw waarneming via de "
+"Bloomin'Algae app. Uw foto is helaas te onduidelijk om een beslissing te "
+"kunnen nemen.</p><p>Kan u a.u.b. een nieuwe waarneming doorsturen met een "
+"foto dichterbij het water (indien mogelijk op ongeveer 30-50 cm afstand van "
+"het wateroppervlak of de drijflaag langs de oever).</p><2><p>Bekijk a.u.b. "
+"onze website voor verdere hulp bij het identificeren van blauwalgenbloeien: "
+"https://www.ceh.ac.uk/algal-blooms/bloomin-algae</p><p>Als u ergens een "
+"bloei vermoedt, vermijd dan a.u.b. elk contact met het water of de drijflaag"
+" langs de oever. Als u of uw huisdier onwel wordt na contact met het water, "
+"raden we u aan onmiddellijk medisch of veterinair advies in te "
+"winnen.</p><p>Nogmaals bedankt voor het gebruik van de app!</p><p>Het "
+"Bloomin'Algae team van het UK Centre for Ecology & Hydrology</p></2></0>"
+
+# Context term
+msgid "Are you sure you want to remove this photo?"
+msgstr ""
+
+# Context term
+msgid "Note: it will remain in the gallery."
 msgstr ""
