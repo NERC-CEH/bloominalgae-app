@@ -677,7 +677,7 @@ msgstr ""
 # onBoarding content
 msgid ""
 "Bloomin’ Algae is a Citizen Science app for reporting the presence of "
-"harmful blooms of blue-green algae . The records you send in help speed up "
+"harmful blooms of blue-green algae. The records you send in help speed up "
 "warnings to minimise risks to public and animal health. Thanks for taking "
 "part!"
 msgstr ""
