@@ -218,6 +218,12 @@ class Component extends React.Component {
 
           {this.getVerificationMessage()}
 
+          {isDisabled && (
+            <InfoMessage className="uploaded-message">
+              This record has been uploaded and can not be edited.
+            </InfoMessage>
+          )}
+
           <PhotoPicker
             model={occ}
             ImageClass={image}

@@ -45,6 +45,14 @@
     }
   }
 
+  .uploaded-message {
+    --border-width: 0;
+
+    ion-label {
+      padding: 10px 0;
+    }
+  }
+
   .photo-picker {
     border-top: 1px solid #cccccc;
   }

@@ -691,3 +691,7 @@ msgstr "Are you sure you want to remove this photo?"
 # Part of photo picker
 msgid "Note: it will remain in the gallery."
 msgstr "Note: it will remain in the gallery."
+
+# Uploaded record message
+msgid "This record has been uploaded and can not be edited."
+msgstr "This record has been uploaded and can not be edited."
