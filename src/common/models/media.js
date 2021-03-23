@@ -51,13 +51,20 @@ export default class AppMedia extends Media {
   }
 
   getURL() {
-    const { data: name } = this.attrs;
+    const { data: name, path } = this.attrs;
 
     if (!Capacitor.isNative || window.testing) {
       return name;
     }
 
-    return Capacitor.convertFileSrc(`${config.dataPath}/${name}`);
+    let pathToFile = path;
+
+    // backwards compatible
+    if (!pathToFile) {
+      pathToFile = config.dataPath.replace('/Documents/', '/Library/NoCloud/');
+    }
+
+    return Capacitor.convertFileSrc(`${pathToFile}/${name}`);
   }
 
   // eslint-disable-next-line class-methods-use-this
