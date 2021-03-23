@@ -235,7 +235,7 @@ class Component extends React.Component {
           />
 
           <MenuAttrItemFromModel attr="date" model={sample} />
-          <MenuAttrItemFromModel attr="bloom-size" model={sample} />
+          <MenuAttrItemFromModel attr="size" model={sample} />
 
           <MenuAttrItem
             routerLink={`${match.url}/activities`}
@@ -246,7 +246,11 @@ class Component extends React.Component {
             disabled={isDisabled}
           />
 
-          <MenuAttrItemFromModel attr="comment" model={sample} />
+          <MenuAttrItemFromModel
+            attr="comment"
+            model={occ}
+            routerLink={`${match.url}/${occ.cid}/comment`}
+          />
         </IonList>
       </Main>
     );

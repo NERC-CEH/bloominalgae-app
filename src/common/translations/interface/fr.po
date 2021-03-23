@@ -499,7 +499,7 @@ msgid "Swimming"
 msgstr "Nager"
 
 # Record activities content
-msgid "Boats / Water sports"
+msgid "Boats / Watersports"
 msgstr ""
 
 # Record activities content

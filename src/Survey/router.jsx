@@ -35,6 +35,7 @@ const routes = [
   [`${baseURL}`, StartNewSurvey.with(survey), true],
   [`${baseURL}/:smpId/`, HomeWrap],
   [`${baseURL}/:smpId/:attr`, Attr],
+  [`${baseURL}/:smpId/:occId/:attr`, Attr],
   [`${baseURL}/:smpId/location`, ModelLocationWrap],
 ];
 

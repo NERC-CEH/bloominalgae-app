@@ -540,7 +540,7 @@ msgid "Swimming"
 msgstr "Zwemmen"
 
 # Record activities content
-msgid "Boats / Water sports"
+msgid "Boats / Watersports"
 msgstr "Bootje varen/Watersporten"
 
 # Record activities content

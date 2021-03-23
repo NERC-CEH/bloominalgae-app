@@ -329,8 +329,8 @@ msgid "Swimming"
 msgstr "Swimming"
 
 # Record activities content
-msgid "Boats / Water sports"
-msgstr "Boats / Water sports"
+msgid "Boats / Watersports"
+msgstr "Boats / Watersports"
 
 # Record activities content
 msgid "Other"

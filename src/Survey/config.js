@@ -49,8 +49,8 @@ const activitiesValues = [
   { value: 'user_Fishing', label: 'Fishing', id: 10642 },
   { value: 'user_Swimming', label: 'Swimming', id: 10643 },
   {
-    value: 'user_Boats / Water sports',
-    label: 'Boats / Water sports',
+    value: 'user_Boats / Watersports',
+    label: 'Boats / Watersports',
     id: 10644,
   },
   { value: 'user_Other', label: 'Other', id: 10645 },
@@ -65,8 +65,8 @@ const activitiesValues = [
   { value: 'Fishing', label: 'Fishing', id: 10642 },
   { value: 'Swimming', label: 'Swimming', id: 10643 },
   {
-    value: 'Boats / Water sports ',
-    label: 'Boats / Water sports',
+    value: 'Boats / Watersports',
+    label: 'Boats / Watersports',
     id: 10644,
   },
   { value: 'Other', label: 'Other', id: 10645 },
@@ -130,7 +130,7 @@ const survey = {
       },
     },
 
-    'bloom-size': {
+    size: {
       type: 'radio',
       label: 'Bloom Size',
       icon: expandOutline,
@@ -177,14 +177,6 @@ const survey = {
         },
       },
     },
-
-    comment: {
-      icon: chatboxEllipsesOutline,
-      label: 'Comment',
-      type: 'textarea',
-      info: 'Please add any extra info about this record.',
-      skipValueTranslation: true,
-    },
   },
 
   occ: {
@@ -194,6 +186,14 @@ const survey = {
           id: 'taxa_taxon_list_id',
           values: taxon => taxon.Cyanobacteria,
         },
+      },
+
+      comment: {
+        icon: chatboxEllipsesOutline,
+        label: 'Comment',
+        type: 'textarea',
+        info: 'Please add any extra info about this record.',
+        skipValueTranslation: true,
       },
     },
 
@@ -247,7 +247,7 @@ const survey = {
 
       attrs: {
         location_type: 'latlon',
-        'bloom-size': null,
+        size: null,
         location: null,
         activities: [],
       },
