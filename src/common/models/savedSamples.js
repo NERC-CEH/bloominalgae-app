@@ -39,6 +39,7 @@ function migrateDataToAppVersion2() {
     try {
       if (Number.isFinite(sample.occurrences[0].attrs.taxon)) {
         console.log('Migrating occurrence');
+        // eslint-disable-next-line
         sample.occurrences[0].attrs.taxon = {
           warehouseId: 400349,
         };
