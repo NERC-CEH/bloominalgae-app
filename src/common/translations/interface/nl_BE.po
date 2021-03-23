@@ -1046,10 +1046,10 @@ msgstr ""
 "winnen.</p><p>Nogmaals bedankt voor het gebruik van de app!</p><p>Het "
 "Bloomin'Algae team van het UK Centre for Ecology & Hydrology</p></2></0>"
 
-# Context term
+# Part of photo picker
 msgid "Are you sure you want to remove this photo?"
 msgstr ""
 
-# Context term
+# Part of photo picker
 msgid "Note: it will remain in the gallery."
 msgstr ""

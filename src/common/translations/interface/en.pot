@@ -683,3 +683,11 @@ msgstr "<0><p>Thanks for sending in your record using the Bloomin'Algae app.</p>
 # Verification message
 msgid "<0><p>Thanks for sending in your record using the Bloomin'Algae app. Your photo is unfortunately not clear enough to make a decision.</p><p>Please could you send in a new record with a closer photo of the water (if possible, about 30-50 cm from the water surface and/or any surface scums).</p><2><p>Please see our website for further help with identifying blooms of blue-green algae : https://www.ceh.ac.uk/algal-blooms/bloomin-algae</p><p>If you do suspect a bloom at any site, please avoid contact with the water or any shoreline scum. If you, or your pet, become unwell after contact with water that may be contaminated with blue-green algae, we’d recommend you seek immediate medical or veterinary advice.</p><p>Thanks again for using the app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & Hydrology</p></2></0>"
 msgstr "<0><p>Thanks for sending in your record using the Bloomin'Algae app. Your photo is unfortunately not clear enough to make a decision.</p><p>Please could you send in a new record with a closer photo of the water (if possible, about 30-50 cm from the water surface and/or any surface scums).</p><2><p>Please see our website for further help with identifying blooms of blue-green algae : https://www.ceh.ac.uk/algal-blooms/bloomin-algae</p><p>If you do suspect a bloom at any site, please avoid contact with the water or any shoreline scum. If you, or your pet, become unwell after contact with water that may be contaminated with blue-green algae, we’d recommend you seek immediate medical or veterinary advice.</p><p>Thanks again for using the app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & Hydrology</p></2></0>"
+
+# Part of photo picker
+msgid "Are you sure you want to remove this photo?"
+msgstr "Are you sure you want to remove this photo?"
+
+# Part of photo picker
+msgid "Note: it will remain in the gallery."
+msgstr "Note: it will remain in the gallery."

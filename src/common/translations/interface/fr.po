@@ -928,10 +928,10 @@ msgid ""
 "Ecology & Hydrology</p></2></0>"
 msgstr ""
 
-# Context term
+# Part of photo picker
 msgid "Are you sure you want to remove this photo?"
 msgstr ""
 
-# Context term
+# Part of photo picker
 msgid "Note: it will remain in the gallery."
 msgstr ""
