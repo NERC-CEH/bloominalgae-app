@@ -32,6 +32,7 @@ const Credits = () => (
             <li>Karolis Kazlauskis (Flumens)</li>
             <li>Vilius Stankaitis (Flumens)</li>
             <li>Jan Krokowski (SEPA)</li>
+            <li>Jeroen Van Wichelen (INBO)</li>
           </ul>
         </P>
         <P>
