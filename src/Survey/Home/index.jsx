@@ -66,7 +66,7 @@ class Controller extends React.Component {
       return;
     }
 
-    const isLoggedIn = !!userModel.attrs.id;
+    const isLoggedIn = !!userModel.attrs.email;
     if (!isLoggedIn) {
       this.context.navigate(`/user/register`);
       return;

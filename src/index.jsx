@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { setupConfig, isPlatform } from '@ionic/react';
 import appModel from 'appModel';
+import userModel from 'userModel';
 import savedSamples from 'savedSamples';
 import { Plugins, StatusBarStyle } from '@capacitor/core';
 import i18n from 'i18next';
@@ -33,7 +34,7 @@ setupConfig({
 
 async function init() {
   await appModel._init;
-  // await userModel._init; // TODO:
+  await userModel._init;
   await savedSamples._init;
 
   initAnalytics({
@@ -41,7 +42,7 @@ async function init() {
     environment: config.environment,
     build: config.build,
     release: config.version,
-    // userId: userModel.attrs.id, // TODO:
+    userId: userModel.attrs.id,
     tags: {
       'app.appSession': appModel.attrs.appSession,
     },

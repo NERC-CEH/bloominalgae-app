@@ -13,11 +13,11 @@ function migrateDataToAppVersion2() {
       if (!Array.isArray(sample.attrs.activities)) {
         console.log('Migrating sample');
         let activities = [];
-        if (sample.attrs.activities.others) {
+        if (sample.attrs.activities && sample.attrs.activities.others) {
           activities = [...sample.attrs.activities.others];
         }
 
-        if (sample.attrs.activities.personal) {
+        if (sample.attrs.activities && sample.attrs.activities.personal) {
           const prependUser = activity => `user_${activity}`;
           activities = [
             ...activities,

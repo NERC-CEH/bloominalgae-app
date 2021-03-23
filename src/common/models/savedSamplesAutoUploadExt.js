@@ -20,9 +20,9 @@ export default function init(savedSamples, userModel) {
 
   const uploadFinishedSurveysAndListenForLogin = () => {
     const uploadIfLoggedIn = isLoggedIn => isLoggedIn && uploadAllFinished();
-    uploadIfLoggedIn(userModel.attrs.id);
+    uploadIfLoggedIn(userModel.attrs.email);
 
-    const listenToUserLogin = () => userModel.attrs.id;
+    const listenToUserLogin = () => userModel.attrs.email;
     reaction(listenToUserLogin, uploadIfLoggedIn);
   };
 

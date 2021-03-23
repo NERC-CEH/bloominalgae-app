@@ -203,4 +203,28 @@ const defaults = {
 };
 
 const userModel = new UserModel(genericStore, 'user', defaults);
+
+function migrateDataToAppVersion2() {
+  try {
+    const oldUserRaw = localStorage.getItem('bloominalgae-app-user');
+    if (oldUserRaw) {
+      console.log('Migrating user');
+
+      const oldUser = JSON.parse(oldUserRaw);
+      userModel.attrs.firstName = oldUser.firstname;
+      userModel.attrs.secondName = oldUser.secondname;
+      userModel.attrs.indiciaUserId = oldUser.drupalID;
+      userModel.attrs.password = oldUser.password;
+      userModel.attrs.email = oldUser.email; // has to be last - record auto sync might kick in
+      userModel.save();
+
+      localStorage.removeItem('bloominalgae-app-user');
+      console.log('Migrating user done', userModel.attrs);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+}
+userModel._init.then(migrateDataToAppVersion2);
+
 export { userModel as default, UserModel };

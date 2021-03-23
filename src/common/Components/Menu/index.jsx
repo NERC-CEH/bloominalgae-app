@@ -183,7 +183,7 @@ const Menu = ({ userModel, savedSamples }) => {
 
   const getRoutes = routesList => renderMenuRoutes(routesList, location);
 
-  const isLoggedIn = !!userModel.attrs.id;
+  const isLoggedIn = !!userModel.attrs.email;
 
   const isUserLoggedIn = isLoggedIn
     ? getLogoutButton(userModel, savedSamples)
