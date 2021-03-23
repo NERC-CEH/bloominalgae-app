@@ -34,6 +34,22 @@ function migrateDataToAppVersion2() {
     }
   };
   savedSamples.forEach(changeActivitiesFormat);
+
+  const changeTaxonId = sample => {
+    try {
+      if (Number.isFinite(sample.occurrences[0].attrs.taxon)) {
+        console.log('Migrating occurrence');
+        sample.occurrences[0].attrs.taxon = {
+          warehouseId: 400349,
+        };
+        console.log('Migrated');
+        sample.save();
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  savedSamples.forEach(changeTaxonId);
 }
 savedSamples._init.then(migrateDataToAppVersion2);
 
