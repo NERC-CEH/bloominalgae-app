@@ -285,9 +285,7 @@ msgstr ""
 msgid ""
 "For more information and advice on algal blooms see:<br/><br/><3>England & "
 "Wales</3><br/><br/><6>Scotland</6>"
-msgstr ""
-"Voor meer informatie en advies over algenbloeien zie: "
-"<br/><br/><3>Vlaanderen</3><br/><br/><6>Brussel</6>Wallonië"
+msgstr "<></>"
 
 # Further action info page content
 msgid ""
