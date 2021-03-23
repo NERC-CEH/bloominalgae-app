@@ -184,7 +184,7 @@ const survey = {
       taxon: {
         remote: {
           id: 'taxa_taxon_list_id',
-          values: taxon => taxon.Cyanobacteria,
+          values: ({ warehouseId }) => warehouseId,
         },
       },
 
@@ -201,7 +201,7 @@ const survey = {
       return new Occurrence({
         attrs: {
           taxon: {
-            Cyanobacteria: 400349,
+            warehouseId: 400349, // Cyanobacteria
           },
         },
       });
