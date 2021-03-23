@@ -59,6 +59,7 @@ class Component extends React.Component {
         <IonList lines="full">
           <MenuAttrItem
             routerLink="/settings/language"
+            routerOptions={{ unmount: true }} // Pick a new language on return
             value={selectedLanguage.label}
             label="Language"
             icon={flagOutline}
