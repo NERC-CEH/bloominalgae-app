@@ -39,7 +39,8 @@ const Survey = ({ sample }) => {
   const survey = sample.getSurvey();
 
   const [occ] = sample.occurrences;
-  const speciesPhoto = occ.media.length ? occ.media[0].getURL() : null;
+
+  const speciesPhoto = occ.media.length ? occ.media[0].attrs.thumbnail : null;
 
   const href = `/${survey.name}/start/${sample.cid}`;
 
