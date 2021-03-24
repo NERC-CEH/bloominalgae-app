@@ -3,7 +3,7 @@ import { Header, Page, Main, Section } from '@apps';
 import cehLogo from './ceh_logo.png';
 import './styles.scss';
 
-const { H, P } = Section;
+const { P } = Section;
 
 const Credits = () => (
   <Page id="credits">
@@ -51,11 +51,9 @@ const Credits = () => (
         </P>
       </Section>
 
-      <H skipTranslation lines="none">
-        <a href="https://www.ceh.ac.uk/">
-          <img src={cehLogo} alt="sponsor-logo" />
-        </a>
-      </H>
+      <a className="logo" href="https://www.ceh.ac.uk/">
+        <img src={cehLogo} alt="sponsor-logo" />
+      </a>
     </Main>
   </Page>
 );

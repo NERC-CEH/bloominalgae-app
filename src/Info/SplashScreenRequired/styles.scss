@@ -1,4 +1,7 @@
 @mixin slide {
+  background-size: cover;
+  background-position: center;
+
   .slide-header {
     background-size: cover;
     height: 100%;
@@ -48,7 +51,6 @@
         &.blur {
           position: absolute;
           width: 100%;
-          min-height: 35%;
           -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
           background-color: rgba(255, 255, 255, 0.563);
@@ -155,6 +157,7 @@
         font-weight: 500;
         color: var(--ion-color-secondary-contrast);
         text-transform: uppercase;
+        --box-shadow: none;
       }
     }
   }
@@ -170,6 +173,7 @@
       height: 50px;
       width: 50px;
       margin: 10px;
+      --box-shadow: none;
 
       background: var(--ion-color-secondary);
       color: var(--ion-color-light);

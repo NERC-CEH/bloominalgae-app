@@ -7,6 +7,13 @@
     width: 100%;
     padding: 10px;
     border-bottom: none;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #card {
+    max-width: 600px;
+    margin: 0 auto;
   }
 
   ion-item-divider.ios {
@@ -15,5 +22,6 @@
 
   .info-message {
     margin-bottom: 10px;
+    max-width: none;
   }
 }
