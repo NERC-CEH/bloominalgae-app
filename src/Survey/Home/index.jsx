@@ -56,14 +56,28 @@ class Controller extends React.Component {
     return new Promise(askToVerifyLocationWrap);
   };
 
-  _processSubmission = () => {
-    const { sample, userModel } = this.props;
+  onFinish = async () => {
+    const { sample, appModel, userModel, match } = this.props;
 
     const invalids = sample.validateRemote();
-
     if (invalids) {
       showInvalidsMessage(invalids);
       return;
+    }
+
+    const isDraft = !sample.metadata.saved;
+    if (isDraft) {
+      const isLocationValid = await this.askToVerifyLocation();
+      if (!isLocationValid) {
+        this.context.navigate(`${match.url}/location`);
+        return;
+      }
+
+      appModel.attrs['draftId:survey'] = null;
+      await appModel.save();
+
+      sample.metadata.saved = true;
+      sample.save();
     }
 
     const isLoggedIn = !!userModel.attrs.email;
@@ -75,41 +89,6 @@ class Controller extends React.Component {
     sample.saveRemote();
 
     this.context.navigate(`/home/surveys`, 'root');
-  };
-
-  _processDraft = async () => {
-    const { appModel, sample, match } = this.props;
-
-    const invalids = sample.validateRemote();
-    if (invalids) {
-      showInvalidsMessage(invalids);
-      return;
-    }
-
-    const isLocationValid = await this.askToVerifyLocation();
-    if (!isLocationValid) {
-      this.context.navigate(`${match.url}/location`);
-      return;
-    }
-
-    appModel.attrs['draftId:survey'] = null;
-    await appModel.save();
-
-    sample.metadata.saved = true;
-    sample.save();
-
-    this.context.navigate(`/home/surveys`, 'root');
-  };
-
-  onFinish = async () => {
-    const { sample } = this.props;
-
-    if (!sample.metadata.saved) {
-      await this._processDraft();
-      return;
-    }
-
-    await this._processSubmission();
   };
 
   resetGPS = () => {
