@@ -1,8 +1,8 @@
-# 
+#
 # Translators:
 # Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021
 # Karolis, 2021
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
@@ -48,7 +48,7 @@ msgstr ""
 "identificatie, gelieve de waarneming toch in te voeren."
 
 # Guide page label
-msgid "Blue-Green Algae Blooms"
+msgid "Examples of Blue-green Algae Blooms"
 msgstr "Blauwalgbloeien"
 
 # Guide page card label
@@ -73,7 +73,7 @@ msgid "Turquoise colour sometimes visible when decaying"
 msgstr "Soms turquoise kleur zichtbaar tijdens de ontbinding van de bloei"
 
 # Guide page label
-msgid "Non Blue-Green Algae"
+msgid "Not Blue-Green Algae - duckweed and harmless green algae"
 msgstr "Op blauwalg lijkende 'bloeien'"
 
 # Guide page card label

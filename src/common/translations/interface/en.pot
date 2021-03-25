@@ -37,8 +37,8 @@ msgid "If you are still not sure after looking at this guide please submit the r
 msgstr "If you are still not sure after looking at this guide please submit the record anyway"
 
 # Guide page label
-msgid "Blue-Green Algae Blooms"
-msgstr "Blue-Green Algae Blooms"
+msgid "Examples of Blue-green Algae Blooms"
+msgstr "Examples of Blue-green Algae Blooms"
 
 # Guide page card label
 msgid "Usually green or blue-green in colour"
@@ -57,8 +57,8 @@ msgid "Turquoise colour sometimes visible when decaying"
 msgstr "Turquoise colour sometimes visible when decaying"
 
 # Guide page label
-msgid "Non Blue-Green Algae"
-msgstr "Non Blue-Green Algae"
+msgid "Not Blue-Green Algae - duckweed and harmless green algae"
+msgstr "Not Blue-Green Algae - duckweed and harmless green algae"
 
 # Guide page card label
 msgid "Plants that float but have solid structure such as leaves"

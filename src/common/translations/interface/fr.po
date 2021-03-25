@@ -1,7 +1,7 @@
-# 
+#
 # Translators:
 # Annick Wilmotte <awilmotte@uliege.be>, 2021
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
@@ -47,7 +47,7 @@ msgstr ""
 "quand même votre observation"
 
 # Guide page label
-msgid "Blue-Green Algae Blooms"
+msgid "Examples of Blue-green Algae Blooms"
 msgstr "Les proliférations d'algues bleues"
 
 # Guide page card label
@@ -69,7 +69,7 @@ msgid "Turquoise colour sometimes visible when decaying"
 msgstr "Couleur turquoise parfois visible lors de la décomposition"
 
 # Guide page label
-msgid "Non Blue-Green Algae"
+msgid "Not Blue-Green Algae - duckweed and harmless green algae"
 msgstr ""
 
 # Guide page card label
