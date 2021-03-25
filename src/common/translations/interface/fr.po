@@ -939,3 +939,11 @@ msgstr ""
 # Uploaded record message
 msgid "This record has been uploaded and can not be edited."
 msgstr ""
+
+# Successfully logged in message
+msgid "Successfully logged in"
+msgstr ""
+
+# Photo picker failed to pick photo error message
+msgid "Sorry, we couldn't get the image."
+msgstr ""

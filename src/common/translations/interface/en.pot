@@ -695,3 +695,11 @@ msgstr "Note: it will remain in the gallery."
 # Uploaded record message
 msgid "This record has been uploaded and can not be edited."
 msgstr "This record has been uploaded and can not be edited."
+
+# Successfully logged in message
+msgid "Successfully logged in"
+msgstr "Successfully logged in"
+
+# Photo picker failed to pick photo error message
+msgid "Sorry, we couldn't get the image."
+msgstr "Sorry, we couldn't get the image."
