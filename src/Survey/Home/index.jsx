@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import { IonButton, NavContext, withIonLifeCycle } from '@ionic/react';
-import { Trans as T } from 'react-i18next';
+import { Trans as T, withTranslation } from 'react-i18next';
 import { Page, Header, showInvalidsMessage, alert } from '@apps';
 import MapComponent from '../Components/Map';
 import Main from './Main';
@@ -17,6 +17,7 @@ class Controller extends React.Component {
     appModel: PropTypes.object.isRequired,
     userModel: PropTypes.object.isRequired,
     match: PropTypes.object.isRequired,
+    t: PropTypes.func.isRequired,
   };
 
   askToVerifyLocation = () => {
@@ -98,7 +99,7 @@ class Controller extends React.Component {
   };
 
   render() {
-    const { sample } = this.props;
+    const { sample, t } = this.props;
 
     const isEditing = sample.metadata.saved;
 
@@ -106,7 +107,7 @@ class Controller extends React.Component {
 
     const finishButton = isDisabled ? null : (
       <IonButton onClick={this.onFinish}>
-        {isEditing ? 'Upload' : 'Finish'}
+        {isEditing ? t('Upload') : t('Finish')}
       </IonButton>
     );
 
@@ -123,4 +124,4 @@ class Controller extends React.Component {
   }
 }
 
-export default withIonLifeCycle(Controller);
+export default withTranslation()(withIonLifeCycle(Controller));

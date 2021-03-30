@@ -1,13 +1,13 @@
 # 
 # Translators:
-# Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021
 # Karolis, 2021
 # Vilius Stankaitis <vilius@flumens.io>, 2021
+# Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Vilius Stankaitis <vilius@flumens.io>, 2021\n"
+"Last-Translator: Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021\n"
 "Language-Team: Dutch (Belgium) (https://www.transifex.com/ceh/teams/116164/nl_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -75,7 +75,9 @@ msgstr "Soms turquoise kleur zichtbaar tijdens de ontbinding van de bloei"
 
 # Guide page label
 msgid "Not Blue-Green Algae - duckweed and harmless green algae"
-msgstr "Op blauwalg lijkende 'bloeien'"
+msgstr ""
+"Op blauwalg lijkende 'bloeien' zoals eendekroos en draadalgen - deze bloeien"
+" betreffen dus geen blauwalgen en hoeft U dus niet in te geven"
 
 # Guide page card label
 msgid "Plants that float but have solid structure such as leaves"
@@ -286,7 +288,8 @@ msgstr ""
 msgid ""
 "For more information and advice on algal blooms see:<br/><br/><3>England & "
 "Wales</3><br/><br/><6>Scotland</6>"
-msgstr "<></>"
+msgstr ""
+"Meer informatie over blauwalgen is terug te vinden op volgende websites:"
 
 # Further action info page content
 msgid ""
@@ -1047,20 +1050,20 @@ msgstr ""
 
 # Part of photo picker
 msgid "Are you sure you want to remove this photo?"
-msgstr ""
+msgstr "Bent U zeker om deze foto te verwijderen?"
 
 # Part of photo picker
 msgid "Note: it will remain in the gallery."
-msgstr ""
+msgstr "Noot: het zal in de fotogalerij blijven."
 
 # Uploaded record message
 msgid "This record has been uploaded and can not be edited."
-msgstr ""
+msgstr "Deze waarneming is opgeladen en kan niet worden bewerkt."
 
 # Successfully logged in message
 msgid "Successfully logged in"
-msgstr ""
+msgstr "Succesvol ingelogd."
 
 # Photo picker failed to pick photo error message
 msgid "Sorry, we couldn't get the image."
-msgstr ""
+msgstr "Het spijt ons, we hebben de afbeelding niet doorgekregen. "

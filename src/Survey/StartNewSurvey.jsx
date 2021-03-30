@@ -7,12 +7,15 @@ import { alert } from '@apps';
 import appModel from 'common/models/appModel';
 import Occurrence from 'common/models/occurrence';
 import savedSamples from 'common/models/savedSamples';
+import { Trans as T } from 'react-i18next';
 
 async function showDraftAlert() {
   const alertWrap = resolve => {
     alert({
       header: 'Draft',
-      message: 'Previous survey draft exists, would you like to continue it?',
+      message: (
+        <T>Previous survey draft exists, would you like to continue it?</T>
+      ),
       backdropDismiss: false,
       buttons: [
         {

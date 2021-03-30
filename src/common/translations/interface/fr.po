@@ -1,11 +1,12 @@
-#
+# 
 # Translators:
 # Annick Wilmotte <awilmotte@uliege.be>, 2021
-#
+# Vilius Stankaitis <vilius@flumens.io>, 2021
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Annick Wilmotte <awilmotte@uliege.be>, 2021\n"
+"Last-Translator: Vilius Stankaitis <vilius@flumens.io>, 2021\n"
 "Language-Team: French (https://www.transifex.com/ceh/teams/116164/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -946,4 +947,8 @@ msgstr ""
 
 # Photo picker failed to pick photo error message
 msgid "Sorry, we couldn't get the image."
+msgstr ""
+
+# Draft record exist message
+msgid "Previous survey draft exists, would you like to continue it?"
 msgstr ""
