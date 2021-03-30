@@ -11,7 +11,7 @@ function Home() {
     <Page id="home-info">
       <Header />
 
-      <Main>
+      <Main forceOverscroll="false">
         <div className="app-home-background">
           <img className="app-logo" src={appLogo} alt="" />
           <IonItemGroup>
