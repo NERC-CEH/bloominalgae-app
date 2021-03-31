@@ -952,3 +952,13 @@ msgstr ""
 # Draft record exist message
 msgid "Previous survey draft exists, would you like to continue it?"
 msgstr ""
+
+# Successfully registration alert message
+msgid "Welcome aboard"
+msgstr ""
+
+# Successfully registration alert message
+msgid ""
+"Before starting any surveys please check your email and click on the "
+"verification link."
+msgstr ""

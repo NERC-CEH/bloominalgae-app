@@ -707,3 +707,11 @@ msgstr "Sorry, we couldn't get the image."
 # Draft record exist message
 msgid "Previous survey draft exists, would you like to continue it?"
 msgstr "Previous survey draft exists, would you like to continue it?"
+
+# Successfully registration alert message
+msgid "Welcome aboard"
+msgstr "Welcome aboard"
+
+# Successfully registration alert message
+msgid "Before starting any surveys please check your email and click on the verification link."
+msgstr "Before starting any surveys please check your email and click on the verification link."
