@@ -19,7 +19,7 @@ import {
   closeCircle,
 } from 'ionicons/icons';
 import clsx from 'clsx';
-import { IonList, withIonLifeCycle } from '@ionic/react';
+import { IonList } from '@ionic/react';
 import GridRefValue from '../Components/GridRefValue';
 import logo from './app_logo_dark.png';
 import './styles.scss';
@@ -263,4 +263,4 @@ class Component extends React.Component {
   }
 }
 
-export default withIonLifeCycle(Component);
+export default Component;

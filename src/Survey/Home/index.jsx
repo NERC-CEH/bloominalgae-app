@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
-import { IonButton, NavContext, withIonLifeCycle } from '@ionic/react';
+import { IonButton, NavContext } from '@ionic/react';
 import { Trans as T, withTranslation } from 'react-i18next';
 import { Page, Header, showInvalidsMessage, alert } from '@apps';
 import MapComponent from '../Components/Map';
@@ -124,4 +124,4 @@ class Controller extends React.Component {
   }
 }
 
-export default withTranslation()(withIonLifeCycle(Controller));
+export default withTranslation()(Controller);
