@@ -62,7 +62,7 @@ class Controller extends React.Component {
 
     const invalids = sample.validateRemote();
     if (invalids) {
-      showInvalidsMessage(invalids);
+      showInvalidsMessage(invalids, { header: 'Record incomplete' });
       return;
     }
 

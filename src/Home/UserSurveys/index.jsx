@@ -79,7 +79,7 @@ class UserSurveyComponent extends React.Component {
           {this.getSurveys(surveys)}
 
           <InfoBackgroundMessage name="showSurveyUploadTip">
-            Please do not forget to upload any pending surveys!
+            Please do not forget to upload any pending records!
           </InfoBackgroundMessage>
         </>
       );

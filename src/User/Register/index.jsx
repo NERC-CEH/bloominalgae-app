@@ -41,7 +41,7 @@ async function onRegister(userModel, details, onSuccess) {
       message: (
         <>
           <T>
-            Before starting any surveys please check your email and click on the
+            Before starting any records please check your email and click on the
             verification link.
           </T>
         </>

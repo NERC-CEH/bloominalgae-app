@@ -872,10 +872,6 @@ msgid "Finish"
 msgstr "Afronden"
 
 # Survey camera options
-msgid "Survey incomplete"
-msgstr "Onvolledige waarneming"
-
-# Survey camera options
 msgid "Choose a method to upload a photo"
 msgstr "Kies een methode om een foto op te laden"
 
@@ -888,7 +884,7 @@ msgid "Camera"
 msgstr "Camera"
 
 # User-surveys page background message
-msgid "Please do not forget to upload any pending surveys!"
+msgid "Please do not forget to upload any pending records!"
 msgstr "Vergeet a.u.b. niet om de lopende waarnemingen op te laden!"
 
 # All records page tip
@@ -1067,16 +1063,12 @@ msgstr "Succesvol ingelogd."
 msgid "Sorry, we couldn't get the image."
 msgstr "Het spijt ons, we hebben de afbeelding niet doorgekregen. "
 
-# Draft record exist message
-msgid "Previous survey draft exists, would you like to continue it?"
-msgstr ""
-
 # Successfully registration alert message
 msgid "Welcome aboard"
 msgstr ""
 
 # Successfully registration alert message
 msgid ""
-"Before starting any surveys please check your email and click on the "
+"Before starting any records please check your email and click on the "
 "verification link."
 msgstr ""

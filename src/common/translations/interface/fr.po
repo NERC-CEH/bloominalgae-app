@@ -806,10 +806,6 @@ msgid "Finish"
 msgstr ""
 
 # Survey camera options
-msgid "Survey incomplete"
-msgstr ""
-
-# Survey camera options
 msgid "Choose a method to upload a photo"
 msgstr ""
 
@@ -822,7 +818,7 @@ msgid "Camera"
 msgstr ""
 
 # User-surveys page background message
-msgid "Please do not forget to upload any pending surveys!"
+msgid "Please do not forget to upload any pending records!"
 msgstr ""
 
 # All records page tip
@@ -949,16 +945,12 @@ msgstr ""
 msgid "Sorry, we couldn't get the image."
 msgstr ""
 
-# Draft record exist message
-msgid "Previous survey draft exists, would you like to continue it?"
-msgstr ""
-
 # Successfully registration alert message
 msgid "Welcome aboard"
 msgstr ""
 
 # Successfully registration alert message
 msgid ""
-"Before starting any surveys please check your email and click on the "
+"Before starting any records please check your email and click on the "
 "verification link."
 msgstr ""
