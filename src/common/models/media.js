@@ -1,6 +1,7 @@
 import { Media } from '@apps';
 import Log from 'helpers/log';
 import config from 'config';
+import { isPlatform } from '@ionic/react';
 import { Capacitor, Plugins, FilesystemDirectory } from '@capacitor/core';
 
 const { Filesystem } = Plugins;
@@ -51,20 +52,22 @@ export default class AppMedia extends Media {
   }
 
   getURL() {
-    const { data: name, path } = this.attrs;
+    let { data: name, path = '' } = this.attrs;
 
     if (!Capacitor.isNative || window.testing) {
       return name;
     }
 
-    let pathToFile = path;
-
-    // backwards compatible
-    if (!pathToFile) {
-      pathToFile = config.dataPath.replace('/Documents/', '/Library/NoCloud/');
+    // make backwards compatible with cordova.file.dataDirectory
+    if (!path) {
+      if (isPlatform('ios')) {
+        path = config.dataPath.replace('/Documents/', '/Library/NoCloud/');
+      } else {
+        name = name.replace('file://', '');
+      }
     }
 
-    return Capacitor.convertFileSrc(`${pathToFile}/${name}`);
+    return Capacitor.convertFileSrc(`${path}/${name}`);
   }
 
   // eslint-disable-next-line class-methods-use-this
