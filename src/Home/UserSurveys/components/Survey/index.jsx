@@ -75,12 +75,12 @@ const Survey = ({ sample }) => {
 
   let detailIcon;
   let idClass;
-  const { verification } = sample.metadata;
-  if (verification) {
-    if (verification === 'V') {
+  const status = sample.getVerificationStatus();
+  if (status) {
+    if (status === 'verified') {
       idClass = 'id-green';
       detailIcon = checkmarkCircle;
-    } else if (verification === 'C') {
+    } else if (status === 'plausible') {
       idClass = 'id-amber';
       detailIcon = helpCircle;
     } else {

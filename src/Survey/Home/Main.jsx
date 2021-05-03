@@ -25,7 +25,7 @@ import logo from './app_logo_dark.png';
 import './styles.scss';
 
 const verificationTexts = {
-  V: (
+  verified: (
     <>
       <p>
         Thanks so much for sending your record in - this looks very much like a
@@ -55,7 +55,7 @@ const verificationTexts = {
       </InfoButton>
     </>
   ),
-  C: (
+  plausible: (
     <>
       <p>
         Thanks for sending in your record using the Bloomin'Algae app. Your
@@ -87,7 +87,7 @@ const verificationTexts = {
     </>
   ),
   // unable to verify
-  R4: (
+  rejected4: (
     <>
       <p>Thanks for sending in your record using the Bloomin'Algae app.</p>
 
@@ -117,7 +117,7 @@ const verificationTexts = {
     </>
   ),
   // incorrect
-  R5: (
+  rejected5: (
     <>
       <p>Thanks for sending in your record using the Bloomin'Algae app. </p>
 
@@ -165,26 +165,24 @@ class Component extends React.Component {
   getVerificationMessage = () => {
     const { sample } = this.props;
 
-    const { verification } = sample.metadata;
-    if (!verification) {
+    const status = sample.getVerificationStatus();
+    if (!status) {
       return null;
     }
 
-    const substatus = sample.metadata.verification_substatus;
-
     const icons = {
-      V: checkmarkCircle,
-      C: helpCircle,
-      R: closeCircle,
+      verified: checkmarkCircle,
+      plausible: helpCircle,
+      rejected: closeCircle,
     };
 
-    let textCode = verification;
-
-    if (verification === 'R' && substatus) {
-      textCode = `${verification}${substatus}`;
+    let textCode = status;
+    const substatus = sample.metadata.verification_substatus;
+    if (status === 'rejected' && substatus) {
+      textCode = `${status}${substatus}`;
       if (!verificationTexts[textCode]) {
         // in case new code is issued that isn't supported default to `incorrect`
-        textCode = `${verification}${5}`;
+        textCode = `${status}${5}`;
       }
     }
 
@@ -195,8 +193,8 @@ class Component extends React.Component {
 
     return (
       <InfoMessage
-        className={clsx('verification-message', verification)}
-        icon={icons[verification]}
+        className={clsx('verification-message', status)}
+        icon={icons[status]}
       >
         {text}
       </InfoMessage>

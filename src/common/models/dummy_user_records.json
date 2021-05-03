@@ -3,34 +3,27 @@
     "data": [
       {
         "id": "1",
-        "sample_date": "2018-08-19 11:00:38.000",
-        "notes": "",
-        "verification": {
-          "status_code": "V",
-          "status_text": "verified",
-          "substatus_code": "1",
-          "substatus_text": "correct"
-        }
+        "verification": { "status_code": "V", "substatus_code": "1" }
+      },
+      {
+        "id": "20319277",
+        "verification": { "status_code": "V", "substatus_code": "2" }
       },
       {
         "id": "2",
-        "sample_date": "2018-08-21 17:24:52.000",
-        "verification": {
-          "status_code": "C",
-          "status_text": "complete",
-          "substatus_code": "3",
-          "substatus_text": "plausible"
-        }
+        "verification": { "status_code": "C", "substatus_code": "1" }
       },
       {
-        "id": "3",
-        "sample_date": "2018-08-22 15:16:32.000",
-        "verification": {
-          "status_code": "R",
-          "status_text": "rejected",
-          "substatus_code": "5",
-          "substatus_text": "incorrect"
-        }
+        "id": "2",
+        "verification": { "status_code": "C", "substatus_code": "3" }
+      },
+      {
+        "id": "2",
+        "verification": { "status_code": "R", "substatus_code": "5" }
+      },
+      {
+        "id": "20319310",
+        "verification": { "status_code": "R", "substatus_code": "4" }
       }
     ]
   }

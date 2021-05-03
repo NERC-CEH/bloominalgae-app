@@ -14,7 +14,7 @@
       padding: 10px 0;
     }
 
-    &.V {
+    &.verified {
       --background: #eafff2;
       ion-icon,
       .info-button,
@@ -24,7 +24,7 @@
       }
     }
 
-    &.C {
+    &.plausible {
       --background: #fffdd5;
       ion-icon,
       .info-button,
@@ -34,7 +34,7 @@
       }
     }
 
-    &.R {
+    &.rejected {
       --background: #e4e4e4;
       ion-icon,
       .info-button,
