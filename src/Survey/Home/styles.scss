@@ -15,32 +15,32 @@
     }
 
     &.V {
-      --background: #d0e4d8;
+      --background: #eafff2;
       ion-icon,
       .info-button,
       ion-label ion-note {
-        color: #295a1d !important;
-        --border-color: #295a1d;
+        color: #0a3100 !important;
+        --border-color: #0a3100;
       }
     }
 
     &.C {
-      --background: #e4e3d0;
+      --background: #fffdd5;
       ion-icon,
       .info-button,
       ion-label ion-note {
-        color: #5f4e2a !important;
-        --border-color: #5f4e2a;
+        color: #2d1f00 !important;
+        --border-color: #2d1f00;
       }
     }
 
     &.R {
-      --background: #e4d0d0;
+      --background: #e4e4e4;
       ion-icon,
       .info-button,
       ion-label ion-note {
-        color: #7e1d1d !important;
-        --border-color: #7e1d1d;
+        color: #000000 !important;
+        --border-color: #000000;
       }
     }
   }
