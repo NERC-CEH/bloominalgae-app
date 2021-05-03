@@ -71,13 +71,13 @@ function Guide() {
         </InfoMessage>
 
         <IonItemDivider>
-          <T>Examples of Blue-green Algae Blooms</T>
+          <T>Examples of blue-green algae blooms</T>
         </IonItemDivider>
 
         {getCards(bgCards)}
 
         <IonItemDivider>
-          <T>Not Blue-Green Algae - duckweed and harmless green algae</T>
+          <T>Not blue-green algae - duckweed and harmless green algae</T>
         </IonItemDivider>
 
         {getCards(nonBgCards)}
