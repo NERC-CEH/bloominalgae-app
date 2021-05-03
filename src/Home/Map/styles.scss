@@ -92,7 +92,7 @@
 
   .my-custom-pin {
     span {
-      background-color: #0ba533;
+      background-color: #3c3c3c;
       width: 1.4rem;
       height: 1.4rem;
       display: block;
@@ -102,8 +102,8 @@
       border: 1px solid #ffffff;
     }
 
-    &.rejected span {
-      background-color: #3c3c3c;
+    &.V span {
+      background-color: #0ba533;
     }
   }
 

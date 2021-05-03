@@ -773,6 +773,10 @@ msgid "complete"
 msgstr "volledig"
 
 # Record status on a map
+msgid "plausible"
+msgstr ""
+
+# Record status on a map
 msgid "verified"
 msgstr "geverifieerd"
 

@@ -708,6 +708,10 @@ msgid "complete"
 msgstr ""
 
 # Record status on a map
+msgid "plausible"
+msgstr ""
+
+# Record status on a map
 msgid "verified"
 msgstr ""
 

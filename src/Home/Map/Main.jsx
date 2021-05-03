@@ -16,12 +16,9 @@ import clsx from 'clsx';
 import 'leaflet/dist/leaflet.css';
 import 'react-leaflet-markercluster/dist/styles.min.css';
 
-const getIcon = ({ verification }) =>
+const getIcon = status =>
   L.divIcon({
-    className: clsx(
-      'my-custom-pin',
-      verification.status_code === 'R' && 'rejected'
-    ),
+    className: clsx('my-custom-pin', status),
     html: `<span />`,
   });
 
@@ -39,13 +36,27 @@ function showRecord(record) {
     );
   }
 
+  const statuses = {
+    R: 'rejected',
+    V: 'verified',
+  };
+
+  let statusText = statuses[record.verification.status_code];
+  if (
+    !statusText &&
+    record.verification.status_code === 'C' &&
+    record.verification.substatus_code === '3'
+  ) {
+    statusText = 'plausible';
+  }
+
   alert({
     header: record.sample_date.split(' ')[0],
     cssClass: 'location-map',
     message: (
       <>
         <div className="alert-record-status">
-          <T>{record.verification.status_text}</T>
+          <T>{statusText}</T>
         </div>
         {image}
       </>
@@ -138,7 +149,7 @@ class MapComponent extends Component {
 
   addMarker = record => {
     const marker = L.marker([record.lat, record.lng], {
-      icon: getIcon(record),
+      icon: getIcon(record.verification.status_code),
     });
     const onMouseUp = () => {
       showRecord(record);

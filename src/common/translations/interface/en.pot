@@ -517,6 +517,10 @@ msgid "complete"
 msgstr "complete"
 
 # Record status on a map
+msgid "plausible"
+msgstr "plausible"
+
+# Record status on a map
 msgid "verified"
 msgstr "verified"
 
