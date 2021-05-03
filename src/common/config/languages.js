@@ -1,6 +1,6 @@
-import GB from 'common/images/ukFlag.png';
-import NL from 'common/images/nlFlag.png';
-import FR from 'common/images/frFlag.png';
+import GB from 'common/images/flags/ukFlag.png';
+import NL from 'common/images/flags/nlFlag.png';
+// import FR from 'common/images/flags/frFlag.png';
 
 export default [
   {
@@ -8,11 +8,11 @@ export default [
     label: 'English',
     value: 'en',
   },
-  {
-    flag: FR,
-    label: 'Français',
-    value: 'fr-Fr',
-  },
+  // {
+  //   flag: FR,
+  //   label: 'Français',
+  //   value: 'fr-Fr',
+  // },
   {
     flag: NL,
     label: 'Nederlands',
