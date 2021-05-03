@@ -132,7 +132,7 @@ const survey = {
 
     size: {
       type: 'radio',
-      label: 'Bloom Size',
+      label: 'Bloom size',
       icon: expandOutline,
       info: 'Select the closest match below.',
       componentProps: {
