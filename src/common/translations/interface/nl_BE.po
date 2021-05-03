@@ -1,13 +1,13 @@
 # 
 # Translators:
 # Karolis, 2021
-# Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021
 # Vilius Stankaitis <vilius@flumens.io>, 2021
+# Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Vilius Stankaitis <vilius@flumens.io>, 2021\n"
+"Last-Translator: Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021\n"
 "Language-Team: Dutch (Belgium) (https://www.transifex.com/ceh/teams/116164/nl_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -283,6 +283,8 @@ msgstr ""
 "eigenaar van het besmette water. Als u een blauwalgenbloei waarneemt en er "
 "zich nog geen waarschuwingsborden in de omgeving bevinden, wordt aangeraden "
 "om zo snel mogelijk de milieudienst van uw stad of gemeente te contacteren. "
+"Voor meer informatie en advies over algenbloei verwijzen we graag door naar "
+"volgende websites:"
 
 # Further action info page content
 msgid ""
@@ -1065,10 +1067,12 @@ msgstr "Het spijt ons, we hebben de afbeelding niet doorgekregen. "
 
 # Successfully registration alert message
 msgid "Welcome aboard"
-msgstr ""
+msgstr "Hartelijk welkom"
 
 # Successfully registration alert message
 msgid ""
 "Before starting any records please check your email and click on the "
 "verification link."
 msgstr ""
+"Gelieve uw e-mail te controleren en te klikken op de verificatielink voordat"
+" U begint met waarnemingen door te geven."
