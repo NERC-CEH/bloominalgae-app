@@ -38,11 +38,13 @@ function deleteSurvey(sample) {
 const Survey = ({ sample }) => {
   const survey = sample.getSurvey();
 
+  const { synchronising } = sample.remote;
+
   const [occ] = sample.occurrences;
 
   const speciesPhoto = occ.media.length ? occ.media[0].attrs.thumbnail : null;
 
-  const href = `/${survey.name}/start/${sample.cid}`;
+  const href = !synchronising && `/${survey.name}/start/${sample.cid}`;
 
   const getProfilePhoto = () => {
     const photo = speciesPhoto ? (
@@ -94,7 +96,7 @@ const Survey = ({ sample }) => {
       <IonItem
         routerLink={href}
         lines="none"
-        detail
+        detail={!synchronising}
         detailIcon={detailIcon}
         className={idClass}
       >
