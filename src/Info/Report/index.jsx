@@ -52,7 +52,7 @@ const getOrganizationsLinkByLanguage = () => {
       </li>
 
       <li>
-        <a href="https://naturalresources.wales/about-us/contact-us/report-it/">
+        <a href="https://naturalresources.wales/about-us/contact-us/report-an-environmental-incident/?lang=en">
           Natural Resources Wales (NRW)
         </a>
       </li>
