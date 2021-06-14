@@ -121,8 +121,10 @@
     @include slide;
 
     ion-content {
-      --background: #fff url('./images/second.jpg') no-repeat center center /
-        cover;
+      --background: none;
+      background-image: url('./images/second.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
 
       .message-container {
         display: flex;
