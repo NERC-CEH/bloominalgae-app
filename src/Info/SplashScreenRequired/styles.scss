@@ -119,45 +119,49 @@
 
   ion-slides ion-slide.second {
     @include slide;
-    background-image: url('./images/second.jpg');
 
-    .message-container {
-      display: flex;
-      flex-direction: column;
-      border-radius: 10px;
-      overflow: hidden;
-      margin: 20px 20px;
-      background: var(--ion-color-warning);
+    ion-content {
+      --background: #fff url('./images/second.jpg') no-repeat center center /
+        cover;
 
-      box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+      .message-container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px 20px;
+        background: var(--ion-color-warning);
 
-      background-color: rgba(255, 255, 255, 0.563);
-      backdrop-filter: blur(12px);
-      bottom: 0;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 
-      .message-header {
-        color: var(--ion-color-warning);
+        background-color: rgba(255, 255, 255, 0.563);
+        backdrop-filter: blur(12px);
+        bottom: 0;
 
-        ion-icon {
-          position: absolute;
-          top: 50%;
-          left: 5%;
-          transform: translateY(-50%);
-          font-size: 40px;
+        .message-header {
           color: var(--ion-color-warning);
+
+          ion-icon {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: var(--ion-color-warning);
+          }
+
+          h2 {
+            color: var(--ion-color-warning);
+          }
         }
 
-        h2 {
-          color: var(--ion-color-warning);
+        ion-button {
+          margin-bottom: 30px;
+          font-weight: 500;
+          color: var(--ion-color-secondary-contrast);
+          text-transform: uppercase;
+          --box-shadow: none;
         }
-      }
-
-      ion-button {
-        margin-bottom: 30px;
-        font-weight: 500;
-        color: var(--ion-color-secondary-contrast);
-        text-transform: uppercase;
-        --box-shadow: none;
       }
     }
   }

@@ -72,34 +72,37 @@ const SplashScreen = ({ appModel }) => {
           </IonSlide>
 
           <IonSlide className="second">
-            <div className="message-container">
-              <div className="message-header">
-                <IonIcon icon={alertCircleOutline} />
-                <h2>
-                  <T>Warning</T>
-                </h2>
+            <Main>
+              <div className="message-container">
+                <div className="message-header">
+                  <IonIcon icon={alertCircleOutline} />
+                  <h2>
+                    <T>Warning</T>
+                  </h2>
+                </div>
+
+                <p>
+                  <T>
+                    Blue-Green algae (also known as cyanobacteria) can be
+                    harmful to the health of people and animals. Do NOT touch or
+                    ingest anything you suspect to be a bloom and do not allow
+                    pets or children to come into contact with, or swallow, the
+                    water.
+                  </T>
+                </p>
+
+                <p>
+                  <T>
+                    By clicking “I Understand” you agree that you have read and
+                    understood this warning
+                  </T>
+                </p>
+
+                <IonButton onClick={exit} color="secondary">
+                  <T>I Understand</T>
+                </IonButton>
               </div>
-
-              <p>
-                <T>
-                  Blue-Green algae (also known as cyanobacteria) can be harmful
-                  to the health of people and animals. Do NOT touch or ingest
-                  anything you suspect to be a bloom and do not allow pets or
-                  children to come into contact with, or swallow, the water.
-                </T>
-              </p>
-
-              <p>
-                <T>
-                  By clicking “I Understand” you agree that you have read and
-                  understood this warning
-                </T>
-              </p>
-
-              <IonButton onClick={exit} color="secondary">
-                <T>I Understand</T>
-              </IonButton>
-            </div>
+            </Main>
           </IonSlide>
         </IonSlides>
       </Main>
