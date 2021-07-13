@@ -1,21 +1,33 @@
 import React from 'react';
 import { Page, Main, Header, Section } from '@apps';
+import { Trans as T } from 'react-i18next';
 import './styles.scss';
 
 const { P } = Section;
+
+// eslint-disable-next-line
+const TLink = ({ children }) => {
+  const link = children[0];
+
+  const href = link.includes('https://') ? link : `https://${link}`; // eslint-disable-line
+
+  return <a href={href}>{link}</a>;
+};
 
 const About = () => (
   <Page id="about">
     <Header title="About Bloomin’ Algae" />
     <Main className="ion-padding">
       <Section>
-        <P>
-          Bloomin’ Algae is a Citizen Science app for reporting the presence of
-          harmful algal blooms of blue-green algae (also known as
-          cyanobacteria). The records you send in help speed up warnings to
-          minimise risks to public and animal health. You will receive feedback
-          on the records you submit which can help you learn how to recognise
-          the risks to you and pets.
+        <P skipTranslation>
+          <T components={{ url: <TLink /> }}>
+            Bloomin’ Algae is a Citizen Science app for reporting the presence
+            of harmful algal blooms of blue-green algae (also known as
+            cyanobacteria). The records you send in help speed up warnings to
+            minimise risks to public and animal health. You will receive
+            feedback on the records you submit which can help you learn how to
+            recognise the risks to you and pets.
+          </T>
         </P>
 
         <P>

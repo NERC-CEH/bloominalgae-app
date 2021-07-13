@@ -295,15 +295,6 @@ msgid ""
 "Wales</3><br/><br/><6>Scotland</6>"
 msgstr "<></>"
 
-# Further action info page content
-msgid ""
-"<0><0><0>Scottish Environment Protection Agency "
-"(SEPA)</0></0><br/><2><0>Northern Ireland Environment Agency "
-"(NIEA)</0></2><br/><4><0>Natural Resources Wales "
-"(NRW)</0></4><br/><6><0>England: Environment Agency "
-"(EA)</0></6><br/><8><0>Ireland: EPA</0></8></0>"
-msgstr ""
-
 # BRC info page title
 msgid "BRC approved"
 msgstr ""

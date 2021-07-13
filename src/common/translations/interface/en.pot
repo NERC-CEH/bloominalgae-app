@@ -160,10 +160,6 @@ msgstr "The responsibility to manage algal blooms lies with the owner of the wat
 msgid "For more information and advice on algal blooms see:<br/><br/><3>England & Wales</3><br/><br/><6>Scotland</6>"
 msgstr "For more information and advice on algal blooms see:<br/><br/><3>England & Wales</3><br/><br/><6>Scotland</6>"
 
-# Further action info page content
-msgid "<0><0><0>Scottish Environment Protection Agency (SEPA)</0></0><br/><2><0>Northern Ireland Environment Agency (NIEA)</0></2><br/><4><0>Natural Resources Wales (NRW)</0></4><br/><6><0>England: Environment Agency (EA)</0></6><br/><8><0>Ireland: EPA</0></8></0>"
-msgstr "<0><0><0>Scottish Environment Protection Agency (SEPA)</0></0><br/><2><0>Northern Ireland Environment Agency (NIEA)</0></2><br/><4><0>Natural Resources Wales (NRW)</0></4><br/><6><0>England: Environment Agency (EA)</0></6><br/><8><0>Ireland: EPA</0></8></0>"
-
 # BRC info page title
 msgid "BRC approved"
 msgstr "BRC approved"

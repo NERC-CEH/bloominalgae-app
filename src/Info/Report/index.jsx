@@ -29,6 +29,12 @@ const getOrganizationsLinkByLanguage = () => {
             Wallonië
           </a>
         </li>
+
+        <li>
+          <a href="https://www.wur.nl/nl/Dossiers/dossier/Blauwalg.htm">
+            Nederland
+          </a>
+        </li>
       </>
     );
   }
@@ -61,10 +67,6 @@ const getOrganizationsLinkByLanguage = () => {
         <a href="http://apps.environment-agency.gov.uk/contact/">
           England: Environment Agency (EA)
         </a>
-      </li>
-
-      <li>
-        <a href="http://www.epa.ie/enforcement/report/">Ireland: EPA</a>
       </li>
     </>
   );
