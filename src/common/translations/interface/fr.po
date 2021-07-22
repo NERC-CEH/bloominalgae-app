@@ -1,13 +1,11 @@
 # 
 # Translators:
 # Annick Wilmotte <awilmotte@uliege.be>, 2021
-# Vilius Stankaitis <vilius@flumens.io>, 2021
-# Karolis, 2021
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Karolis, 2021\n"
+"Last-Translator: Annick Wilmotte <awilmotte@uliege.be>, 2021\n"
 "Language-Team: French (https://www.transifex.com/ceh/teams/116164/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,23 +16,23 @@ msgstr ""
 
 # Button title
 msgid "Back"
-msgstr "retour"
+msgstr "Retour"
 
 # Home page toolbar menu label
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 # Home page toolbar menu label
 msgid "Map"
-msgstr ""
+msgstr "Plan"
 
 # Home page toolbar menu label
 msgid "Guide"
-msgstr "Guide"
+msgstr "Guide photo"
 
 # Home page toolbar menu label
 msgid "My Records"
-msgstr ""
+msgstr "Mes observations"
 
 # Guide page header title
 msgid "Identify"
@@ -45,12 +43,12 @@ msgid ""
 "If you are still not sure after looking at this guide please submit the "
 "record anyway"
 msgstr ""
-"Si vous n'êtes toujours pas certain après avoir regardé ce guide, envoyez "
-"quand même votre observation"
+"Si vous n'êtes toujours pas certain(e) de l'identification après avoir "
+"regardé ce guide photo, veuillez quand même envoyer votre observation"
 
 # Guide page label
 msgid "Examples of blue-green algae blooms"
-msgstr "Les proliférations d'algues bleues"
+msgstr "Exemples de proliférations d'algues bleues"
 
 # Guide page card label
 msgid "Usually green or blue-green in colour"
@@ -58,13 +56,17 @@ msgstr "Habituellement de couleur verte ou bleu-verte"
 
 # Guide page card label
 msgid "Form paint-like surface scums often along shorelines"
-msgstr "forment des écumes ressemblant à de la peinture le long des rives"
+msgstr ""
+"Forment des écumes ressemblant à de la peinture, souvent le long des rives"
 
 # Guide page card label
 msgid ""
 "Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be "
 "small and round or tiny grass like flakes"
 msgstr ""
+"Petits agrégats de forme irrégulière (moins de 3 mm) flottant dans l'eau. "
+"Les agrégats peuvent être petits et arrondis ou former de petites paillettes"
+" ressemblant à de l'herbe"
 
 # Guide page card label
 msgid "Turquoise colour sometimes visible when decaying"
@@ -72,21 +74,21 @@ msgstr "Couleur turquoise parfois visible lors de la décomposition"
 
 # Guide page label
 msgid "Not blue-green algae - duckweed and harmless green algae"
-msgstr ""
+msgstr "Pas des algues bleues - lentilles d'eau et algues vertes non toxiques"
 
 # Guide page card label
 msgid "Plants that float but have solid structure such as leaves"
 msgstr ""
-"Plantes qui flottent mais ont une structure solide, par exemple, des "
+"Plantes flottantes mais qui ont une structure solide, par exemple, des "
 "feuilles"
 
 # Guide page card label
 msgid "Others are long and tubular the size of a little finger"
-msgstr "D'autres sont longues et forment un tube de la taille d'un doigt"
+msgstr "D'autres sont longues et tubulaires, de la taille d'un petit doigt"
 
 # Guide page card label
 msgid "Some have very stringy, long hair-like strands"
-msgstr "Certaines ont des longs brins ressemblant à des cheveus"
+msgstr "Certaines forment de longs brins ressemblant à des cheveux"
 
 # Guide page card label
 msgid "Or fine green hairs attached to rocks and pebbles"
@@ -94,11 +96,11 @@ msgstr "ou des sortes de cheveux verts fins attachés aux cailloux"
 
 # My Records page header title
 msgid "Pending"
-msgstr ""
+msgstr "En attente"
 
 # My Records page header title
 msgid "Uploaded"
-msgstr ""
+msgstr "Téléchargé"
 
 # My Records page record info message
 msgid "Draft"
@@ -106,11 +108,11 @@ msgstr "Brouillon"
 
 # My Records page record info message
 msgid "To delete any records swipe it to the left."
-msgstr ""
+msgstr "Pour éliminer une observation, faites la glisser vers la gauche"
 
 # About Bloomin’ Algae info page title
 msgid "About Bloomin’ Algae"
-msgstr ""
+msgstr " A propos de Bloomin' Algae"
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -120,13 +122,16 @@ msgid ""
 "animal health. You will receive feedback on the records you submit which can"
 " help you learn how to recognise the risks to you and pets."
 msgstr ""
-"Bloomin 'Algae est une application Citizen Science pour signaler la présence"
-" de proliférations nocives d'algues bleues (également appelées "
-"cyanobactéries). Les enregistrements que vous envoyez contribuent à "
-"accélérer les alertes afin de minimiser les risques pour la santé publique "
-"et animale. Vous recevrez des feedbacks concernant les notifications que "
-"vous soumettrez, ce qui peut vous aider à apprendre à reconnaître les "
-"risques pour vous et vos animaux de compagnie ."
+"Bloomin 'Algae est une application de Science participative (‘Citizen "
+"Science’ en anglais) qui vous permet de signaler la présence de "
+"proliférations  d'algues bleues (également appelées cyanobactéries). Les "
+"observations que vous envoyez contribuent à augmenter les connaissances sur "
+"ce phénomène mais aussi à accélérer les alertes afin de minimiser les "
+"risques pour la santé publique et animale. Pour chaque notification envoyée,"
+" vous recevrez une réaction d'expert, ce qui vous aidera à mieux évaluer les"
+" risques pour vous et vos animaux de compagnie. En Wallonie, la qualité des "
+"eaux de baignade officielles est suivie et le résultat est consultable sur "
+"le site internet http://environnement.wallonie.be/baignade/#/station/map"
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -137,13 +142,13 @@ msgid ""
 "education, scientific research and other public benefit uses but contact "
 "details will not be shared."
 msgstr ""
-"Lorsque vous soumettez un enregistrement, les données sont stockées sur le "
-"<2> site Web iRecord </2>, où elles seront examinées et vérifiées par un "
-"expert et affichées aux utilisateurs. Seuls vos enregistrements sont "
-"disponibles publiquement, pas vos coordonnées. Ces documents peuvent être "
-"rassemblés et diffusés à des fins d'éducation, de recherche scientifique et "
-"d'autres utilisations d'intérêt public, mais vos coordonnées ne seront pas "
-"partagées."
+"Lorsque vous envoyez une observation, les données sont stockées sur le <2> "
+"site Web iRecord </2>, où elles seront visibles par les autres utilisateurs "
+"et seront vérifiées par un expert. Seules vos observations sont disponibles "
+"publiquement, pas vos coordonnées personnelles qui ne seront pas partagées. "
+"Toutes les données d'observation peuvent être rassemblés et diffusés à des "
+"fins d'éducation, de recherche scientifique et d'autres utilisations "
+"d'intérêt public."
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -158,18 +163,18 @@ msgid ""
 msgstr ""
 "En plus de soumettre une photo et les détails du site, nous vous demandons "
 "d’indiquer les activités que vous, ou d'autres, réalisez dans, ou autour, de"
-" l'eau (comme la promenade avec des chiens). En effet, les algues bleues "
-"présentent un risque plus élevé pour les activités aquatiques, comme la "
-"natation ou la planche à voile, par rapport aux activités sans contact avec "
-"l’eau telles que la promenade. Elles peuvent présenter un risque très élevé "
-"pour les animaux domestiques et le bétail s’ils boivent l’eau. En "
-"rassemblant des informations détaillées sur les activités entreprises, nous "
-"espérons mieux comprendre comment les proliférations d'algues affectent "
-"l'utilisation récréative des eaux douces."
+" l'eau (comme la promenade avec des chiens, la pêche, le jogging...). En "
+"effet, les algues bleues présentent un risque plus élevé pour les activités "
+"aquatiques, comme la natation ou la planche à voile (contact direct avec "
+"l’eau) que pour les promeneurs. Elles peuvent présenter un risque élevé pour"
+" les animaux domestiques et le bétail s’ils boivent l’eau contaminée. En "
+"rassemblant ce type d' information, nous espérons mieux comprendre comment "
+"les proliférations d'algues bleues toxiques affectent l'utilisation "
+"récréative des eaux douces."
 
 # About Bloomin’ Algae info page content
 msgid "<0>Privacy policy</0>"
-msgstr ""
+msgstr "Politique de confidentialité"
 
 # What are blue-green algae info page title
 msgid "What are blue-green algae?"
@@ -187,17 +192,18 @@ msgid ""
 "scums and surface blooms (see ID guide in app) pose severe health risks, "
 "particularly to animals that swim or drink the affected water."
 msgstr ""
-"Les algues bleues sont un type de bactéries, appelées cyanobactéries, dont "
-"certaines produisent des composés toxiques très nocifs pour la santé des "
-"personnes et des animaux. Ces algues sont naturellement présentes dans "
-"toutes les eaux douces, en particulier les lacs, les réservoirs, les canaux "
-"et les rivières à faible débit. Elles sont microscopiques mais s'agglutinent"
-" en colonies visibles qui peuvent remonter à la surface et former de fines "
-"trainées vaporeuses ou des écumes épaisses ressemblant à de la peinture à la"
-" surface de l'eau si elles deviennent très abondantes. Les écumes de rivage "
-"et les efflorescences de surface (voir le guide d'identification dans "
-"l'application) présentent de graves risques pour la santé, en particulier "
-"pour les animaux qui nagent ou boivent de l'eau. "
+"Les algues bleues sont en fait une catégorie de bactéries photosynthétiques,"
+" appelées cyanobactéries, dont certaines produisent des toxines nocives pour"
+" la santé des personnes et des animaux. Ces algues sont naturellement "
+"présentes dans toutes les eaux douces, en particulier les lacs, les "
+"réservoirs, les canaux et les rivières à faible débit. Elles sont "
+"microscopiques mais peuvent s'agglutiner en colonies visibles qui peuvent "
+"remonter à la surface et former de fines trainées vaporeuses ou des écumes "
+"épaisses ressemblant à de la peinture à la surface de l'eau si elles "
+"deviennent très abondantes. Les écumes de rivage et les efflorescences de "
+"surface (voir le guide d'identification dans l'application) présentent de "
+"graves risques pour la santé, en particulier pour les animaux qui nagent ou "
+"boivent de l'eau. "
 
 # What are blue-green algae info page content
 msgid ""
@@ -209,16 +215,17 @@ msgid ""
 "Some blooms are coloured red, dark brown or black."
 msgstr ""
 "Les proliférations d'algues bleues sont le plus souvent observées pendant "
-"les mois d'été, en particulier dans des conditions calmes et ensoleillées, "
-"mais elles peuvent persister dans les eaux douces jusqu'à l'automne. Elles "
-"surviennent occasionnellement en hiver et au printemps. La plupart des "
-"proliférations sont vertes, mais parfois des trainées turquoise sont "
-"visibles sur l'eau ou le long des rives quand les algues se décomposent. "
-"Certaines proliférations sont rouge, brun foncé ou noires."
+"les mois d'été et au début de l'automne, en particulier dans des conditions "
+"calmes et ensoleillées, mais elles peuvent persister dans les eaux douces "
+"jusqu'à la fin de l'automne. Elles surviennent occasionnellement en hiver et"
+" au printemps. La plupart des proliférations sont vertes, mais parfois des "
+"trainées turquoise sont visibles sur l'eau ou le long des rives quand les "
+"algues se décomposent. Certaines proliférations sont rouge, brun foncé ou "
+"noires."
 
 # Health Risk info page title
 msgid "Health risks"
-msgstr ""
+msgstr "Risques pour la santé"
 
 # Health Risk info page title
 msgid ""
@@ -226,10 +233,10 @@ msgid ""
 "effects in people and animals. They cause skin rashes and much more severe "
 "symptoms if swallowed (fever, vomiting, liver damage)."
 msgstr ""
-"Les toxines produites par les algues bleues peuvent entraîner une gamme "
-"d'effets sur la santé des personnes et des animaux. Elles provoquent des "
-"éruptions cutanées et des symptômes beaucoup plus graves (fièvre, "
-"vomissements, lésions hépatiques) en cas d'ingestion."
+"Les toxines produites par les algues bleues peuvent entraîner toute une "
+"gamme d'effets sur la santé des personnes et des animaux, allant de "
+"symptômes légers (éruptions cutanées) jusqu'à  des symptômes plus graves en "
+"cas d'ingestion (fièvre, vomissements, lésions du foie)."
 
 # Health Risk info page title
 msgid ""
@@ -239,16 +246,18 @@ msgid ""
 "cattle, birds and fish."
 msgstr ""
 "Les chiens sont particulièrement à risque s'ils boivent de l'eau contaminée "
-"ou se lèchent le pelage après avoir nagé, avec des symptômes sévères "
-"nécessitant un traitement vétérinaire très rapide. Les algues bleues ont "
-"également déjà causé la mort de chevaux, de bovins, d'oiseaux et de "
-"poissons."
+"ou lèchent leur pelage après avoir nagé, avec des symptômes sévères "
+"nécessitant un traitement vétérinaire très rapide pour éviter leur décès. "
+"Des intoxications par des algues bleues ont également déjà causé la mort de "
+"chevaux, de bovins, d'oiseaux et de poissons."
 
 # Health Risk info page title
 msgid ""
 "If you are a pet owner you can find further information from the <2>Blue "
 "Cross</2>."
 msgstr ""
+"<2></2>Si vous avez un animal domestique, vous pouvez trouver plus "
+"d'informations sur https://vetemergency.be/"
 
 # Health Risk info page title
 msgid ""
@@ -262,11 +271,11 @@ msgstr ""
 
 # Further action and reporting harmful algal blooms info page title
 msgid "Report"
-msgstr ""
+msgstr "Envoyez une observation"
 
 # Further action info page content
 msgid "Further action"
-msgstr ""
+msgstr "Autres actions"
 
 # Further action info page content
 msgid ""
@@ -280,24 +289,28 @@ msgid ""
 "authority:"
 msgstr ""
 "La responsabilité de gérer les proliférations d'algues incombe au "
-"propriétaire du plan d’eau concerné. Si une prolifération est présente et "
-"qu'aucun signe d'avertissement n'est visible, nous vous recommandons de "
-"contacter le service de santé environnementale de votre autorité locale. La "
-"santé environnementale évaluera toute action requise par rapport aux "
-"directives pertinentes et pourra contacter l'autorité de régulation (EA, "
-"SEPA, NRW, EANI) pour d'autres analyses de l’eau. Vous pouvez également "
-"signaler directement les incidents de prolifération d'algues ou de pollution"
-" de l'eau à votre autorité de réglementation environnementale :"
+"propriétaire du plan d’eau concerné. Si vous observez une prolifération en "
+"Belgique et qu'aucun panneau d'avertissement n'est visible à cet endroit, "
+"nous vous recommandons de contacter rapidement le service de l'environnement"
+" de votre ville ou commune.  Vous pouvez également signaler directement les "
+"incidents de prolifération d'algues ou de pollution de l'eau en Wallonie à "
+"'SOS pollution' (Tel: 070/23.30.01) "
+"http://environnement.wallonie.be/eew2000/divers/divr4.htm"
 
 # Further action info page content
 msgid ""
 "For more information and advice on algal blooms see:<br/><br/><3>England & "
 "Wales</3><br/><br/><6>Scotland</6>"
-msgstr "<></>"
+msgstr ""
+"Pour plus d'informations et des conseils concernant les proliférations algales, vous pouvez consulter les sites internet suivants:\n"
+"Flandres  \n"
+"Bruxelles \n"
+"Wallonie \n"
+"Pays-Bas"
 
 # BRC info page title
 msgid "BRC approved"
-msgstr ""
+msgstr "Approuvé par le BRC"
 
 # BRC info page content
 msgid ""
@@ -306,6 +319,10 @@ msgid ""
 "assurance; made available for conservation and research and preserved for "
 "long-term use."
 msgstr ""
+"Quand vous voyez ce logo pour une application d'observations biologiques, "
+"vous êtes certain(e) que les données soumises seront:   évaluées pour leur "
+"qualité par des experts; utilisées pour la protection de l'environnement et "
+"la recherche et préservées pour une utilisation à long terme."
 
 # BRC info page content
 msgid ""
@@ -315,10 +332,16 @@ msgid ""
 "of iRecord.</0><1>Quality assured data is passed onto Local Environmental "
 "Records Centres, National Recording Schemes and to the NBN Gateway.</1></1>"
 msgstr ""
+"Ce logo indique que vos observations sont envoyées dans la base de données "
+"du Biological Record Centre dans le système iRecord, où il est accessible à "
+"vous-mêmes en tant qu'observateur(rice), à des experts pour vérification et "
+"aux autres utilisateurs de iRecord. Les données, après vérification, sont "
+"transférées aux Local Environmental Records Centres, National Recording "
+"Schemes et au NBN Gateway."
 
 # BRC info page label
 msgid "About BRC"
-msgstr ""
+msgstr "A propos du BRC"
 
 # BRC info page content
 msgid ""
@@ -330,10 +353,17 @@ msgid ""
 "for Ecology & Hydrology (UKCEH). The work of BRC is a major BRC of the "
 "National Biodiversity Network (NBN)."
 msgstr ""
+"Le 'Biological Records Centre' (BRC) fondé en 1964, est une institution "
+"nationale au Royaume-Uni pour l'enregistrement des observations d'espèces "
+"terrestres et d'eau douce. BRC travaille en lien avec une communauté "
+"d'observateurs volontaires, principalement grâce au soutien de programmes et"
+" d'associations nationales. BRC bénéficie de soutien du Joint Nature "
+"Conservation Committee (JNCC) et du Centre for Ecology & Hydrology (UKCEH). "
+"Le BRC est un acteur majeur du National Biodiversity Network (NBN)."
 
 # BRC info page content
 msgid "Which app should I use?"
-msgstr ""
+msgstr "Quelle application devrais-je utiliser?"
 
 # BRC info page content
 msgid ""
@@ -344,10 +374,17 @@ msgid ""
 " same place, treated in the same way and will meet the established standards"
 " required by the Biological Record Centre."
 msgstr ""
+"Vous avez noté que plusieurs applications BRC peuvent être utilisées pour "
+"enregistrer les mêmes espèces? Pour signifier que les données de toutes nos "
+"applications sont rassemblées au même endroit, nous avons introduit le logo "
+"'approuvé BRC' . C'est pourquoi vous êtes libres de choisir l'application "
+"pour enregistrer la présence d'une certaine espèce. Toutes les observations "
+"seront traitées de la même façon et devront respecter les standards de "
+"qualité requis par le Biological Record Centre."
 
 # Credit info page title
 msgid "Credits"
-msgstr ""
+msgstr "Remerciements"
 
 # Credit info page content
 msgid ""
@@ -357,10 +394,29 @@ msgid ""
 "England for their support, advice and guidance during the development of the"
 " app."
 msgstr ""
+"Cette application a été développée avec le soutien financier du UK Centre "
+"for Ecology & Hydrology, le National Environment Research Council et le "
+"Gouvernement écossais. De plus, les membres du personnel du Scottish "
+"Environment Protection Agency,  Health Protection Scotland, Environment "
+"Agency et Public Health England ont contribué par leur soutien, avis et "
+"conseils."
 
 # Credit info page content
 msgid "We are grateful for all the people that helped to create this app:"
-msgstr "Nous remercions les personnes qui ont aidé à créer cette app:"
+msgstr ""
+"Nous remercions spécialement les personnes qui ont aidé à la réalisation de cette application:\n"
+"Laurence Carvalho (UKCEH)\n"
+"Anne Dobel (UKCEH)\n"
+"Gemma Nash (UKCEH)\n"
+"Eleanor Mackay (UKCEH)\n"
+"David Roy (UKCEH)\n"
+"Philip Taylor (UKCEH)\n"
+"Helen Woods (UKCEH)\n"
+"Karolis Kazlauskis (Flumens)\n"
+"Vilius Stankaitis (Flumens)\n"
+"Jan Krokowski (SEPA)\n"
+"Jeroen Van Wichelen (INBO)\n"
+"Annick Wilmotte (University of Liège)"
 
 # Credit info page content
 msgid ""
@@ -368,10 +424,13 @@ msgid ""
 "at:<br/><br/><3>www.paintingbiology.com<br/></3> <br/>Twitter: "
 "@JuliaFpaintsbio<br/>email: paintingbiology@gmail.com"
 msgstr ""
+"Merci aussi à  Julia Ferguson pour la conception du logo. Julia peut être "
+"contactée à :www.paintingbiology.com Twitter: @JuliaFpaintsbioemail: "
+"paintingbiology@gmail.com"
 
 # Settings page header title
 msgid "Settings"
-msgstr ""
+msgstr "Paramètres"
 
 # Settings page label
 msgid "English"
@@ -379,19 +438,20 @@ msgstr "Anglais"
 
 # Settings page label
 msgid "Language"
-msgstr "Langue"
+msgstr "Language"
 
 # Settings page message
 msgid "Share app crash data so we can make the app more reliable."
 msgstr ""
+"Partagez vos données de plantage de l'application pour la rendre plus fiable"
 
 # Settings page label
 msgid "Reset App"
-msgstr ""
+msgstr "Réinitialiser l'application"
 
 # Settings page label
 msgid "Share App Analytics"
-msgstr ""
+msgstr "Partager l'analytique de l'application"
 
 # Reset app alert button label
 msgid "Cancel"
@@ -399,21 +459,24 @@ msgstr "Annuler"
 
 # Reset app alert button label
 msgid "Reset"
-msgstr ""
+msgstr "Réinitialiser"
 
 # Reset app alert message
 msgid ""
 "Are you sure you want to reset the application to its initial "
 "state?<1><0>This will wipe all the locally stored app data!</0></1>"
 msgstr ""
+"Etes-vous certain(e) de vouloir réinitialiser l'application vers son état "
+"initial?  Ceci éliminera toutes les données de l'application qui sont "
+"conservées localement"
 
 # Start record draft title
 msgid "No uploaded records"
-msgstr ""
+msgstr "Pas d'observations téléchargées"
 
 # Start record draft button label
 msgid "Discard"
-msgstr ""
+msgstr "Eliminer"
 
 # Start record draft button label
 msgid "Continue"
@@ -421,7 +484,7 @@ msgstr "Continuer"
 
 # Start record draft button message
 msgid "Previous record draft exists, would you like to continue it?"
-msgstr ""
+msgstr "Des brouillons d'observation existent, voulez-vous les finaliser?"
 
 # Record page label
 msgid "No photo has been added."
@@ -429,11 +492,11 @@ msgstr "Aucune photo n'a été ajoutée"
 
 # Record page label
 msgid "Press <1></1> to add."
-msgstr ""
+msgstr "Pressez    pour ajouter"
 
 # Record page label
 msgid "Location"
-msgstr ""
+msgstr "Localisation"
 
 # Record page label
 msgid "Today"
@@ -445,7 +508,7 @@ msgstr "Date"
 
 # Record page label
 msgid "Bloom size"
-msgstr "Taille du bloom"
+msgstr "Taille de la prolifération"
 
 # Record page label
 msgid "Activities"
@@ -458,18 +521,20 @@ msgstr "Commentaires"
 # Record comment information message
 msgid "Please add any extra info about this record."
 msgstr ""
+"Veuillez ajouter ici toute information supplémentaire concernant cette "
+"observation"
 
 # Record comment placeholder message
 msgid "Enter more information here..."
-msgstr ""
+msgstr "Entrez plus d'information ici"
 
 # Record activities information message
 msgid "What activities were you doing?"
-msgstr ""
+msgstr "Quelle(s) activité(s) étiez-vous en train de faire?"
 
 # Record activities content
 msgid "Walking / Running"
-msgstr "Se promener/courrir"
+msgstr "Se promener/courir"
 
 # Record activities content
 msgid "Dog-walking"
@@ -481,7 +546,7 @@ msgstr "Faire du vélo"
 
 # Record activities content
 msgid "Birdwatching"
-msgstr ""
+msgstr "Observer les oiseaux"
 
 # Record activities content
 msgid "Fishing"
@@ -493,7 +558,7 @@ msgstr "Nager"
 
 # Record activities content
 msgid "Boats / Watersports"
-msgstr ""
+msgstr "Sports nautiques"
 
 # Record activities content
 msgid "Other"
@@ -501,31 +566,32 @@ msgstr "Autre"
 
 # Record activities content divider
 msgid "What activities are done at this location?"
-msgstr ""
+msgstr "Quelles activités sont réalisées dans ce site?"
 
 # Record activities divider content
 msgid "Please select the activities type for this record."
 msgstr ""
+"Veuillez sélectionner les types d'activités concernant cette observation"
 
 # Record bloom size content
 msgid "Doormat"
-msgstr ""
+msgstr "Paillasson"
 
 # Record bloom size content
 msgid "Parking space"
-msgstr ""
+msgstr "Place de parking"
 
 # Record bloom size content
 msgid "Tennis court"
-msgstr "Court de tennis"
+msgstr "Terrain de tennis"
 
 # Record bloom size content
 msgid "Even bigger"
-msgstr ""
+msgstr "Encore plus grand"
 
 # Record bloom size information message
 msgid "Select the closest match below."
-msgstr ""
+msgstr "Sélectionnez ce qui est le plus ressemblant."
 
 # Splash screen content
 msgid "Warning"
@@ -538,10 +604,12 @@ msgid ""
 "bloom and do not allow pets or children to come into contact with, or "
 "swallow, the water."
 msgstr ""
+"Les algues bleues (également appelées cyanobactéries ) peuvent \n"
+"nuire à la santé des personnes et des animaux. Evitez le contact avec de l'eau que vous soupçonnez être contaminée par des algues bleues et ne laissez pas les animaux domestiques ou les enfants toucher ou avaler de l’eau."
 
 # Splash screen content
 msgid "Got it!"
-msgstr ""
+msgstr "J'ai compris!"
 
 # Button label
 msgid "Delete"
@@ -549,35 +617,35 @@ msgstr "Supprimer"
 
 # My records page background message
 msgid "No finished pending records."
-msgstr ""
+msgstr "Observation en attente et non finalisée"
 
 # Record location name message
 msgid "Location name e.g. lake, reservoir or pond name"
-msgstr ""
+msgstr "Nom de la localité, par ex., nom du lac, étang, barrage ou réservoir"
 
 # Record incomplete pop up record message
 msgid "Please add a photo of the bloom"
-msgstr ""
+msgstr "Veuillez ajouter une photo du bloom"
 
 # Record incomplete pop up record message
 msgid "Please select location."
-msgstr ""
+msgstr "Veuillez sélectionner la localisation"
 
 # Record incomplete pop up button label
 msgid "Got it"
-msgstr ""
+msgstr "J'ai compris"
 
 # Record incomplete pop up title
 msgid "Record incomplete"
-msgstr ""
+msgstr "Observation incomplète"
 
 # Record verify location button label
 msgid "Incorrect"
-msgstr ""
+msgstr "Incorrect"
 
 # Record verify location button label
 msgid "Correct"
-msgstr ""
+msgstr "Correct"
 
 # Side menu label
 msgid "Navigate"
@@ -585,23 +653,23 @@ msgstr "Naviguer"
 
 # Side menu label
 msgid "Algal bloom info"
-msgstr ""
+msgstr "Information sur la prolifération algale"
 
 # Side menu label
 msgid "Report a bloom"
-msgstr ""
+msgstr "Enregistrez l'observation d'une prolifération"
 
 # Side menu content
 msgid "App version"
-msgstr ""
+msgstr "Version de l'application"
 
 # Delete record alert message
 msgid "Are you sure you want to delete this record ?"
-msgstr ""
+msgstr "Etes-vous certain(e) de vouloir éliminer cette observation?"
 
 # More information info page title
 msgid "Using the app"
-msgstr ""
+msgstr "Utilisation de l'application"
 
 # More information info page content
 msgid ""
@@ -609,10 +677,14 @@ msgid ""
 "service for records submitted in your area, please see the section on “Using"
 " the app” on the <2>Bloomin’ Algae website</2>."
 msgstr ""
+"Pour plus d'information sur l'utilisation de l'application, y compris "
+"l'installation d'un service de notification pour les observations concernant"
+" votre région, veuillez consulter la section “Using the app” sur le site "
+"internet de Bloomin’ Algae (en anglais)."
 
 # What do we use your records for info page title
 msgid "What do we use your records for?"
-msgstr ""
+msgstr "Quel usage faisons-nous de vos observations?"
 
 # What do we use your records for info page content
 msgid ""
@@ -624,10 +696,13 @@ msgid ""
 "environment agencies and water companies in water quality risk management "
 "and prevention.</4></0>"
 msgstr ""
+"-  Pour informer rapidement les autorités locales et les propriétaires des plans d’eau afin d'accélérer la mise en place de panneaux d'avertissement. \n"
+"- Pour la recherche scientifique, pour augmenter les connaissances concernant la période et l'emplacement des proliférations d'algues bleues à travers la Belgique et pour mieux caractériser l'influence des changements climatiques maintenant et dans le futur. \n"
+"- En appui aux instances compétentes pour la gestion et la prévention des risques concernant la qualité des eaux. "
 
 # Record upload button label
 msgid "Upload"
-msgstr ""
+msgstr "Téléchargez"
 
 # Record button label
 msgid "OK"
@@ -635,37 +710,39 @@ msgstr "OK"
 
 # part of record
 msgid "DD/MM/YYYY"
-msgstr ""
+msgstr "JJ/MM/AAAA"
 
 # part of record
 msgid "Record"
-msgstr ""
+msgstr "Observation"
 
 # onBoarding page content
 msgid ""
 "By clicking “I Understand” you agree that you have read and understood this "
 "warning"
 msgstr ""
+"En cliquant sur \"Je comprends\", vous reconnaissez avoir lu et compris cet "
+"avertissement "
 
 # onBoarding page content
 msgid "I Understand"
-msgstr ""
+msgstr "J'ai compris"
 
 # Settings reset alert message
 msgid "Done"
-msgstr ""
+msgstr "Réalisé"
 
 # Info background message button label
 msgid "Hide"
-msgstr ""
+msgstr "Cachez"
 
 # Map page header label
 msgid "All Records"
-msgstr ""
+msgstr "Toutes les observations"
 
 # onBoarding title
 msgid "Welcome to Bloomin’ Algae!"
-msgstr ""
+msgstr "Bienvenue à Bloomin’ Algae!"
 
 # onBoarding content
 msgid ""
@@ -674,177 +751,191 @@ msgid ""
 "warnings to minimise risks to public and animal health. Thanks for taking "
 "part!"
 msgstr ""
+"Bloomin 'Algae est une application de Science participative (‘Citizen "
+"Science’ en anglais) pour signaler la présence de proliférations d'algues "
+"bleues (également appelées cyanobactéries). Les observations que vous "
+"envoyez contribuent à accélérer les réactions des autorités afin de "
+"minimiser les risques pour la santé publique et animale. Merci pour votre "
+"participation!"
 
 # Record map toggle
 msgid "See past 12 months"
-msgstr ""
+msgstr "Voir les derniers 12 mois"
 
 # Record map toggle
 msgid "The default setting is the past 4 weeks of records."
 msgstr ""
+"Le paramètre par défaut concerne les 4 dernières semaines d'observations. "
 
 # Record map toggle
 msgid "Please confirm this is your correct location."
-msgstr ""
+msgstr "Veuillez confirmer que la localisation est correcte"
 
 # Record alert image on a map
 msgid "This record has no images."
-msgstr ""
+msgstr "Il n'y a pas d'images avec cette observation"
 
 # Record status on a map
 msgid "rejected"
-msgstr ""
+msgstr "refusé"
 
 # Record status on a map
 msgid "complete"
-msgstr ""
+msgstr "complet"
 
 # Record status on a map
 msgid "plausible"
-msgstr ""
+msgstr "probable"
 
 # Record status on a map
 msgid "verified"
-msgstr ""
+msgstr "vérifié"
 
 # Part of User authentication page
 msgid "Register/Login"
-msgstr ""
+msgstr "Enregistrement/Connection"
 
 # Part of User authentication page
 msgid "Create a free account"
-msgstr ""
+msgstr "Créez un compte gratuit"
 
 # Part of User authentication page
 msgid "First name"
-msgstr ""
+msgstr "Prénom"
 
 # Part of User authentication page
 msgid "Last name"
-msgstr ""
+msgstr "Nom de famille"
 
 # Part of User authentication page
 msgid "Email"
-msgstr ""
+msgstr "Courrier électronique"
 
 # Part of User authentication page
 msgid "Password"
-msgstr ""
+msgstr "Mot de passe"
 
 # Part of User authentication page
 msgid ""
 "By clicking Sign Up, you agree to our <2>Privacy Policy</2> and <6>Terms and"
 " Conditions</6>"
 msgstr ""
+"En cliquant sur S'inscrire, vous acceptez notre politique de confidentialité"
+" et nos conditions générales "
 
 # Part of User authentication page
 msgid "Sign Up"
-msgstr ""
+msgstr "S'inscrire"
 
 # Part of User authentication page
 msgid "I am already a member"
-msgstr ""
+msgstr "Je suis déjà membre"
 
 # Part of User authentication page
 msgid "Sign In"
-msgstr ""
+msgstr "S'identifier"
 
 # part of User authentication page
 msgid "Welcome back"
-msgstr ""
+msgstr "Bienvenue à nouveau"
 
 # Part of User authentication page
 msgid "Sign in to your account to start"
-msgstr ""
+msgstr "Connectez-vous à votre compte pour commencer"
 
 # Part of User authentication page
 msgid "Forgot password?"
-msgstr ""
+msgstr "Mot de passe oublié?"
 
 # Part of User authentication page
 msgid "firstName is a required field"
-msgstr ""
+msgstr "Le prénom est un champ obligatoire"
 
 # Part of User authentication page
 msgid "Enter your email address to request a password reset."
 msgstr ""
+"Entrez votre adresse de courrier électronique pour demander une "
+"réinitialisation du mot de passe"
 
 # Part of User authentication page
 msgid "email is a required field"
-msgstr ""
+msgstr "L'adresse de courrier électronique est un champ obligatoire"
 
 # Part of User authentication page
 msgid "password is a required field"
-msgstr ""
+msgstr "Le mot de passe est un champ obligatoire"
 
 # Part of User authentication page
 msgid "secondName is a required field"
-msgstr ""
+msgstr "Le nom de famille est un champ obligatoire"
 
 # User authentication alert
 msgid "Logout"
-msgstr ""
+msgstr "Déconnection"
 
 # User authentication alert
 msgid "Are you sure you want to logout?"
-msgstr ""
+msgstr "Etes-vous certain(e) de vouloir quitter?"
 
 # User authentication alert
 msgid "Discard local data"
-msgstr ""
+msgstr "Eliminer les données locales"
 
 # User authentication alert
 msgid "Please wait..."
-msgstr ""
+msgstr "Veuillez attendre ..."
 
 # Survey header button
 msgid "Finish"
-msgstr ""
+msgstr "Terminer"
 
 # Survey camera options
 msgid "Choose a method to upload a photo"
-msgstr ""
+msgstr "Choisissez une méthode pour charger une photo"
 
 # Survey camera options
 msgid "Gallery"
-msgstr ""
+msgstr "Galerie de photos"
 
 # Survey camera options
 msgid "Camera"
-msgstr ""
+msgstr "Appareil photo"
 
 # User-surveys page background message
 msgid "Please do not forget to upload any pending records!"
 msgstr ""
+"S'il vous plait, n'oubliez pas de télécharger vos observations en attente"
 
 # All records page tip
 msgid "OK, got it"
-msgstr ""
+msgstr "OK, j'ai compris"
 
 # Error messages from server for user account actions
 msgid "Sorry"
-msgstr ""
+msgstr "Désolé"
 
 # Error messages from server for user account actions
 msgid "Unauthorized"
-msgstr ""
+msgstr "Non autorisé"
 
 # Error messages from server for user account actions
 msgid "Not found"
-msgstr ""
+msgstr "Non trouvé"
 
 # Error messages from server for user account actions
 msgid "Bad Request"
-msgstr ""
+msgstr "Requête incorrecte"
 
 # Verification message
 msgid ""
 "Some of your records have been verified. Please check your records list."
 msgstr ""
+"Certaines de vos observations ont été vérifiées. Veuillez contrôler votre "
+"liste d'observations."
 
 # Record date stamp
 msgid "Yesterday"
-msgstr ""
+msgstr "Hier"
 
 # Verification message
 msgid ""
@@ -862,14 +953,16 @@ msgid ""
 "app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
 "Hydrology</p></1></0>"
 msgstr ""
+"Merci beaucoup pour l'envoi de votre observation - ceci ressemble beaucoup à une prolifération d'algues bleues (aussi appelées cyanobactéries), et nous l'avons évalué comme 'considéré correct'. \n"
+"Ces proliférations constituent un risque élevé pour la santé publique et animale - particulièrement pour les chiens. S'il s'agit d'un endroit public, veuillez contrôler que des panneaux d'avertissement ont été placés. Si c'est un endroit privé, contactez votre responsable local de l'environnement qui peut conseiller le propriétaire pour placer un avertissement. De plus, évitez le contact avec l'eau ou l'écume sur la rive. Si vous ou votre animal de compagnie ne vous sentez pas bien après un contact avec de l'eau qui peut être contaminée par des algues bleues, nous vous recommandons de consulter immédiatement un médecin ou un vétérinaire. Encore merci pour l'utilisation de l'app. L'équipe Bloomin'Algae au UK Centre for Ecology and Hydrology."
 
 # Verification message
 msgid "READ MORE"
-msgstr ""
+msgstr "Plus d'informations"
 
 # Verification message header
 msgid "Info"
-msgstr ""
+msgstr "Information"
 
 # Verification message
 msgid ""
@@ -888,6 +981,21 @@ msgid ""
 "advice.</p><p>Thanks again for using the app!</p><p>The Bloomin'Algae team "
 "at the UK Centre for Ecology & Hydrology</p></2></0>"
 msgstr ""
+"Merci beaucoup pour l'envoi de votre observation par l'app Bloomin'Algae. "
+"D'après vos photos, nous ne pensons pas qu'il s'agit d'algues bleues "
+"(cyanobactéries). Nous ne pouvons pas être certains qu'il n'y a pas d'algues"
+" bleues du tout à cet endroit, mais elles ne sont pas clairement visibles "
+"sur la photo. Notre guide sur les algues dans l'app a des photos pour aider "
+"avec l'identification. Notre site internet a aussi la description d'un test "
+"simple avec un bâton que vous pouvez utiliser pour éliminer les lentilles "
+"d'eau et autres algues, qui sont souvent confondues avec les algues bleues: "
+"https://www.ceh.ac.uk/algal-blooms/bloomin-algae. Si vous soupçonnez une "
+"prolifération à un endroit, évitéz le contact avec l'eau ou l'écume sur les "
+"rives. Si vous ou votre animal de compagnie ne vous sentez pas bien après un"
+" contact avec de l'eau qui peut être contaminée par des algues bleues, nous "
+"vous recommandons de consulter immédiatement un médecin ou un vétérinaire. "
+"Encore merci pour l'utilisation de l'application! L'équipe Bloomin'Algae au "
+"UK Centre for Ecology & Hydrology."
 
 # Verification message
 msgid ""
@@ -904,6 +1012,18 @@ msgid ""
 "app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
 "Hydrology</p></2></0>"
 msgstr ""
+"Merci beaucoup pour l'envoi de votre observation par l'app Bloomin'Algae. "
+"Nous avons rejeté cette observation car nous pensons que la localisation est"
+" incorrecte. Pourriez-vous contrôler et envoyer une nouvelle observation "
+"avec une localisation correcte? S'il vous plaît, consultez notre site "
+"internet pour de l'aide pour utiliser l'app et identifier les proliférations"
+" d'algues bleues : https://www.ceh.ac.uk/algal-blooms/bloomin-algae. Si vous"
+" soupçonnez une prolifération à un endroit, évitéz le contact avec l'eau ou "
+"l'écume sur les rives. Si vous ou votre animal de compagnie ne vous sentez "
+"pas bien après un contact avec de l'eau qui peut être contaminée par des "
+"algues bleues, nous vous recommandons de consulter immédiatement un médecin "
+"ou un vétérinaire. Encore merci pour l'utilisation de l'application! "
+"L'équipe Bloomin'Algae au UK Centre for Ecology & Hydrology."
 
 # Verification message
 msgid ""
@@ -920,33 +1040,48 @@ msgid ""
 "again for using the app!</p><p>The Bloomin'Algae team at the UK Centre for "
 "Ecology & Hydrology</p></2></0>"
 msgstr ""
+"Merci beaucoup pour l'envoi de votre observation par l'app Bloomin'Algae. "
+"Votre photo ne nous permet malheureusement pas de prendre une décision. S'il"
+" vous plaît, pourriez-vous envoyer une nouvelle observation avec une photo "
+"plus détaillée de l'eau (si possible, à environ 30-50 cm de la surface de "
+"l'eau ou de l'écume)? Consultez notre site internet pour de l'aide pour "
+"utiliser l'app et identifier les proliférations d'algues bleues : "
+"https://www.ceh.ac.uk/algal-blooms/bloomin-algae. Si vous soupçonnez une "
+"prolifération à un endroit, évitez le contact avec l'eau ou l'écume sur les "
+"rives. Si vous ou votre animal de compagnie ne vous sentez pas bien après un"
+" contact avec de l'eau qui peut être contaminée par des algues bleues, nous "
+"vous recommandons de consulter immédiatement un médecin ou un vétérinaire. "
+"Encore merci pour l'utilisation de l'application! L'équipe Bloomin'Algae au "
+"UK Centre for Ecology & Hydrology."
 
 # Part of photo picker
 msgid "Are you sure you want to remove this photo?"
-msgstr ""
+msgstr "Etes-vous certain(e) de vouloir éliminer cette photo?"
 
 # Part of photo picker
 msgid "Note: it will remain in the gallery."
-msgstr ""
+msgstr "Note: elle restera dans la galerie de photos."
 
 # Uploaded record message
 msgid "This record has been uploaded and can not be edited."
-msgstr ""
+msgstr "Cette observation a été téléchargée et ne peut pas être modifiée"
 
 # Successfully logged in message
 msgid "Successfully logged in"
-msgstr ""
+msgstr "Connexion réussie "
 
 # Photo picker failed to pick photo error message
 msgid "Sorry, we couldn't get the image."
-msgstr ""
+msgstr "Désolé, nous ne pouvons pas télécharger cette image."
 
 # Successfully registration alert message
 msgid "Welcome aboard"
-msgstr ""
+msgstr "Bienvenue à bord!"
 
 # Successfully registration alert message
 msgid ""
 "Before starting any records please check your email and click on the "
 "verification link."
 msgstr ""
+".Avant de commencer toute observation, veuillez vérifier votre courrier "
+"électronique et cliquer sur le lien de vérification. "
