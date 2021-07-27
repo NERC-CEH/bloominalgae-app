@@ -33,6 +33,7 @@ const Credits = () => (
             <li>Vilius Stankaitis (Flumens)</li>
             <li>Jan Krokowski (SEPA)</li>
             <li>Jeroen Van Wichelen (INBO)</li>
+            <li>Annick Wilmotte (Université de Liège)</li>
           </ul>
         </P>
         <P>

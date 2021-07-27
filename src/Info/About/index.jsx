@@ -1,18 +1,9 @@
 import React from 'react';
-import { Page, Main, Header, Section } from '@apps';
+import { Page, Main, Header, Section, TLink } from '@apps';
 import { Trans as T } from 'react-i18next';
 import './styles.scss';
 
 const { P } = Section;
-
-// eslint-disable-next-line
-const TLink = ({ children }) => {
-  const link = children[0];
-
-  const href = link.includes('https://') ? link : `https://${link}`; // eslint-disable-line
-
-  return <a href={href}>{link}</a>;
-};
 
 const About = () => (
   <Page id="about">

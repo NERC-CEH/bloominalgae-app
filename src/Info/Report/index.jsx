@@ -1,6 +1,7 @@
 import React from 'react';
-import { Page, Main, Header, Section } from '@apps';
+import { Page, Main, Header, Section, TLink } from '@apps';
 import appModel from 'appModel';
+import { Trans as T } from 'react-i18next';
 import './styles.scss';
 
 const { P } = Section;
@@ -9,7 +10,7 @@ const getOrganizationsLinkByLanguage = () => {
   const isLanguageDutch = appModel.attrs.language === 'nl-NL';
   const isLanguageFrench = appModel.attrs.language === 'fr-Fr';
 
-  if (isLanguageDutch) {
+  if (isLanguageDutch || isLanguageFrench) {
     return (
       <>
         <li>
@@ -37,10 +38,6 @@ const getOrganizationsLinkByLanguage = () => {
         </li>
       </>
     );
-  }
-
-  if (isLanguageFrench) {
-    return null;
   }
 
   return (
@@ -77,15 +74,17 @@ const Report = () => (
     <Header title="Further action" />
     <Main className="ion-padding">
       <Section>
-        <P>
-          The responsibility to manage algal blooms lies with the owner of the
-          water concerned. If a bloom is present and no warning signs are
-          visible, we recommend you contact the environmental health department
-          in your local authority. Environmental health will assess any action
-          required against the relevant guidance and may contact the regulatory
-          authority (EA, SEPA, NRW, NIEA) for further water tests. You may also
-          directly report incidents of algal blooms or water pollution incidents
-          to your environment regulatory authority:
+        <P skipTranslation>
+          <T components={{ url: <TLink /> }}>
+            The responsibility to manage algal blooms lies with the owner of the
+            water concerned. If a bloom is present and no warning signs are
+            visible, we recommend you contact the environmental health
+            department in your local authority. Environmental health will assess
+            any action required against the relevant guidance and may contact
+            the regulatory authority (EA, SEPA, NRW, NIEA) for further water
+            tests. You may also directly report incidents of algal blooms or
+            water pollution incidents to your environment regulatory authority:
+          </T>
         </P>
 
         <P skipTranslation>

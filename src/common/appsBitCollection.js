@@ -31,3 +31,5 @@ export { default as Media } from '@bit/flumens.apps.models.media-with-drupal-rem
 
 export { default as Store } from '@bit/flumens.apps.models.store';
 export { default as initStoredSamples } from '@bit/flumens.apps.models.init-stored-samples';
+
+export * from './Components/TranslationComponents';
