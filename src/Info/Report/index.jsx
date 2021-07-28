@@ -44,8 +44,8 @@ const getOrganizationsLinkByLanguage = () => {
     return (
       <>
         <li>
-          <a href="https://www.vmm.be/water/kwaliteit-waterlopen/blauwalgen">
-            Flandres
+          <a href="http://environnement.sante.wallonie.be/home/slide/les-sites-de-baignade-wallons-sous-haute-surveillance-bacteriologique.html">
+            Wallonie
           </a>
         </li>
 
@@ -56,8 +56,8 @@ const getOrganizationsLinkByLanguage = () => {
         </li>
 
         <li>
-          <a href="http://environnement.sante.wallonie.be/home/slide/les-sites-de-baignade-wallons-sous-haute-surveillance-bacteriologique.html">
-            Wallonie
+          <a href="https://www.vmm.be/water/kwaliteit-waterlopen/blauwalgen">
+            Flandres
           </a>
         </li>
 
