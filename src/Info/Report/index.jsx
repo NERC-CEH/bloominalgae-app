@@ -10,7 +10,7 @@ const getOrganizationsLinkByLanguage = () => {
   const isLanguageDutch = appModel.attrs.language === 'nl-NL';
   const isLanguageFrench = appModel.attrs.language === 'fr-Fr';
 
-  if (isLanguageDutch || isLanguageFrench) {
+  if (isLanguageDutch) {
     return (
       <>
         <li>
@@ -34,6 +34,36 @@ const getOrganizationsLinkByLanguage = () => {
         <li>
           <a href="https://www.wur.nl/nl/Dossiers/dossier/Blauwalg.htm">
             Nederland
+          </a>
+        </li>
+      </>
+    );
+  }
+
+  if (isLanguageFrench) {
+    return (
+      <>
+        <li>
+          <a href="https://www.vmm.be/water/kwaliteit-waterlopen/blauwalgen">
+            Flandres
+          </a>
+        </li>
+
+        <li>
+          <a href="https://environnement.brussels/thematiques/eau/leau-bruxelles/etangs-et-cours-deau/les-algues-bleues-cyanobacteries">
+            Bruxelles
+          </a>
+        </li>
+
+        <li>
+          <a href="http://environnement.sante.wallonie.be/home/slide/les-sites-de-baignade-wallons-sous-haute-surveillance-bacteriologique.html">
+            Wallonie
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.wur.nl/nl/Dossiers/dossier/Blauwalg.htm">
+            Pays-Bas
           </a>
         </li>
       </>
