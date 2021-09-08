@@ -1,5 +1,5 @@
 {
-  "version": "2.0.4",
+  "version": "2.0.5",
   "scripts": {
     "start": "webpack serve --progress --watch --content-base build --port 8000",
     "build": "NODE_ENV=production webpack",
@@ -46,7 +46,7 @@
     "@bit/flumens.apps.utils.analytics": "0.2.0",
     "@bit/flumens.apps.utils.location": "0.1.6",
     "@bit/flumens.apps.utils.validation": "0.2.0",
-    "@capacitor/android": "2.4.7",
+    "@capacitor/android": "2.5.0",
     "@capacitor/core": "2.4.7",
     "@capacitor/ios": "2.4.7",
     "@indicia-js/core": "5.4.0",
