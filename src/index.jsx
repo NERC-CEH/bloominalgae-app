@@ -37,17 +37,17 @@ async function init() {
   await userModel._init;
   await savedSamples._init;
 
-  appModel.attrs.sendAnalytics &&
-    initAnalytics({
-      dsn: config.sentryDNS,
-      environment: config.environment,
-      build: config.build,
-      release: config.version,
-      userId: userModel.attrs.id,
-      tags: {
-        'app.appSession': appModel.attrs.appSession,
-      },
-    });
+  initAnalytics({
+    dsn: config.sentryDNS,
+    environment: config.environment,
+    build: config.build,
+    release: config.version,
+    userId: userModel.attrs.id,
+    tags: {
+      'app.appSession': appModel.attrs.appSession,
+    },
+    isDisabled: () => !appModel.attrs.sendAnalytics,
+  });
 
   appModel.attrs.appSession += 1;
   appModel.save();
