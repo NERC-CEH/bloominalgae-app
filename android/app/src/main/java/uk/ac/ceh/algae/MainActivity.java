@@ -1,4 +1,4 @@
-package com.natural_apptitude.butterfly;
+package uk.ac.ceh.algae;
 
 import android.os.Bundle;
 
