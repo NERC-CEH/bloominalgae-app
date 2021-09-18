@@ -1,13 +1,13 @@
 {
-  "appId": "uk.ac.ceh.algae",
-  "appName": "Bloomin' Algae",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "build",
-  "cordova": {},
-  "plugins": {
-    "SplashScreen": {
-      "androidScaleType": "CENTER_CROP"
-    }
-  }
+	"appId": "uk.ac.ceh.algae",
+	"appName": "Bloomin' Algae",
+	"bundledWebRuntime": false,
+	"npmClient": "npm",
+	"webDir": "build",
+	"cordova": {},
+	"plugins": {
+		"SplashScreen": {
+			"androidScaleType": "CENTER_CROP"
+		}
+	}
 }

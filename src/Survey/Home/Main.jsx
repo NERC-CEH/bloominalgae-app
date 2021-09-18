@@ -1,16 +1,13 @@
 import { observer } from 'mobx-react';
-import config from 'config';
 import React from 'react';
 import {
   Main,
   MenuAttrItemFromModel,
   MenuAttrItem,
-  PhotoPicker,
   InfoMessage,
   InfoButton,
 } from '@apps';
 import PropTypes from 'prop-types';
-import image from 'common/models/media';
 import {
   bicycleOutline,
   locationOutline,
@@ -20,6 +17,7 @@ import {
 } from 'ionicons/icons';
 import clsx from 'clsx';
 import { IonList } from '@ionic/react';
+import PhotoPicker from 'Components/PhotoPicker';
 import GridRefValue from '../Components/GridRefValue';
 import logo from './app_logo_dark.png';
 import './styles.scss';
@@ -222,12 +220,7 @@ class Component extends React.Component {
             </InfoMessage>
           )}
 
-          <PhotoPicker
-            model={occ}
-            ImageClass={image}
-            isDisabled={isDisabled}
-            dataDirPath={config.dataPath}
-          />
+          <PhotoPicker model={occ} />
 
           <MenuAttrItem
             routerLink={`${match.url}/location`}

@@ -4,6 +4,8 @@ import Header from 'Components/Header';
 import { IonItem, IonItemGroup, IonLabel, IonRouterLink } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
 import appLogo from './appLogo.png';
+import backgroundImage from './homePageBackground.jpg';
+
 import './styles.scss';
 
 function Home() {
@@ -12,7 +14,10 @@ function Home() {
       <Header />
 
       <Main forceOverscroll="false">
-        <div className="app-home-background">
+        <div
+          className="app-home-background"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
           <img className="app-logo" src={appLogo} alt="" />
           <IonItemGroup>
             <IonRouterLink routerLink="/survey/start" routerDirection="none">

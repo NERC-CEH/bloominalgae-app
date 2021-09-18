@@ -114,7 +114,6 @@
 
   ion-slides ion-slide.first {
     @include slide;
-    background-image: url('./images/first.jpg');
   }
 
   ion-slides ion-slide.second {
@@ -122,7 +121,6 @@
 
     ion-content {
       --background: none;
-      background-image: url('./images/second.jpg');
       background-size: cover;
       background-repeat: no-repeat;
 

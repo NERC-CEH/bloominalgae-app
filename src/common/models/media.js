@@ -2,9 +2,8 @@ import { Media } from '@apps';
 import Log from 'helpers/log';
 import config from 'config';
 import { isPlatform } from '@ionic/react';
-import { Capacitor, Plugins, FilesystemDirectory } from '@capacitor/core';
-
-const { Filesystem } = Plugins;
+import { Capacitor } from '@capacitor/core';
+import { Filesystem, Directory } from '@capacitor/filesystem';
 
 export default class AppMedia extends Media {
   async destroy(silent) {
@@ -30,7 +29,7 @@ export default class AppMedia extends Media {
     try {
       await Filesystem.deleteFile({
         path: URL,
-        directory: FilesystemDirectory.Data,
+        directory: Directory.Data,
       });
 
       if (!this.parent) {

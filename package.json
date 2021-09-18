@@ -1,11 +1,12 @@
 {
   "version": "2.0.5",
   "scripts": {
-    "start": "webpack serve --progress --watch --content-base build --port 8000",
+    "start": "webpack serve --progress --content-base build --port 8000",
     "build": "NODE_ENV=production webpack",
-    "build:production": "npm run clean && npm run build && npx cap sync",
-    "build:resources": "mkdir -p resources && cp -R other/designs/android resources && cp -R other/designs/splash.png resources && npx sharp -i other/designs/icon.svg -o resources/icon.png resize 1024 1024 -- removeAlpha && npx cordova-res ios --skip-config --resources resources --copy && npx cordova-res android --skip-config --resources resources --copy",
+    "build:production": "npm run clean && npm run build && npx cap sync && npm run build:resources",
+    "build:resources": "mkdir -p resources && cp -R other/designs/android resources && cp -R other/designs/*.png resources && npx cordova-res ios --skip-config --resources resources --copy && npx cordova-res android --skip-config --resources resources --copy",
     "deploy": "vercel --prod -A other/now.json -t $VERCEL_TOKEN --confirm",
+    "deploy:production": "bitrise run ci",
     "clean": "rm -rf build resources",
     "test": "echo 'No unit tests yet'",
     "test:eslint": "eslint src --quiet --ext .jsx --ext .js && echo '\\033[37;42;1m PASS \\033[00m'"
@@ -39,33 +40,41 @@
     "@bit/flumens.apps.models.sample-with-drupal-remote": "1.1.0",
     "@bit/flumens.apps.models.store": "0.3.1",
     "@bit/flumens.apps.page": "1.1.0",
-    "@bit/flumens.apps.photo-picker": "1.1.0",
+    "@bit/flumens.apps.photo-picker": "2.0.5",
     "@bit/flumens.apps.route-with-models": "0.3.1",
     "@bit/flumens.apps.section": "0.4.0",
     "@bit/flumens.apps.toggle": "^0.1.0",
     "@bit/flumens.apps.utils.analytics": "0.2.0",
     "@bit/flumens.apps.utils.location": "0.1.6",
     "@bit/flumens.apps.utils.validation": "0.2.0",
-    "@capacitor/android": "2.5.0",
-    "@capacitor/core": "2.4.7",
-    "@capacitor/ios": "2.4.7",
+    "@capacitor/android": "3.0.2",
+    "@capacitor/app": "^1.0.2",
+    "@capacitor/camera": "^1.0.2",
+    "@capacitor/core": "3.0.2",
+    "@capacitor/filesystem": "^1.0.2",
+    "@capacitor/geolocation": "^1.0.2",
+    "@capacitor/ios": "3.0.2",
+    "@capacitor/keyboard": "^1.0.2",
+    "@capacitor/splash-screen": "^1.0.2",
+    "@capacitor/status-bar": "^1.0.2",
     "@indicia-js/core": "5.4.0",
     "@indicia-js/remote-drupal": "5.6.7",
-    "@ionic-native/core": "5.31.1",
-    "@ionic/core": "5.6.2",
-    "@ionic/react": "5.6.2",
-    "@ionic/react-router": "5.6.2",
-    "@sentry/browser": "6.2.3",
-    "axios": "0.21.1",
+    "@ionic-native/core": "5.36.0",
+    "@ionic/core": "5.8.0",
+    "@ionic/react": "5.8.0",
+    "@ionic/react-router": "5.8.0",
+    "@sentry/browser": "6.12.0",
+    "@sentry/utils": "^6.12.0",
+    "axios": "^0.21.4",
     "babel-plugin-module-resolver": "4.1.0",
     "clsx": "^1.1.1",
-    "cordova-plugin-network-information": "2.0.2",
-    "cordova-sqlite-storage": "5.1.0",
-    "formik": "^2.2.6",
+    "cordova-plugin-network-information": "3.0.0",
+    "cordova-sqlite-storage": "6.0.0",
+    "formik": "^2.2.9",
     "i18next": "19.9.2",
-    "ionicons": "5.5.1",
+    "ionicons": "^5.5.3",
     "leaflet": "1.7.1",
-    "leaflet.markercluster": "1.5.0",
+    "leaflet.markercluster": "^1.5.1",
     "mobx": "6.1.8",
     "mobx-react": "7.1.0",
     "po2json": "^1.0.0-beta-3",
@@ -77,37 +86,41 @@
     "react-leaflet": "2.7.0",
     "react-leaflet-control": "^2.1.2",
     "react-leaflet-markercluster": "^2.0.0",
-    "react-router": "5.2.0",
+    "react-router": "^5.2.1",
     "react-router-dom": "5.2.0",
     "yup": "0.32.9"
   },
   "devDependencies": {
-    "@babel/core": "7.13.10",
-    "@babel/plugin-proposal-class-properties": "7.13.0",
-    "@babel/plugin-proposal-decorators": "7.13.5",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-decorators": "^7.15.4",
     "@babel/plugin-syntax-dynamic-import": "7.8.3",
-    "@babel/plugin-transform-exponentiation-operator": "7.12.13",
-    "@babel/preset-env": "7.13.10",
-    "@babel/preset-react": "7.12.13",
-    "@capacitor/cli": "2.4.7",
+    "@babel/plugin-transform-exponentiation-operator": "^7.14.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@capacitor/cli": "3.2.3",
     "@flumens/eslint-config": "0.4.0",
-    "@flumens/webpack-config": "1.0.0",
+    "@flumens/webpack-config": "2.2.2",
+    "@sentry/types": "^6.12.0",
     "babel-eslint": "10.1.0",
+    "babel-jest": "27.0.6",
+    "babel-plugin-module-resolver": "4.1.0",
     "cordova-res": "0.15.3",
-    "dotenv": "8.2.0",
-    "eslint": "7.21.0",
-    "eslint-import-resolver-babel-module": "5.2.0",
-    "eslint-plugin-import": "2.22.1",
-    "husky": "^6.0.0",
-    "jest": "^26.6.3",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-import-resolver-babel-module": "^5.3.1",
+    "eslint-plugin-import": "^2.24.2",
+    "husky": "^7.0.2",
+    "jest": "^27.2.0",
     "mock-geolocation": "1.0.11",
-    "prettier-eslint": "12.0.0",
+    "prettier-eslint": "^13.0.0",
     "prettier-eslint-cli": "5.0.1",
-    "regenerator-runtime": "0.13.7",
-    "sharp-cli": "1.14.1",
-    "vercel": "21.3.3",
-    "webpack": "5.15.0",
-    "webpack-cli": "4.4.0",
+    "regenerator-runtime": "^0.13.9",
+    "sharp-cli": "^1.15.0",
+    "tslib": "2.3.0",
+    "vercel": "^23.1.2",
+    "webpack": "5.42.1",
+    "webpack-cli": "4.7.2",
     "webpack-dev-server": "3.11.2"
   },
   "browserslist": [
@@ -166,12 +179,6 @@
         }
       ],
       "@babel/plugin-transform-exponentiation-operator",
-      [
-        "@babel/plugin-proposal-class-properties",
-        {
-          "loose": true
-        }
-      ],
       "@babel/plugin-syntax-dynamic-import"
     ]
   },
@@ -199,9 +206,32 @@
   },
   "bit": {
     "env": {
-      "compiler": "bit.envs/compilers/react@1.0.14"
+      "compiler": "bit.envs/compilers/react@1.0.21"
     },
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "npm"
+  },
+  "jest": {
+    "globals": {},
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "testRegex": "((src/\\.|/*.)(spec))\\.js?$",
+    "moduleNameMapper": {
+      "^.+.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$": "jest-transform-stub",
+      "ionic-native": "jest-transform-stub",
+      "react-photoswipe": "jest-transform-stub"
+    },
+    "moduleDirectories": [
+      "node_modules",
+      "components",
+      "src"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/test/setupTests.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!@ionic-native|@ionic|@bit)"
+    ]
   }
 }

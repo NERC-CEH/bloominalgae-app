@@ -14,6 +14,8 @@ import {
 import Log from 'helpers/log';
 import { arrowForward, alertCircleOutline } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
+import firstBackgroundImage from './images/first.jpg';
+import secondBackgroundImage from './images/second.jpg';
 import './styles.scss';
 
 const SplashScreen = ({ appModel }) => {
@@ -52,7 +54,10 @@ const SplashScreen = ({ appModel }) => {
           onIonSlideWillChange={handleSlideChangeStart}
           onIonSlidesDidLoad={onIonSlidesDidLoadWrap}
         >
-          <IonSlide className="first">
+          <IonSlide
+            className="first"
+            style={{ backgroundImage: `url(${firstBackgroundImage})` }}
+          >
             <div className="message-container blur">
               <div className="message-header">
                 <h2>
@@ -71,7 +76,10 @@ const SplashScreen = ({ appModel }) => {
             </div>
           </IonSlide>
 
-          <IonSlide className="second">
+          <IonSlide
+            className="second"
+            style={{ backgroundImage: `url(${secondBackgroundImage})` }}
+          >
             <Main>
               <div className="message-container">
                 <div className="message-header">
