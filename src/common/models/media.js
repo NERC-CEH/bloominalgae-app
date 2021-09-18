@@ -10,7 +10,7 @@ export default class AppMedia extends Media {
     Log('MediaModel: destroying.');
 
     // remove from internal storage
-    if (!Capacitor.isNative || window.testing) {
+    if (!Capacitor.isNativePlatform() || window.testing) {
       if (!this.parent) {
         return null;
       }
@@ -53,7 +53,7 @@ export default class AppMedia extends Media {
   getURL() {
     let { data: name, path = '' } = this.attrs;
 
-    if (!Capacitor.isNative || window.testing) {
+    if (!Capacitor.isNativePlatform() || window.testing) {
       return name;
     }
 
@@ -64,6 +64,12 @@ export default class AppMedia extends Media {
       } else {
         name = name.replace('file://', '');
       }
+    } else if (isPlatform('ios')) {
+      // when rebuilding across (dev?) builds the app ID changes and so the image is not found
+      // probably best to stick to the config.dataPath and also set the path to the image for future
+      // reference. Even better would be to store in the image only the last path "/Documents" or whatever goes
+      // after the app ID.
+      path = config.dataPath;
     }
 
     return Capacitor.convertFileSrc(`${path}/${name}`);
