@@ -3,6 +3,9 @@ default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 project_type: ios
 app:
   envs:
+    - BITRISE_PROJECT_NAME: uk.ac.ceh.algae
+      opts:
+        is_expand: false
     - BITRISE_PROJECT_PATH: ios/App/App.xcworkspace
       opts:
         is_expand: false
@@ -57,6 +60,10 @@ workflows:
           title: Create app artifact
           inputs:
             - notify_user_groups: none
+      - google-play-deploy@3:
+          inputs:
+            - package_name: $BITRISE_PROJECT_NAME
+            - service_account_json_key_path: $BITRISEIO_GOOGLE_SERVICE_KEY_URL
       - deploy-to-itunesconnect-application-loader@0:
           inputs:
             - password: $ITUNES_CONNECT_PASS

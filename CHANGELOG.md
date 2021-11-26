@@ -1,3 +1,7 @@
+## 2.0.7
+
+Fixed the communication with the new iRecord site.
+
 ## 2.0.0
 
 Added record verification updates.

@@ -3,8 +3,7 @@ import { isPlatform } from '@ionic/react';
 
 const isTestEnv = process.env.NODE_ENV === 'test';
 
-const backendUrl =
-  process.env.APP_BACKEND_URL || 'https://www.brc.ac.uk/irecord';
+const backendUrl = process.env.APP_BACKEND_URL || 'https://irecord.org.uk';
 
 const indiciaUrl =
   process.env.APP_BACKEND_INDICIA_URL || 'https://warehouse1.indicia.org.uk';
