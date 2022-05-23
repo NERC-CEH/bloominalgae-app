@@ -35,16 +35,16 @@ const About = () => (
 
         <P>
           When you submit a record the data is stored within the{' '}
-          <a href="https://www.brc.ac.uk/irecord/">iRecord website</a>, where it
-          will be displayed to users and be examined and verified by an expert.
-          Only your records are available publically, not your contact details.
-          These records may be collated and disseminated for education,
-          scientific research and other public benefit uses but contact details
-          will not be shared.
+          <a href="https://irecord.org.uk">iRecord website</a>, where it will be
+          displayed to users and be examined and verified by an expert. Only
+          your records are available publically, not your contact details. These
+          records may be collated and disseminated for education, scientific
+          research and other public benefit uses but contact details will not be
+          shared.
         </P>
 
         <P>
-          <a href="https://www.brc.ac.uk/irecord/node/8097">Privacy policy</a>
+          <a href="https://irecord.org.uk/privacy-notice">Privacy policy</a>
         </P>
       </Section>
     </Main>
