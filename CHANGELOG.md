@@ -1,3 +1,7 @@
+## 2.1.0
+
+Added Norwegian language.
+
 ## 2.0.7
 
 Fixed the communication with the new iRecord site.

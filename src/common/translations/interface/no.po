@@ -1,108 +1,114 @@
 # 
+# Translators:
+# Camilla Hagman, 2022
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
+"Last-Translator: Camilla Hagman, 2022\n"
+"Language-Team: Norwegian (https://www.transifex.com/ceh/teams/116164/no/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"Language: no\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: POEditor.com\n"
 
 # Button title
 msgid "Back"
-msgstr "Back"
+msgstr "Tilbake"
 
 # Home page toolbar menu label
 msgid "Home"
-msgstr "Home"
+msgstr "Hjem"
 
 # Home page toolbar menu label
 msgid "Map"
-msgstr "Map"
+msgstr "Kart"
 
 # Home page toolbar menu label
 msgid "Guide"
-msgstr "Guide"
+msgstr "Veiledning"
 
 # Home page toolbar menu label
 msgid "My Records"
-msgstr "My Records"
+msgstr "Mine registreringer"
 
 # Guide page header title
 msgid "Identify"
-msgstr "Identify"
+msgstr "Identifiser"
 
 # Guide page information message
 msgid ""
 "If you are still not sure after looking at this guide please submit the "
 "record anyway"
 msgstr ""
-"If you are still not sure after looking at this guide please submit the "
-"record anyway"
+"Hvis du fremdeles er usikker etter å ha sett denne veiledningen, er det fint"
+" om du sender inn registreringen likevel"
 
 # Guide page label
 msgid "Examples of blue-green algae blooms"
-msgstr "Examples of blue-green algae blooms"
+msgstr "Eksempler på oppblomstringer av cyanobakterier"
 
 # Guide page card label
 msgid "Usually green or blue-green in colour"
-msgstr "Usually green or blue-green in colour"
+msgstr "Vanligvis grønn eller blågrønn i fargen"
 
 # Guide page card label
 msgid "Form paint-like surface scums often along shorelines"
-msgstr "Form paint-like surface scums often along shorelines"
+msgstr "Danner malingslignende overflateansamlinger, ofte i vannkanten"
 
 # Guide page card label
 msgid ""
 "Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be "
 "small and round or tiny grass like flakes"
 msgstr ""
-"Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be "
-"small and round or tiny grass like flakes"
+"Bittesmå ujevne klumper (mindre enn 3 mm) løst i vannet. Kan være små og "
+"runde, eller små gress-lignende flak"
 
 # Guide page card label
 msgid "Turquoise colour sometimes visible when decaying"
-msgstr "Turquoise colour sometimes visible when decaying"
+msgstr "Turkis farge kan være synlig under nedbrytning"
 
 # Guide page label
 msgid "Not blue-green algae - duckweed and harmless green algae"
-msgstr "Not blue-green algae - duckweed and harmless green algae"
+msgstr "Ikke cyanobakterier - andemat og ufarlige grønnalger"
 
 # Guide page card label
 msgid "Plants that float but have solid structure such as leaves"
-msgstr "Plants that float but have solid structure such as leaves"
+msgstr "Planter som flyter og har solide strukturer som f.eks. blader"
 
 # Guide page card label
 msgid "Others are long and tubular the size of a little finger"
-msgstr "Others are long and tubular the size of a little finger"
+msgstr "Andre er lange og tykke, på størrelse med en lillefinger"
 
 # Guide page card label
 msgid "Some have very stringy, long hair-like strands"
-msgstr "Some have very stringy, long hair-like strands"
+msgstr "Noen har veldig trevlete og lange hårlignende tråder"
 
 # Guide page card label
 msgid "Or fine green hairs attached to rocks and pebbles"
-msgstr "Or fine green hairs attached to rocks and pebbles"
+msgstr "Eller tynne og grønne tråder festet til steiner og grus"
 
 # My Records page header title
 msgid "Pending"
-msgstr "Pending"
+msgstr "Venter"
 
 # My Records page header title
 msgid "Uploaded"
-msgstr "Uploaded"
+msgstr "Lastet opp"
 
 # My Records page record info message
 msgid "Draft"
-msgstr "Draft"
+msgstr "Kladd"
 
 # My Records page record info message
 msgid "To delete any records swipe it to the left."
-msgstr "To delete any records swipe it to the left."
+msgstr "For å slette registreringer sveip de til venstre."
 
 # About Bloomin’ Algae info page title
 msgid "About Bloomin’ Algae"
-msgstr "About Bloomin’ Algae"
+msgstr "Om Bloomin' Algae"
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -112,11 +118,12 @@ msgid ""
 "animal health. You will receive feedback on the records you submit which can"
 " help you learn how to recognise the risks to you and pets."
 msgstr ""
-"Bloomin’ Algae is a Citizen Science app for reporting the presence of "
-"harmful algal blooms of blue-green algae (also known as cyanobacteria). The "
-"records you send in help speed up warnings to minimise risks to public and "
-"animal health. You will receive feedback on the records you submit which can"
-" help you learn how to recognise the risks to you and pets."
+"Bloomin' Algae er en folkeforskningsapp for å rapportere forekomster av "
+"farlige oppblomstringer av cyanobakterier (også kjent som blågrønnalger). "
+"Registreringene du sender inn vil bidra til raskere oppføring av advarsler, "
+"og minimere helserisiko for mennesker og dyr. Du vil motta tilbakemelding på"
+" registreringene du sender inn, slik at du lærer å gjenkjenne risiko for deg"
+" selv og for kjæledyrene dine."
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -127,12 +134,13 @@ msgid ""
 "education, scientific research and other public benefit uses but contact "
 "details will not be shared."
 msgstr ""
-"When you submit a record the data is stored within the <2>iRecord "
-"website</2>, where it will be displayed to users and be examined and "
-"verified by an expert. Only your records are available publically, not your "
-"contact details. These records may be collated and disseminated for "
-"education, scientific research and other public benefit uses but contact "
-"details will not be shared."
+"Når du sender inn en registrering blir dataene lagret på <2>iRecord "
+"nettsiden</2>, hvor de vil være synlige for andre brukere og bli gjennomgått"
+" og verifisert av en ekspert. Det er kun registreringene dine som blir "
+"offentlig tilgjengelige, ikke kontaktinformasjonen din. Disse "
+"registreringene kan bli samlet inn og videreformidlet for benyttelse til "
+"opplæring/utdanning, forskning og andre allmenne nytteformål, men "
+"kontaktinformasjonen vil ikke bli delt."
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -145,22 +153,23 @@ msgid ""
 "undertaken we hope to gain a better understanding of how harmful algal "
 "blooms are impacting recreational use of freshwaters."
 msgstr ""
-"As well as submitting a photo and location details, we ask you to confirm "
-"what general activities you, or others, are carrying out in, or around, the "
-"water (such as dog walking). This is because blue-green algae pose a greater"
-" risk to water-based activities, such as swimming or windsurfing, compared "
-"to non-contact activities such as walking. Blue-green algae can pose a very "
-"high risk to pets and livestock. By gathering details of activities "
-"undertaken we hope to gain a better understanding of how harmful algal "
-"blooms are impacting recreational use of freshwaters."
+"I tillegg til å sende et bilde og detaljer om oppblomstringens beliggenhet, "
+"ber vi deg oppgi hva slags aktiviteter som foregår i eller rundt vannet (for"
+" eksempel hundelufting). Dette er fordi cyanobakterier utgjør en større "
+"risiko ved aktiviteter som utføres i eller på vannet, som svømming eller "
+"padling, sammenlignet med aktiviteter i nærheten av vannet, som turgåing. "
+"Cyanobakterier kan utgjøre en stor risiko for kjæledyr og husdyr. Ved å "
+"samle informasjon om aktiviteter i området håper vi å få en bedre forståelse"
+" av hvordan potensielt farlige algeoppblomstringer påvirker fritidsbruken av"
+" ferskvann."
 
 # About Bloomin’ Algae info page content
 msgid "<0>Privacy policy</0>"
-msgstr "<0>Privacy policy</0>"
+msgstr "<0>Personvernerklæring</0>"
 
 # What are blue-green algae info page title
 msgid "What are blue-green algae?"
-msgstr "What are blue-green algae?"
+msgstr "Hva er cyanobakterier?"
 
 # What are blue-green algae info page content
 msgid ""
@@ -174,15 +183,16 @@ msgid ""
 "scums and surface blooms (see ID guide in app) pose severe health risks, "
 "particularly to animals that swim or drink the affected water."
 msgstr ""
-"Blue-green algae are a type of bacteria, known as cyanobacteria, which can "
-"produce toxic chemicals that are very harmful to the health of people and "
-"animals. These algae naturally occur in all freshwaters, especially lakes, "
-"reservoirs, canals and slow-moving rivers. They are microscopic but, when "
-"abundant, grow to be visible small green particles or flakes. In calm sunny "
-"weather, they can rise to the surface and form thin wispy streaks, or thick "
-"paint-like scums on the water surface if they get very abundant. Shoreline "
-"scums and surface blooms (see ID guide in app) pose severe health risks, "
-"particularly to animals that swim or drink the affected water."
+"Cyanobakterier er en type mikroalger, også kjent som blågrønnalger. De kan "
+"produsere giftstoffer (toksiner) som er helseskadelige for mennesker og dyr."
+" Cyanobakterier forekommer naturlig i alle ferskvann, spesielt innsjøer, men"
+" også i mindre vann og elver. De er mikroskopiske, men i store mengder blir "
+"de synlige som små grønne partikler eller flak. Når det er solskinn og "
+"vindstille kan de flyte opp og danne tynne striper på overflaten, eller "
+"tykke malingslignende matter hvis det blir virkelig store mengder. "
+"Ansamlinger som dannes i strandlinjen og oppblomstringer på vannoverflaten "
+"(se veiledning for identifisering i appen), utgjør alvorlig helsefare, "
+"spesielt for dyr som svømmer i eller drikker av vannet."
 
 # What are blue-green algae info page content
 msgid ""
@@ -193,16 +203,17 @@ msgid ""
 "are seen on the water or along shorelines when the blooms start to decay. "
 "Some blooms are coloured red, dark brown or black."
 msgstr ""
-"Blooms of blue-green algae are most commonly seen during summer and early "
-"autumn months, particularly in calm and sunny weather, but they can linger "
-"in freshwaters into late autumn. They occasionally occur in winter and "
-"spring months. Most blooms are green but sometimes turquoise blue patches "
-"are seen on the water or along shorelines when the blooms start to decay. "
-"Some blooms are coloured red, dark brown or black."
+"Oppblomstringer av cyanobakterier blir oftest sett på sommeren og tidlig "
+"høst, spesielt når det er vindstille og solskinn, men de kan også bli "
+"værende i ferskvann helt til sen høst. De opptrer noen ganger også i vinter-"
+" og vårmåneder. De fleste oppblomstringer er grønne, men noen ganger kan "
+"turkise/blå flekker ses på vannet eller langs strandlinjen når "
+"oppblomstringen begynner å brytes ned. Noen oppblomstringer er rødfargede, "
+"mørk brune eller svarte."
 
 # Health Risk info page title
 msgid "Health risks"
-msgstr "Health risks"
+msgstr "Helsefarer"
 
 # Health Risk info page title
 msgid ""
@@ -210,9 +221,10 @@ msgid ""
 "effects in people and animals. They cause skin rashes and much more severe "
 "symptoms if swallowed (fever, vomiting, liver damage)."
 msgstr ""
-"The toxins that blue-green algae produce can result in a range of health "
-"effects in people and animals. They cause skin rashes and much more severe "
-"symptoms if swallowed (fever, vomiting, liver damage)."
+"Giftstoffene (toksinene) produsert av cyanobakterier kan føre til en rekke "
+"negative helseeffekter hos mennesker og dyr. De kan forårsake hudutslett, og"
+" enda flere alvorlige symptomer hvis de svelges (feber, oppkast, "
+"leverskade)."
 
 # Health Risk info page title
 msgid ""
@@ -221,18 +233,17 @@ msgid ""
 " to avoid death. Blue-green algae have also caused the deaths of horses, "
 "cattle, birds and fish."
 msgstr ""
-"Dogs are especially at risk if they drink contaminated water, or lick their "
-"coat after swimming, with severe symptoms requiring very rapid vet treatment"
-" to avoid death. Blue-green algae have also caused the deaths of horses, "
-"cattle, birds and fish."
+"Hunder er spesielt utsatt for risiko hvis de drikker vann med cyanobakterier"
+" eller slikker pelsen sin etter bading. Alvorlige symptomer kan oppstå som "
+"krever rask veterinærbehandling for å unngå dødsfall. Cyanobakterier har "
+"også forårsaket dødsfall hos hester, kyr, fugler og fisk."
 
 # Health Risk info page title
 msgid ""
 "If you are a pet owner you can find further information from the <2>Blue "
 "Cross</2>."
 msgstr ""
-"If you are a pet owner you can find further information from the <2>Blue "
-"Cross</2>."
+"Dersom du er dyreeier kan du finne mer informasjon hos Veterinærinstituttet."
 
 # Health Risk info page title
 msgid ""
@@ -240,17 +251,17 @@ msgid ""
 "contaminated with blue-green algae, we’d recommend you seek immediate "
 "medical or veterinary advice.</0>"
 msgstr ""
-"<0>If you, or your pet, become unwell after contact with water that may be "
-"contaminated with blue-green algae, we’d recommend you seek immediate "
-"medical or veterinary advice.</0>"
+"<0>Hvis du eller kjæledyret ditt føler dere dårlige etter kontakt med vann "
+"som kan ha oppblomstring av cyanobakterier, anbefaler vi at du umiddelbart "
+"kontakter lege eller veterinær. </0>"
 
 # Further action and reporting harmful algal blooms info page title
 msgid "Report"
-msgstr "Report"
+msgstr "Registrering"
 
 # Further action info page content
 msgid "Further action"
-msgstr "Further action"
+msgstr "Videre tiltak"
 
 # Further action info page content
 msgid ""
@@ -263,26 +274,24 @@ msgid ""
 "algal blooms or water pollution incidents to your environment regulatory "
 "authority:"
 msgstr ""
-"The responsibility to manage algal blooms lies with the owner of the water "
-"concerned. If a bloom is present and no warning signs are visible, we "
-"recommend you contact the environmental health department in your local "
-"authority. Environmental health will assess any action required against the "
-"relevant guidance and may contact the regulatory authority (EA, SEPA, NRW, "
-"NIEA) for further water tests. You may also directly report incidents of "
-"algal blooms or water pollution incidents to your environment regulatory "
-"authority:"
+"Ansvaret for å håndtere algeoppblomstringer ligger hos kommunene. Hvis en "
+"oppblomstring er til stede, men ingen advarsler er synlige ved vannet, "
+"anbefaler vi deg å ta kontakt med kommunen. De vil vurdere nødvendige tiltak"
+" i forhold til WHOs nyeste retningslinjer og kan kontakte NIVA eller "
+"Veterinærinstituttet for ytterligere undersøkelser av vannet. Du kan også "
+"rapportere algeoppblomstringer, vannforurensning eller mulige forgiftninger "
+"direkte til følgende organisasjoner:"
 
 # Further action info page content
 msgid ""
 "For more information and advice on algal blooms see:<br/><br/><3>England & "
 "Wales</3><br/><br/><6>Scotland</6>"
 msgstr ""
-"For more information and advice on algal blooms see:<br/><br/><3>England & "
-"Wales</3><br/><br/><6>Scotland</6>"
+"hvor du også kan finne mer informasjon og råd ved algeoppblomsstringer."
 
 # BRC info page title
 msgid "BRC approved"
-msgstr "BRC approved"
+msgstr "BRC godkjent"
 
 # BRC info page content
 msgid ""
@@ -291,10 +300,10 @@ msgid ""
 "assurance; made available for conservation and research and preserved for "
 "long-term use."
 msgstr ""
-"Wherever you see this logo on a biological recording app you can be assured "
-"that the data you submit will be: made available to experts for quality "
-"assurance; made available for conservation and research and preserved for "
-"long-term use."
+"Når du ser denne logoen på en app for biologisk registrering kan du være "
+"forsikret om at data du sender inn vil bli: gjort tilgjengelig for "
+"kvalitetssikring av eksperter; gjort tilgjengelig for bevaring og forskning "
+"og lagret for langtidsbruk."
 
 # BRC info page content
 msgid ""
@@ -304,15 +313,10 @@ msgid ""
 "of iRecord.</0><1>Quality assured data is passed onto Local Environmental "
 "Records Centres, National Recording Schemes and to the NBN Gateway.</1></1>"
 msgstr ""
-"This logo indicates that your data is:<1><0>Sent to the Biological Record "
-"Centre’s data warehouse linked to the iRecord system where it is accessible "
-"to you as the recorder, to an expert community of verifiers and other users "
-"of iRecord.</0><1>Quality assured data is passed onto Local Environmental "
-"Records Centres, National Recording Schemes and to the NBN Gateway.</1></1>"
 
 # BRC info page label
 msgid "About BRC"
-msgstr "About BRC"
+msgstr ""
 
 # BRC info page content
 msgid ""
@@ -324,17 +328,10 @@ msgid ""
 "for Ecology & Hydrology (UKCEH). The work of BRC is a major BRC of the "
 "National Biodiversity Network (NBN)."
 msgstr ""
-"The <1>Biological Records Centre</1> (BRC), established in 1964, is a "
-"national focus in the UK for terrestrial and freshwater species recording. "
-"BRC works closely with the voluntary recording community, principally "
-"through support of national recording schemes and societies. BRC is "
-"supported by the Joint Nature Conservation Committee (JNCC) and the Centre "
-"for Ecology & Hydrology (UKCEH). The work of BRC is a major BRC of the "
-"National Biodiversity Network (NBN)."
 
 # BRC info page content
 msgid "Which app should I use?"
-msgstr "Which app should I use?"
+msgstr ""
 
 # BRC info page content
 msgid ""
@@ -345,16 +342,10 @@ msgid ""
 " same place, treated in the same way and will meet the established standards"
 " required by the Biological Record Centre."
 msgstr ""
-"You might have noticed that several of<1> BRC apps</1> feature some of the "
-"same species? We have introduced the BRC Approved logo to signify that data "
-"from our apps all go to the same place. Therefore, you are free to choose "
-"which app you use to record a given species. All records will be sent to the"
-" same place, treated in the same way and will meet the established standards"
-" required by the Biological Record Centre."
 
 # Credit info page title
 msgid "Credits"
-msgstr "Credits"
+msgstr "Bidragsytere"
 
 # Credit info page content
 msgid ""
@@ -364,15 +355,15 @@ msgid ""
 "England for their support, advice and guidance during the development of the"
 " app."
 msgstr ""
-"The project would like to thank UKCEH, NERC and the Scottish Government for "
-"funding the app development and staff in the Scottish Environment Protection"
-" Agency, Health Protection Scotland, Environment Agency and Public Health "
-"England for their support, advice and guidance during the development of the"
-" app."
+"Dette prosjektet vil takke UKCEH, NERC og den skotske regjeringen for å "
+"finansiere utviklingen av appen. Den norske oversettelsen ble finansiert av "
+"NIVA, og vi takker ansatte ved NIVA, FHI og Veterinærinstituttet for råd og "
+"veiledning i utviklingen av en norsk versjon."
 
 # Credit info page content
 msgid "We are grateful for all the people that helped to create this app:"
-msgstr "We are grateful for all the people that helped to create this app:"
+msgstr ""
+"Vi er takknemlige for alle som har hjulpet til med å lage denne appen:"
 
 # Credit info page content
 msgid ""
@@ -380,173 +371,176 @@ msgid ""
 "at:<br/><br/><3>www.paintingbiology.com<br/></3> <br/>Twitter: "
 "@JuliaFpaintsbio<br/>email: paintingbiology@gmail.com"
 msgstr ""
-"Thanks also to Julia Ferguson for the logo design. Julia can be contacted "
-"at:<br/><br/><3>www.paintingbiology.com<br/></3> <br/>Twitter: "
-"@JuliaFpaintsbio<br/>email: paintingbiology@gmail.com"
+"Takk også til Julia Ferguson for logo design. Julia kan kontaktes på: "
+"<br/><br/><3>www.paintingbiology.com<br/></3><br/>Twitter: "
+"@JuliaFpaintsbio<br/>epost: paintingbiology@gmail.com"
 
 # Settings page header title
 msgid "Settings"
-msgstr "Settings"
+msgstr "Innstillinger"
 
 # Settings page label
 msgid "English"
-msgstr "English"
+msgstr "Engelsk"
 
 # Settings page label
 msgid "Language"
-msgstr "Language"
+msgstr "Språk"
 
 # Settings page message
 msgid "Share app crash data so we can make the app more reliable."
-msgstr "Share app crash data so we can make the app more reliable."
+msgstr "Del appens feildata slik at vi kan gjøre den mer pålitelig."
 
 # Settings page label
 msgid "Reset App"
-msgstr "Reset App"
+msgstr "Gjenopprett App"
 
 # Settings page label
 msgid "Share App Analytics"
-msgstr "Share App Analytics"
+msgstr "Del App Analyser"
 
 # Reset app alert button label
 msgid "Cancel"
-msgstr "Cancel"
+msgstr "Avbryt"
 
 # Reset app alert button label
 msgid "Reset"
-msgstr "Reset"
+msgstr "Tilbakestill"
 
 # Reset app alert message
 msgid ""
 "Are you sure you want to reset the application to its initial "
 "state?<1><0>This will wipe all the locally stored app data!</0></1>"
 msgstr ""
-"Are you sure you want to reset the application to its initial "
-"state?<1><0>This will wipe all the locally stored app data!</0></1>"
+"Er du sikker på at du vil gjenopprette applikasjonen til dens opprinnelige "
+"innstillinger?<1><0>Dette vil slette alle data lagret lokalt i "
+"appen!</0></1>"
 
 # Start record draft title
 msgid "No uploaded records"
-msgstr "No uploaded records"
+msgstr "Ingen opplastede registreringer"
 
 # Start record draft button label
 msgid "Discard"
-msgstr "Discard"
+msgstr "Forkast"
 
 # Start record draft button label
 msgid "Continue"
-msgstr "Continue"
+msgstr "Fortsett"
 
 # Start record draft button message
 msgid "Previous record draft exists, would you like to continue it?"
-msgstr "Previous record draft exists, would you like to continue it?"
+msgstr ""
+"Det finnes tidligere utkast til registrering, vil du fortsette på denne?"
 
 # Record page label
 msgid "No photo has been added."
-msgstr "No photo has been added."
+msgstr "Bilde er ikke lagt til."
 
 # Record page label
 msgid "Press <1></1> to add."
-msgstr "Press <1></1> to add."
+msgstr "Trykk <1></1> for å legge til."
 
 # Record page label
 msgid "Location"
-msgstr "Location"
+msgstr "Beliggenhet"
 
 # Record page label
 msgid "Today"
-msgstr "Today"
+msgstr "I dag"
 
 # Record page label
 msgid "Date"
-msgstr "Date"
+msgstr "Dato"
 
 # Record page label
 msgid "Bloom size"
-msgstr "Bloom size"
+msgstr "Størrelse på oppblomstring"
 
 # Record page label
 msgid "Activities"
-msgstr "Activities"
+msgstr "Aktiviteter"
 
 # Record page label
 msgid "Comment"
-msgstr "Comment"
+msgstr "Kommentar"
 
 # Record comment information message
 msgid "Please add any extra info about this record."
-msgstr "Please add any extra info about this record."
+msgstr ""
+"Vennligst tilføy eventuell ekstra informasjon om denne registreringen."
 
 # Record comment placeholder message
 msgid "Enter more information here..."
-msgstr "Enter more information here..."
+msgstr "Legg til mer informasjon her..."
 
 # Record activities information message
 msgid "What activities were you doing?"
-msgstr "What activities were you doing?"
+msgstr "Hvilke aktiviteter bedrev du?"
 
 # Record activities content
 msgid "Walking / Running"
-msgstr "Walking / Running"
+msgstr "Gåing / Løping"
 
 # Record activities content
 msgid "Dog-walking"
-msgstr "Dog-walking"
+msgstr "Hundelufting"
 
 # Record activities content
 msgid "Cycling"
-msgstr "Cycling"
+msgstr "Sykling"
 
 # Record activities content
 msgid "Birdwatching"
-msgstr "Birdwatching"
+msgstr "Fuglekikking"
 
 # Record activities content
 msgid "Fishing"
-msgstr "Fishing"
+msgstr "Fisking"
 
 # Record activities content
 msgid "Swimming"
-msgstr "Swimming"
+msgstr "Bading"
 
 # Record activities content
 msgid "Boats / Watersports"
-msgstr "Boats / Watersports"
+msgstr "Båt / Vannsport"
 
 # Record activities content
 msgid "Other"
-msgstr "Other"
+msgstr "Annet"
 
 # Record activities content divider
 msgid "What activities are done at this location?"
-msgstr "What activities are done at this location?"
+msgstr "Hvilke aktiviteter foregår på dette stedet?"
 
 # Record activities divider content
 msgid "Please select the activities type for this record."
-msgstr "Please select the activities type for this record."
+msgstr "Vennligst velg aktivitetstypen for denne registreringen."
 
 # Record bloom size content
 msgid "Doormat"
-msgstr "Doormat"
+msgstr "Dørmatte"
 
 # Record bloom size content
 msgid "Parking space"
-msgstr "Parking space"
+msgstr "Parkeringsplass"
 
 # Record bloom size content
 msgid "Tennis court"
-msgstr "Tennis court"
+msgstr "Tennisbane"
 
 # Record bloom size content
 msgid "Even bigger"
-msgstr "Even bigger"
+msgstr "Enda større"
 
 # Record bloom size information message
 msgid "Select the closest match below."
-msgstr "Select the closest match below."
+msgstr "Velg den som passer best under."
 
 # Splash screen content
 msgid "Warning"
-msgstr "Warning"
+msgstr "Advarsel"
 
 # Splash screen content
 msgid ""
@@ -555,74 +549,74 @@ msgid ""
 "bloom and do not allow pets or children to come into contact with, or "
 "swallow, the water."
 msgstr ""
-"Blue-Green algae (also known as cyanobacteria) can be harmful to the health "
-"of people and animals. Do NOT touch or ingest anything you suspect to be a "
-"bloom and do not allow pets or children to come into contact with, or "
-"swallow, the water."
+"Cyanobakterier (også kjent som blågrønnalger) kan være helseskadelige for "
+"mennesker og dyr. IKKE berør eller innta noe du mistenker kan være en "
+"oppblomstring, og ikke la barn eller dyr komme i kontakt med eller svelge "
+"vannet."
 
 # Splash screen content
 msgid "Got it!"
-msgstr "Got it!"
+msgstr "Jeg forstår!"
 
 # Button label
 msgid "Delete"
-msgstr "Delete"
+msgstr "Slett"
 
 # My records page background message
 msgid "No finished pending records."
-msgstr "No finished pending records."
+msgstr "Ingen fullførte, ventende registreringer."
 
 # Record location name message
 msgid "Location name e.g. lake, reservoir or pond name"
-msgstr "Location name e.g. lake, reservoir or pond name"
+msgstr "Stedsnavn, f. eks. navn på innsjø eller tjern"
 
 # Record incomplete pop up record message
 msgid "Please add a photo of the bloom"
-msgstr "Please add a photo of the bloom"
+msgstr "Vennligst legg til et bilde av oppblomstringen"
 
 # Record incomplete pop up record message
 msgid "Please select location."
-msgstr "Please select location."
+msgstr "Vennligst velg en beliggenhet."
 
 # Record incomplete pop up button label
 msgid "Got it"
-msgstr "Got it"
+msgstr "Jeg forstår"
 
 # Record incomplete pop up title
 msgid "Record incomplete"
-msgstr "Record incomplete"
+msgstr "Ufullstendig registrering"
 
 # Record verify location button label
 msgid "Incorrect"
-msgstr "Incorrect"
+msgstr "Feil"
 
 # Record verify location button label
 msgid "Correct"
-msgstr "Correct"
+msgstr "Riktig"
 
 # Side menu label
 msgid "Navigate"
-msgstr "Navigate"
+msgstr "Naviger"
 
 # Side menu label
 msgid "Algal bloom info"
-msgstr "Algal bloom info"
+msgstr "Informasjon om algeoppblomstring"
 
 # Side menu label
 msgid "Report a bloom"
-msgstr "Report a bloom"
+msgstr "Rapporter en oppblomstring"
 
 # Side menu content
 msgid "App version"
-msgstr "App version"
+msgstr "App-versjon"
 
 # Delete record alert message
 msgid "Are you sure you want to delete this record ?"
-msgstr "Are you sure you want to delete this record ?"
+msgstr "Er du sikker på at du vil slette denne registreringen ?"
 
 # More information info page title
 msgid "Using the app"
-msgstr "Using the app"
+msgstr "Bruk av appen"
 
 # More information info page content
 msgid ""
@@ -630,13 +624,13 @@ msgid ""
 "service for records submitted in your area, please see the section on “Using"
 " the app” on the <2>Bloomin’ Algae website</2>."
 msgstr ""
-"For more information on using the app, including setting up a notification "
-"service for records submitted in your area, please see the section on “Using"
-" the app” on the <2>Bloomin’ Algae website</2>."
+"For mer informasjon om bruk av appen, inkludert oppsett av varslingstjeneste"
+" for registreringer i ditt område, se delen om \"Bruk av appen\" på "
+"nettsiden til <2>Bloomin' Algae</2>."
 
 # What do we use your records for info page title
 msgid "What do we use your records for?"
-msgstr "What do we use your records for?"
+msgstr "Hvordan blir registreringene dine benyttet?"
 
 # What do we use your records for info page content
 msgid ""
@@ -648,17 +642,19 @@ msgid ""
 "environment agencies and water companies in water quality risk management "
 "and prevention.</4></0>"
 msgstr ""
-"<0><0>Informing local authorities and landowners to help speed up the "
-"erection of public warning signs.</0><br/><2>We use the data in scientific "
-"research to get a better understanding of the timing and location of algal "
-"blooms, to understand how climate change is impacting water quality now, and"
-" to predict future impacts.</2><br/><4>We also use the data to support "
-"environment agencies and water companies in water quality risk management "
-"and prevention.</4></0>"
+"<0><0>Til å informere kommuner og interkommunale samarbeidsorganer "
+"(miljørettet helsevern, vannområder, vannverk) slik at offentlige advarsler "
+"raskere kommer på plass.</0><br/><2>Vi bruker dataene i vitenskapelig "
+"forskning for å få en bedre forståelse av tidspunkt og lokaliteter for "
+"oppblomstringer av cyanobakterier over hele Norge. Slik kan vi forstå "
+"hvordan klimaendring påvirker vannkvalitet nå, og forutse fremtidige "
+"påvirkninger.</2><br/><4>Dataene vil bli benyttet av relevante institutter "
+"og etater (Folkehelseinstituttet, Veterinærinstituttet, Miljødirektoratet, "
+"NIVA) i risikohåndtering og forebygging rundt vannkvalitet.</4></0>"
 
 # Record upload button label
 msgid "Upload"
-msgstr "Upload"
+msgstr "Last opp"
 
 # Record button label
 msgid "OK"
@@ -666,39 +662,39 @@ msgstr "OK"
 
 # part of record
 msgid "DD/MM/YYYY"
-msgstr "DD/MM/YYYY"
+msgstr "DD/MM/ÅÅÅÅ"
 
 # part of record
 msgid "Record"
-msgstr "Record"
+msgstr "Registrering"
 
 # onBoarding page content
 msgid ""
 "By clicking “I Understand” you agree that you have read and understood this "
 "warning"
 msgstr ""
-"By clicking “I Understand” you agree that you have read and understood this "
-"warning"
+"Ved å klikke «Jeg Forstår» bekrefter du at du har lest og forstått denne "
+"advarselen"
 
 # onBoarding page content
 msgid "I Understand"
-msgstr "I Understand"
+msgstr "Jeg Forstår"
 
 # Settings reset alert message
 msgid "Done"
-msgstr "Done"
+msgstr "Ferdig"
 
 # Info background message button label
 msgid "Hide"
-msgstr "Hide"
+msgstr "Skjul"
 
 # Map page header label
 msgid "All Records"
-msgstr "All Records"
+msgstr "Alle registreringer"
 
 # onBoarding title
 msgid "Welcome to Bloomin’ Algae!"
-msgstr "Welcome to Bloomin’ Algae!"
+msgstr "Velkommen til Bloomin' Algae!"
 
 # onBoarding content
 msgid ""
@@ -707,184 +703,185 @@ msgid ""
 "warnings to minimise risks to public and animal health. Thanks for taking "
 "part!"
 msgstr ""
-"Bloomin’ Algae is a Citizen Science app for reporting the presence of "
-"harmful blooms of blue-green algae. The records you send in help speed up "
-"warnings to minimise risks to public and animal health. Thanks for taking "
-"part!"
+"Bloomin' Algae er en folkeforskningsapp for å rapportere forekomster av "
+"farlige oppblomstringer av cyanobakterier. Registreringene du sender inn vil"
+" bidra til raskere oppføring av advarsler og minimere helserisiko for "
+"mennesker og dyr. Takk for at du bidrar!"
 
 # Record map toggle
 msgid "See past 12 months"
-msgstr "See past 12 months"
+msgstr "Se siste 12 måneder"
 
 # Record map toggle
 msgid "The default setting is the past 4 weeks of records."
-msgstr "The default setting is the past 4 weeks of records."
+msgstr "Standard innstilling er de siste 4 uker med registreringer."
 
 # Record map toggle
 msgid "Please confirm this is your correct location."
-msgstr "Please confirm this is your correct location."
+msgstr "Vennligst bekreft at dette er din riktige posisjon."
 
 # Record alert image on a map
 msgid "This record has no images."
-msgstr "This record has no images."
+msgstr "Denne registreringen har ingen bilder."
 
 # Record status on a map
 msgid "rejected"
-msgstr "rejected"
+msgstr "avvist"
 
 # Record status on a map
 msgid "complete"
-msgstr "complete"
+msgstr "ferdig"
 
 # Record status on a map
 msgid "plausible"
-msgstr "plausible"
+msgstr "plausibel"
 
 # Record status on a map
 msgid "verified"
-msgstr "verified"
+msgstr "bekreftet"
 
 # Part of User authentication page
 msgid "Register/Login"
-msgstr "Register/Login"
+msgstr "Registrer deg/Logg inn"
 
 # Part of User authentication page
 msgid "Create a free account"
-msgstr "Create a free account"
+msgstr "Opprett gratis konto"
 
 # Part of User authentication page
 msgid "First name"
-msgstr "First name"
+msgstr "Fornavn"
 
 # Part of User authentication page
 msgid "Last name"
-msgstr "Last name"
+msgstr "Etternavn"
 
 # Part of User authentication page
 msgid "Email"
-msgstr "Email"
+msgstr "Epost"
 
 # Part of User authentication page
 msgid "Password"
-msgstr "Password"
+msgstr "Passord"
 
 # Part of User authentication page
 msgid ""
 "By clicking Sign Up, you agree to our <2>Privacy Policy</2> and <6>Terms and"
 " Conditions</6>"
 msgstr ""
-"By clicking Sign Up, you agree to our <2>Privacy Policy</2> and <6>Terms and"
-" Conditions</6>"
+"Ved å trykke Registrer, godtar du vår <2>Personvernerklæring</2> og "
+"<6>Vilkår og Betingelser</6>"
 
 # Part of User authentication page
 msgid "Sign Up"
-msgstr "Sign Up"
+msgstr "Registrer konto"
 
 # Part of User authentication page
 msgid "I am already a member"
-msgstr "I am already a member"
+msgstr "Jeg er allerede medlem"
 
 # Part of User authentication page
 msgid "Sign In"
-msgstr "Sign In"
+msgstr "Logg Inn"
 
 # part of User authentication page
 msgid "Welcome back"
-msgstr "Welcome back"
+msgstr "Velkommen tilbake"
 
 # Part of User authentication page
 msgid "Sign in to your account to start"
-msgstr "Sign in to your account to start"
+msgstr "Logg inn på din konto for å begynne"
 
 # Part of User authentication page
 msgid "Forgot password?"
-msgstr "Forgot password?"
+msgstr "Glemt passord?"
 
 # Part of User authentication page
 msgid "firstName is a required field"
-msgstr "firstName is a required field"
+msgstr "forNavn er et obligatorisk felt"
 
 # Part of User authentication page
 msgid "Enter your email address to request a password reset."
-msgstr "Enter your email address to request a password reset."
+msgstr "Oppgi din epostadresse for å be om nullstilling av passord."
 
 # Part of User authentication page
 msgid "email is a required field"
-msgstr "email is a required field"
+msgstr "epost er et obligatorisk felt"
 
 # Part of User authentication page
 msgid "password is a required field"
-msgstr "password is a required field"
+msgstr "passord er et obligatorisk felt"
 
 # Part of User authentication page
 msgid "secondName is a required field"
-msgstr "secondName is a required field"
+msgstr "etterNavn er et obligatorisk felt"
 
 # User authentication alert
 msgid "Logout"
-msgstr "Logout"
+msgstr "Logg ut"
 
 # User authentication alert
 msgid "Are you sure you want to logout?"
-msgstr "Are you sure you want to logout?"
+msgstr "Er du sikker på at du vil logge ut?"
 
 # User authentication alert
 msgid "Discard local data"
-msgstr "Discard local data"
+msgstr "Forkast lokale data"
 
 # User authentication alert
 msgid "Please wait..."
-msgstr "Please wait..."
+msgstr "Vennligst vent..."
 
 # Survey header button
 msgid "Finish"
-msgstr "Finish"
+msgstr "Fullfør"
 
 # Survey camera options
 msgid "Choose a method to upload a photo"
-msgstr "Choose a method to upload a photo"
+msgstr "Velg hvordan du vil laste opp et bilde"
 
 # Survey camera options
 msgid "Gallery"
-msgstr "Gallery"
+msgstr "Galleri"
 
 # Survey camera options
 msgid "Camera"
-msgstr "Camera"
+msgstr "Kamera"
 
 # User-surveys page background message
 msgid "Please do not forget to upload any pending records!"
-msgstr "Please do not forget to upload any pending records!"
+msgstr "Ikke glem å laste opp ventende registreringer!"
 
 # All records page tip
 msgid "OK, got it"
-msgstr "OK, got it"
+msgstr "OK, jeg forstår"
 
 # Error messages from server for user account actions
 msgid "Sorry"
-msgstr "Sorry"
+msgstr "Beklager"
 
 # Error messages from server for user account actions
 msgid "Unauthorized"
-msgstr "Unauthorized"
+msgstr "Uautorisert"
 
 # Error messages from server for user account actions
 msgid "Not found"
-msgstr "Not found"
+msgstr "Ikke funnet"
 
 # Error messages from server for user account actions
 msgid "Bad Request"
-msgstr "Bad Request"
+msgstr "Ugyldig forespørsel"
 
 # Verification message
 msgid ""
 "Some of your records have been verified. Please check your records list."
 msgstr ""
-"Some of your records have been verified. Please check your records list."
+"Noen av dine registreringer har blitt verifisert. Vennligst sjekk listen din"
+" over registreringer."
 
 # Record date stamp
 msgid "Yesterday"
-msgstr "Yesterday"
+msgstr "I går"
 
 # Verification message
 msgid ""
@@ -902,23 +899,23 @@ msgid ""
 "app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
 "Hydrology</p></1></0>"
 msgstr ""
-"<0><p>Thanks so much for sending your record in - this looks very much like "
-"a bloom of blue-green algae (also known as cyanobacteria), so we have "
-"verified your record as “considered correct”.</p><1><p>These surface "
-"accumulations constitute a high risk to public and animal health – "
-"particularly to dogs. If this is a public place, then please check that "
-"warning signs are posted. If not, please contact your local authority "
-"environmental health officer or environment protection agency who can advise"
-" the landowner on an appropriate warning sign.</p><p>Finally, please avoid "
-"contact with the water or any shoreline scum. If you, or your pet, become "
-"unwell after any contact with the water, we’d recommend you seek immediate "
-"medical or veterinary advice.</p><p>Thanks again for using the "
-"app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
-"Hydrology</p></1></0>"
+"<0><p>Tusen takk for at du sendte inn en registrering – dette ser veldig ut "
+"som en oppblomstring av cyanobakterier (også kjent som blågrønnalger), så vi"
+" har verifisert denne som «trolig korrekt».</p><1><p>Disse ansamlingene på "
+"overflaten utgjør en stor helsefare for mennesker og dyr – særlig hunder. "
+"Hvis dette er et offentlig sted, vennligst sjekk at advarselsskilt er satt "
+"opp. Er det ikke synlige advarsler til stede, vær vennlig å kontakte "
+"kommunen/kommuneoverlege/miljørettethelsevern/vannverkseier som kan "
+"informere og sette opp advarsler.</p><p>Vær også oppmerksom på at kontakt "
+"med vannet eller eventuelle ansamlinger i vannkanten bør unngås. Hvis du "
+"eller kjæledyret ditt føler dere dårlige etter kontakt med vannet, anbefaler"
+" vi at du kontakter lege eller veterinær umiddelbart.</p><p>Takk igjen for "
+"at du bruker appen!</p><p>Bloomin' Algae teamet ved Norsk Institutt for "
+"Vannforskning</p></1></0>"
 
 # Verification message
 msgid "READ MORE"
-msgstr "READ MORE"
+msgstr "LES MER"
 
 # Verification message header
 msgid "Info"
@@ -941,20 +938,21 @@ msgid ""
 "advice.</p><p>Thanks again for using the app!</p><p>The Bloomin'Algae team "
 "at the UK Centre for Ecology & Hydrology</p></2></0>"
 msgstr ""
-"<0><p>Thanks for sending in your record using the Bloomin'Algae app. "
-"</p><p>From your photos, we do not think this is blue-green algae "
-"(cyanobacteria).</p><2><p>We cannot of course be certain that blue-green "
-"algae are not present at all at this site, but they are not clearly visible "
-"in the photo.</p><p>Our algal guide in the app has photos to help with "
-"identification. Our website also has a description of a simple stick test "
-"you can use to help eliminate duckweed and blanket weed, which are commonly "
-"misidentified as blue-green algae: https://www.ceh.ac.uk/algal-"
-"blooms/bloomin-algae</p><p>If you do suspect a bloom at any site, please "
-"avoid contact with the water or any shoreline scum. If you, or your pet, "
-"become unwell after contact with water that may be contaminated with blue-"
-"green algae, we’d recommend you seek immediate medical or veterinary "
-"advice.</p><p>Thanks again for using the app!</p><p>The Bloomin'Algae team "
-"at the UK Centre for Ecology & Hydrology</p></2></0>"
+"<0><p>Takk for at du sendte inn en registrering via Bloomin’ Algae appen. "
+"</p><p>Ut ifra bildene dine tror vi ikke dette er cyanobakterier "
+"(blågrønnalger).</p><2><p>Vi kan selvfølgelig ikke være helt sikre på at det"
+" ikke er cyanobakterier til stede, men det ser ikke slik ut på dette "
+"bildet.</p><p>Algeveilederen i appen har bilder som kan hjelpe med "
+"identifisering. På nettsiden vår finner du også en beskrivelse av en enkel "
+"pinne-test du kan utføre for å utelukke andemat og «grønske» (trådformede "
+"grønnalger), som ofte antas å være blågrønnalger: "
+"https://www.niva.no/Bloomin’Algae</p><p>Hvis du har mistanke om en "
+"oppblomstring av cyanobakterier, bør du unngå kontakt med vannet eller "
+"eventuelle ansamlinger i vannkanten. Hvis du eller kjæledyret ditt føler "
+"dere dårlige etter kontakt med vann som kan ha oppblomstring av "
+"cyanobakterier, anbefaler vi at du kontakter lege eller veterinær "
+"umiddelbart.</p><p>Takk igjen for at du bruker appen!</p><p>Bloomin' Algae "
+"teamet ved Norsk Institutt for Vannforskning</p></2></0>"
 
 # Verification message
 msgid ""
@@ -971,18 +969,18 @@ msgid ""
 "app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
 "Hydrology</p></2></0>"
 msgstr ""
-"<0><p>Thanks for sending in your record using the Bloomin'Algae "
-"app.</p><p>We have rejected this record as we think the location is "
-"incorrect. Please could you check your record and send in a new record with "
-"the correct location.</p><2><p>Please see our website for further help with "
-"using the app and identifying blooms of blue-green algae : "
-"https://www.ceh.ac.uk/algal-blooms/bloomin-algae</p><p>If you do suspect a "
-"bloom at any site, please avoid contact with the water or any shoreline "
-"scum. If you, or your pet, become unwell after contact with water that may "
-"be contaminated with blue-green algae, we’d recommend you seek immediate "
-"medical or veterinary advice.</p><p>Thanks again for using the "
-"app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
-"Hydrology</p></2></0>"
+"<0><p>Takk for at du sendte inn en registrering via Bloomin’ Algae "
+"appen.</p><p>Vi har avvist denne registreringen da vi ikke tror at "
+"plasseringen stemmer. Vennligst sjekk registreringen din og send inn på nytt"
+" med riktig stedsangivelse.</p><2><p>Vennligst se vår nettside for videre "
+"hjelp til å bruke appen og identifisere oppblomstringer av cyanobakterier: "
+"https://www.niva.no/Bloomin’Algae</p><p>Hvis du har mistanke om en "
+"oppblomstring av cyanobakterier, bør du unngå kontakt med vannet eller "
+"eventuelle ansamlinger i vannkanten. Hvis du eller kjæledyret ditt føler "
+"dere dårlige etter kontakt med vann som kan ha oppblomstring av "
+"cyanobakterier, anbefaler vi at du kontakter lege eller veterinær "
+"umiddelbart.</p><p>Takk igjen for at du bruker appen!</p><p>Bloomin' Algae "
+"teamet ved Norsk Institutt for Vannforskning</p></2></0>"
 
 # Verification message
 msgid ""
@@ -999,47 +997,48 @@ msgid ""
 "again for using the app!</p><p>The Bloomin'Algae team at the UK Centre for "
 "Ecology & Hydrology</p></2></0>"
 msgstr ""
-"<0><p>Thanks for sending in your record using the Bloomin'Algae app. Your "
-"photo is unfortunately not clear enough to make a decision.</p><p>Please "
-"could you send in a new record with a closer photo of the water (if "
-"possible, about 30-50 cm from the water surface and/or any surface "
-"scums).</p><2><p>Please see our website for further help with identifying "
-"blooms of blue-green algae : https://www.ceh.ac.uk/algal-blooms/bloomin-"
-"algae</p><p>If you do suspect a bloom at any site, please avoid contact with"
-" the water or any shoreline scum. If you, or your pet, become unwell after "
-"contact with water that may be contaminated with blue-green algae, we’d "
-"recommend you seek immediate medical or veterinary advice.</p><p>Thanks "
-"again for using the app!</p><p>The Bloomin'Algae team at the UK Centre for "
-"Ecology & Hydrology</p></2></0>"
+"<0><p>Takk for at du sendte inn en registrering via Bloomin’ Algae appen. "
+"Bildet ditt er dessverre ikke tydelig nok til å gjøre en "
+"vurdering.</p><p>Vennligst send inn en ny registrering med et nærbilde av "
+"oppblomstringen (hvis mulig, ca 30-50 cm fra vannoverflaten og/eller "
+"overflateskummet).</p><2><p>Vennligst se vår nettside for videre hjelp til å"
+" bruke appen og identifisere oppblomstringer av cyanobakterier: "
+"https://www.niva.no/Bloomin’Algae</p><p>Hvis du har mistanke om en "
+"oppblomstring av cyanobakterier, bør du unngå kontakt med vannet eller "
+"eventuelle ansamlinger i vannkanten. Hvis du eller kjæledyret ditt føler "
+"dere dårlige etter kontakt med vann som kan ha oppblomstring av "
+"cyanobakterier, anbefaler vi at du kontakter lege eller veterinær "
+"umiddelbart.</p><p>Takk igjen for at du bruker appen!</p><p>Bloomin' Algae "
+"teamet ved Norsk Institutt for Vannforskning</p></2></0>"
 
 # Part of photo picker
 msgid "Are you sure you want to remove this photo?"
-msgstr "Are you sure you want to remove this photo?"
+msgstr "Er du sikker på at du vil fjerne dette bildet?"
 
 # Part of photo picker
 msgid "Note: it will remain in the gallery."
-msgstr "Note: it will remain in the gallery."
+msgstr "Merk: det vil forbli i galleriet."
 
 # Uploaded record message
 msgid "This record has been uploaded and can not be edited."
-msgstr "This record has been uploaded and can not be edited."
+msgstr "Denne registreringen er lastet opp og kan ikke redigeres."
 
 # Successfully logged in message
 msgid "Successfully logged in"
-msgstr "Successfully logged in"
+msgstr "Vellykket innlogging"
 
 # Photo picker failed to pick photo error message
 msgid "Sorry, we couldn't get the image."
-msgstr "Sorry, we couldn't get the image."
+msgstr "Beklager, vi kunne ikke hente bildet."
 
 # Successfully registration alert message
 msgid "Welcome aboard"
-msgstr "Welcome aboard"
+msgstr "Velkommen"
 
 # Successfully registration alert message
 msgid ""
 "Before starting any records please check your email and click on the "
 "verification link."
 msgstr ""
-"Before starting any records please check your email and click on the "
-"verification link."
+"Før du starter en registrering, vennligst sjekk eposten din og trykk på "
+"verifiseringslenken."

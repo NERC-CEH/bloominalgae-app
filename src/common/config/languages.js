@@ -1,8 +1,9 @@
 import { isPlatform } from '@ionic/react';
 
-import GB from 'common/images/flags/ukFlag.png';
-import NL from 'common/images/flags/nlFlag.png';
-import FR from 'common/images/flags/frFlag.png';
+import GB from 'common/images/flags/ukFlag.svg';
+import NL from 'common/images/flags/nlFlag.svg';
+import FR from 'common/images/flags/frFlag.svg';
+import NO from 'common/images/flags/noFlag.svg';
 
 const languages = [
   {
@@ -19,6 +20,11 @@ const languages = [
 
 const isDemo = !isPlatform('hybrid');
 if (isDemo) {
+  languages.push({
+    flag: NO,
+    label: 'Norsk',
+    value: 'no',
+  });
   languages.push({
     flag: FR,
     label: 'Français',
