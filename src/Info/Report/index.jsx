@@ -9,6 +9,7 @@ const { P } = Section;
 const getOrganizationsLinkByLanguage = () => {
   const isLanguageDutch = appModel.attrs.language === 'nl-NL';
   const isLanguageFrench = appModel.attrs.language === 'fr-Fr';
+  const isLanguageNorwegian = appModel.attrs.language === 'no';
 
   if (isLanguageDutch) {
     return (
@@ -65,6 +66,26 @@ const getOrganizationsLinkByLanguage = () => {
           <a href="https://www.wur.nl/nl/Dossiers/dossier/Blauwalg.htm">
             Pays-Bas
           </a>
+        </li>
+      </>
+    );
+  }
+
+  if (isLanguageNorwegian) {
+    return (
+      <>
+        <li>
+          <a href="https://www.niva.no/forskning/ferskvannsokologi/cyanobakterier">
+            NIVA
+          </a>
+        </li>
+        <li>
+          <a href="https://www.fhi.no/ml/badevann/algeoppblomstring-i-vann/">
+            Folkehelseinstituttet
+          </a>
+        </li>
+        <li>
+          <a href="https://www.vetinst.no">Veterinærinstituttet</a>
         </li>
       </>
     );
