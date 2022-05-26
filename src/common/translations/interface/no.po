@@ -1,12 +1,12 @@
 # 
 # Translators:
-# Camilla Hagman, 2022
 # Karolis, 2022
+# Camilla Hagman, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Karolis, 2022\n"
+"Last-Translator: Camilla Hagman, 2022\n"
 "Language-Team: Norwegian (https://www.transifex.com/ceh/teams/116164/no/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -289,7 +289,7 @@ msgid ""
 "For more information and advice on algal blooms see:<br/><br/><3>England & "
 "Wales</3><br/><br/><6>Scotland</6>"
 msgstr ""
-"hvor du også kan finne mer informasjon og råd ved algeoppblomsstringer."
+"Der kan du også kan finne mer informasjon og råd ved algeoppblomsstringer."
 
 # BRC info page title
 msgid "BRC approved"
@@ -302,10 +302,6 @@ msgid ""
 "assurance; made available for conservation and research and preserved for "
 "long-term use."
 msgstr ""
-"Når du ser denne logoen på en app for biologisk registrering kan du være "
-"forsikret om at data du sender inn vil bli: gjort tilgjengelig for "
-"kvalitetssikring av eksperter; gjort tilgjengelig for bevaring og forskning "
-"og lagret for langtidsbruk."
 
 # BRC info page content
 msgid ""
@@ -420,7 +416,7 @@ msgstr ""
 
 # Start record draft title
 msgid "No uploaded records"
-msgstr "Ingen opplastede registreringer"
+msgstr "Ingen registreringer er lastet opp"
 
 # Start record draft button label
 msgid "Discard"
@@ -433,7 +429,7 @@ msgstr "Fortsett"
 # Start record draft button message
 msgid "Previous record draft exists, would you like to continue it?"
 msgstr ""
-"Det finnes tidligere utkast til registrering, vil du fortsette på denne?"
+"Det finnes allerede utkast til registrering, vil du fortsette på denne?"
 
 # Record page label
 msgid "No photo has been added."
