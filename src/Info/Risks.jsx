@@ -5,7 +5,7 @@ import appModel from 'appModel';
 const { P } = Section;
 
 const Risks = () => {
-  const isLanguageNorwegian = appModel.attrs.language === 'no';
+  const isInNorway = appModel.attrs.country === 'NO';
 
   return (
     <Page id="risks">
@@ -37,7 +37,7 @@ const Risks = () => {
             If you are a pet owner you can find further information from the{' '}
             <a
               href={
-                isLanguageNorwegian
+                isInNorway
                   ? 'https://www.vetinst.no'
                   : 'https://www.bluecross.org.uk/pet-advice/blue-green-algae-and-its-dangers-dogs'
               }

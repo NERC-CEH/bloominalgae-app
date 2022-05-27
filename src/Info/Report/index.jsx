@@ -7,9 +7,10 @@ import './styles.scss';
 const { P } = Section;
 
 const getOrganizationsLinkByLanguage = () => {
+  const isInNorway = appModel.attrs.country === 'NO';
+  // TODO: make country specific
   const isLanguageDutch = appModel.attrs.language === 'nl-NL';
   const isLanguageFrench = appModel.attrs.language === 'fr-Fr';
-  const isLanguageNorwegian = appModel.attrs.language === 'no';
 
   if (isLanguageDutch) {
     return (
@@ -71,7 +72,7 @@ const getOrganizationsLinkByLanguage = () => {
     );
   }
 
-  if (isLanguageNorwegian) {
+  if (isInNorway) {
     return (
       <>
         <li>
@@ -80,7 +81,7 @@ const getOrganizationsLinkByLanguage = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.fhi.no/ml/badevann/algeoppblomstring-i-vann/">
+          <a href="https://www.fhi.no/ml/badevann/algeoppblomstring-i-vann">
             Folkehelseinstituttet
           </a>
         </li>
