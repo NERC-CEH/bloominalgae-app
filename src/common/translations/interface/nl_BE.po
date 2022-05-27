@@ -2,12 +2,12 @@
 # Translators:
 # Vilius Stankaitis <vilius@flumens.io>, 2021
 # Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021
-# Karolis, 2021
+# Karolis, 2022
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Karolis, 2021\n"
+"Last-Translator: Karolis, 2022\n"
 "Language-Team: Dutch (Belgium) (https://www.transifex.com/ceh/teams/116164/nl_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1071,3 +1071,19 @@ msgid ""
 msgstr ""
 "Gelieve uw e-mail te controleren en te klikken op de verificatielink voordat"
 " U begint met waarnemingen door te geven."
+
+# Country choice
+msgid "Country"
+msgstr "Land"
+
+# Country choice
+msgid "Belgium"
+msgstr "België"
+
+# Country choice
+msgid "Norway"
+msgstr "Noorwegen"
+
+# Country choice
+msgid "United Kingdom"
+msgstr "Verenigd Koninkrijk"

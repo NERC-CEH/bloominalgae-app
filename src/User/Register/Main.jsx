@@ -13,7 +13,7 @@ import { Trans as T } from 'react-i18next';
 import { Formik, Form } from 'formik';
 import { Main, InputWithValidation } from '@apps';
 
-import config from 'common/config/config';
+import config from 'common/config';
 
 class Component extends React.Component {
   state = {

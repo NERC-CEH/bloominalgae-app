@@ -2,9 +2,8 @@ import appModel from 'appModel';
 import i18n from 'i18next';
 import { observe } from 'mobx';
 import { initReactI18next } from 'react-i18next';
+import config from 'config';
 import resources from './loader';
-
-const DEFAULT_LANGUAGE = 'en';
 
 window.getNewTerms = function getNewTermsWrap() {
   window.dic = window.dic || [];
@@ -35,8 +34,8 @@ i18n
   .init({
     defaultNS: 'interface',
     resources,
-    lng: DEFAULT_LANGUAGE,
-    fallbackLng: DEFAULT_LANGUAGE,
+    lng: config.DEFAULT_LANGUAGE,
+    fallbackLng: config.DEFAULT_LANGUAGE,
 
     keySeparator: false, // we do not use keys in form messages.welcome
     nsSeparator: false, // no namespace use in keys
@@ -60,6 +59,8 @@ const newLanguageCodeWrap = ({ newValue }) => {
 
   const newLanguageCode = newValue.replace('_', '-'); // backwards compatible
   i18n.changeLanguage(newLanguageCode);
+
+  document.body.setAttribute('lang', newValue);
 };
 
 observe(appModel.attrs, 'language', newLanguageCodeWrap);

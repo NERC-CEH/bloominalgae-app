@@ -5,11 +5,13 @@ import {
   shareSocialOutline,
   arrowUndoSharp,
   flagOutline,
+  languageOutline,
 } from 'ionicons/icons';
 import PropTypes from 'prop-types';
 import { IonIcon, IonList, IonItem, IonLabel } from '@ionic/react';
-import languages from 'common/config/languages';
-import { Trans as T } from 'react-i18next';
+import languages from 'common/languages';
+import countries from 'common/countries';
+import { Trans as T, withTranslation } from 'react-i18next';
 import './styles.scss';
 
 function resetDialog(resetApp) {
@@ -43,16 +45,19 @@ class Component extends React.Component {
     sendAnalytics: PropTypes.bool.isRequired,
     onToggle: PropTypes.func.isRequired,
     language: PropTypes.string,
+    country: PropTypes.string,
+    t: PropTypes.func,
   };
 
   render() {
-    const { resetApp, language, sendAnalytics, onToggle } = this.props;
+    const { resetApp, language, country, sendAnalytics, onToggle, t } =
+      this.props;
 
     const showAlertDialog = () => resetDialog(resetApp);
     const onSendAnalyticsToggle = checked => onToggle('sendAnalytics', checked);
 
-    const languageNameByISO = ({ value }) => value === language;
-    const selectedLanguage = languages.find(languageNameByISO) || {};
+    const countryNameByISO = ({ value }) => value === country;
+    const selectedCountry = countries.find(countryNameByISO) || {};
 
     return (
       <Main className="app-settings">
@@ -60,8 +65,17 @@ class Component extends React.Component {
           <MenuAttrItem
             routerLink="/settings/language"
             routerOptions={{ unmount: true }} // Pick a new language on return
-            value={selectedLanguage.label}
+            value={languages[language]}
             label="Language"
+            icon={languageOutline}
+            skipValueTranslation
+          />
+
+          <MenuAttrItem
+            routerLink="/settings/country"
+            routerOptions={{ unmount: true }}
+            value={t(selectedCountry.label)}
+            label="Country"
             icon={flagOutline}
             skipValueTranslation
           />
@@ -87,4 +101,4 @@ class Component extends React.Component {
   }
 }
 
-export default Component;
+export default withTranslation()(Component);

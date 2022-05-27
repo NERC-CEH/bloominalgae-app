@@ -13,14 +13,16 @@ import { configure } from 'mobx';
 import { initReactI18next } from 'react-i18next';
 import { initAnalytics } from '@apps';
 import 'common/translations/translator';
-import App from './App';
+import getLangCodeFromDevice from 'common/helpers/getLangCodeFromDevice';
+import languages from 'common/languages';
 import '@capacitor/core';
 import '@ionic/core/css/core.css';
 import '@ionic/core/css/ionic.bundle.css';
 import 'common/theme.scss';
+import App from './App';
 
 i18n.use(initReactI18next).init({
-  lng: 'en',
+  lng: config.DEFAULT_LANGUAGE,
 });
 
 configure({
@@ -36,6 +38,12 @@ async function init() {
   await appModel._init;
   await userModel._init;
   await savedSamples._init;
+
+  if (!appModel.attrs.language) {
+    const languageCode = await getLangCodeFromDevice(Object.keys(languages));
+    appModel.attrs.language = languageCode || config.DEFAULT_LANGUAGE;
+    appModel.save();
+  }
 
   appModel.attrs.sendAnalytics &&
     initAnalytics({

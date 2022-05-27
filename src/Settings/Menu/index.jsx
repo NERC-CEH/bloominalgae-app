@@ -26,7 +26,7 @@ function onToggle(appModel, setting, checked) {
 
 const MenuController = props => {
   const { savedSamples, appModel, userModel } = props;
-  const { sendAnalytics, language } = appModel.attrs;
+  const { sendAnalytics, language, country } = appModel.attrs;
 
   const resetApplication = () => resetApp(savedSamples, appModel, userModel);
   const onToggleWrap = (...args) => onToggle(appModel, ...args);
@@ -37,6 +37,7 @@ const MenuController = props => {
       <Main
         resetApp={resetApplication}
         language={language}
+        country={country}
         sendAnalytics={sendAnalytics}
         onToggle={onToggleWrap}
       />

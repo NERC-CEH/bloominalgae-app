@@ -1,6 +1,6 @@
 import { Sample } from '@apps';
 import userModel from 'userModel';
-import config from 'common/config/config';
+import config from 'common/config';
 import { observable } from 'mobx';
 import surveyConfig from '../../Survey/config';
 import GPSExtension from './sampleGPSExt';

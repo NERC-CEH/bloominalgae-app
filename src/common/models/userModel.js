@@ -1,4 +1,4 @@
-import CONFIG from 'common/config/config';
+import CONFIG from 'common/config';
 import * as Yup from 'yup';
 import { Model } from '@apps';
 import axios from 'axios';

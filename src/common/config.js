@@ -13,6 +13,8 @@ const CONFIG = {
   version: process.env.APP_VERSION,
   build: process.env.APP_BUILD,
 
+  DEFAULT_LANGUAGE: 'en',
+
   log: !isTestEnv,
 
   sentryDNS: !isTestEnv && process.env.APP_SENTRY_KEY,

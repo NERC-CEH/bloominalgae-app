@@ -4,28 +4,28 @@ import { observer } from 'mobx-react';
 import { Page, Main } from '@apps';
 import { IonList, IonIcon } from '@ionic/react';
 import { globeOutline } from 'ionicons/icons';
-import languages from 'common/config/languages';
+import countries from 'common/countries';
 import appModel from 'appModel';
 import backgroundImage from './backgroundImage.jpg';
-import LanguageButton from './Component/LanguageButton';
-
+import CountryButton from './CountryButton';
 import './styles.scss';
 
-const alphabetically = (lng1, lng2) => lng1.label.localeCompare(lng2.label);
+const alphabetically = (country1, country2) =>
+  country1.label.localeCompare(country2.label);
 
-const showData = language => (
-  <LanguageButton key={language.flag} language={language} appModel={appModel} />
+const getCountry = country => (
+  <CountryButton key={country.label} country={country} appModel={appModel} />
 );
 
-const languagesOptions = () => languages.sort(alphabetically).map(showData);
+const countriesEntries = () => countries.sort(alphabetically).map(getCountry);
 
-function LanguageSelect({ children }) {
-  if (appModel.attrs.language) {
+function CountrySelect({ children }) {
+  if (appModel.attrs.country) {
     return children;
   }
 
   return (
-    <Page id="language-select">
+    <Page id="country-select">
       <div className="header">
         <IonIcon icon={globeOutline} />
       </div>
@@ -37,9 +37,9 @@ function LanguageSelect({ children }) {
           alt="background"
         />
 
-        <div className="language-select-container">
+        <div className="country-select-container">
           <div className="list-container">
-            <IonList>{languagesOptions()}</IonList>
+            <IonList>{countriesEntries()}</IonList>
           </div>
         </div>
       </Main>
@@ -47,7 +47,7 @@ function LanguageSelect({ children }) {
   );
 }
 
-LanguageSelect.propTypes = {
+CountrySelect.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
@@ -55,4 +55,4 @@ LanguageSelect.propTypes = {
   ]),
 };
 
-export default observer(LanguageSelect);
+export default observer(CountrySelect);

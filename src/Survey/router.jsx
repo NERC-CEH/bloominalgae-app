@@ -16,7 +16,7 @@ const HomeWrap = props => (
 
 // eslint-disable-next-line
 const ModelLocationWrap = ({ sample }) => {
-  const isInUK = appModel.attrs.language === 'en';
+  const isInUK = appModel.attrs.country === 'UK';
 
   return (
     <ModelLocation

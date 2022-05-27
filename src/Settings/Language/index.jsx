@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
+import exact from 'prop-types-exact';
 import { observer } from 'mobx-react';
-import { withRouter } from 'react-router';
 import { Page, Main, Header } from '@apps';
 import {
   IonList,
@@ -11,7 +11,7 @@ import {
   IonLabel,
   NavContext,
 } from '@ionic/react';
-import languages from 'common/config/languages';
+import languages from 'common/languages';
 
 function SelectLanguage({ appModel }) {
   const navigate = useContext(NavContext);
@@ -25,16 +25,18 @@ function SelectLanguage({ appModel }) {
     navigate.goBack();
   }
 
-  const alphabetically = (lng1, lng2) => lng1.label.localeCompare(lng2.label);
+  const alphabetically = ([, l1], [, l2]) => l1.localeCompare(l2);
 
-  const languageEntries = ({ value, label }) => (
+  const languageEntries = ([value, language]) => (
     <IonItem key={value}>
-      <IonLabel>{label}</IonLabel>
+      <IonLabel>{language}</IonLabel>
       <IonRadio value={value} />
     </IonItem>
   );
 
-  const languagesOptions = languages.sort(alphabetically).map(languageEntries);
+  const languagesOptions = Object.entries(languages)
+    .sort(alphabetically)
+    .map(languageEntries);
 
   return (
     <Page id="language-options">
@@ -51,8 +53,8 @@ function SelectLanguage({ appModel }) {
   );
 }
 
-SelectLanguage.propTypes = {
+SelectLanguage.propTypes = exact({
   appModel: PropTypes.object.isRequired,
-};
+});
 
-export default observer(withRouter(SelectLanguage));
+export default observer(SelectLanguage);

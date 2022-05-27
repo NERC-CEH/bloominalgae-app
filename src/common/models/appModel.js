@@ -7,6 +7,7 @@ const defaults = {
   appSession: 0,
   showedWelcome: false,
   language: null,
+  country: null,
   sendAnalytics: true,
   recordDraftId: null,
 

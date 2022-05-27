@@ -5,12 +5,14 @@ import userModel from 'userModel';
 import savedSamples from 'savedSamples';
 import Menu from './Menu';
 import Language from './Language';
+import Country from './Country';
 
 const MenuWrap = () => (
   <Menu appModel={appModel} savedSamples={savedSamples} userModel={userModel} />
 );
 
 const LanguageWrap = () => <Language appModel={appModel} />;
+const CountryWrap = () => <Country appModel={appModel} />;
 
 export default [
   <Route
@@ -25,5 +27,12 @@ export default [
     key="/settings/language"
     exact
     render={LanguageWrap}
+  />,
+
+  <Route
+    path="/settings/country"
+    key="/settings/country"
+    exact
+    render={CountryWrap}
   />,
 ];

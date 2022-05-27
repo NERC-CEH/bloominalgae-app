@@ -70,8 +70,11 @@ function showRecord(record) {
   });
 }
 
-const UK = [53.505, -3.09];
-const BE = [50.637, 4.59];
+const COUNTRY_CENTROIDS = {
+  UK: [53.505, -3.09],
+  BE: [50.637, 4.59],
+  NO: [62.574, 9.4],
+};
 
 const DEFAULT_ZOOM = 5;
 const DEFAULT_LOCATED_ZOOM = 12;
@@ -102,8 +105,8 @@ class MapComponent extends Component {
   };
 
   componentDidMount() {
-    const isUK = appModel.attrs.language === 'en';
-    const DEFAULT_POSITION = isUK ? UK : BE;
+    const { country } = appModel.attrs;
+    const DEFAULT_POSITION = COUNTRY_CENTROIDS[country] || COUNTRY_CENTROIDS.UK;
 
     const map = this.map.current.leafletElement;
     map.panTo(new L.LatLng(...DEFAULT_POSITION));

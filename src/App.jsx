@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
-import LanguageSelectRequired from 'common/Components/LanguageSelectRequire';
+import CountrySelectRequired from 'common/Components/CountrySelectRequired';
 import { IonReactRouter } from '@ionic/react-router';
 import Menu from 'Components/Menu';
 import userModel from 'userModel';
@@ -22,7 +22,7 @@ const HomeRedirect = () => {
 
 const App = () => (
   <IonApp>
-    <LanguageSelectRequired appModel={appModel}>
+    <CountrySelectRequired appModel={appModel}>
       <SplashScreenRequired appModel={appModel}>
         <IonReactRouter>
           <IonRouterOutlet id="user">{User}</IonRouterOutlet>
@@ -37,7 +37,7 @@ const App = () => (
           </IonRouterOutlet>
         </IonReactRouter>
       </SplashScreenRequired>
-    </LanguageSelectRequired>
+    </CountrySelectRequired>
   </IonApp>
 );
 

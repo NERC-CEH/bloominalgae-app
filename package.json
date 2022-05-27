@@ -51,16 +51,17 @@
     "@capacitor/app": "^1.0.2",
     "@capacitor/camera": "^1.0.2",
     "@capacitor/core": "3.0.2",
+    "@capacitor/device": "^1.1.2",
     "@capacitor/filesystem": "^1.0.2",
     "@capacitor/geolocation": "^1.0.2",
     "@capacitor/ios": "3.0.2",
     "@capacitor/keyboard": "^1.0.2",
     "@capacitor/splash-screen": "^1.0.2",
     "@capacitor/status-bar": "^1.0.2",
-    "@ionic-native/launch-review": "^5.29.0",
     "@indicia-js/core": "5.4.0",
     "@indicia-js/remote-drupal": "5.6.7",
     "@ionic-native/core": "5.36.0",
+    "@ionic-native/launch-review": "^5.29.0",
     "@ionic/core": "5.8.0",
     "@ionic/react": "5.8.0",
     "@ionic/react-router": "5.8.0",
@@ -169,7 +170,7 @@
             "appModel": "./src/common/models/appModel",
             "userModel": "./src/common/models/userModel",
             "Components": "./src/common/Components",
-            "config": "./src/common/config/config.js"
+            "config": "./src/common/config.js"
           }
         }
       ],
