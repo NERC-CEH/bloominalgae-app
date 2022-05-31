@@ -1054,5 +1054,9 @@ msgid "Norway"
 msgstr "Norge"
 
 # Country choice
+msgid "Netherlands"
+msgstr "Nederland"
+
+# Country choice
 msgid "United Kingdom"
 msgstr "Storbritannia"

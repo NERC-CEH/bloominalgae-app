@@ -1085,5 +1085,9 @@ msgid "Norway"
 msgstr "Noorwegen"
 
 # Country choice
+msgid "Netherlands"
+msgstr "Nederland"
+
+# Country choice
 msgid "United Kingdom"
 msgstr "Verenigd Koninkrijk"

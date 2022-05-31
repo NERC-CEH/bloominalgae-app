@@ -3,6 +3,7 @@ import { isPlatform } from '@ionic/react';
 import UK from 'common/images/flags/ukFlag.svg';
 import BE from 'common/images/flags/beFlag.svg';
 import NO from 'common/images/flags/noFlag.svg';
+import NL from 'common/images/flags/nlFlag.svg';
 
 const countries = [
   {
@@ -19,6 +20,11 @@ const countries = [
     flag: NO,
     label: 'Norway',
     value: 'NO',
+  },
+  {
+    flag: NL,
+    label: 'Netherlands',
+    value: 'NL',
   },
 ];
 
