@@ -40,10 +40,13 @@
         width: 100%;
         border-radius: 20px 20px 0 0;
 
+        .language-icon-default,
         img {
           height: 40px;
           width: 40px;
           margin: 10px 20px 10px 0px;
+          background-color: rgb(233, 233, 233);
+          border-radius: 50%;
         }
 
         ion-item {

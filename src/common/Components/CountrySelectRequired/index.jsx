@@ -6,20 +6,27 @@ import { IonList, IonIcon } from '@ionic/react';
 import { globeOutline } from 'ionicons/icons';
 import countries from 'common/countries';
 import appModel from 'appModel';
+import { useTranslation } from 'react-i18next';
 import backgroundImage from './backgroundImage.jpg';
 import CountryButton from './CountryButton';
 import './styles.scss';
-
-const alphabetically = (country1, country2) =>
-  country1.label.localeCompare(country2.label);
 
 const getCountry = country => (
   <CountryButton key={country.label} country={country} appModel={appModel} />
 );
 
-const countriesEntries = () => countries.sort(alphabetically).map(getCountry);
+const countriesEntries = t => {
+  const alphabetically = (country1, country2) =>
+    country1.label === 'Other'
+      ? 1
+      : t(country1.label).localeCompare(t(country2.label));
+
+  return countries.sort(alphabetically).map(getCountry);
+};
 
 function CountrySelect({ children }) {
+  const { t } = useTranslation();
+
   if (appModel.attrs.country) {
     return children;
   }
@@ -39,7 +46,7 @@ function CountrySelect({ children }) {
 
         <div className="country-select-container">
           <div className="list-container">
-            <IonList>{countriesEntries()}</IonList>
+            <IonList>{countriesEntries(t)}</IonList>
           </div>
         </div>
       </Main>

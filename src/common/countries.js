@@ -26,6 +26,10 @@ const countries = [
     label: 'Netherlands',
     value: 'NL',
   },
+  {
+    label: 'Other',
+    value: 'OTHER',
+  },
 ];
 
 const isDemo = !isPlatform('hybrid');

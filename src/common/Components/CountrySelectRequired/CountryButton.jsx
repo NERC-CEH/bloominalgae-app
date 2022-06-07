@@ -14,7 +14,8 @@ function CountryButton({ appModel, country }) {
   return (
     <IonItem key={label} lines="none" className="first" onClick={selectCountry}>
       <div className="icon-wrapper">
-        <img className="language-icons" src={flag} />
+        {flag && <img className="language-icons" src={flag} />}
+        {!flag && <div className="language-icon-default" />}
       </div>
 
       <IonLabel>

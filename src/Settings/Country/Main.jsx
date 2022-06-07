@@ -10,12 +10,14 @@ import {
   IonLabel,
 } from '@ionic/react';
 import { Main } from '@apps';
-import { Trans as T } from 'react-i18next';
+import { Trans as T, useTranslation } from 'react-i18next';
 import countries from 'common/countries';
 
-const getCountriesOptions = () => {
+const getCountriesOptions = t => {
   const alphabetically = (country1, country2) =>
-    country1.label.localeCompare(country2.label);
+    country1.label === 'Other'
+      ? 1
+      : t(country1.label).localeCompare(t(country2.label));
 
   const getCountry = ({ value, label }) => (
     <IonItem key={value} className="rounded">
@@ -30,13 +32,14 @@ const getCountriesOptions = () => {
 };
 
 function SelectCountryContainer({ appModel, onSelect }) {
+  const { t } = useTranslation();
   const currentValue = appModel.attrs.country;
 
   return (
     <Main>
       <IonList>
         <IonRadioGroup onIonChange={onSelect} value={currentValue}>
-          {getCountriesOptions()}
+          {getCountriesOptions(t)}
         </IonRadioGroup>
       </IonList>
     </Main>
