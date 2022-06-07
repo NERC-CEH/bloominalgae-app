@@ -1033,6 +1033,13 @@ msgstr "Beklager, vi kunne ikke hente bildet."
 msgid "Welcome aboard"
 msgstr "Velkommen"
 
+# Language info popup
+msgid ""
+"The language will default to the language of your phone settings. If you "
+"want to change the language go to \"Settings\" in the Bloomin' Algae app "
+"menu and select \"Language\""
+msgstr "Appen vil automatisk velge språket som er valgt i dine telefoninnstillinger. Hvis du ønsker å endre språk, gå til \"Innstillinger\" i app-menyen til Bloomin' Algae og velg \"Språk\""
+
 # Successfully registration alert message
 msgid ""
 "Before starting any records please check your email and click on the "

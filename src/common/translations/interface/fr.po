@@ -1068,6 +1068,13 @@ msgstr "Désolé, nous ne pouvons pas télécharger cette image."
 msgid "Welcome aboard"
 msgstr "Bienvenue à bord!"
 
+# Language info popup
+msgid ""
+"The language will default to the language of your phone settings. If you "
+"want to change the language go to \"Settings\" in the Bloomin' Algae app "
+"menu and select \"Language\""
+msgstr ""
+
 # Successfully registration alert message
 msgid ""
 "Before starting any records please check your email and click on the "
