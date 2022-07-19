@@ -86,7 +86,9 @@ const getOrganizationsLinkByLanguage = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.vetinst.no">Veterinærinstituttet</a>
+          <a href="https://www.vetinst.no/sykdom-og-agens/cyanotoksiner-mikrocystiner">
+            Veterinærinstituttet
+          </a>
         </li>
       </>
     );

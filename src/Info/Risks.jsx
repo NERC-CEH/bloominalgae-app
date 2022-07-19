@@ -35,15 +35,15 @@ const Risks = () => {
 
           <P>
             If you are a pet owner you can find further information from the{' '}
-            <a
-              href={
-                isInNorway
-                  ? 'https://www.vetinst.no'
-                  : 'https://www.bluecross.org.uk/pet-advice/blue-green-algae-and-its-dangers-dogs'
-              }
-            >
-              Blue Cross
-            </a>
+            {isInNorway ? (
+              <a href="https://www.vetinst.no/sykdom-og-agens/cyanotoksiner-mikrocystiner">
+                Veterinærinstituttet
+              </a>
+            ) : (
+              <a href="https://www.bluecross.org.uk/pet-advice/blue-green-algae-and-its-dangers-dogs">
+                Blue Cross
+              </a>
+            )}
             .
           </P>
 
