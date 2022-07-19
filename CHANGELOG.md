@@ -1,3 +1,7 @@
+## 2.1.1
+
+Updated links.
+
 ## 2.1.0
 
 Added Norwegian language.
