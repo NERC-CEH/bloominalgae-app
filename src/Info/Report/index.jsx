@@ -1,6 +1,5 @@
-import React from 'react';
-import { Page, Main, Header, Section, TLink } from '@apps';
-import appModel from 'appModel';
+import { Page, Main, Header, Section, TLink } from '@flumens';
+import appModel from 'models/app';
 import { Trans as T } from 'react-i18next';
 import './styles.scss';
 

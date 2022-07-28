@@ -1,5 +1,4 @@
-import React from 'react';
-import { Page, Main, Header, Section } from '@apps';
+import { Page, Main, Header, Section } from '@flumens';
 
 const { P } = Section;
 

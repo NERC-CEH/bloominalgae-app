@@ -1,15 +1,15 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import { IonButton, NavContext } from '@ionic/react';
 import { Trans as T, withTranslation } from 'react-i18next';
-import { Page, Header, showInvalidsMessage, alert } from '@apps';
+import { Page, Header, showInvalidsMessage, alert } from '@flumens';
 import MapComponent from '../Components/Map';
 import Main from './Main';
 import './styles.scss';
 
 @observer
-class Controller extends React.Component {
+class Controller extends Component {
   static contextType = NavContext;
 
   static propTypes = {

@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 import { observer } from 'mobx-react';
-import { alert, Main, Toggle, MenuNote, MenuAttrItem } from '@apps';
+import { alert, Main, Toggle, MenuNote, MenuAttrItem } from '@flumens';
 import {
   shareSocialOutline,
   arrowUndoSharp,

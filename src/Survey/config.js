@@ -1,4 +1,4 @@
-import { date } from '@apps';
+import { date } from '@flumens';
 import {
   expandOutline,
   calendarOutline,

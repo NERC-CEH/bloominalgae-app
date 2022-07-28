@@ -1,11 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
-import { Page, Main } from '@apps';
+import { Page, Main } from '@flumens';
 import { IonList, IonIcon } from '@ionic/react';
 import { globeOutline } from 'ionicons/icons';
 import countries from 'common/countries';
-import appModel from 'appModel';
+import appModel from 'models/app';
 import { useTranslation } from 'react-i18next';
 import backgroundImage from './backgroundImage.jpg';
 import CountryButton from './CountryButton';

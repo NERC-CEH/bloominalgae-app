@@ -1,8 +1,8 @@
-import React from 'react';
+import { Component } from 'react';
 import { IonLabel, IonIcon, IonButton } from '@ionic/react';
 import Header from 'Components/Header';
 import { observer } from 'mobx-react';
-import { Page, Toggle, alert } from '@apps';
+import { Page, Toggle, alert } from '@flumens';
 import { Trans as T } from 'react-i18next';
 import axios from 'axios';
 import { helpCircleOutline } from 'ionicons/icons';
@@ -23,7 +23,7 @@ const showDurationOfRecordsAlert = () =>
   });
 
 @observer
-class Container extends React.Component {
+class Container extends Component {
   state = {
     isFetchingRecords: null,
     currentLocation: null,

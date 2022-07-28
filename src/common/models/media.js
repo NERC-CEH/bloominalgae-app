@@ -1,13 +1,12 @@
-import { Media } from '@apps';
-import Log from 'helpers/log';
-import config from 'config';
+import { Media } from '@flumens';
+import config from 'common/config';
 import { isPlatform } from '@ionic/react';
 import { Capacitor } from '@capacitor/core';
 import { Filesystem, Directory } from '@capacitor/filesystem';
 
 export default class AppMedia extends Media {
   async destroy(silent) {
-    Log('MediaModel: destroying.');
+    console.log('MediaModel: destroying.');
 
     // remove from internal storage
     if (!Capacitor.isNativePlatform() || window.testing) {

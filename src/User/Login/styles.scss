@@ -1,7 +1,7 @@
 #user-login {
   ion-toolbar {
     position: fixed;
-    --ion-toolbar-background: transparent;
+    --background: transparent;
 
     ion-back-button {
       color: var(--ion-color-light-contrast);
@@ -10,16 +10,8 @@
 
   ion-content {
     --padding-top: 40px; // header
-  }
 
-  ion-list,
-  ion-item {
-    --background: transparent;
-    background: transparent;
-  }
-
-  ion-content {
-    ion-icon {
+    ion-button ion-icon {
       color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 1);
     }
 
@@ -36,7 +28,16 @@
       margin-bottom: 70px;
     }
 
-    form ion-router-link.password-forgot-button {
+    a {
+      color: var(--ion-color-primary);
+      text-decoration: none;
+    }
+
+    ion-icon.faint {
+      opacity: 0.6;
+    }
+
+    form a.password-forgot-button {
       display: block;
       padding: 10px;
       text-align: right;
@@ -45,8 +46,19 @@
     }
 
     ion-button[type='submit'] {
-      margin: 20px;
+      margin: 15px auto;
+      width: calc(100% - 30px);
+      max-width: 200px;
       margin-bottom: 60px;
     }
+  }
+
+  input {
+    background: transparent;
+  }
+
+  .signup-button {
+    font-size: 0.85em;
+    text-align: center;
   }
 }

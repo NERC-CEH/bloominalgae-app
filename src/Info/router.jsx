@@ -1,4 +1,3 @@
-import React from 'react';
 import { Route } from 'react-router-dom';
 import About from './About';
 import MoreInformation from './MoreInformation';

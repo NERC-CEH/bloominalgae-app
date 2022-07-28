@@ -1,5 +1,5 @@
-import { Sample } from '@apps';
-import userModel from 'userModel';
+import { Sample } from '@flumens';
+import userModel from 'models/user';
 import config from 'common/config';
 import { observable } from 'mobx';
 import surveyConfig from '../../Survey/config';

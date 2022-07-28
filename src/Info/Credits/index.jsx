@@ -1,5 +1,4 @@
-import React from 'react';
-import { Header, Page, Main, Section } from '@apps';
+import { Header, Page, Main, Section } from '@flumens';
 import cehLogo from './ceh_logo.png';
 import './styles.scss';
 

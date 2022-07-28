@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import { Page, Main, alert } from '@apps';
+import { useEffect } from 'react';
+import { Page, Main, alert } from '@flumens';
 import Header from 'Components/Header';
-import appModel from 'appModel';
+import appModel from 'models/app';
 import { IonItem, IonItemGroup, IonLabel, IonRouterLink } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
 import appLogo from './appLogo.png';

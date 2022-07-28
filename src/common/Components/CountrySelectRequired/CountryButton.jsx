@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { IonItem, IonLabel } from '@ionic/react';
 import { Trans as T } from 'react-i18next';

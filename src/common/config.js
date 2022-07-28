@@ -15,8 +15,6 @@ const CONFIG = {
 
   DEFAULT_LANGUAGE: 'en',
 
-  log: !isTestEnv,
-
   sentryDNS: !isTestEnv && process.env.APP_SENTRY_KEY,
 
   map: {

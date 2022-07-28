@@ -1,6 +1,3 @@
-import React from 'react';
-
-// eslint-disable-next-line
 export const TLink = ({ children }) => {
   const link = children[0];
 

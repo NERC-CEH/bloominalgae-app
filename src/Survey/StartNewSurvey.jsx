@@ -1,10 +1,10 @@
-import React, { useEffect, useContext } from 'react';
+import { useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 import exact from 'prop-types-exact';
 import { NavContext } from '@ionic/react';
 import Sample from 'common/models/sample';
-import { alert } from '@apps';
-import appModel from 'common/models/appModel';
+import { alert } from '@flumens';
+import appModel from 'models/app';
 import Occurrence from 'common/models/occurrence';
 import savedSamples from 'common/models/savedSamples';
 import { Trans as T } from 'react-i18next';

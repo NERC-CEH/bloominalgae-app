@@ -1,6 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { alert, date as dateUtils } from '@apps';
+import { alert, date as dateUtils } from '@flumens';
 import { observer } from 'mobx-react';
 import {
   IonItem,

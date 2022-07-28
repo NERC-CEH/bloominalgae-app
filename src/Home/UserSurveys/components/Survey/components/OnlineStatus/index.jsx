@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { IonSpinner, IonLabel, IonChip } from '@ionic/react';
 import { observer } from 'mobx-react';

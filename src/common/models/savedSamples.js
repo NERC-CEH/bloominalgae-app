@@ -1,7 +1,7 @@
-import { initStoredSamples } from '@apps';
+import { initStoredSamples } from '@flumens';
 import { modelStore } from './store';
 import Sample from './sample';
-import userModel from './userModel';
+import userModel from './user';
 import remotePullExtInit from './savedSamplesRemotePullExt';
 import autoUploadExtInit from './savedSamplesAutoUploadExt';
 

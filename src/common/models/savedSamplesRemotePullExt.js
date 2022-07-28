@@ -1,6 +1,6 @@
 import axios from 'axios';
 import i18n from 'i18next';
-import { alert } from '@apps';
+import { alert } from '@flumens';
 
 async function fetchUpdatedRemoteSamples(userModel) {
   console.log('SavedSamples: pulling remote surveys');

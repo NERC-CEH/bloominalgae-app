@@ -1,5 +1,4 @@
-import React from 'react';
-import { Page, InfoMessage } from '@apps';
+import { Page, InfoMessage } from '@flumens';
 import { IonItemDivider, IonContent } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
 import { informationCircle } from 'ionicons/icons';
@@ -25,8 +24,7 @@ const bgCards = [
     image: img2,
   },
   {
-    text:
-      'Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be small and round or tiny grass like flakes',
+    text: 'Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be small and round or tiny grass like flakes',
     image: img3,
   },
   {

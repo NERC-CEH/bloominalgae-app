@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
-import { Page, Main } from '@apps';
+import { Page, Main } from '@flumens';
 import { observer } from 'mobx-react';
 import {
   IonSlides,
@@ -11,7 +11,6 @@ import {
   IonToolbar,
   IonFooter,
 } from '@ionic/react';
-import Log from 'helpers/log';
 import { arrowForward, alertCircleOutline } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
 import firstBackgroundImage from './images/first.jpg';
@@ -22,7 +21,7 @@ const SplashScreen = ({ appModel }) => {
   const [isEnd, setIsEnd] = useState(false);
 
   function exit() {
-    Log('Info:Welcome:Controller: exit.');
+    console.log('Info:Welcome:Controller: exit.');
     // eslint-disable-next-line no-param-reassign
     appModel.attrs.showedWelcome = true;
     appModel.save();

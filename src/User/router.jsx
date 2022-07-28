@@ -1,6 +1,5 @@
-import React from 'react';
 import { Route } from 'react-router-dom';
-import userModel from 'userModel';
+import userModel from 'models/user';
 import Login from './Login';
 import Register from './Register';
 import Reset from './Reset';

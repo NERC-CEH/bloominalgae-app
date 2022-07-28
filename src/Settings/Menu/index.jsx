@@ -1,14 +1,12 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { Page, Header, toast } from '@apps';
+import { Page, Header, toast } from '@flumens';
 import { observer } from 'mobx-react';
-import Log from 'helpers/log';
 import Main from './Main';
 
 const { success, error } = toast;
 
 const resetApp = async (saveSamples, appModel, userModel) => {
-  Log('Settings:Menu:Controller: resetting the application!', 'w');
+  console.log('Settings:Menu:Controller: resetting the application!', 'w');
   try {
     await saveSamples.resetDefaults();
     await appModel.resetDefaults();

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
   IonHeader,
@@ -11,7 +11,7 @@ import {
   IonBadge,
 } from '@ionic/react';
 import { observer } from 'mobx-react';
-import { Page, Main } from '@apps';
+import { Page, Main } from '@flumens';
 import InfoBackgroundMessage from 'Components/InfoBackgroundMessage';
 import { Trans as T } from 'react-i18next';
 import Survey from './components/Survey';
@@ -24,7 +24,7 @@ function byCreateTime(m1, m2) {
 }
 
 @observer
-class UserSurveyComponent extends React.Component {
+class UserSurveyComponent extends Component {
   static propTypes = {
     savedSamples: PropTypes.array.isRequired,
   };

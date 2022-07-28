@@ -1,8 +1,8 @@
-import appModel from 'appModel';
+import appModel from 'models/app';
 import i18n from 'i18next';
 import { observe } from 'mobx';
 import { initReactI18next } from 'react-i18next';
-import config from 'config';
+import config from 'common/config';
 import resources from './loader';
 
 window.getNewTerms = function getNewTermsWrap() {

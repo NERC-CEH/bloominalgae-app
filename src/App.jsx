@@ -1,12 +1,11 @@
-import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import CountrySelectRequired from 'common/Components/CountrySelectRequired';
 import { IonReactRouter } from '@ionic/react-router';
 import Menu from 'Components/Menu';
-import userModel from 'userModel';
-import appModel from 'appModel';
-import savedSamples from 'savedSamples';
+import userModel from 'models/user';
+import appModel from 'models/app';
+import savedSamples from 'models/savedSamples';
 import Info from './Info/router';
 import SplashScreenRequired from './Info/SplashScreenRequired';
 import Survey from './Survey/router';

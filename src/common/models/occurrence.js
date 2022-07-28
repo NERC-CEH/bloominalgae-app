@@ -1,4 +1,4 @@
-import { Occurrence } from '@apps';
+import { Occurrence } from '@flumens';
 import Media from './media';
 
 export default class AppOccurrence extends Occurrence {

@@ -1,9 +1,8 @@
-import React from 'react';
-import { AttrPage as Attr, RouteWithModels, ModelLocation } from '@apps';
-import appModel from 'appModel';
-import userModel from 'userModel';
-import config from 'config';
-import savedSamples from 'savedSamples';
+import { AttrPage as Attr, RouteWithModels, ModelLocation } from '@flumens';
+import appModel from 'models/app';
+import userModel from 'models/user';
+import config from 'common/config';
+import savedSamples from 'models/savedSamples';
 import StartNewSurvey from './StartNewSurvey';
 import survey from './config';
 import Home from './Home';

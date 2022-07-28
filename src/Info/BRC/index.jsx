@@ -1,5 +1,4 @@
-import React from 'react';
-import { Page, Main, Header, Section } from '@apps';
+import { Page, Main, Header, Section } from '@flumens';
 import BRCLogo from './BRC_approved_logo.png';
 
 const { H, P } = Section;

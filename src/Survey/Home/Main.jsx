@@ -1,12 +1,12 @@
 import { observer } from 'mobx-react';
-import React from 'react';
+import * as React from 'react';
 import {
   Main,
   MenuAttrItemFromModel,
   MenuAttrItem,
   InfoMessage,
   InfoButton,
-} from '@apps';
+} from '@flumens';
 import PropTypes from 'prop-types';
 import {
   bicycleOutline,
@@ -18,7 +18,7 @@ import {
 import clsx from 'clsx';
 import { IonList } from '@ionic/react';
 import PhotoPicker from 'Components/PhotoPicker';
-import GridRefValue from '../Components/GridRefValue';
+import GridRefValue from 'Survey/Components/GridRefValue';
 import logo from './app_logo_dark.png';
 import './styles.scss';
 

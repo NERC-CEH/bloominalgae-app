@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import { createRef, Component } from 'react';
 import { withIonLifeCycle } from '@ionic/react';
 import PropTypes from 'prop-types';
-import CONFIG from 'config';
+import CONFIG from 'common/config';
 import L from 'leaflet';
 import { Map, TileLayer, Marker } from 'react-leaflet';
 import { observer } from 'mobx-react';
@@ -22,7 +22,7 @@ class MapComponent extends Component {
 
   constructor(props) {
     super(props);
-    this.map = React.createRef();
+    this.map = createRef();
   }
 
   render() {

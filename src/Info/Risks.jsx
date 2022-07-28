@@ -1,6 +1,5 @@
-import React from 'react';
-import { Page, Main, Header, Section } from '@apps';
-import appModel from 'appModel';
+import { Page, Main, Header, Section } from '@flumens';
+import appModel from 'models/app';
 
 const { P } = Section;
 

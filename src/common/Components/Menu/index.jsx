@@ -1,9 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import exact from 'prop-types-exact';
-import config from 'config';
+import config from 'common/config';
 import { useLocation } from 'react-router';
-import { alert } from '@apps';
+import { alert } from '@flumens';
 import {
   IonContent,
   IonIcon,
@@ -164,7 +163,7 @@ function loggingOut(userModel, savedSamples) {
 }
 
 const getLogoutButton = (userModel, savedSamples) => {
-  const { firstName, secondName } = userModel.attrs; // Log('Home:Info: logging out.');
+  const { firstName, secondName } = userModel.attrs; // console.log('Home:Info: logging out.');
 
   const loggingOutWrap = () => loggingOut(userModel, savedSamples);
 

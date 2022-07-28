@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import { createRef, Component } from 'react';
 import PropTypes from 'prop-types';
 import exact from 'prop-types-exact';
 import { withIonLifeCycle, IonSpinner, IonIcon } from '@ionic/react';
-import { Main, alert } from '@apps';
-import appModel from 'common/models/appModel';
-import CONFIG from 'config';
+import { Main, alert } from '@flumens';
+import appModel from 'models/app';
+import CONFIG from 'common/config';
 import L from 'leaflet';
 import { Map, TileLayer } from 'react-leaflet';
 import { Trans as T } from 'react-i18next';
-import LeafletControl from 'react-leaflet-control';
 import 'leaflet.markercluster';
+import LeafletControl from 'common/Components/LeafletControl';
 import { observer } from 'mobx-react';
 import { locateOutline } from 'ionicons/icons';
 import clsx from 'clsx';
@@ -92,7 +92,7 @@ class MapComponent extends Component {
 
   constructor(props) {
     super(props);
-    this.map = React.createRef();
+    this.map = createRef();
   }
 
   ionViewDidEnter = () => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { IonItemDivider, IonLabel } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
 import { observer } from 'mobx-react';
