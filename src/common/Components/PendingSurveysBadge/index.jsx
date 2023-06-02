@@ -1,11 +1,11 @@
+import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
 import exact from 'prop-types-exact';
 import { IonBadge } from '@ionic/react';
-import { observer } from 'mobx-react';
 import './styles.scss';
 
 function getPendingCount(savedSamples) {
-  const byUploadStatus = sample => !sample.metadata.synced_on;
+  const byUploadStatus = sample => !sample.metadata.syncedOn;
 
   return savedSamples.filter(byUploadStatus).length;
 }

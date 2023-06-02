@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Page, Main, alert } from '@flumens';
+import { Page, Main, useAlert } from '@flumens';
 import Header from 'Components/Header';
 import appModel from 'models/app';
 import { IonItem, IonItemGroup, IonLabel, IonRouterLink } from '@ionic/react';
@@ -10,6 +10,8 @@ import backgroundImage from './homePageBackground.jpg';
 import './styles.scss';
 
 function useLanguageTip() {
+  const alert = useAlert();
+
   const showLanguageTip = () => {
     if (!appModel.attrs.showLanguageTip) return;
 

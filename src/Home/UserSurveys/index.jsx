@@ -1,5 +1,8 @@
 import { Component } from 'react';
+import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
+import { Trans as T } from 'react-i18next';
+import { Page, Main } from '@flumens';
 import {
   IonHeader,
   IonToolbar,
@@ -10,20 +13,16 @@ import {
   IonLabel,
   IonBadge,
 } from '@ionic/react';
-import { observer } from 'mobx-react';
-import { Page, Main } from '@flumens';
 import InfoBackgroundMessage from 'Components/InfoBackgroundMessage';
-import { Trans as T } from 'react-i18next';
 import Survey from './components/Survey';
 import './styles.scss';
 
 function byCreateTime(m1, m2) {
-  const date1 = new Date(m1.metadata.created_on);
-  const date2 = new Date(m2.metadata.created_on);
+  const date1 = new Date(m1.metadata.createdOn);
+  const date2 = new Date(m2.metadata.createdOn);
   return date2.getTime() - date1.getTime();
 }
 
-@observer
 class UserSurveyComponent extends Component {
   static propTypes = {
     savedSamples: PropTypes.array.isRequired,
@@ -39,7 +38,7 @@ class UserSurveyComponent extends Component {
     const { savedSamples } = this.props;
 
     const byUploadStatus = sample =>
-      uploaded ? sample.metadata.synced_on : !sample.metadata.synced_on;
+      uploaded ? sample.metadata.syncedOn : !sample.metadata.syncedOn;
 
     return savedSamples.filter(byUploadStatus).sort(byCreateTime);
   }
@@ -164,4 +163,4 @@ class UserSurveyComponent extends Component {
   }
 }
 
-export default UserSurveyComponent;
+export default observer(UserSurveyComponent);

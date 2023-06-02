@@ -728,6 +728,10 @@ msgstr "Please confirm this is your correct location."
 msgid "This record has no images."
 msgstr "This record has no images."
 
+# A verification popup setting
+msgid "Do not show again"
+msgstr "Do not show again"
+
 # Record status on a map
 msgid "rejected"
 msgstr "rejected"

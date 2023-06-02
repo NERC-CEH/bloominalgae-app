@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/prefer-default-export
 export const TLink = ({ children }) => {
   const link = children[0];
 

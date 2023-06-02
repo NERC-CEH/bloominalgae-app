@@ -1,0 +1,187 @@
+@mixin slide {
+  background-size: cover;
+  background-position: center;
+
+  .slide-header {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+}
+
+#welcome-page {
+  ion-header {
+    position: fixed;
+
+    ion-toolbar {
+      --background: transparent;
+      --border-color: transparent;
+
+      ion-button {
+        border-radius: 50%;
+        background: #ffffffe0;
+        color: #4d380a;
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+        color: var(--ion-color-dark);
+        --border-radius: 50%;
+      }
+    }
+  }
+
+  .swiper {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+
+    .swiper-slide {
+      .message-container {
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &.blur {
+          position: absolute;
+          width: 100%;
+          -webkit-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+          background-color: rgba(255, 255, 255, 0.563);
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(3px);
+          bottom: 0;
+          padding-bottom: 50px;
+        }
+
+        .message-header {
+          background: var(--ion-color-primary-very-dark);
+          position: relative;
+          color: var(--ion-color-warning);
+          margin: 0;
+          padding: 10px;
+          width: 100%;
+        }
+      }
+    }
+
+    p,
+    h2 {
+      margin-top: 1.1rem;
+      text-align: center;
+    }
+
+    h2 {
+      letter-spacing: 2px;
+      font-size: 1.8rem;
+      text-align: center;
+      padding: 0 40px;
+      font-weight: bold;
+      color: var(--ion-color-light);
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+      text-align: left;
+      max-width: 85%;
+      margin: 20px auto;
+      color: var(--ion-color-dark);
+      line-height: 1.5em;
+    }
+
+    .swiper-pagination-bullets {
+      bottom: 2%;
+
+      .swiper-pagination-bullet {
+        opacity: 1;
+        --bullet-background: var(--ion-color-medium);
+      }
+
+      .swiper-pagination-bullet-active {
+        opacity: 0.8;
+        --bullet-background-active: var(--ion-color-dark);
+      }
+    }
+  }
+
+  .swiper .swiper-slide.first {
+    @include slide;
+  }
+
+  .swiper .swiper-slide.second {
+    @include slide;
+
+    ion-content {
+      --background: none;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .message-container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 20px 20px;
+        background: var(--ion-color-warning);
+
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+
+        background-color: rgba(255, 255, 255, 0.563);
+        backdrop-filter: blur(12px);
+        bottom: 0;
+
+        .message-header {
+          color: var(--ion-color-warning);
+
+          ion-icon {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: var(--ion-color-warning);
+          }
+
+          h2 {
+            color: var(--ion-color-warning);
+          }
+        }
+
+        ion-button {
+          margin-bottom: 30px;
+          font-weight: 500;
+          color: var(--ion-color-secondary-contrast);
+          text-transform: uppercase;
+          --box-shadow: none;
+        }
+      }
+    }
+  }
+
+  ion-footer ion-toolbar {
+    --background: transparent;
+    --border-color: transparent;
+    position: absolute;
+    bottom: 0;
+
+    ion-button {
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      margin: 10px;
+      --box-shadow: none;
+
+      background: var(--ion-color-secondary);
+      color: var(--ion-color-light);
+      --ionicon-stroke-width: 52px;
+    }
+  }
+}

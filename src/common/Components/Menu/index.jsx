@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import exact from 'prop-types-exact';
 import config from 'common/config';
 import { useLocation } from 'react-router';
-import { alert } from '@flumens';
+import { useAlert } from '@flumens';
 import {
   IonContent,
   IonIcon,
@@ -27,7 +27,7 @@ import { Trans as T } from 'react-i18next';
 import flumensLogo from 'common/images/flumens.svg';
 import './styles.scss';
 
-function showLogoutConfirmationDialog(callback) {
+function showLogoutConfirmationDialog(callback, alert) {
   let deleteData = true;
 
   const onCheckboxChange = e => {
@@ -150,7 +150,7 @@ function renderMenuRoutes(list, location) {
   return list.map(getMenuItem);
 }
 
-function loggingOut(userModel, savedSamples) {
+function loggingOut(userModel, savedSamples, alert) {
   const onReset = async reset => {
     if (reset) {
       await savedSamples.resetDefaults();
@@ -159,13 +159,13 @@ function loggingOut(userModel, savedSamples) {
     userModel.logOut();
   };
 
-  showLogoutConfirmationDialog(onReset);
+  showLogoutConfirmationDialog(onReset, alert);
 }
 
-const getLogoutButton = (userModel, savedSamples) => {
+const getLogoutButton = (userModel, savedSamples, alert) => {
   const { firstName, secondName } = userModel.attrs; // console.log('Home:Info: logging out.');
 
-  const loggingOutWrap = () => loggingOut(userModel, savedSamples);
+  const loggingOutWrap = () => loggingOut(userModel, savedSamples, alert);
 
   return (
     <IonItem detail={false} routerDirection="none" onClick={loggingOutWrap}>
@@ -179,13 +179,14 @@ const getLogoutButton = (userModel, savedSamples) => {
 
 const Menu = ({ userModel, savedSamples }) => {
   const location = useLocation();
+  const alert = useAlert();
 
   const getRoutes = routesList => renderMenuRoutes(routesList, location);
 
   const isLoggedIn = !!userModel.attrs.email;
 
   const isUserLoggedIn = isLoggedIn
-    ? getLogoutButton(userModel, savedSamples)
+    ? getLogoutButton(userModel, savedSamples, alert)
     : getRoutes(routes.loggedOutPages);
 
   return (

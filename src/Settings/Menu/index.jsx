@@ -1,19 +1,17 @@
 import PropTypes from 'prop-types';
-import { Page, Header, toast } from '@flumens';
+import { Page, Header, useToast } from '@flumens';
 import { observer } from 'mobx-react';
 import Main from './Main';
 
-const { success, error } = toast;
-
-const resetApp = async (saveSamples, appModel, userModel) => {
+const resetApp = async (saveSamples, appModel, userModel, toast) => {
   console.log('Settings:Menu:Controller: resetting the application!', 'w');
   try {
     await saveSamples.resetDefaults();
     await appModel.resetDefaults();
     await userModel.resetDefaults();
-    success('Done');
+    toast.success('Done');
   } catch (e) {
-    error(`${e.message}`);
+    toast.error(e);
   }
 };
 
@@ -25,8 +23,10 @@ function onToggle(appModel, setting, checked) {
 const MenuController = props => {
   const { savedSamples, appModel, userModel } = props;
   const { sendAnalytics, language, country } = appModel.attrs;
+  const toast = useToast();
 
-  const resetApplication = () => resetApp(savedSamples, appModel, userModel);
+  const resetApplication = () =>
+    resetApp(savedSamples, appModel, userModel, toast);
   const onToggleWrap = (...args) => onToggle(appModel, ...args);
 
   return (

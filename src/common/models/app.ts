@@ -13,6 +13,9 @@ export interface Attrs extends ModelAttrs {
   // draft survey pointers
   'draftId:survey'?: string;
 
+  showVerifiedRecordsNotification: boolean;
+  verifiedRecordsTimestamp: null | number;
+
   // tips
   showSurveysDeleteTip: boolean;
   showSurveyUploadTip: boolean;
@@ -26,6 +29,9 @@ const defaults: Attrs = {
   country: '',
   sendAnalytics: true,
   feedbackGiven: false,
+
+  showVerifiedRecordsNotification: true,
+  verifiedRecordsTimestamp: null,
 
   // tips
   showSurveysDeleteTip: true,

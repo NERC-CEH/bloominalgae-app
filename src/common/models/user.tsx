@@ -10,12 +10,14 @@ import {
   DrupalUserModelAttrs,
 } from '@flumens';
 import { NavContext } from '@ionic/react';
+import * as Sentry from '@sentry/browser';
 import { genericStore } from './store';
 
 export interface Attrs extends DrupalUserModelAttrs {
-  firstName: string;
-  secondName: string;
-  email: string;
+  firstName?: string;
+  secondName?: string;
+  email?: string;
+
   /**
    * @deprecated
    */
@@ -31,11 +33,15 @@ const defaults: Attrs = {
 export class UserModel extends DrupalUserModel {
   attrs: Attrs = DrupalUserModel.extendAttrs(this.attrs, defaults);
 
-  registerSchema = Yup.object().shape({
+  resetSchema: any = this.resetSchema;
+
+  loginSchema: any = this.loginSchema;
+
+  registerSchema: any = Yup.object().shape({
     email: Yup.string().email('email is not valid').required('Please fill in'),
     password: Yup.string().required('Please fill in'),
-    fullName: Yup.string().required('Please fill in'),
-    identificationExperience: Yup.string().required('Please fill in'),
+    firstName: Yup.string().required('Please fill in'),
+    secondName: Yup.string().required('Please fill in'),
   });
 
   constructor(options: any) {
@@ -47,7 +53,23 @@ export class UserModel extends DrupalUserModel {
         this.refreshProfile();
       }
     };
-    this.ready?.then(checkForValidation);
+    this.ready
+      ?.then(() => {
+        this.attrs.password && this._migrateAuth();
+      })
+      .then(checkForValidation);
+  }
+
+  async logIn(email: string, password: string) {
+    await super.logIn(email, password);
+
+    if (this.id) Sentry.setUser({ id: this.id });
+  }
+
+  getPrettyName() {
+    return this.isLoggedIn()
+      ? `${this.attrs.firstName} ${this.attrs.secondName}`
+      : '';
   }
 
   async checkActivation() {
@@ -72,6 +94,49 @@ export class UserModel extends DrupalUserModel {
     await this._sendVerificationEmail();
 
     return true;
+  }
+
+  async getAccessToken(...args: any) {
+    if (this.attrs.password) await this._migrateAuth();
+
+    return super.getAccessToken(...args);
+  }
+
+  /**
+   * Migrate from Indicia API auth to JWT. Remove in the future versions.
+   */
+  async _migrateAuth() {
+    console.log('Migrating user auth.');
+    if (!this.attrs.email) {
+      // email might not exist
+      delete this.attrs.password;
+      return this.save();
+    }
+
+    try {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      const tokens = await this._exchangePasswordToTokens(
+        this.attrs.email,
+        this.attrs.password
+      );
+      this.attrs.tokens = tokens;
+      delete this.attrs.password;
+
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      await this._refreshAccessToken();
+    } catch (e: any) {
+      if (e.message === 'Incorrect password or email') {
+        console.log('Removing invalid old user credentials');
+        delete this.attrs.password;
+        return this.logOut();
+      }
+      console.error(e);
+      throw e;
+    }
+
+    return this.save();
   }
 
   resetDefaults() {
@@ -145,28 +210,5 @@ export const useUserStatusCheck = () => {
 
   return check;
 };
-
-function migrateDataToAppVersion2() {
-  try {
-    const oldUserRaw = localStorage.getItem('bloominalgae-app-user');
-    if (oldUserRaw) {
-      console.log('Migrating user');
-
-      const oldUser = JSON.parse(oldUserRaw);
-      userModel.attrs.firstName = oldUser.firstname;
-      userModel.attrs.secondName = oldUser.secondname;
-      userModel.attrs.indiciaUserId = oldUser.drupalID;
-      userModel.attrs.password = oldUser.password;
-      userModel.attrs.email = oldUser.email; // has to be last - record auto sync might kick in
-      userModel.save();
-
-      localStorage.removeItem('bloominalgae-app-user');
-      console.log('Migrating user done', userModel.attrs);
-    }
-  } catch (e) {
-    console.error(e);
-  }
-}
-userModel.ready?.then(migrateDataToAppVersion2);
 
 export default userModel;

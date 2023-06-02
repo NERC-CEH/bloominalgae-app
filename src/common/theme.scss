@@ -1,3 +1,6 @@
+@import '@flumens/ionic/dist/themes/rounded.css';
+@import './themeAccessibility.scss';
+
 :root {
   --ion-color-primary: #098b5c;
   --ion-color-primary-rgb: 9, 139, 92;
@@ -56,7 +59,7 @@
   --ion-color-medium-shade: #808289;
   --ion-color-medium-tint: #9d9fa6;
 
-  --ion-color-light: #f4f5f8;
+  --ion-color-light: #ffffff;
   --ion-color-light-rgb: 244, 245, 248;
   --ion-color-light-contrast: #000000;
   --ion-color-light-contrast-rgb: 0, 0, 0;
@@ -129,11 +132,6 @@ ion-item-divider {
   }
 }
 
-// Fix mapbox attribution
-#location-page-content {
-  height: 100% !important;
-}
-
 ion-content {
   --background: var(--ion-page-background);
 }
@@ -194,4 +192,37 @@ html.plt-tablet {
 
 .app-header ion-title {
   text-transform: none;
+}
+
+// reduce distance between two rounded lists
+ion-list + ion-list > .rounded {
+  margin-top: 0 !important;
+}
+
+// subtle borders around rounded items
+.search-result:nth-child(odd),
+.survey-list-item,
+.slider-input-attr,
+.input-list-attr .input-list-attr-item,
+.radio-input-attr ion-item,
+#suggestions .empty,
+.taxa-filter-edit-dialog-form ion-item,
+.rounded:not(:empty) {
+  border: 1px solid #ebecebe3;
+  border-radius: var(--theme-border-radius);
+}
+
+// subtle borders around rounded radio items
+ion-radio-group .item-radio-checked:not(.radio-input-default-option) {
+  border: 1px #dce0d5 solid;
+}
+
+// subtle borders around rounded checkbox items
+.checkbox-input-attr > ion-item {
+  border: 1px #dce0d5 solid;
+}
+
+// subtle borders around rounded checkbox items
+ion-textarea.textarea-attr {
+  border: 1px #dce0d5 solid;
 }

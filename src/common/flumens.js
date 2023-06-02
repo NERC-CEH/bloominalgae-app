@@ -5,17 +5,20 @@ export {
 export {
   default as Sample,
   Attrs as SampleAttrs,
+  Metadata as SampleMetadata,
   Options as SampleOptions,
-} from '@flumens/ionic/dist/models/Sample';
+  RemoteConfig,
+} from '@flumens/ionic/dist/models/Indicia/Sample';
 export {
   default as Media,
   Attrs as MediaAttrs,
-} from '@flumens/ionic/dist/models/Media';
+} from '@flumens/ionic/dist/models/Indicia/Media';
 export {
   default as Occurrence,
   Attrs as OccurrenceAttrs,
+  Metadata as OccurrenceMetadata,
   Options as OccurrenceOptions,
-} from '@flumens/ionic/dist/models/Occurrence';
+} from '@flumens/ionic/dist/models/Indicia/Occurrence';
 export {
   default as DrupalUserModel,
   Attrs as DrupalUserModelAttrs,
@@ -48,6 +51,7 @@ export * from '@flumens/ionic/dist/utils/validation';
 export * from '@flumens/ionic/dist/utils/type';
 export * from '@flumens/ionic/dist/utils/image';
 export * from '@flumens/ionic/dist/utils/location';
+export * from '@flumens/ionic/dist/utils/errors';
 export { default as date } from '@flumens/ionic/dist/utils/date';
 export { default as initAnalytics } from '@flumens/ionic/dist/utils/analytics';
 export { default as device } from '@flumens/ionic/dist/utils/device';

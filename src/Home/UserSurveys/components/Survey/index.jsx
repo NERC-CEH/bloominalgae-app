@@ -1,6 +1,8 @@
-import PropTypes from 'prop-types';
-import { alert, date as dateUtils } from '@flumens';
 import { observer } from 'mobx-react';
+import { checkmarkCircle, helpCircle, closeCircle } from 'ionicons/icons';
+import PropTypes from 'prop-types';
+import { Trans as T } from 'react-i18next';
+import { useAlert, date as dateUtils } from '@flumens';
 import {
   IonItem,
   IonLabel,
@@ -8,14 +10,12 @@ import {
   IonItemOptions,
   IonItemOption,
 } from '@ionic/react';
-import { checkmarkCircle, helpCircle, closeCircle } from 'ionicons/icons';
-import { Trans as T } from 'react-i18next';
-import logo from './logo.png';
-import OnlineStatus from './components/OnlineStatus';
 import ErrorMessage from './components/ErrorMessage';
+import OnlineStatus from './components/OnlineStatus';
+import logo from './logo.png';
 import './styles.scss';
 
-function deleteSurvey(sample) {
+function deleteSurvey(sample, alert) {
   alert({
     header: 'Delete',
     message: <T>Are you sure you want to delete this record ?</T>,
@@ -36,6 +36,7 @@ function deleteSurvey(sample) {
 
 const Survey = ({ sample }) => {
   const survey = sample.getSurvey();
+  const alert = useAlert();
 
   const { synchronising } = sample.remote;
 
@@ -70,11 +71,11 @@ const Survey = ({ sample }) => {
     );
   }
 
-  const deleteSurveyWrap = () => deleteSurvey(sample);
+  const deleteSurveyWrap = () => deleteSurvey(sample, alert);
 
   let detailIcon;
   let idClass;
-  const status = sample.getVerificationStatus();
+  const status = occ.getVerificationStatus();
   if (status) {
     if (status === 'verified') {
       idClass = 'id-green';

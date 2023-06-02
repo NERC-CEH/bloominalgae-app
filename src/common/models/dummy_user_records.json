@@ -1,29 +1,23 @@
 {
-  "data": {
-    "data": [
+  "hits": {
+    "hits": [
       {
-        "id": "1",
-        "verification": { "status_code": "V", "substatus_code": "1" }
-      },
-      {
-        "id": "20319277",
-        "verification": { "status_code": "V", "substatus_code": "2" }
-      },
-      {
-        "id": "2",
-        "verification": { "status_code": "C", "substatus_code": "1" }
-      },
-      {
-        "id": "2",
-        "verification": { "status_code": "C", "substatus_code": "3" }
-      },
-      {
-        "id": "2",
-        "verification": { "status_code": "R", "substatus_code": "5" }
-      },
-      {
-        "id": "20319310",
-        "verification": { "status_code": "R", "substatus_code": "4" }
+        "_source": {
+          "identification": {
+            "verifier": {
+              "name": "Kazlauskis, Karolis",
+              "id": "71394"
+            },
+            "verification_status": "C",
+            "verified_on": "2023-06-01 04:50:33.000",
+            "verification_substatus": "3"
+          },
+          "id": "123",
+          "date": "02/06/2023",
+          "occurrence": {
+            "source_system_key": "36187e76-b7a9-4e03-945c-9ec0de67247f"
+          }
+        }
       }
     ]
   }

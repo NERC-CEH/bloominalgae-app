@@ -1,15 +1,15 @@
 import { useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 import exact from 'prop-types-exact';
-import { NavContext } from '@ionic/react';
-import Sample from 'common/models/sample';
-import { alert } from '@flumens';
-import appModel from 'models/app';
-import Occurrence from 'common/models/occurrence';
-import savedSamples from 'common/models/savedSamples';
 import { Trans as T } from 'react-i18next';
+import { useAlert } from '@flumens';
+import { NavContext } from '@ionic/react';
+import Occurrence from 'common/models/occurrence';
+import Sample from 'common/models/sample';
+import savedSamples from 'common/models/savedSamples';
+import appModel from 'models/app';
 
-async function showDraftAlert() {
+async function showDraftAlert(alert) {
   const alertWrap = resolve => {
     alert({
       header: 'Draft',
@@ -48,14 +48,14 @@ async function getNewSample(survey, draftIdKey) {
   return sample;
 }
 
-async function getDraft(draftIdKey) {
+async function getDraft(draftIdKey, alert) {
   const draftID = appModel.attrs[draftIdKey];
 
   if (draftID) {
     const byId = ({ cid }) => cid === draftID;
     const draftSample = savedSamples.find(byId);
     if (draftSample) {
-      const continueDraftRecord = await showDraftAlert();
+      const continueDraftRecord = await showDraftAlert(alert);
       if (continueDraftRecord) {
         return draftSample;
       }
@@ -69,13 +69,14 @@ async function getDraft(draftIdKey) {
 
 function StartNewSurvey({ match, survey }) {
   const context = useContext(NavContext);
+  const alert = useAlert();
 
   const draftIdKey = `draftId:${survey.name}`;
 
   const pickDraftOrCreateSampleWrap = () => {
     // eslint-disable-next-line
     (async () => {
-      let sample = await getDraft(draftIdKey);
+      let sample = await getDraft(draftIdKey, alert);
 
       if (!sample) {
         sample = await getNewSample(survey, draftIdKey);
@@ -94,9 +95,6 @@ function StartNewSurvey({ match, survey }) {
 StartNewSurvey.propTypes = exact({
   match: PropTypes.object.isRequired,
   survey: PropTypes.object.isRequired,
-  history: PropTypes.any.isRequired,
-  location: PropTypes.any,
-  staticContext: PropTypes.any,
 });
 
 // eslint-disable-next-line @getify/proper-arrows/name

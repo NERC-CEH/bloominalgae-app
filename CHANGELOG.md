@@ -1,3 +1,8 @@
+## 3.0.0
+
+Bug fixes and framework upgrade.
+New authentication system.
+
 ## 2.1.1
 
 Updated links.

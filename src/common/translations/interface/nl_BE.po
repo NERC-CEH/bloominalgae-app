@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
 "Last-Translator: Karolis, 2022\n"
-"Language-Team: Dutch (Belgium) (https://www.transifex.com/ceh/teams/116164/nl_BE/)\n"
+"Language-Team: Dutch (Belgium) (https://app.transifex.com/ceh/teams/116164/nl_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -755,6 +755,10 @@ msgstr "Bevestig a.u.b. of uw locatie correct is."
 msgid "This record has no images."
 msgstr "Deze waarneming bevat geen foto's."
 
+# A verification popup setting
+msgid "Do not show again"
+msgstr "Niet meer weergeven"
+
 # Record status on a map
 msgid "rejected"
 msgstr "afgewezen"
@@ -1069,7 +1073,10 @@ msgid ""
 "The language will default to the language of your phone settings. If you "
 "want to change the language go to \"Settings\" in the Bloomin' Algae app "
 "menu and select \"Language\""
-msgstr "De app gebruikt automatisch de taal van uw telefooninstelling. U kan de ingestelde taal desgewenst zelf wijzigen via \"Instellingen\" in het hoofdmenu van de app."
+msgstr ""
+"De app gebruikt automatisch de taal van uw telefooninstelling. U kan de "
+"ingestelde taal desgewenst zelf wijzigen via \"Instellingen\" in het "
+"hoofdmenu van de app."
 
 # Successfully registration alert message
 msgid ""

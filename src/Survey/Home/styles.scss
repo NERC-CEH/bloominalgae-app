@@ -9,6 +9,7 @@
 
   .verification-message {
     --border-width: 0;
+    margin: 10px 0;
 
     ion-label {
       padding: 10px 0;
@@ -16,6 +17,8 @@
 
     &.verified {
       --background: #eafff2;
+      border: 1px solid #cbdcd1;
+
       ion-icon,
       .info-button,
       ion-label ion-note {
@@ -26,6 +29,8 @@
 
     &.plausible {
       --background: #fffdd5;
+      border: 1px solid #e7e5c2;
+
       ion-icon,
       .info-button,
       ion-label ion-note {
@@ -36,6 +41,8 @@
 
     &.rejected {
       --background: #e4e4e4;
+      border: 1px solid #cfcfcf;
+
       ion-icon,
       .info-button,
       ion-label ion-note {
@@ -47,14 +54,12 @@
 
   .uploaded-message {
     --border-width: 0;
+    border: 1px #dce0d5 solid;
+    margin: 10px 0;
 
     ion-label {
       padding: 10px 0;
     }
-  }
-
-  .photo-picker {
-    border-top: 1px solid #cccccc;
   }
 
   ion-item > ion-icon {
@@ -67,4 +72,8 @@
     margin: 20px auto;
     display: block;
   }
+}
+
+.location-panel {
+  height: 20vh;
 }

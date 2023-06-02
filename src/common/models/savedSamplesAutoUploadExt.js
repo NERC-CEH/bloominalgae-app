@@ -26,5 +26,5 @@ export default function init(savedSamples, userModel) {
     reaction(listenToUserLogin, uploadIfLoggedIn);
   };
 
-  savedSamples._init.then(uploadFinishedSurveysAndListenForLogin);
+  savedSamples.ready.then(uploadFinishedSurveysAndListenForLogin);
 }

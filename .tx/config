@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[bloomin-algae.app]
+[o:ceh:p:bloomin-algae:r:app]
 file_filter = src/common/translations/interface/<lang>.po
 minimum_perc = 0
 source_file = src/common/translations/interface/en.pot
