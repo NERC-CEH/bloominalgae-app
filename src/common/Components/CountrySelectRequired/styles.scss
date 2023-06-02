@@ -5,27 +5,12 @@
     filter: brightness(0.9);
   }
 
-  .header {
-    padding: 50px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    text-align: center;
-
-    ion-icon {
-      font-size: 115px;
-      --ionicon-stroke-width: 12px;
-      color: var(--ion-color-light);
-    }
-  }
-
   .country-select-container {
     position: absolute;
     bottom: 0px;
     background: white;
-    background-color: rgba(255, 255, 255, 0.563);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(0.5px);
 
     .list-container {
       width: 100vw;

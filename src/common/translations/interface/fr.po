@@ -1,12 +1,12 @@
 # 
 # Translators:
 # Annick Wilmotte <awilmotte@uliege.be>, 2021
-# Karolis, 2022
+# Karolis, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Karolis, 2022\n"
+"Last-Translator: Karolis, 2023\n"
 "Language-Team: French (https://app.transifex.com/ceh/teams/116164/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -884,6 +884,10 @@ msgstr "Terminer"
 # Survey camera options
 msgid "Choose a method to upload a photo"
 msgstr "Choisissez une méthode pour charger une photo"
+
+# Camera empty input message
+msgid "No photo has been added.<br/>Press <4><0></0></4> to add."
+msgstr "Aucune photo n'a été ajoutée.<br/>Appuyez sur <4><0></0></4> pour en ajouter."
 
 # Survey camera options
 msgid "Gallery"

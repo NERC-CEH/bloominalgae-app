@@ -1,13 +1,12 @@
-import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
+import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import { Page, Main } from '@flumens';
-import { IonList, IonIcon } from '@ionic/react';
-import { globeOutline } from 'ionicons/icons';
+import { IonList } from '@ionic/react';
 import countries from 'common/countries';
 import appModel from 'models/app';
-import { useTranslation } from 'react-i18next';
-import backgroundImage from './backgroundImage.jpg';
 import CountryButton from './CountryButton';
+import backgroundImage from './backgroundImage.jpg';
 import './styles.scss';
 
 const getCountry = country => (
@@ -32,10 +31,6 @@ function CountrySelect({ children }) {
 
   return (
     <Page id="country-select">
-      <div className="header">
-        <IonIcon icon={globeOutline} />
-      </div>
-
       <Main>
         <img
           className="background-image"

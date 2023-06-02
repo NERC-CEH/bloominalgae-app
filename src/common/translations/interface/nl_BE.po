@@ -2,12 +2,12 @@
 # Translators:
 # Vilius Stankaitis <vilius@flumens.io>, 2021
 # Jeroen Van Wichelen <jeroen.vanwichelen@inbo.be>, 2021
-# Karolis, 2022
+# Karolis, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Karolis, 2022\n"
+"Last-Translator: Karolis, 2023\n"
 "Language-Team: Dutch (Belgium) (https://app.transifex.com/ceh/teams/116164/nl_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -875,6 +875,10 @@ msgstr "Afronden"
 # Survey camera options
 msgid "Choose a method to upload a photo"
 msgstr "Kies een methode om een foto op te laden"
+
+# Camera empty input message
+msgid "No photo has been added.<br/>Press <4><0></0></4> to add."
+msgstr "Er is geen foto toegevoegd.<br/>Druk op <4><0></0></4> om toe te voegen."
 
 # Survey camera options
 msgid "Gallery"

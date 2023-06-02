@@ -848,6 +848,10 @@ msgstr "Finish"
 msgid "Choose a method to upload a photo"
 msgstr "Choose a method to upload a photo"
 
+# Camera empty input message
+msgid "No photo has been added.<br/>Press <4><0></0></4> to add."
+msgstr "No photo has been added.<br/>Press <4><0></0></4> to add."
+
 # Survey camera options
 msgid "Gallery"
 msgstr "Gallery"

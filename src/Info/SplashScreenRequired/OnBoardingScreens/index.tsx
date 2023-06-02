@@ -71,7 +71,7 @@ const OnboardingScreens: FC<Props> = ({ onExit }) => {
             style={{ backgroundImage: `url(${secondBackgroundImage})` }}
           >
             <Main>
-              <div className="message-container">
+              <div className="message-container blur">
                 <div className="message-header">
                   <IonIcon icon={alertCircleOutline} />
                   <h2>
