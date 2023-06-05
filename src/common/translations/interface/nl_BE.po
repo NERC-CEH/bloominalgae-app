@@ -878,7 +878,8 @@ msgstr "Kies een methode om een foto op te laden"
 
 # Camera empty input message
 msgid "No photo has been added.<br/>Press <4><0></0></4> to add."
-msgstr "Er is geen foto toegevoegd.<br/>Druk op <4><0></0></4> om toe te voegen."
+msgstr ""
+"Er is geen foto toegevoegd.<br/>Druk op <4><0></0></4> om toe te voegen."
 
 # Survey camera options
 msgid "Gallery"
@@ -1101,6 +1102,10 @@ msgstr "België"
 # Country choice
 msgid "Norway"
 msgstr "Noorwegen"
+
+# Country choice
+msgid "Luxembourg"
+msgstr ""
 
 # Country choice
 msgid "Netherlands"

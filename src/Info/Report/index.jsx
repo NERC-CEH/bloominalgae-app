@@ -1,6 +1,6 @@
+import { Trans as T } from 'react-i18next';
 import { Page, Main, Header, Section, TLink } from '@flumens';
 import appModel from 'models/app';
-import { Trans as T } from 'react-i18next';
 import './styles.scss';
 
 const { P } = Section;
@@ -8,8 +8,9 @@ const { P } = Section;
 const getOrganizationsLinkByLanguage = () => {
   const isInNorway = appModel.attrs.country === 'NO';
   // TODO: make country specific
+  const isLanguageFrenchBelgium = appModel.attrs.language === 'fr-BE';
+  const isLanguageFrenchLux = appModel.attrs.language === 'fr-LU';
   const isLanguageDutch = appModel.attrs.language === 'nl-NL';
-  const isLanguageFrench = appModel.attrs.language === 'fr-Fr';
 
   if (isLanguageDutch) {
     return (
@@ -41,7 +42,29 @@ const getOrganizationsLinkByLanguage = () => {
     );
   }
 
-  if (isLanguageFrench) {
+  if (isLanguageFrenchLux) {
+    return (
+      <>
+        <li>
+          <a href="https://eau.gouvernement.lu/fr/services-aux-citoyens/eauxbaignade.html">
+            Administration de la Gestion de l’Eau
+          </a>
+          <div>
+            Email : baignade@eau.etat.lu Luxembourg Institute of Science and
+          </div>
+        </li>
+
+        <li>
+          <a href="https://cyanowatch.lu">
+            Technology (LIST) Surveillance des cyanobactéries
+          </a>
+          <div>Email: baignade@list.lu</div>
+        </li>
+      </>
+    );
+  }
+
+  if (isLanguageFrenchBelgium) {
     return (
       <>
         <li>

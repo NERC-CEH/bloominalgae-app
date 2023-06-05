@@ -1,11 +1,15 @@
 /* eslint-disable @getify/proper-arrows/name */
+
 /* eslint-disable no-param-reassign */
+
 /* eslint-disable camelcase */
 import en from './interface/en.pot';
-
-import fr from './interface/fr.po';
+import frBE from './interface/fr_BE.po';
+import frLU from './interface/fr_LU.po';
 import nl from './interface/nl_BE.po';
-import nb from './interface/no.po'; // using "no" because of mistake
+import nb from './interface/no.po';
+
+// using "no" because of mistake
 
 const rawToKeyVal = lang =>
   Object.entries(lang).reduce((agg, pair) => {
@@ -39,8 +43,11 @@ export default {
   nl: {
     interface: rawToKeyVal(nl),
   },
-  fr: {
-    interface: rawToKeyVal(fr),
+  'fr-BE': {
+    interface: rawToKeyVal(frBE),
+  },
+  'fr-LU': {
+    interface: rawToKeyVal(frLU),
   },
   nb: {
     interface: rawToKeyVal(nb),

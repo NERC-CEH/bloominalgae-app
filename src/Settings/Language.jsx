@@ -25,14 +25,19 @@ function SelectLanguage({ appModel }) {
     navigate.goBack();
   }
 
-  const alphabetically = ([, l1], [, l2]) => l1.localeCompare(l2);
+  const alphabetically = ([, l1], [, l2]) =>
+    typeof l1 === 'string' && l1.localeCompare(l2);
 
-  const languageEntries = ([value, language]) => (
-    <IonItem key={value}>
-      <IonLabel>{language}</IonLabel>
-      <IonRadio value={value} />
-    </IonItem>
-  );
+  const languageEntries = ([value, language]) => {
+    if (typeof language === 'object') return null;
+
+    return (
+      <IonItem key={value}>
+        <IonLabel>{language}</IonLabel>
+        <IonRadio value={value} />
+      </IonItem>
+    );
+  };
 
   const languagesOptions = Object.entries(languages)
     .sort(alphabetically)

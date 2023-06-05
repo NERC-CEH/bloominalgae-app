@@ -1,4 +1,5 @@
-import { Page, Main, Header, Section } from '@flumens';
+import { Trans as T } from 'react-i18next';
+import { Page, Main, Header, Section, TLink } from '@flumens';
 import appModel from 'models/app';
 
 const { P } = Section;
@@ -32,18 +33,20 @@ const Risks = () => {
             caused the deaths of horses, cattle, birds and fish.
           </P>
 
-          <P>
-            If you are a pet owner you can find further information from the{' '}
-            {isInNorway ? (
-              <a href="https://www.vetinst.no/sykdom-og-agens/cyanotoksiner-mikrocystiner">
-                Veterinærinstituttet
-              </a>
-            ) : (
-              <a href="https://www.bluecross.org.uk/pet-advice/blue-green-algae-and-its-dangers-dogs">
-                Blue Cross
-              </a>
-            )}
-            .
+          <P skipTranslation>
+            <T components={{ url: <TLink /> }}>
+              If you are a pet owner you can find further information from the{' '}
+              {isInNorway ? (
+                <a href="https://www.vetinst.no/sykdom-og-agens/cyanotoksiner-mikrocystiner">
+                  Veterinærinstituttet
+                </a>
+              ) : (
+                <a href="https://www.bluecross.org.uk/pet-advice/blue-green-algae-and-its-dangers-dogs">
+                  Blue Cross
+                </a>
+              )}
+              .
+            </T>
           </P>
 
           <P>

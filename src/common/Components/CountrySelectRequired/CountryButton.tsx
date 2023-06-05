@@ -1,14 +1,13 @@
-import PropTypes from 'prop-types';
-import { IonItem, IonLabel } from '@ionic/react';
+import { FC } from 'react';
 import { Trans as T } from 'react-i18next';
+import { IonItem, IonLabel } from '@ionic/react';
 
-function CountryButton({ appModel, country }) {
+type Props = { onSelect: any; country: any };
+
+const CountryButton: FC<Props> = ({ onSelect, country }) => {
   const { flag, label, value } = country;
 
-  const selectCountry = () => {
-    appModel.attrs.country = value; // eslint-disable-line no-param-reassign
-    appModel.save();
-  };
+  const selectCountry = () => onSelect(value);
 
   return (
     <IonItem key={label} lines="none" className="first" onClick={selectCountry}>
@@ -22,11 +21,6 @@ function CountryButton({ appModel, country }) {
       </IonLabel>
     </IonItem>
   );
-}
-
-CountryButton.propTypes = {
-  country: PropTypes.object.isRequired,
-  appModel: PropTypes.object.isRequired,
 };
 
 export default CountryButton;

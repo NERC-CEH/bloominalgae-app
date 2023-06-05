@@ -1,14 +1,16 @@
 import { Device } from '@capacitor/device';
 
-const getMacroLanguage = code => code.split('-')[0]; // check only the first part in fr-FR
-
 async function getLangCodeFromDevice(languages) {
-  const { value: deviceLanguage } = await Device.getLanguageCode();
+  const deviceISOkey = await Device.getLanguageCode();
+  // const deviceISOkey = { value: 'pt' };
 
-  const byLanguageCode = language =>
-    getMacroLanguage(language) === getMacroLanguage(deviceLanguage);
+  // eslint-disable-next-line no-restricted-syntax
+  for (const [languageISOKey, languageOptionsOrLabel] of languages) {
+    if (languageISOKey === deviceISOkey.value)
+      return languageOptionsOrLabel.default || languageISOKey;
+  }
 
-  return languages.find(byLanguageCode);
+  return '';
 }
 
 export default getLangCodeFromDevice;

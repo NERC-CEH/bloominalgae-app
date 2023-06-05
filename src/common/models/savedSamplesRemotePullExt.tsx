@@ -177,17 +177,20 @@ function updateLocalOccurrences(
 ): Occurrence[] {
   const nonPendingUpdatedOccurrences: Occurrence[] = [];
 
+  console.log('🦋', Object.keys(updatedRemoteSamples));
   if (updatedRemoteSamples.length <= 0) return nonPendingUpdatedOccurrences;
 
   const findMatchingLocalSamples = (sample: Sample) => {
     const appendVerification = (occ: Occurrence) => {
       const updatedOccurrence = updatedRemoteSamples[occ.cid];
+      console.log('🦋', occ.cid, updatedOccurrence);
       if (!updatedOccurrence) return;
 
       const newVerification = updatedOccurrence._source.identification;
 
       const hasNotChanged =
         newVerification.verified_on === occ.metadata.verification?.verified_on;
+      console.log('🦋', 'hasNotChanged', hasNotChanged);
       if (hasNotChanged) return; // there is a window when the same update can be returned. We don't want to change the record in that case.
 
       occ.metadata.verification = { ...newVerification };
@@ -195,6 +198,7 @@ function updateLocalOccurrences(
       const isNonPending =
         newVerification.verification_status === 'C' &&
         newVerification.verification_substatus === '0';
+      console.log('🦋', 'isNonPending', isNonPending);
       if (isNonPending) return;
 
       nonPendingUpdatedOccurrences.push(occ);

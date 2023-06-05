@@ -844,7 +844,8 @@ msgstr "Velg hvordan du vil laste opp et bilde"
 
 # Camera empty input message
 msgid "No photo has been added.<br/>Press <4><0></0></4> to add."
-msgstr "Det er ikke lagt til noe bilde.<br/>Trykk <4><0></0></4> for å legge til."
+msgstr ""
+"Det er ikke lagt til noe bilde.<br/>Trykk <4><0></0></4> for å legge til."
 
 # Survey camera options
 msgid "Gallery"
@@ -1070,6 +1071,10 @@ msgstr "Belgia"
 # Country choice
 msgid "Norway"
 msgstr "Norge"
+
+# Country choice
+msgid "Luxembourg"
+msgstr ""
 
 # Country choice
 msgid "Netherlands"
