@@ -1,8 +1,8 @@
 import { FC, useContext } from 'react';
-import userModel from 'models/user';
-import { NavContext } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
 import { Page, Header, device, useToast, useAlert, useLoader } from '@flumens';
+import { NavContext } from '@ionic/react';
+import userModel from 'models/user';
 import Main from './Main';
 import './styles.scss';
 
@@ -42,7 +42,7 @@ const RegisterContainer: FC = () => {
       await userModel.register(email, password, otherDetails);
 
       userModel.attrs.firstName = firstName; // eslint-disable-line
-      userModel.attrs.lastName = secondName; // eslint-disable-line
+      userModel.attrs.secondName = secondName; // eslint-disable-line
       userModel.save();
 
       alert({
