@@ -1036,6 +1036,38 @@ msgstr "This record has been uploaded and can not be edited."
 msgid "Successfully logged in"
 msgstr "Successfully logged in"
 
+# User form validation message
+msgid "Please fill in"
+msgstr "Please fill in"
+
+# User form validation message
+msgid "email must be a valid email"
+msgstr "email must be a valid email"
+
+# App Setting message
+msgid "You can reset the app data to its default settings."
+msgstr "You can reset the app data to its default settings."
+
+# Account option 
+msgid "Delete account"
+msgstr "Delete account"
+
+# Account option message
+msgid "You can delete your user account from the system."
+msgstr "You can delete your user account from the system."
+
+# Account option message
+msgid "Account delete"
+msgstr "Account delete"
+
+# Account option message
+msgid "Are you sure you want to delete your account?"
+msgstr "Are you sure you want to delete your account?"
+
+# Account option message
+msgid "This will remove your account on the iRecord website. You will lose access to any records that you have previously submitted using the app or website."
+msgstr "This will remove your account on the iRecord website. You will lose access to any records that you have previously submitted using the app or website."
+
 # Photo picker failed to pick photo error message
 msgid "Sorry, we couldn't get the image."
 msgstr "Sorry, we couldn't get the image."

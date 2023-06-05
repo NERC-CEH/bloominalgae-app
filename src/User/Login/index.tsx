@@ -1,7 +1,7 @@
 import { FC, useContext } from 'react';
-import { UserModel } from 'models/user';
-import { NavContext } from '@ionic/react';
 import { useToast, useLoader, Page, Header, device } from '@flumens';
+import { NavContext } from '@ionic/react';
+import userModel from 'models/user';
 import Main from './Main';
 import './styles.scss';
 
@@ -10,18 +10,13 @@ export type Details = {
   email: string;
 };
 
-type Props = {
-  userModel: UserModel;
-};
-
-const LoginController: FC<Props> = ({ userModel }) => {
+const LoginController: FC = () => {
   const context = useContext(NavContext);
   const toast = useToast();
   const loader = useLoader();
 
   const onSuccessReturn = () => {
-    const { email } = userModel.attrs;
-    toast.success(`Successfully logged in as: ${email}`);
+    toast.success('Successfully logged in');
     context.navigate('/home/surveys', 'root');
   };
 

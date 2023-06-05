@@ -1073,6 +1073,40 @@ msgstr "Cette observation a été téléchargée et ne peut pas être modifiée"
 msgid "Successfully logged in"
 msgstr "Connexion réussie "
 
+# User form validation message
+msgid "Please fill in"
+msgstr ""
+
+# User form validation message
+msgid "email must be a valid email"
+msgstr ""
+
+# App Setting message
+msgid "You can reset the app data to its default settings."
+msgstr ""
+
+# Account option
+msgid "Delete account"
+msgstr ""
+
+# Account option message
+msgid "You can delete your user account from the system."
+msgstr ""
+
+# Account option message
+msgid "Account delete"
+msgstr ""
+
+# Account option message
+msgid "Are you sure you want to delete your account?"
+msgstr ""
+
+# Account option message
+msgid ""
+"This will remove your account on the iRecord website. You will lose access "
+"to any records that you have previously submitted using the app or website."
+msgstr ""
+
 # Photo picker failed to pick photo error message
 msgid "Sorry, we couldn't get the image."
 msgstr "Désolé, nous ne pouvons pas télécharger cette image."

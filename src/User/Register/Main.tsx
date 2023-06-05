@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import { IonIcon, IonButton, IonList, IonRouterLink } from '@ionic/react';
+import { Formik, Form } from 'formik';
 import {
   personOutline,
   mailOutline,
@@ -8,9 +8,10 @@ import {
   eyeOffOutline,
 } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { AnySchema } from 'yup';
-import { Formik, Form } from 'formik';
 import { Main, InputWithValidation } from '@flumens';
+import { IonIcon, IonButton, IonList, IonRouterLink } from '@ionic/react';
 import config from 'common/config';
 
 type Props = {
@@ -114,6 +115,13 @@ const RegisterMain: FC<Props> = ({ onSubmit, schema }) => {
       >
         {registrationForm}
       </Formik>
+
+      <div className="signin-button">
+        <T>I am already a member</T>.{' '}
+        <Link to="/user/login">
+          <T>Sign In</T>
+        </Link>
+      </div>
     </Main>
   );
 };
