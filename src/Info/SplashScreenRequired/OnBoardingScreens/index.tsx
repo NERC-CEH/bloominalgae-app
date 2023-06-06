@@ -89,11 +89,12 @@ const OnboardingScreens: FC<Props> = ({ onExit }) => {
                   </T>
                 </p>
 
-                <p>
+                <p className="small-font">
                   <T>
                     By clicking “I Understand” you agree that you have read and
                     understood this warning
                   </T>
+                  .
                 </p>
 
                 <IonButton onClick={onExit} color="secondary">

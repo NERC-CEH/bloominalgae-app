@@ -1,10 +1,9 @@
 import { isPlatform } from '@ionic/react';
-
-import UK from 'common/images/flags/ukFlag.svg';
 import BE from 'common/images/flags/beFlag.svg';
-import NO from 'common/images/flags/noFlag.svg';
-import NL from 'common/images/flags/nlFlag.svg';
 import LU from 'common/images/flags/luFlag.svg';
+import NL from 'common/images/flags/nlFlag.svg';
+import NO from 'common/images/flags/noFlag.svg';
+import UK from 'common/images/flags/ukFlag.svg';
 
 const countries = [
   {
@@ -40,6 +39,7 @@ const countries = [
   {
     label: 'Other',
     value: 'OTHER',
+    location: { latitude: 53, longitude: 5, zoom: 2 }, // default to Europe
   },
 ];
 

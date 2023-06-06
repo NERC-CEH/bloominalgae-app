@@ -1,15 +1,15 @@
-import { useRef, FC, useEffect, useMemo } from 'react';
+import { useRef, FC, useEffect, useMemo, useState } from 'react';
 import { observer } from 'mobx-react';
-import { locateOutline } from 'ionicons/icons';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { Trans as T } from 'react-i18next';
 import MapboxMap, { MapRef, Source } from 'react-map-gl';
 import { Main, useAlert } from '@flumens';
-import { IonSpinner, IonIcon, useIonViewDidEnter } from '@ionic/react';
+import { IonSpinner, useIonViewDidEnter } from '@ionic/react';
 import CONFIG from 'common/config';
 import { countriesByKey as countries } from 'common/countries';
 import appModel from 'models/app';
 import MarkerClusterLayer from './Components/ClusterLayer';
+import GPSButton from './Components/GPSButton';
 import MarkerLayer from './Components/MarkerLayer';
 
 const getGeoJSONfromRecords = (records?: Record[]): any => {
@@ -101,22 +101,22 @@ const DEFAULT_LOCATED_ZOOM = 12;
 type Props = {
   records: Record[];
   onMoveEnd: any;
-  refreshCurrentLocation: any;
-  locating?: boolean;
   isFetchingRecords?: boolean;
-  currentLocation?: any;
 };
 
 const MapComponent: FC<Props> = ({
   records,
   onMoveEnd: onMoveEndProp,
-  refreshCurrentLocation,
-  locating,
   isFetchingRecords,
-  currentLocation,
 }) => {
   const mapRef = useRef<MapRef>();
   const showRecordPopup = useRecordPopup(records);
+  const [currentLocation, setCurrentLocation] = useState<any>(null);
+  const setCurrentLocationWithTimestamp = (newLocation: any) =>
+    setCurrentLocation({
+      ...newLocation,
+      timestamp: Date.now(), // map re-centering - cache-busting
+    });
 
   const resizeMap = () => mapRef.current?.resize();
   useIonViewDidEnter(resizeMap);
@@ -126,6 +126,8 @@ const MapComponent: FC<Props> = ({
     (countries as any)[country]?.location || countries.uk.location;
 
   const centerToCurrentLocation = () => {
+    if (!currentLocation) return;
+
     mapRef.current?.flyTo({
       center: [currentLocation.longitude, currentLocation.latitude],
       zoom: DEFAULT_LOCATED_ZOOM,
@@ -140,8 +142,6 @@ const MapComponent: FC<Props> = ({
     onMoveEndProp(bounds);
   };
 
-  const centerMapToCurrentLocation = () => refreshCurrentLocation();
-
   const data = useMemo(
     // eslint-disable-next-line @getify/proper-arrows/name
     () => getGeoJSONfromRecords(records),
@@ -150,12 +150,7 @@ const MapComponent: FC<Props> = ({
 
   return (
     <Main>
-      <button
-        className={`geolocate-btn ${locating ? 'spin' : ''}`}
-        onClick={centerMapToCurrentLocation}
-      >
-        <IonIcon icon={locateOutline} mode="md" size="large" />
-      </button>
+      <GPSButton onChange={setCurrentLocationWithTimestamp} />
 
       <MapboxMap
         ref={mapRef as any}
@@ -194,7 +189,7 @@ const MapComponent: FC<Props> = ({
           />
         </Source>
 
-        {isFetchingRecords && <IonSpinner />}
+        {isFetchingRecords && <IonSpinner className="records-loader" />}
       </MapboxMap>
     </Main>
   );

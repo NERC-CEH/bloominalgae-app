@@ -102,6 +102,11 @@
       margin: 20px auto;
       color: var(--ion-color-dark);
       line-height: 1.5em;
+
+      &.small-font {
+        font-size: 1rem;
+        line-height: 1.1em;
+      }
     }
 
     .swiper-pagination-bullets {
