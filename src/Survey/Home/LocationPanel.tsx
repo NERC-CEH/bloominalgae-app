@@ -17,17 +17,13 @@ const LocationPanel: FC<Props> = ({ latitude, longitude }) => {
   const resizeMap = () => mapRef.current?.resize();
   useIonViewDidEnter(resizeMap);
 
-  const initialViewState = {
-    latitude,
-    longitude,
-    zoom: 14,
-  };
-
   return (
     <div className="location-panel">
       <MapboxMap
         ref={mapRef as any}
-        initialViewState={initialViewState}
+        zoom={14}
+        latitude={latitude}
+        longitude={longitude}
         maxZoom={17}
         mapStyle="mapbox://styles/mapbox/satellite-streets-v11"
         minZoom={3}

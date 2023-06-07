@@ -24,8 +24,8 @@ const SurveyHome: FC<Props> = ({ sample }) => {
 
   const askToVerifyLocation = () => {
     const askToVerifyLocationWrap = (resolve: any) => {
-      const latitude = parseInt(sample.attrs.location?.latitude || '', 10);
-      const longitude = parseInt(sample.attrs.location?.longitude || '', 10);
+      const latitude = parseFloat(sample.attrs.location?.latitude || '');
+      const longitude = parseFloat(sample.attrs.location?.longitude || '');
 
       alert({
         header: 'Location',
