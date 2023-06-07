@@ -1,6 +1,15 @@
+import { observer } from 'mobx-react';
+import {
+  heartOutline,
+  settingsOutline,
+  informationCircleOutline,
+  lockClosedOutline,
+  personOutline,
+  logOut,
+} from 'ionicons/icons';
 import PropTypes from 'prop-types';
 import exact from 'prop-types-exact';
-import config from 'common/config';
+import { Trans as T } from 'react-i18next';
 import { useLocation } from 'react-router';
 import { useAlert } from '@flumens';
 import {
@@ -14,16 +23,7 @@ import {
   IonFooter,
   IonCheckbox,
 } from '@ionic/react';
-import {
-  heartOutline,
-  settingsOutline,
-  informationCircleOutline,
-  lockClosedOutline,
-  personOutline,
-  logOut,
-} from 'ionicons/icons';
-import { observer } from 'mobx-react';
-import { Trans as T } from 'react-i18next';
+import config from 'common/config';
 import flumensLogo from 'common/images/flumens.svg';
 import './styles.scss';
 

@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import CONFIG from 'common/config';
 import * as Yup from 'yup';
 import {
   DrupalUserModel,
@@ -11,6 +10,7 @@ import {
 } from '@flumens';
 import { NavContext } from '@ionic/react';
 import * as Sentry from '@sentry/browser';
+import CONFIG from 'common/config';
 import { genericStore } from './store';
 
 export interface Attrs extends DrupalUserModelAttrs {

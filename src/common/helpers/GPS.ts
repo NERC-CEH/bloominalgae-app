@@ -5,9 +5,9 @@ import { isPlatform } from '@ionic/core';
 export const GPS_DISABLED_ERROR_MESSAGE = 'Location services are not enabled';
 
 type Options = {
-  callback: any,
-  onUpdate?: any,
-  accuracyLimit?: any,
+  callback: any;
+  onUpdate?: any;
+  accuracyLimit?: any;
 };
 
 const GPS_ACCURACY_LIMIT = 100; // meters

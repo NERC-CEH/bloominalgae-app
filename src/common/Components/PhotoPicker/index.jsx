@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import exact from 'prop-types-exact';
-import { PhotoPicker } from '@flumens';
 import { useTranslation } from 'react-i18next';
-import Image from 'common/models/media';
+import { PhotoPicker } from '@flumens';
 import config from 'common/config';
+import Image from 'common/models/media';
 import utils from './imageUtils';
 
 function AppPhotoPicker({ model }) {

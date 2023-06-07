@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { IonCard, IonLabel } from '@ionic/react';
 import { useTranslation } from 'react-i18next';
+import { IonCard, IonLabel } from '@ionic/react';
 import './styles.scss';
 
 function Card(props) {

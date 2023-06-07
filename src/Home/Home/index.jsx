@@ -1,12 +1,11 @@
 import { useEffect } from 'react';
-import { Page, Main, useAlert } from '@flumens';
-import Header from 'Components/Header';
-import appModel from 'models/app';
-import { IonItem, IonItemGroup, IonLabel, IonRouterLink } from '@ionic/react';
 import { Trans as T } from 'react-i18next';
+import { Page, Main, useAlert } from '@flumens';
+import { IonItem, IonItemGroup, IonLabel, IonRouterLink } from '@ionic/react';
+import appModel from 'models/app';
+import Header from 'Components/Header';
 import appLogo from './appLogo.png';
 import backgroundImage from './homePageBackground.jpg';
-
 import './styles.scss';
 
 function useLanguageTip() {

@@ -1,7 +1,7 @@
-import { IonItemDivider, IonLabel } from '@ionic/react';
-import { Trans as T } from 'react-i18next';
 import { observer } from 'mobx-react';
 import PropTypes from 'prop-types';
+import { Trans as T } from 'react-i18next';
+import { IonItemDivider, IonLabel } from '@ionic/react';
 
 function ErrorMessage({ sample }) {
   if (!sample.error.message) {

@@ -1,7 +1,7 @@
+import { informationCircle } from 'ionicons/icons';
+import { Trans as T } from 'react-i18next';
 import { Page, InfoMessage } from '@flumens';
 import { IonItemDivider, IonContent } from '@ionic/react';
-import { Trans as T } from 'react-i18next';
-import { informationCircle } from 'ionicons/icons';
 import Header from 'Components/Header';
 import Card from './Component/Card';
 import img1 from './images/image1.jpg';

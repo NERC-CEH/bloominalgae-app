@@ -1,6 +1,11 @@
-import { Route, Redirect } from 'react-router-dom';
-import savedSamples from 'models/savedSamples';
 import { observer } from 'mobx-react';
+import {
+  homeOutline,
+  mapOutline,
+  informationCircleOutline,
+  layersOutline,
+} from 'ionicons/icons';
+import { Route, Redirect } from 'react-router-dom';
 import {
   IonTabs,
   IonTabButton,
@@ -8,17 +13,12 @@ import {
   IonTabBar,
   IonRouterOutlet,
 } from '@ionic/react';
-import {
-  homeOutline,
-  mapOutline,
-  informationCircleOutline,
-  layersOutline,
-} from 'ionicons/icons';
 import PendingSurveysBadge from 'common/Components/PendingSurveysBadge';
-import Home from './Home';
+import savedSamples from 'models/savedSamples';
 import Guide from './Guide';
-import Surveys from './UserSurveys';
+import Home from './Home';
 import MapComponent from './Map';
+import Surveys from './UserSurveys';
 import './styles.scss';
 
 const UserSurveys = () => <Surveys savedSamples={savedSamples} />;

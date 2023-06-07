@@ -1,12 +1,12 @@
 import { Route } from 'react-router-dom';
 import About from './About';
+import BRC from './BRC';
+import Credits from './Credits';
+import Info from './Info';
 import MoreInformation from './MoreInformation';
 import Record from './Record';
-import Info from './Info';
-import Credits from './Credits';
-import Risks from './Risks';
 import Report from './Report';
-import BRC from './BRC';
+import Risks from './Risks';
 
 export default [
   <Route path="/info/about" key="/info/about" exact component={About} />,

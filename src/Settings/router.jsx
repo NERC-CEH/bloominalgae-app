@@ -1,10 +1,10 @@
 import { Route } from 'react-router-dom';
 import appModel from 'models/app';
-import userModel from 'models/user';
 import savedSamples from 'models/savedSamples';
-import Menu from './Menu';
-import Language from './Language';
+import userModel from 'models/user';
 import Country from './Country';
+import Language from './Language';
+import Menu from './Menu';
 
 const MenuWrap = () => (
   <Menu appModel={appModel} savedSamples={savedSamples} userModel={userModel} />
