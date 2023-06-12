@@ -31,12 +31,6 @@ const countries = [
     location: { latitude: 52.207, longitude: 5.311, zoom: 6 },
   },
   {
-    flag: LU,
-    label: 'Luxembourg',
-    value: 'LU',
-    location: { latitude: 49.815, longitude: 6.103, zoom: 8 },
-  },
-  {
     label: 'Other',
     value: 'OTHER',
     location: { latitude: 53, longitude: 5, zoom: 2 }, // default to Europe
@@ -48,6 +42,12 @@ if (isDemo) {
   countries.push(
     ...[
       // demo only countries here
+      {
+        flag: LU,
+        label: 'Luxembourg',
+        value: 'LU',
+        location: { latitude: 49.815, longitude: 6.103, zoom: 8 },
+      },
     ]
   );
 }
