@@ -49,14 +49,13 @@ const getOrganizationsLinkByLanguage = () => {
           <a href="https://eau.gouvernement.lu/fr/services-aux-citoyens/eauxbaignade.html">
             Administration de la Gestion de l’Eau
           </a>
-          <div>
-            Email : baignade@eau.etat.lu Luxembourg Institute of Science and
-          </div>
+          <div>Email : baignade@eau.etat.lu</div>
         </li>
 
         <li>
           <a href="https://cyanowatch.lu">
-            Technology (LIST) Surveillance des cyanobactéries
+            Luxembourg Institute for Science and Technology (LIST) Surveillance
+            des cyanobactéries
           </a>
           <div>Email: baignade@list.lu</div>
         </li>

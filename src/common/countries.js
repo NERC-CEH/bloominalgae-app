@@ -25,6 +25,12 @@ const countries = [
     location: { latitude: 64.192, longitude: 14.726, zoom: 3 },
   },
   {
+    flag: LU,
+    label: 'Luxembourg',
+    value: 'LU',
+    location: { latitude: 49.815, longitude: 6.103, zoom: 8 },
+  },
+  {
     flag: NL,
     label: 'Netherlands',
     value: 'NL',
@@ -42,12 +48,6 @@ if (isDemo) {
   countries.push(
     ...[
       // demo only countries here
-      {
-        flag: LU,
-        label: 'Luxembourg',
-        value: 'LU',
-        location: { latitude: 49.815, longitude: 6.103, zoom: 8 },
-      },
     ]
   );
 }

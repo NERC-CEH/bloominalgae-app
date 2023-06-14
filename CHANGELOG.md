@@ -1,3 +1,7 @@
+## 3.1.0
+
+- Added Luxembourg
+
 ## 3.0.0
 
 - Fixed iOS white screen display.
