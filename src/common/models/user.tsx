@@ -163,7 +163,7 @@ export const useUserStatusCheck = () => {
     }
 
     if (!userModel.isLoggedIn()) {
-      navigate(`/user/login`);
+      navigate(`/user/register`);
       return false;
     }
 

@@ -1,3 +1,7 @@
+## 3.1.1
+
+- Improved user verification flow.
+
 ## 3.1.0
 
 - Added Luxembourg

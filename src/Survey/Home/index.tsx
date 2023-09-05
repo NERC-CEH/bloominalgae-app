@@ -6,7 +6,7 @@ import { Page, Header, useAlert } from '@flumens';
 import { IonButton, NavContext } from '@ionic/react';
 import appModel from 'common/models/app';
 import Sample, { useValidateCheck } from 'models/sample';
-import userModel from 'models/user';
+import { useUserStatusCheck } from 'models/user';
 import LocationPanel from './LocationPanel';
 import Main from './Main';
 import './styles.scss';
@@ -21,6 +21,7 @@ const SurveyHome: FC<Props> = ({ sample }) => {
   const { t } = useTranslation();
   const alert = useAlert();
   const checkSampleStatus = useValidateCheck(sample);
+  const checkUserStatus = useUserStatusCheck();
 
   const askToVerifyLocation = () => {
     const askToVerifyLocationWrap = (resolve: any) => {
@@ -80,11 +81,8 @@ const SurveyHome: FC<Props> = ({ sample }) => {
       sample.save();
     }
 
-    const isLoggedIn = !!userModel.attrs.email;
-    if (!isLoggedIn) {
-      navigate(`/user/register`);
-      return;
-    }
+    const isUserOK = await checkUserStatus();
+    if (!isUserOK) return;
 
     sample.saveRemote();
 

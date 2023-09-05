@@ -1111,3 +1111,27 @@ msgstr "Netherlands"
 # Country choice
 msgid "United Kingdom"
 msgstr "United Kingdom"
+
+# User registration
+msgid "email is not valid"
+msgstr "email is not valid"
+
+# User verification messages 
+msgid "Before starting any surveys please check your email and click on the verification link."
+msgstr "Before starting any surveys please check your email and click on the verification link."
+
+# User verification messages 
+msgid "Resend"
+msgstr "Resend"
+
+# User verification messages 
+msgid "Looks like your email hasn't been verified yet."
+msgstr "Looks like your email hasn't been verified yet."
+
+# User verification messages 
+msgid "Should we resend the verification email?"
+msgstr "Should we resend the verification email?"
+
+# User verification messages 
+msgid "A new verification email was successfully sent now. If you did not receive the email, then check your Spam or Junk email folders."
+msgstr "A new verification email was successfully sent now. If you did not receive the email, then check your Spam or Junk email folders."
