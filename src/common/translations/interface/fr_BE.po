@@ -1,11 +1,12 @@
 # 
 # Translators:
 # Karolis, 2023
+# Annick Wilmotte <awilmotte@uliege.be>, 2023
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Karolis, 2023\n"
+"Last-Translator: Annick Wilmotte <awilmotte@uliege.be>, 2023\n"
 "Language-Team: French (Belgium) (https://app.transifex.com/ceh/teams/116164/fr_BE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -477,7 +478,7 @@ msgstr "Aucune photo n'a été ajoutée"
 
 # Record page label
 msgid "Press <1></1> to add."
-msgstr "Pressez    pour ajouter"
+msgstr "Pressez  <1> <1> pour ajouter"
 
 # Record page label
 msgid "Location"
@@ -1071,41 +1072,46 @@ msgstr "Connexion réussie "
 
 # User form validation message
 msgid "Please fill in"
-msgstr ""
+msgstr "S'il vous plait, remplissez"
 
 # User form validation message
 msgid "email must be a valid email"
-msgstr ""
+msgstr "L'adresse de courrier électronique doit être valide"
 
 # App Setting message
 msgid "You can reset the app data to its default settings."
 msgstr ""
+"Vous pouvez réinitialiser les données de l’application à leurs paramètres "
+"par défaut"
 
 # Account option
 msgid "Delete account"
-msgstr ""
+msgstr "Supprimer le compte"
 
 # Account option message
 msgid "You can delete your user account from the system."
-msgstr ""
+msgstr "Vous pouvez supprimer votre compte client de ce système"
 
 # Account option message
 msgid "Account delete"
-msgstr ""
+msgstr "Compte supprimé"
 
 # Account option message
 msgid "Are you sure you want to delete your account?"
-msgstr ""
+msgstr "Etes-vous certain(e)s de vouloir supprimer votre compte?"
 
 # Account option message
 msgid ""
 "This will remove your account on the iRecord website. You will lose access "
 "to any records that you have previously submitted using the app or website."
 msgstr ""
+"Cela supprimera votre compte sur le site web iRecord. Vous perdrez l'accès à"
+" toutes les observations que vous avez précédemment soumises à l'aide de "
+"l'application ou du site web."
 
 # Photo picker failed to pick photo error message
 msgid "Sorry, we couldn't get the image."
-msgstr "Désolé, nous ne pouvons pas télécharger cette image."
+msgstr "Désolé, nous ne pouvons pas charger cette image."
 
 # Successfully registration alert message
 msgid "Welcome aboard"
@@ -1117,6 +1123,9 @@ msgid ""
 "want to change the language go to \"Settings\" in the Bloomin' Algae app "
 "menu and select \"Language\""
 msgstr ""
+"La langue sera par défaut la langue des paramètres de votre téléphone. Si "
+"vous souhaitez changer la langue, allez dans « Paramètres » dans le menu de "
+"l'application Bloomin' Algae et sélectionnez « Langue »"
 
 # Successfully registration alert message
 msgid ""
@@ -1140,7 +1149,7 @@ msgstr "Norvège"
 
 # Country choice
 msgid "Luxembourg"
-msgstr ""
+msgstr "Luxembourg"
 
 # Country choice
 msgid "Netherlands"
@@ -1149,3 +1158,35 @@ msgstr "Pays-Bas"
 # Country choice
 msgid "United Kingdom"
 msgstr "Royaume-Uni"
+
+# User registration
+msgid "email is not valid"
+msgstr "L'email n'est pas valide"
+
+# User verification messages
+msgid ""
+"Before starting any surveys please check your email and click on the "
+"verification link."
+msgstr ""
+"Avant de commencer vos observations, veuillez regarder votre boite de "
+"courrier électronique et cliquez sur le lien de vérification "
+
+# User verification messages
+msgid "Resend"
+msgstr "Envoyez à nouveau"
+
+# User verification messages
+msgid "Looks like your email hasn't been verified yet."
+msgstr "Il semble que votre email n'a pas encore été vérifié"
+
+# User verification messages
+msgid "Should we resend the verification email?"
+msgstr "Faut-il envoyer à nouveau l'email de vérification?"
+
+# User verification messages
+msgid ""
+"A new verification email was successfully sent now. If you did not receive "
+"the email, then check your Spam or Junk email folders."
+msgstr ""
+"Un nouvel e-mail de vérification a été envoyé avec succès. Si vous n'avez "
+"pas reçu l'e-mail, vérifiez vos dossiers Spam ou Courrier indésirable."
