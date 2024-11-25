@@ -1,5 +1,5 @@
 ion-menu ion-content {
-  --padding-top: 20px;
+  --padding-top: calc(env(safe-area-inset-top) + 20px);
   --padding-bottom: 20px;
   --background: linear-gradient(to bottom, #a4cc38 0%, #098b5c 100%);
 
