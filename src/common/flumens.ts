@@ -72,7 +72,6 @@ export {
 export { default as MapHeader } from '@flumens/ionic/dist/components/Map/Header';
 export { default as MapSettingsPanel } from '@flumens/ionic/dist/components/Map/SettingsPanel';
 export * from '@flumens/ionic/dist/components/Map/utils';
-export { default as UserFeedbackRequest } from '@flumens/ionic/dist/components/UserFeedbackRequest';
 export { useToast, useAlert, useLoader } from '@flumens/ionic/dist/hooks';
 export * from '@flumens/utils/dist/image';
 export * from '@flumens/utils/dist/errors';

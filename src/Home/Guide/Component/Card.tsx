@@ -1,9 +1,12 @@
-import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import { IonCard, IonLabel } from '@ionic/react';
 import './styles.scss';
 
-function Card(props) {
+type Props = {
+  card: any;
+};
+
+function Card(props: Props) {
   const { t } = useTranslation();
 
   const { text, image } = props.card;
@@ -22,9 +25,5 @@ function Card(props) {
     </div>
   );
 }
-
-Card.propTypes = {
-  card: PropTypes.object.isRequired,
-};
 
 export default Card;

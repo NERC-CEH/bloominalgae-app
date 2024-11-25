@@ -2,11 +2,5 @@
   "appId": "uk.ac.ceh.algae",
   "appName": "Bloomin' Algae",
   "npmClient": "npm",
-  "webDir": "build",
-  "cordova": {},
-  "plugins": {
-    "SplashScreen": {
-      "androidScaleType": "CENTER_CROP"
-    }
-  }
+  "webDir": "build"
 }

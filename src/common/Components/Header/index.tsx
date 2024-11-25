@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Trans as T } from 'react-i18next';
 import {
   IonToolbar,
@@ -9,7 +8,17 @@ import {
 } from '@ionic/react';
 import './styles.scss';
 
-const Header = ({ title: titleProp, styleId: styleIdProp, rightSlot }) => {
+type Props = {
+  title?: string;
+  styleId?: string;
+  rightSlot?: any;
+};
+
+const Header = ({
+  title: titleProp,
+  styleId: styleIdProp,
+  rightSlot,
+}: Props) => {
   const title = titleProp || '';
 
   const styleId = styleIdProp || 'custom-header';
@@ -28,12 +37,6 @@ const Header = ({ title: titleProp, styleId: styleIdProp, rightSlot }) => {
       </IonToolbar>
     </IonHeader>
   );
-};
-
-Header.propTypes = {
-  title: PropTypes.string,
-  styleId: PropTypes.string,
-  rightSlot: PropTypes.any,
 };
 
 export default Header;

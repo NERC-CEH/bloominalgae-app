@@ -1,10 +1,10 @@
 import { observer } from 'mobx-react';
-import PropTypes from 'prop-types';
 import { prettyPrintLocation } from '@flumens';
 import { IonSpinner } from '@ionic/react';
+import Sample from 'common/models/sample';
 import './styles.scss';
 
-function getValue(sample) {
+function getValue(sample: Sample) {
   if (sample.isGPSRunning()) {
     return <IonSpinner />;
   }
@@ -12,14 +12,14 @@ function getValue(sample) {
   return prettyPrintLocation(sample.attrs.location);
 }
 
-function GridRefValue({ sample }) {
+type Props = {
+  sample: Sample;
+};
+
+function GridRefValue({ sample }: Props) {
   const value = getValue(sample);
 
   return <div className="gridref-label">{value}</div>;
 }
-
-GridRefValue.propTypes = {
-  sample: PropTypes.object.isRequired,
-};
 
 export default observer(GridRefValue);

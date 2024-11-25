@@ -1,9 +1,13 @@
 import { observer } from 'mobx-react';
-import PropTypes from 'prop-types';
 import { Trans as T } from 'react-i18next';
 import { IonItemDivider, IonLabel } from '@ionic/react';
+import Sample from 'common/models/sample';
 
-function ErrorMessage({ sample }) {
+type Props = {
+  sample: Sample;
+};
+
+function ErrorMessage({ sample }: Props) {
   if (!sample.error.message) {
     return null;
   }
@@ -19,9 +23,5 @@ function ErrorMessage({ sample }) {
     </IonItemDivider>
   );
 }
-
-ErrorMessage.propTypes = {
-  sample: PropTypes.object.isRequired,
-};
 
 export default observer(ErrorMessage);
