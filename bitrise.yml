@@ -59,6 +59,7 @@ workflows:
           run_if: enveq "BUILD_ONLY" ""
           inputs:
             - package_name: $BITRISE_PROJECT_NAME
+            - retry_without_sending_to_review: 'true'
             - service_account_json_key_path: $BITRISEIO_GOOGLE_SERVICE_KEY_URL
       - deploy-to-itunesconnect-application-loader@1:
           run_if: enveq "BUILD_ONLY" ""
