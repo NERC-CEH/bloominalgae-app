@@ -3,11 +3,14 @@
 /* eslint-disable no-param-reassign */
 
 /* eslint-disable camelcase */
+import arn from './interface/arn.po';
 import en from './interface/en.pot';
+import esCL from './interface/es_CL.po';
 import frBE from './interface/fr_BE.po';
 import frLU from './interface/fr_LU.po';
 import nl from './interface/nl_BE.po';
 import nb from './interface/no.po';
+import swKE from './interface/sw_KE.po';
 
 // using "no" because of mistake
 
@@ -51,5 +54,14 @@ export default {
   },
   nb: {
     interface: rawToKeyVal(nb),
+  },
+  'es-CL': {
+    interface: rawToKeyVal(esCL),
+  },
+  'sw-KE': {
+    interface: rawToKeyVal(swKE),
+  },
+  arn: {
+    interface: rawToKeyVal(arn),
   },
 };

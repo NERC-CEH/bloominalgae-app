@@ -7,6 +7,11 @@ const languages = {
   fr: { default: 'fr-BE' },
   'fr-BE': 'Français (Belgique)',
   'fr-LU': 'Français (Luxembourg)',
+  'sw-KE': 'Swahili',
+  sw: { default: 'sw-KE' },
+  'es-CL': 'Español',
+  es: { default: 'es-CL' },
+  arn: 'Mapudungun',
 };
 
 const isDemo = !isPlatform('hybrid');

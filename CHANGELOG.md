@@ -1,6 +1,8 @@
 ## 3.2.0
 
 - Framework upgrade.
+- Added Kenya and Chile.
+- Added Swahili, Mapudungun and Spanish.
 
 ## 3.1.1
 

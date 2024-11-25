@@ -51,7 +51,7 @@ const OnboardingScreens = ({ onExit }: Props) => {
             className="first"
             style={{ backgroundImage: `url(${firstBackgroundImage})` }}
           >
-            <div className="message-container blur">
+            <div className="message-container blurry">
               <div className="message-header">
                 <h2>
                   <T>Welcome to Bloomin’ Algae!</T>
@@ -74,7 +74,7 @@ const OnboardingScreens = ({ onExit }: Props) => {
             style={{ backgroundImage: `url(${secondBackgroundImage})` }}
           >
             <Main>
-              <div className="message-container blur">
+              <div className="message-container blurry">
                 <div className="message-header">
                   <IonIcon icon={alertCircleOutline} />
                   <h2>

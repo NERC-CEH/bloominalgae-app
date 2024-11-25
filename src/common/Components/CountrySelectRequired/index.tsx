@@ -1,19 +1,13 @@
 import { ReactNode } from 'react';
 import { observer } from 'mobx-react';
-import { useTranslation } from 'react-i18next';
 import { Page, Main } from '@flumens';
-import { IonList } from '@ionic/react';
-import countries from 'common/countries';
 import appModel from 'models/app';
-import CountryButton from './CountryButton';
+import CountriesList from '../CountriesList';
 import backgroundImage from './backgroundImage.jpg';
-import './styles.scss';
 
 type Props = { children: ReactNode };
 
 const CountrySelect = ({ children }: Props) => {
-  const { t } = useTranslation();
-
   if (appModel.attrs.country) return children;
 
   const selectCountry = (country: string) => {
@@ -31,35 +25,18 @@ const CountrySelect = ({ children }: Props) => {
     appModel.save();
   };
 
-  const countriesEntries = () => {
-    const alphabetically = (country1: any, country2: any) =>
-      country1.label === 'Other'
-        ? 1
-        : t(country1.label).localeCompare(t(country2.label));
-
-    const getCountry = (country: any) => (
-      <CountryButton
-        key={country.label}
-        country={country}
-        onSelect={selectCountry}
-      />
-    );
-
-    return countries.sort(alphabetically).map(getCountry);
-  };
-
   return (
     <Page id="country-select">
-      <Main>
-        <img
-          className="background-image"
-          src={backgroundImage}
-          alt="background"
-        />
+      <Main className="[--padding-top:0] [--padding-bottom:0]">
+        <div className="relative backdrop-blur-[0.5px] bg-[rgba(0,0,0,0.3)] h-full">
+          <img
+            className="absolute brightness-90 w-screen h-full"
+            src={backgroundImage}
+            alt="background"
+          />
 
-        <div className="country-select-container">
-          <div className="list-container">
-            <IonList>{countriesEntries()}</IonList>
+          <div className="w-full max-h-screen overflow-x-scroll">
+            <CountriesList onChange={selectCountry} />
           </div>
         </div>
       </Main>

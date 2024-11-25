@@ -1,5 +1,7 @@
 import { isPlatform } from '@ionic/react';
 import BE from 'common/images/flags/beFlag.svg';
+import CL from 'common/images/flags/clFlag.svg';
+import KE from 'common/images/flags/keFlag.svg';
 import LU from 'common/images/flags/luFlag.svg';
 import NL from 'common/images/flags/nlFlag.svg';
 import NO from 'common/images/flags/noFlag.svg';
@@ -17,6 +19,18 @@ const countries = [
     label: 'Belgium',
     value: 'BE',
     location: { latitude: 50.495, longitude: 3.147, zoom: 5 },
+  },
+  {
+    flag: CL,
+    label: 'Chile',
+    value: 'CL',
+    location: { latitude: -21.944683, longitude: -69.018893, zoom: 2 },
+  },
+  {
+    flag: KE,
+    label: 'Kenya',
+    value: 'KE',
+    location: { latitude: 0.003, longitude: 37.69, zoom: 5 },
   },
   {
     flag: NO,

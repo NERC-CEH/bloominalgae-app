@@ -1,14 +1,7 @@
 import { useContext } from 'react';
 import { observer } from 'mobx-react';
-import { Page, Main, Header } from '@flumens';
-import {
-  IonList,
-  IonItem,
-  IonRadioGroup,
-  IonRadio,
-  IonLabel,
-  NavContext,
-} from '@ionic/react';
+import { Page, Main, Header, RadioInput } from '@flumens';
+import { IonList, NavContext } from '@ionic/react';
 import languages from 'common/languages';
 import appModel from 'common/models/app';
 
@@ -17,8 +10,8 @@ function SelectLanguage() {
 
   const currentValue = appModel.attrs.language;
 
-  function onSelect(e: any) {
-    appModel.attrs.language = e.target.value; // eslint-disable-line no-param-reassign
+  function onSelect(newLanguage: any) {
+    appModel.attrs.language = newLanguage; // eslint-disable-line no-param-reassign
     appModel.save();
 
     navigate.goBack();
@@ -27,20 +20,16 @@ function SelectLanguage() {
   const alphabetically = ([, l1]: any, [, l2]: any): any =>
     typeof l1 === 'string' && l1.localeCompare(l2);
 
-  const languageEntries = ([value, language]: any) => {
+  const languageEntries = ([value, language]: any): any => {
     if (typeof language === 'object') return null;
 
-    return (
-      <IonItem key={value}>
-        <IonLabel>{language}</IonLabel>
-        <IonRadio value={value} />
-      </IonItem>
-    );
+    return { value, label: language };
   };
 
   const languagesOptions = Object.entries(languages)
     .sort(alphabetically)
-    .map(languageEntries);
+    .map(languageEntries)
+    .filter((o: any) => !!o);
 
   return (
     <Page id="language-options">
@@ -48,13 +37,13 @@ function SelectLanguage() {
 
       <Main>
         <IonList>
-          <IonRadioGroup
-            className="radio-input-attr"
-            onIonChange={onSelect}
+          <RadioInput
+            onChange={onSelect}
             value={currentValue}
-          >
-            {languagesOptions}
-          </IonRadioGroup>
+            options={languagesOptions}
+            skipTranslation
+            platform="ios"
+          />
         </IonList>
       </Main>
     </Page>

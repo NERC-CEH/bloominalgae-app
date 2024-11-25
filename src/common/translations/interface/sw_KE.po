@@ -1,0 +1,980 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: temp\n"
+"Language-Team: Swahili (Kenya) (https://app.transifex.com/ceh/teams/116164/sw_KE/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sw_KE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: POEditor.com\n"
+
+# Button title
+msgid "Back"
+msgstr ""
+
+# Home page toolbar menu label
+msgid "Home"
+msgstr ""
+
+# Home page toolbar menu label
+msgid "Map"
+msgstr ""
+
+# Home page toolbar menu label
+msgid "Guide"
+msgstr ""
+
+# Home page toolbar menu label
+msgid "My Records"
+msgstr ""
+
+# Guide page header title
+msgid "Identify"
+msgstr ""
+
+# Guide page information message
+msgid ""
+"If you are still not sure after looking at this guide please submit the "
+"record anyway"
+msgstr ""
+
+# Guide page label
+msgid "Examples of blue-green algae blooms"
+msgstr ""
+
+# Guide page card label
+msgid "Usually green or blue-green in colour"
+msgstr ""
+
+# Guide page card label
+msgid "Form paint-like surface scums often along shorelines"
+msgstr ""
+
+# Guide page card label
+msgid ""
+"Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be "
+"small and round or tiny grass like flakes"
+msgstr ""
+
+# Guide page card label
+msgid "Turquoise colour sometimes visible when decaying"
+msgstr ""
+
+# Guide page label
+msgid "Not blue-green algae - duckweed and harmless green algae"
+msgstr ""
+
+# Guide page card label
+msgid "Plants that float but have solid structure such as leaves"
+msgstr ""
+
+# Guide page card label
+msgid "Others are long and tubular the size of a little finger"
+msgstr ""
+
+# Guide page card label
+msgid "Some have very stringy, long hair-like strands"
+msgstr ""
+
+# Guide page card label
+msgid "Or fine green hairs attached to rocks and pebbles"
+msgstr ""
+
+# My Records page header title
+msgid "Pending"
+msgstr ""
+
+# My Records page header title
+msgid "Uploaded"
+msgstr ""
+
+# My Records page record info message
+msgid "Draft"
+msgstr ""
+
+# My Records page record info message
+msgid "To delete any records swipe it to the left."
+msgstr ""
+
+# About Bloomin’ Algae info page title
+msgid "About Bloomin’ Algae"
+msgstr ""
+
+# About Bloomin’ Algae info page content
+msgid ""
+"Bloomin’ Algae is a Citizen Science app for reporting the presence of "
+"harmful algal blooms of blue-green algae (also known as cyanobacteria). The "
+"records you send in help speed up warnings to minimise risks to public and "
+"animal health. You will receive feedback on the records you submit which can"
+" help you learn how to recognise the risks to you and pets."
+msgstr ""
+
+# About Bloomin’ Algae info page content
+msgid ""
+"When you submit a record the data is stored within the <2>iRecord "
+"website</2>, where it will be displayed to users and be examined and "
+"verified by an expert. Only your records are available publically, not your "
+"contact details. These records may be collated and disseminated for "
+"education, scientific research and other public benefit uses but contact "
+"details will not be shared."
+msgstr ""
+
+# About Bloomin’ Algae info page content
+msgid ""
+"As well as submitting a photo and location details, we ask you to confirm "
+"what general activities you, or others, are carrying out in, or around, the "
+"water (such as dog walking). This is because blue-green algae pose a greater"
+" risk to water-based activities, such as swimming or windsurfing, compared "
+"to non-contact activities such as walking. Blue-green algae can pose a very "
+"high risk to pets and livestock. By gathering details of activities "
+"undertaken we hope to gain a better understanding of how harmful algal "
+"blooms are impacting recreational use of freshwaters."
+msgstr ""
+
+# About Bloomin’ Algae info page content
+msgid "<0>Privacy policy</0>"
+msgstr ""
+
+# What are blue-green algae info page title
+msgid "What are blue-green algae?"
+msgstr ""
+
+# What are blue-green algae info page content
+msgid ""
+"Blue-green algae are a type of bacteria, known as cyanobacteria, which can "
+"produce toxic chemicals that are very harmful to the health of people and "
+"animals. These algae naturally occur in all freshwaters, especially lakes, "
+"reservoirs, canals and slow-moving rivers. They are microscopic but, when "
+"abundant, grow to be visible small green particles or flakes. In calm sunny "
+"weather, they can rise to the surface and form thin wispy streaks, or thick "
+"paint-like scums on the water surface if they get very abundant. Shoreline "
+"scums and surface blooms (see ID guide in app) pose severe health risks, "
+"particularly to animals that swim or drink the affected water."
+msgstr ""
+
+# What are blue-green algae info page content
+msgid ""
+"Blooms of blue-green algae are most commonly seen during summer and early "
+"autumn months, particularly in calm and sunny weather, but they can linger "
+"in freshwaters into late autumn. They occasionally occur in winter and "
+"spring months. Most blooms are green but sometimes turquoise blue patches "
+"are seen on the water or along shorelines when the blooms start to decay. "
+"Some blooms are coloured red, dark brown or black."
+msgstr ""
+
+# Health Risk info page title
+msgid "Health risks"
+msgstr ""
+
+# Health Risk info page title
+msgid ""
+"The toxins that blue-green algae produce can result in a range of health "
+"effects in people and animals. They cause skin rashes and much more severe "
+"symptoms if swallowed (fever, vomiting, liver damage)."
+msgstr ""
+
+# Health Risk info page title
+msgid ""
+"Dogs are especially at risk if they drink contaminated water, or lick their "
+"coat after swimming, with severe symptoms requiring very rapid vet treatment"
+" to avoid death. Blue-green algae have also caused the deaths of horses, "
+"cattle, birds and fish."
+msgstr ""
+
+# Health Risk info page title
+msgid ""
+"If you are a pet owner you can find further information from the <2>Blue "
+"Cross</2>."
+msgstr ""
+
+# Health Risk info page title
+msgid ""
+"<0>If you, or your pet, become unwell after contact with water that may be "
+"contaminated with blue-green algae, we’d recommend you seek immediate "
+"medical or veterinary advice.</0>"
+msgstr ""
+
+# Further action and reporting harmful algal blooms info page title
+msgid "Report"
+msgstr ""
+
+# Further action info page content
+msgid "Further action"
+msgstr ""
+
+# Further action info page content
+msgid ""
+"The responsibility to manage algal blooms lies with the owner of the water "
+"concerned. If a bloom is present and no warning signs are visible, we "
+"recommend you contact the environmental health department in your local "
+"authority. Environmental health will assess any action required against the "
+"relevant guidance and may contact the regulatory authority (EA, SEPA, NRW, "
+"NIEA) for further water tests. You may also directly report incidents of "
+"algal blooms or water pollution incidents to your environment regulatory "
+"authority:"
+msgstr ""
+
+# Further action info page content
+msgid ""
+"For more information and advice on algal blooms see:<br/><br/><3>England & "
+"Wales</3><br/><br/><6>Scotland</6>"
+msgstr ""
+
+# BRC info page title
+msgid "BRC approved"
+msgstr ""
+
+# BRC info page content
+msgid ""
+"Wherever you see this logo on a biological recording app you can be assured "
+"that the data you submit will be: made available to experts for quality "
+"assurance; made available for conservation and research and preserved for "
+"long-term use."
+msgstr ""
+
+# BRC info page content
+msgid ""
+"This logo indicates that your data is:<1><0>Sent to the Biological Record "
+"Centre’s data warehouse linked to the iRecord system where it is accessible "
+"to you as the recorder, to an expert community of verifiers and other users "
+"of iRecord.</0><1>Quality assured data is passed onto Local Environmental "
+"Records Centres, National Recording Schemes and to the NBN Gateway.</1></1>"
+msgstr ""
+
+# BRC info page label
+msgid "About BRC"
+msgstr ""
+
+# BRC info page content
+msgid ""
+"The <1>Biological Records Centre</1> (BRC), established in 1964, is a "
+"national focus in the UK for terrestrial and freshwater species recording. "
+"BRC works closely with the voluntary recording community, principally "
+"through support of national recording schemes and societies. BRC is "
+"supported by the Joint Nature Conservation Committee (JNCC) and the Centre "
+"for Ecology & Hydrology (UKCEH). The work of BRC is a major BRC of the "
+"National Biodiversity Network (NBN)."
+msgstr ""
+
+# BRC info page content
+msgid "Which app should I use?"
+msgstr ""
+
+# BRC info page content
+msgid ""
+"You might have noticed that several of<1> BRC apps</1> feature some of the "
+"same species? We have introduced the BRC Approved logo to signify that data "
+"from our apps all go to the same place. Therefore, you are free to choose "
+"which app you use to record a given species. All records will be sent to the"
+" same place, treated in the same way and will meet the established standards"
+" required by the Biological Record Centre."
+msgstr ""
+
+# Credit info page title
+msgid "Credits"
+msgstr ""
+
+# Credit info page content
+msgid ""
+"The project would like to thank UKCEH, NERC and the Scottish Government for "
+"funding the app development and staff in the Scottish Environment Protection"
+" Agency, Health Protection Scotland, Environment Agency and Public Health "
+"England for their support, advice and guidance during the development of the"
+" app."
+msgstr ""
+
+# Credit info page content
+msgid "We are grateful for all the people that helped to create this app:"
+msgstr ""
+
+# Credit info page content
+msgid ""
+"Thanks also to Julia Ferguson for the logo design. Julia can be contacted "
+"at:<br/><br/><3>www.paintingbiology.com<br/></3> <br/>Twitter: "
+"@JuliaFpaintsbio<br/>email: paintingbiology@gmail.com"
+msgstr ""
+
+# Settings page header title
+msgid "Settings"
+msgstr ""
+
+# Settings page label
+msgid "English"
+msgstr ""
+
+# Settings page label
+msgid "Language"
+msgstr ""
+
+# Settings page message
+msgid "Share app crash data so we can make the app more reliable."
+msgstr ""
+
+# Settings page label
+msgid "Reset App"
+msgstr ""
+
+# Settings page label
+msgid "Share App Analytics"
+msgstr ""
+
+# Reset app alert button label
+msgid "Cancel"
+msgstr ""
+
+# Reset app alert button label
+msgid "Reset"
+msgstr ""
+
+# Reset app alert message
+msgid ""
+"Are you sure you want to reset the application to its initial "
+"state?<1><0>This will wipe all the locally stored app data!</0></1>"
+msgstr ""
+
+# Start record draft title
+msgid "No uploaded records"
+msgstr ""
+
+# Start record draft button label
+msgid "Discard"
+msgstr ""
+
+# Start record draft button label
+msgid "Continue"
+msgstr ""
+
+# Start record draft button message
+msgid "Previous record draft exists, would you like to continue it?"
+msgstr ""
+
+# Record page label
+msgid "No photo has been added."
+msgstr ""
+
+# Record page label
+msgid "Press <1></1> to add."
+msgstr ""
+
+# Record page label
+msgid "Location"
+msgstr ""
+
+# Record page label
+msgid "Today"
+msgstr ""
+
+# Record page label
+msgid "Date"
+msgstr ""
+
+# Record page label
+msgid "Bloom size"
+msgstr ""
+
+# Record page label
+msgid "Activities"
+msgstr ""
+
+# Record page label
+msgid "Comment"
+msgstr ""
+
+# Record comment information message
+msgid "Please add any extra info about this record."
+msgstr ""
+
+# Record comment placeholder message
+msgid "Enter more information here..."
+msgstr ""
+
+# Record activities information message
+msgid "What activities were you doing?"
+msgstr ""
+
+# Record activities content
+msgid "Walking / Running"
+msgstr ""
+
+# Record activities content
+msgid "Dog-walking"
+msgstr ""
+
+# Record activities content
+msgid "Cycling"
+msgstr ""
+
+# Record activities content
+msgid "Birdwatching"
+msgstr ""
+
+# Record activities content
+msgid "Fishing"
+msgstr ""
+
+# Record activities content
+msgid "Swimming"
+msgstr ""
+
+# Record activities content
+msgid "Boats / Watersports"
+msgstr ""
+
+# Record activities content
+msgid "Other"
+msgstr ""
+
+# Record activities content divider
+msgid "What activities are done at this location?"
+msgstr ""
+
+# Record activities divider content
+msgid "Please select the activities type for this record."
+msgstr ""
+
+# Record bloom size content
+msgid "Doormat"
+msgstr ""
+
+# Record bloom size content
+msgid "Parking space"
+msgstr ""
+
+# Record bloom size content
+msgid "Tennis court"
+msgstr ""
+
+# Record bloom size content
+msgid "Even bigger"
+msgstr ""
+
+# Record bloom size information message
+msgid "Select the closest match below."
+msgstr ""
+
+# Splash screen content
+msgid "Warning"
+msgstr ""
+
+# Splash screen content
+msgid ""
+"Blue-Green algae (also known as cyanobacteria) can be harmful to the health "
+"of people and animals. Do NOT touch or ingest anything you suspect to be a "
+"bloom and do not allow pets or children to come into contact with, or "
+"swallow, the water."
+msgstr ""
+
+# Splash screen content
+msgid "Got it!"
+msgstr ""
+
+# Button label
+msgid "Delete"
+msgstr ""
+
+# My records page background message
+msgid "No finished pending records."
+msgstr ""
+
+# Record location name message
+msgid "Location name e.g. lake, reservoir or pond name"
+msgstr ""
+
+# Record incomplete pop up record message
+msgid "Please add a photo of the bloom"
+msgstr ""
+
+# Record incomplete pop up record message
+msgid "Please select location."
+msgstr ""
+
+# Record incomplete pop up button label
+msgid "Got it"
+msgstr ""
+
+# Record incomplete pop up title
+msgid "Record incomplete"
+msgstr ""
+
+# Record verify location button label
+msgid "Incorrect"
+msgstr ""
+
+# Record verify location button label
+msgid "Correct"
+msgstr ""
+
+# Side menu label
+msgid "Navigate"
+msgstr ""
+
+# Side menu label
+msgid "Algal bloom info"
+msgstr ""
+
+# Side menu label
+msgid "Report a bloom"
+msgstr ""
+
+# Side menu content
+msgid "App version"
+msgstr ""
+
+# Delete record alert message
+msgid "Are you sure you want to delete this record ?"
+msgstr ""
+
+# More information info page title
+msgid "Using the app"
+msgstr ""
+
+# More information info page content
+msgid ""
+"For more information on using the app, including setting up a notification "
+"service for records submitted in your area, please see the section on “Using"
+" the app” on the <2>Bloomin’ Algae website</2>."
+msgstr ""
+
+# What do we use your records for info page title
+msgid "What do we use your records for?"
+msgstr ""
+
+# What do we use your records for info page content
+msgid ""
+"<0><0>Informing local authorities and landowners to help speed up the "
+"erection of public warning signs.</0><br/><2>We use the data in scientific "
+"research to get a better understanding of the timing and location of algal "
+"blooms, to understand how climate change is impacting water quality now, and"
+" to predict future impacts.</2><br/><4>We also use the data to support "
+"environment agencies and water companies in water quality risk management "
+"and prevention.</4></0>"
+msgstr ""
+
+# Record upload button label
+msgid "Upload"
+msgstr ""
+
+# Record button label
+msgid "OK"
+msgstr ""
+
+# part of record
+msgid "DD/MM/YYYY"
+msgstr ""
+
+# part of record
+msgid "Record"
+msgstr ""
+
+# onBoarding page content
+msgid ""
+"By clicking “I Understand” you agree that you have read and understood this "
+"warning"
+msgstr ""
+
+# onBoarding page content
+msgid "I Understand"
+msgstr ""
+
+# Settings reset alert message
+msgid "Done"
+msgstr ""
+
+# Info background message button label
+msgid "Hide"
+msgstr ""
+
+# Map page header label
+msgid "All Records"
+msgstr ""
+
+# onBoarding title
+msgid "Welcome to Bloomin’ Algae!"
+msgstr ""
+
+# onBoarding content
+msgid ""
+"Bloomin’ Algae is a Citizen Science app for reporting the presence of "
+"harmful blooms of blue-green algae. The records you send in help speed up "
+"warnings to minimise risks to public and animal health. Thanks for taking "
+"part!"
+msgstr ""
+
+# Record map toggle
+msgid "See past 12 months"
+msgstr ""
+
+# Record map toggle
+msgid "The default setting is the past 4 weeks of records."
+msgstr ""
+
+# Record map toggle
+msgid "Please confirm this is your correct location."
+msgstr ""
+
+# Record alert image on a map
+msgid "This record has no images."
+msgstr ""
+
+# A verification popup setting
+msgid "Do not show again"
+msgstr ""
+
+# Record status on a map
+msgid "rejected"
+msgstr ""
+
+# Record status on a map
+msgid "complete"
+msgstr ""
+
+# Record status on a map
+msgid "plausible"
+msgstr ""
+
+# Record status on a map
+msgid "verified"
+msgstr ""
+
+# Part of User authentication page
+msgid "Register/Login"
+msgstr ""
+
+# Part of User authentication page
+msgid "Create a free account"
+msgstr ""
+
+# Part of User authentication page
+msgid "First name"
+msgstr ""
+
+# Part of User authentication page
+msgid "Last name"
+msgstr ""
+
+# Part of User authentication page
+msgid "Email"
+msgstr ""
+
+# Part of User authentication page
+msgid "Password"
+msgstr ""
+
+# Part of User authentication page
+msgid ""
+"By clicking Sign Up, you agree to our <2>Privacy Policy</2> and <6>Terms and"
+" Conditions</6>"
+msgstr ""
+
+# Part of User authentication page
+msgid "Sign Up"
+msgstr ""
+
+# Part of User authentication page
+msgid "I am already a member"
+msgstr ""
+
+# Part of User authentication page
+msgid "Sign In"
+msgstr ""
+
+# part of User authentication page
+msgid "Welcome back"
+msgstr ""
+
+# Part of User authentication page
+msgid "Sign in to your account to start"
+msgstr ""
+
+# Part of User authentication page
+msgid "Forgot password?"
+msgstr ""
+
+# Part of User authentication page
+msgid "firstName is a required field"
+msgstr ""
+
+# Part of User authentication page
+msgid "Enter your email address to request a password reset."
+msgstr ""
+
+# Part of User authentication page
+msgid "email is a required field"
+msgstr ""
+
+# Part of User authentication page
+msgid "password is a required field"
+msgstr ""
+
+# Part of User authentication page
+msgid "secondName is a required field"
+msgstr ""
+
+# User authentication alert
+msgid "Logout"
+msgstr ""
+
+# User authentication alert
+msgid "Are you sure you want to logout?"
+msgstr ""
+
+# User authentication alert
+msgid "Discard local data"
+msgstr ""
+
+# User authentication alert
+msgid "Please wait..."
+msgstr ""
+
+# Survey header button
+msgid "Finish"
+msgstr ""
+
+# Survey camera options
+msgid "Choose a method to upload a photo"
+msgstr ""
+
+# Camera empty input message
+msgid "No photo has been added.<br/>Press <4><0></0></4> to add."
+msgstr ""
+
+# Survey camera options
+msgid "Gallery"
+msgstr ""
+
+# Survey camera options
+msgid "Camera"
+msgstr ""
+
+# User-surveys page background message
+msgid "Please do not forget to upload any pending records!"
+msgstr ""
+
+# All records page tip
+msgid "OK, got it"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Sorry"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Unauthorized"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Not found"
+msgstr ""
+
+# Error messages from server for user account actions
+msgid "Bad Request"
+msgstr ""
+
+# Verification message
+msgid ""
+"Some of your records have been verified. Please check your records list."
+msgstr ""
+
+# Record date stamp
+msgid "Yesterday"
+msgstr ""
+
+# Verification message
+msgid ""
+"<0><p>Thanks so much for sending your record in - this looks very much like "
+"a bloom of blue-green algae (also known as cyanobacteria), so we have "
+"verified your record as “considered correct”.</p><1><p>These surface "
+"accumulations constitute a high risk to public and animal health – "
+"particularly to dogs. If this is a public place, then please check that "
+"warning signs are posted. If not, please contact your local authority "
+"environmental health officer or environment protection agency who can advise"
+" the landowner on an appropriate warning sign.</p><p>Finally, please avoid "
+"contact with the water or any shoreline scum. If you, or your pet, become "
+"unwell after any contact with the water, we’d recommend you seek immediate "
+"medical or veterinary advice.</p><p>Thanks again for using the "
+"app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
+"Hydrology</p></1></0>"
+msgstr ""
+
+# Verification message
+msgid "READ MORE"
+msgstr ""
+
+# Verification message header
+msgid "Info"
+msgstr ""
+
+# Verification message
+msgid ""
+"<0><p>Thanks for sending in your record using the Bloomin'Algae app. "
+"</p><p>From your photos, we do not think this is blue-green algae "
+"(cyanobacteria).</p><2><p>We cannot of course be certain that blue-green "
+"algae are not present at all at this site, but they are not clearly visible "
+"in the photo.</p><p>Our algal guide in the app has photos to help with "
+"identification. Our website also has a description of a simple stick test "
+"you can use to help eliminate duckweed and blanket weed, which are commonly "
+"misidentified as blue-green algae: https://www.ceh.ac.uk/algal-"
+"blooms/bloomin-algae</p><p>If you do suspect a bloom at any site, please "
+"avoid contact with the water or any shoreline scum. If you, or your pet, "
+"become unwell after contact with water that may be contaminated with blue-"
+"green algae, we’d recommend you seek immediate medical or veterinary "
+"advice.</p><p>Thanks again for using the app!</p><p>The Bloomin'Algae team "
+"at the UK Centre for Ecology & Hydrology</p></2></0>"
+msgstr ""
+
+# Verification message
+msgid ""
+"<0><p>Thanks for sending in your record using the Bloomin'Algae "
+"app.</p><p>We have rejected this record as we think the location is "
+"incorrect. Please could you check your record and send in a new record with "
+"the correct location.</p><2><p>Please see our website for further help with "
+"using the app and identifying blooms of blue-green algae : "
+"https://www.ceh.ac.uk/algal-blooms/bloomin-algae</p><p>If you do suspect a "
+"bloom at any site, please avoid contact with the water or any shoreline "
+"scum. If you, or your pet, become unwell after contact with water that may "
+"be contaminated with blue-green algae, we’d recommend you seek immediate "
+"medical or veterinary advice.</p><p>Thanks again for using the "
+"app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
+"Hydrology</p></2></0>"
+msgstr ""
+
+# Verification message
+msgid ""
+"<0><p>Thanks for sending in your record using the Bloomin'Algae app. Your "
+"photo is unfortunately not clear enough to make a decision.</p><p>Please "
+"could you send in a new record with a closer photo of the water (if "
+"possible, about 30-50 cm from the water surface and/or any surface "
+"scums).</p><2><p>Please see our website for further help with identifying "
+"blooms of blue-green algae : https://www.ceh.ac.uk/algal-blooms/bloomin-"
+"algae</p><p>If you do suspect a bloom at any site, please avoid contact with"
+" the water or any shoreline scum. If you, or your pet, become unwell after "
+"contact with water that may be contaminated with blue-green algae, we’d "
+"recommend you seek immediate medical or veterinary advice.</p><p>Thanks "
+"again for using the app!</p><p>The Bloomin'Algae team at the UK Centre for "
+"Ecology & Hydrology</p></2></0>"
+msgstr ""
+
+# Part of photo picker
+msgid "Are you sure you want to remove this photo?"
+msgstr ""
+
+# Part of photo picker
+msgid "Note: it will remain in the gallery."
+msgstr ""
+
+# Uploaded record message
+msgid "This record has been uploaded and can not be edited."
+msgstr ""
+
+# Successfully logged in message
+msgid "Successfully logged in"
+msgstr ""
+
+# User form validation message
+msgid "Please fill in"
+msgstr ""
+
+# User form validation message
+msgid "email must be a valid email"
+msgstr ""
+
+# App Setting message
+msgid "You can reset the app data to its default settings."
+msgstr ""
+
+# Account option
+msgid "Delete account"
+msgstr ""
+
+# Account option message
+msgid "You can delete your user account from the system."
+msgstr ""
+
+# Account option message
+msgid "Account delete"
+msgstr ""
+
+# Account option message
+msgid "Are you sure you want to delete your account?"
+msgstr ""
+
+# Account option message
+msgid ""
+"This will remove your account on the iRecord website. You will lose access "
+"to any records that you have previously submitted using the app or website."
+msgstr ""
+
+# Photo picker failed to pick photo error message
+msgid "Sorry, we couldn't get the image."
+msgstr ""
+
+# Successfully registration alert message
+msgid "Welcome aboard"
+msgstr ""
+
+# Language info popup
+msgid ""
+"The language will default to the language of your phone settings. If you "
+"want to change the language go to \"Settings\" in the Bloomin' Algae app "
+"menu and select \"Language\""
+msgstr ""
+
+# Successfully registration alert message
+msgid ""
+"Before starting any records please check your email and click on the "
+"verification link."
+msgstr ""
+
+# Country choice
+msgid "Country"
+msgstr ""
+
+# Country choice
+msgid "Belgium"
+msgstr ""
+
+# Country choice
+msgid "Norway"
+msgstr ""
+
+# Country choice
+msgid "Luxembourg"
+msgstr ""
+
+# Country choice
+msgid "Netherlands"
+msgstr ""
+
+# Country choice
+msgid "United Kingdom"
+msgstr ""
+
+# User registration
+msgid "email is not valid"
+msgstr ""
+
+# User verification messages
+msgid ""
+"Before starting any surveys please check your email and click on the "
+"verification link."
+msgstr ""
+
+# User verification messages
+msgid "Resend"
+msgstr ""
+
+# User verification messages
+msgid "Looks like your email hasn't been verified yet."
+msgstr ""
+
+# User verification messages
+msgid "Should we resend the verification email?"
+msgstr ""
+
+# User verification messages
+msgid ""
+"A new verification email was successfully sent now. If you did not receive "
+"the email, then check your Spam or Junk email folders."
+msgstr ""
