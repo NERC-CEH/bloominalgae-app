@@ -1,9 +1,9 @@
 .pending-surveys-badge {
-  font-size: 0.8em;
-  color: var(--ion-color-light);
   background: var(--ion-color-warning);
   padding: 4px;
+  color: var(--ion-color-light);
   font-weight: bold;
+  font-size: 0.8em;
 
   &.ios {
     padding: 0 4px;

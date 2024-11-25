@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import * as Yup from 'yup';
+import { z, object } from 'zod';
 import {
   DrupalUserModel,
   device,
@@ -9,9 +9,8 @@ import {
   DrupalUserModelAttrs,
 } from '@flumens';
 import { NavContext } from '@ionic/react';
-import * as Sentry from '@sentry/browser';
 import CONFIG from 'common/config';
-import { genericStore } from './store';
+import { mainStore } from './store';
 
 export interface Attrs extends DrupalUserModelAttrs {
   firstName?: string;
@@ -30,22 +29,25 @@ const defaults: Attrs = {
   email: '',
 };
 
-export class UserModel extends DrupalUserModel {
-  attrs: Attrs = DrupalUserModel.extendAttrs(this.attrs, defaults);
+export class UserModel extends DrupalUserModel<Attrs> {
+  static registerSchema: any = object({
+    email: z.string().email('Please fill in'),
+    password: z.string().min(1, 'Please fill in'),
+    firstName: z.string().min(1, 'Please fill in'),
+    secondName: z.string().min(1, 'Please fill in'),
+  });
 
-  resetSchema: any = this.resetSchema;
+  static resetSchema: any = object({
+    email: z.string().email('Please fill in'),
+  });
 
-  loginSchema: any = this.loginSchema;
-
-  registerSchema: any = Yup.object().shape({
-    email: Yup.string().email('email is not valid').required('Please fill in'),
-    password: Yup.string().required('Please fill in'),
-    firstName: Yup.string().required('Please fill in'),
-    secondName: Yup.string().required('Please fill in'),
+  static loginSchema: any = object({
+    email: z.string().email('Please fill in'),
+    password: z.string().min(1, 'Please fill in'),
   });
 
   constructor(options: any) {
-    super(options);
+    super({ ...options, attrs: { ...defaults, ...options.attrs } });
 
     const checkForValidation = () => {
       if (this.isLoggedIn() && !this.attrs.verified) {
@@ -53,17 +55,7 @@ export class UserModel extends DrupalUserModel {
         this.refreshProfile();
       }
     };
-    this.ready
-      ?.then(() => {
-        this.attrs.password && this._migrateAuth();
-      })
-      .then(checkForValidation);
-  }
-
-  async logIn(email: string, password: string) {
-    await super.logIn(email, password);
-
-    if (this.id) Sentry.setUser({ id: this.id });
+    this.ready?.then(checkForValidation);
   }
 
   getPrettyName() {
@@ -96,49 +88,6 @@ export class UserModel extends DrupalUserModel {
     return true;
   }
 
-  async getAccessToken(...args: any) {
-    if (this.attrs.password) await this._migrateAuth();
-
-    return super.getAccessToken(...args);
-  }
-
-  /**
-   * Migrate from Indicia API auth to JWT. Remove in the future versions.
-   */
-  async _migrateAuth() {
-    console.log('Migrating user auth.');
-    if (!this.attrs.email) {
-      // email might not exist
-      delete this.attrs.password;
-      return this.save();
-    }
-
-    try {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      const tokens = await this._exchangePasswordToTokens(
-        this.attrs.email,
-        this.attrs.password
-      );
-      this.attrs.tokens = tokens;
-      delete this.attrs.password;
-
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      await this._refreshAccessToken();
-    } catch (e: any) {
-      if (e.message === 'Incorrect password or email') {
-        console.log('Removing invalid old user credentials');
-        delete this.attrs.password;
-        return this.logOut();
-      }
-      console.error(e);
-      throw e;
-    }
-
-    return this.save();
-  }
-
   resetDefaults() {
     return super.resetDefaults(defaults);
   }
@@ -146,7 +95,7 @@ export class UserModel extends DrupalUserModel {
 
 const userModel = new UserModel({
   cid: 'user',
-  store: genericStore,
+  store: mainStore,
   config: CONFIG.backend,
 });
 

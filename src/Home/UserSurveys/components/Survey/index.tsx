@@ -1,8 +1,7 @@
 import { observer } from 'mobx-react';
 import { checkmarkCircle, helpCircle, closeCircle } from 'ionicons/icons';
-import PropTypes from 'prop-types';
 import { Trans as T } from 'react-i18next';
-import { useAlert, date as dateUtils } from '@flumens';
+import { getRelativeDate, useAlert } from '@flumens';
 import {
   IonItem,
   IonLabel,
@@ -10,12 +9,13 @@ import {
   IonItemOptions,
   IonItemOption,
 } from '@ionic/react';
+import Sample from 'common/models/sample';
 import ErrorMessage from './components/ErrorMessage';
 import OnlineStatus from './components/OnlineStatus';
 import logo from './logo.png';
 import './styles.scss';
 
-function deleteSurvey(sample, alert) {
+function deleteSurvey(sample: Sample, alert: any) {
   alert({
     header: 'Delete',
     message: <T>Are you sure you want to delete this record ?</T>,
@@ -34,8 +34,10 @@ function deleteSurvey(sample, alert) {
   });
 }
 
-const Survey = ({ sample }) => {
-  const survey = sample.getSurvey();
+type Props = { sample: Sample };
+
+const Survey = ({ sample }: Props) => {
+  const survey: any = sample.getSurvey();
   const alert = useAlert();
 
   const { synchronising } = sample.remote;
@@ -44,7 +46,9 @@ const Survey = ({ sample }) => {
 
   const speciesPhoto = occ.media.length ? occ.media[0].attrs.thumbnail : null;
 
-  const href = !synchronising && `/${survey.name}/start/${sample.cid}`;
+  const href = !synchronising
+    ? `/survey/${survey.name}/${sample.cid}`
+    : undefined;
 
   const getProfilePhoto = () => {
     const photo = speciesPhoto ? (
@@ -59,14 +63,12 @@ const Survey = ({ sample }) => {
   function getSampleInfo() {
     const { date } = sample.attrs;
 
-    const prettyDate = dateUtils.print(date);
-
     return (
       <div className="record-info">
         <h3>
           <T>Record</T>
         </h3>
-        <p>{prettyDate}</p>
+        <p>{getRelativeDate(date)}</p>
       </div>
     );
   }
@@ -100,7 +102,7 @@ const Survey = ({ sample }) => {
         detailIcon={detailIcon}
         className={idClass}
       >
-        {getProfilePhoto(speciesPhoto)}
+        {getProfilePhoto()}
 
         <IonLabel className="ion-no-margin">{getSampleInfo()}</IonLabel>
         <OnlineStatus sample={sample} />
@@ -112,10 +114,6 @@ const Survey = ({ sample }) => {
       </IonItemOptions>
     </IonItemSliding>
   );
-};
-
-Survey.propTypes = {
-  sample: PropTypes.object.isRequired,
 };
 
 export default observer(Survey);

@@ -14,14 +14,12 @@ import {
   IonRouterOutlet,
 } from '@ionic/react';
 import PendingSurveysBadge from 'common/Components/PendingSurveysBadge';
-import savedSamples from 'models/savedSamples';
+import savedSamples from 'models/collections/samples';
 import Guide from './Guide';
 import Home from './Home';
 import MapComponent from './Map';
-import Surveys from './UserSurveys';
+import UserSurveys from './UserSurveys';
 import './styles.scss';
-
-const UserSurveys = () => <Surveys savedSamples={savedSamples} />;
 
 const HomeComponent = () => {
   return (
@@ -32,7 +30,7 @@ const HomeComponent = () => {
           <Route path="/home/info" component={Home} exact />
           <Route path="/home/map" component={MapComponent} exact />
           <Route path="/home/guide" component={Guide} exact />
-          <Route path="/home/surveys" component={UserSurveys} exact />
+          <Route path="/home/surveys/:id?" component={UserSurveys} exact />
         </IonRouterOutlet>
 
         <IonTabBar slot="bottom" className="home-tab-bar">

@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { observer } from 'mobx-react';
 import {
   shareSocialOutline,
@@ -9,13 +8,7 @@ import {
   arrowUndoOutline,
 } from 'ionicons/icons';
 import { Trans as T, useTranslation } from 'react-i18next';
-import {
-  useAlert,
-  Main,
-  MenuAttrToggle,
-  InfoMessage,
-  MenuAttrItem,
-} from '@flumens';
+import { useAlert, Main, Toggle, InfoMessage, MenuAttrItem } from '@flumens';
 import { IonIcon, IonList, IonItem, IonLabel } from '@ionic/react';
 import countries from 'common/countries';
 import languages from 'common/languages';
@@ -32,7 +25,7 @@ function useUserDeleteDialog(deleteUser: any) {
           <T>Are you sure you want to delete your account?</T>
           <InfoMessage
             color="danger"
-            icon={warningOutline}
+            prefix={<IonIcon icon={warningOutline} size="6" />}
             className="destructive-warning"
           >
             This will remove your account on the iRecord website. You will lose
@@ -97,7 +90,7 @@ type Props = {
   country?: string;
 };
 
-const MenuMain: FC<Props> = ({
+const MenuMain = ({
   isLoggedIn,
   deleteUser,
   resetApp,
@@ -105,7 +98,7 @@ const MenuMain: FC<Props> = ({
   country,
   sendAnalytics,
   onToggle,
-}) => {
+}: Props) => {
   const showUserDeleteDialog = useUserDeleteDialog(deleteUser);
 
   const showResetDialog = useResetDialog(resetApp);
@@ -119,8 +112,8 @@ const MenuMain: FC<Props> = ({
 
   return (
     <Main className="app-settings">
-      <IonList lines="full">
-        <div className="rounded">
+      <IonList lines="full" className="flex flex-col gap-3">
+        <div className="rounded-list">
           <MenuAttrItem
             routerLink="/settings/language"
             routerOptions={{ unmount: true }} // Pick a new language on return
@@ -139,40 +132,40 @@ const MenuMain: FC<Props> = ({
             skipValueTranslation
           />
 
-          <MenuAttrToggle
+          <Toggle
             label="Share App Analytics"
-            icon={shareSocialOutline}
+            prefix={<IonIcon icon={shareSocialOutline} className="size-6" />}
             onChange={onSendAnalyticsToggle}
-            value={sendAnalytics}
+            defaultSelected={sendAnalytics}
           />
-          <InfoMessage color="medium">
+          <InfoMessage>
             Share app crash data so we can make the app more reliable.
           </InfoMessage>
         </div>
 
-        <div className="destructive-item rounded">
+        <div className="destructive-item rounded-list">
           <IonItem onClick={showResetDialog}>
             <IonIcon icon={arrowUndoOutline} size="small" slot="start" />
             <IonLabel>Reset app</IonLabel>
           </IonItem>
-          <InfoMessage color="medium">
+          <InfoMessage>
             You can reset the app data to its default settings.
           </InfoMessage>
-
-          {isLoggedIn && (
-            <>
-              <IonItem onClick={showUserDeleteDialog}>
-                <IonIcon icon={personRemoveOutline} size="small" slot="start" />
-                <IonLabel>
-                  <T>Delete account</T>
-                </IonLabel>
-              </IonItem>
-              <InfoMessage color="medium">
-                You can delete your user account from the system.
-              </InfoMessage>
-            </>
-          )}
         </div>
+
+        {isLoggedIn && (
+          <div className="destructive-item rounded-list">
+            <IonItem onClick={showUserDeleteDialog}>
+              <IonIcon icon={personRemoveOutline} size="small" slot="start" />
+              <IonLabel>
+                <T>Delete account</T>
+              </IonLabel>
+            </IonItem>
+            <InfoMessage>
+              You can delete your user account from the system.
+            </InfoMessage>
+          </div>
+        )}
       </IonList>
     </Main>
   );

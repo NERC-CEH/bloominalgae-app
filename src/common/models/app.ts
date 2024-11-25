@@ -1,5 +1,5 @@
 import { Model, ModelAttrs } from '@flumens';
-import { genericStore } from './store';
+import { mainStore } from './store';
 
 export interface Attrs extends ModelAttrs {
   sendAnalytics: boolean;
@@ -42,11 +42,9 @@ const defaults: Attrs = {
   'draftId:survey': '',
 };
 
-export class AppModel extends Model {
-  attrs: Attrs = Model.extendAttrs(this.attrs, defaults);
-
+export class AppModel extends Model<Attrs> {
   constructor(options: any) {
-    super(options);
+    super({ ...options, attrs: { ...defaults, ...options.attrs } });
 
     // fix old language choices - TODO: remove in the future
     this.ready?.then(() => {
@@ -63,5 +61,5 @@ export class AppModel extends Model {
   }
 }
 
-const appModel = new AppModel({ cid: 'app', store: genericStore });
+const appModel = new AppModel({ cid: 'app', store: mainStore });
 export default appModel;

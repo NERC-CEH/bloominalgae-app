@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react';
+import { useEffect } from 'react';
 import {
   LayerProps,
   Layer as MapLayer,
@@ -10,7 +10,7 @@ type Props = {
   source: string;
 };
 
-const Layer: FC<Props> = ({ source }) => {
+const Layer = ({ source }: Props) => {
   const layer: LayerProps = {
     id: 'clusters',
     type: 'circle',
@@ -57,7 +57,7 @@ const Layer: FC<Props> = ({ source }) => {
 
     const mapboxSource = mapRef.current.getSource('records') as GeoJSONSource;
 
-    const flyToCluster: (error: any, zoom: number) => void = (err, zoom) => {
+    const flyToCluster = (err: any, zoom: any) => {
       if (err) return;
 
       mapRef.current?.flyTo({

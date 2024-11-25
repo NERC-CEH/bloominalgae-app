@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { ReactNode } from 'react';
 import { observer } from 'mobx-react';
 import { useTranslation } from 'react-i18next';
 import { Page, Main } from '@flumens';
@@ -9,7 +9,9 @@ import CountryButton from './CountryButton';
 import backgroundImage from './backgroundImage.jpg';
 import './styles.scss';
 
-const CountrySelect: FC<any> = ({ children }) => {
+type Props = { children: ReactNode };
+
+const CountrySelect = ({ children }: Props) => {
   const { t } = useTranslation();
 
   if (appModel.attrs.country) return children;

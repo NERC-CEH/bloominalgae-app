@@ -1,7 +1,5 @@
 import { useContext } from 'react';
 import { observer } from 'mobx-react';
-import PropTypes from 'prop-types';
-import exact from 'prop-types-exact';
 import { Page, Main, Header } from '@flumens';
 import {
   IonList,
@@ -12,23 +10,24 @@ import {
   NavContext,
 } from '@ionic/react';
 import languages from 'common/languages';
+import appModel from 'common/models/app';
 
-function SelectLanguage({ appModel }) {
+function SelectLanguage() {
   const navigate = useContext(NavContext);
 
   const currentValue = appModel.attrs.language;
 
-  function onSelect(e) {
+  function onSelect(e: any) {
     appModel.attrs.language = e.target.value; // eslint-disable-line no-param-reassign
     appModel.save();
 
     navigate.goBack();
   }
 
-  const alphabetically = ([, l1], [, l2]) =>
+  const alphabetically = ([, l1]: any, [, l2]: any): any =>
     typeof l1 === 'string' && l1.localeCompare(l2);
 
-  const languageEntries = ([value, language]) => {
+  const languageEntries = ([value, language]: any) => {
     if (typeof language === 'object') return null;
 
     return (
@@ -50,7 +49,7 @@ function SelectLanguage({ appModel }) {
       <Main>
         <IonList>
           <IonRadioGroup
-            className="radio-input-attr "
+            className="radio-input-attr"
             onIonChange={onSelect}
             value={currentValue}
           >
@@ -61,9 +60,5 @@ function SelectLanguage({ appModel }) {
     </Page>
   );
 }
-
-SelectLanguage.propTypes = exact({
-  appModel: PropTypes.object.isRequired,
-});
 
 export default observer(SelectLanguage);

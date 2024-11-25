@@ -1,13 +1,13 @@
-import { FC } from 'react';
+import { ReactNode } from 'react';
 import { observer } from 'mobx-react';
-import { AppModel } from 'models/app';
+import appModel from 'models/app';
 import OnboardingScreens from './OnBoardingScreens';
 
 interface Props {
-  appModel: AppModel;
+  children: ReactNode;
 }
 
-const onBoardingScreens: FC<Props> = ({ appModel, children }) => {
+const onBoardingScreens = ({ children }: Props) => {
   const { showedWelcome } = appModel.attrs;
 
   if (showedWelcome) {

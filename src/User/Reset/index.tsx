@@ -1,25 +1,21 @@
-import { FC, useContext } from 'react';
+import { useContext } from 'react';
 import { Trans as T } from 'react-i18next';
-import { Page, Header, device, useAlert, useLoader, useToast } from '@flumens';
+import { TypeOf } from 'zod';
+import { useToast, useLoader, Page, Header, device, useAlert } from '@flumens';
 import { NavContext } from '@ionic/react';
-import userModel from 'models/user';
+import userModel, { UserModel } from 'models/user';
 import Main from './Main';
-import './styles.scss';
 
-export type Details = {
-  password: string;
-  email: string;
-};
+type Details = TypeOf<typeof UserModel.resetSchema>;
 
-const ResetController: FC = () => {
-  const context = useContext(NavContext);
+const ResetController = () => {
+  const { goBack } = useContext(NavContext);
   const alert = useAlert();
+
   const toast = useToast();
   const loader = useLoader();
 
-  const onSuccess = () => {
-    context.navigate('/home/menu', 'root');
-  };
+  const onSuccess = () => goBack();
 
   async function onSubmit(details: Details) {
     const { email } = details;
@@ -56,8 +52,8 @@ const ResetController: FC = () => {
 
   return (
     <Page id="user-reset">
-      <Header className="ion-no-border" defaultHref="/user/login" />
-      <Main schema={userModel.resetSchema} onSubmit={onSubmit} />
+      <Header className="ion-no-border" title="Reset" />
+      <Main onSubmit={onSubmit} />
     </Page>
   );
 };

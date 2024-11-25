@@ -39,7 +39,6 @@ export default class Media extends MediaOriginal {
       if (silent) return;
 
       this.parent.save();
-      return;
     } catch (err) {
       console.error(err);
     }

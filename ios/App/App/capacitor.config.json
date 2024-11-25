@@ -8,5 +8,18 @@
 		"SplashScreen": {
 			"androidScaleType": "CENTER_CROP"
 		}
-	}
+	},
+	"packageClassList": [
+		"CapacitorSQLitePlugin",
+		"AppPlugin",
+		"CAPCameraPlugin",
+		"DevicePlugin",
+		"FilesystemPlugin",
+		"GeolocationPlugin",
+		"HapticsPlugin",
+		"KeyboardPlugin",
+		"CAPNetworkPlugin",
+		"SplashScreenPlugin",
+		"StatusBarPlugin"
+	]
 }

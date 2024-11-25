@@ -1,10 +1,9 @@
-import { FC } from 'react';
 import { Trans as T } from 'react-i18next';
 import { IonItem, IonLabel } from '@ionic/react';
 
 type Props = { onSelect: any; country: any };
 
-const CountryButton: FC<Props> = ({ onSelect, country }) => {
+const CountryButton = ({ onSelect, country }: Props) => {
   const { flag, label, value } = country;
 
   const selectCountry = () => onSelect(value);

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 import { observer } from 'mobx-react';
 import {
   heartOutline,
@@ -7,8 +8,6 @@ import {
   personOutline,
   logOut,
 } from 'ionicons/icons';
-import PropTypes from 'prop-types';
-import exact from 'prop-types-exact';
 import { Trans as T } from 'react-i18next';
 import { useLocation } from 'react-router';
 import { useAlert } from '@flumens';
@@ -21,39 +20,16 @@ import {
   IonMenu,
   IonMenuToggle,
   IonFooter,
-  IonCheckbox,
 } from '@ionic/react';
 import config from 'common/config';
 import flumensLogo from 'common/images/flumens.svg';
 import './styles.scss';
 
-function showLogoutConfirmationDialog(callback, alert) {
-  let deleteData = true;
-
-  const onCheckboxChange = e => {
-    deleteData = e.detail.checked;
-  };
-
+function showLogoutConfirmationDialog(callback: any, alert: any) {
   alert({
     header: 'Logout',
     cssClass: 'logout-alert',
-    message: (
-      <>
-        <T>Are you sure you want to logout?</T>
-        <br />
-        <br />
-        <IonItem
-          lines="none"
-          className="log-out-checkbox"
-          style={{ background: 'transperant' }}
-        >
-          <IonLabel>
-            <T>Discard local data</T>
-          </IonLabel>
-          <IonCheckbox checked onIonChange={onCheckboxChange} />
-        </IonItem>
-      </>
-    ),
+    message: <T>Are you sure you want to logout?</T>,
     buttons: [
       {
         text: 'Cancel',
@@ -64,7 +40,7 @@ function showLogoutConfirmationDialog(callback, alert) {
       {
         text: 'Logout',
         cssClass: 'primary',
-        handler: () => callback(deleteData),
+        handler: () => callback(),
       },
     ],
   });
@@ -127,8 +103,8 @@ const routes = {
   ],
 };
 
-function renderMenuRoutes(list, location) {
-  const getMenuItem = p => (
+function renderMenuRoutes(list: any, location: any) {
+  const getMenuItem = (p: any) => (
     <IonMenuToggle key={p.title} auto-hide="false">
       <IonItem
         detail={false}
@@ -150,8 +126,8 @@ function renderMenuRoutes(list, location) {
   return list.map(getMenuItem);
 }
 
-function loggingOut(userModel, savedSamples, alert) {
-  const onReset = async reset => {
+function loggingOut(userModel: any, savedSamples: any, alert: any) {
+  const onReset = async (reset: any) => {
     if (reset) {
       await savedSamples.resetDefaults();
     }
@@ -162,7 +138,7 @@ function loggingOut(userModel, savedSamples, alert) {
   showLogoutConfirmationDialog(onReset, alert);
 }
 
-const getLogoutButton = (userModel, savedSamples, alert) => {
+const getLogoutButton = (userModel: any, savedSamples: any, alert: any) => {
   const { firstName, secondName } = userModel.attrs; // console.log('Home:Info: logging out.');
 
   const loggingOutWrap = () => loggingOut(userModel, savedSamples, alert);
@@ -177,11 +153,11 @@ const getLogoutButton = (userModel, savedSamples, alert) => {
   );
 };
 
-const Menu = ({ userModel, savedSamples }) => {
+const Menu = ({ userModel, savedSamples }: any) => {
   const location = useLocation();
   const alert = useAlert();
 
-  const getRoutes = routesList => renderMenuRoutes(routesList, location);
+  const getRoutes = (routesList: any) => renderMenuRoutes(routesList, location);
 
   const isLoggedIn = !!userModel.attrs.email;
 
@@ -198,11 +174,10 @@ const Menu = ({ userModel, savedSamples }) => {
       </IonContent>
 
       <IonFooter className="ion-no-border">
-        <div>
+        <div className="flex flex-col justify-center py-2">
           <a href="https://flumens.io">
-            <img src={flumensLogo} alt="" />
+            <img src={flumensLogo} alt="" className="inline-block" />
           </a>
-
           <p className="app-version">
             <T>App version</T>
             {`: v${config.version} (${config.build})`}
@@ -212,10 +187,5 @@ const Menu = ({ userModel, savedSamples }) => {
     </IonMenu>
   );
 };
-
-Menu.propTypes = exact({
-  userModel: PropTypes.object.isRequired,
-  savedSamples: PropTypes.array.isRequired,
-});
 
 export default observer(Menu);

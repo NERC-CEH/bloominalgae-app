@@ -1,9 +1,10 @@
-import { FC, useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { arrowForward, alertCircleOutline } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
-import SwiperCore, { Pagination } from 'swiper';
+import SwiperCore from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Page } from '@flumens';
 import {
@@ -18,13 +19,15 @@ import firstBackgroundImage from './images/first.jpg';
 import secondBackgroundImage from './images/second.jpg';
 import './styles.scss';
 
-const Main: FC = ({ children }) => <div>{children}</div>;
+// Fixes iOS 12 scrolling issue.
+type MainProps = { children: ReactNode };
+const Main = ({ children }: MainProps) => <div>{children}</div>;
 
 type Props = {
   onExit: any;
 };
 
-const OnboardingScreens: FC<Props> = ({ onExit }) => {
+const OnboardingScreens = ({ onExit }: Props) => {
   const [moreSlidesExist, setMoreSlidesExist] = useState(true);
   const [controlledSwiper, setControlledSwiper] = useState<SwiperCore>();
 

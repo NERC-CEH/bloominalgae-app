@@ -1,15 +1,15 @@
-import { FC, useEffect } from 'react';
+import { useEffect } from 'react';
 import { observer } from 'mobx-react';
 import { Trans as T, useTranslation } from 'react-i18next';
 import { useAlert } from '@flumens';
 import { IonItem, IonCheckbox, IonLabel } from '@ionic/react';
 import appModel from 'models/app';
-import savedSamples from 'models/savedSamples';
+import savedSamples from 'models/collections/samples';
 import './styles.scss';
 
 let isPopupVisible = false;
 
-const UpdatedRecordsDialog: FC = () => {
+const UpdatedRecordsDialog = () => {
   const alert = useAlert();
   const { t } = useTranslation();
 

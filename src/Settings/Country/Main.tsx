@@ -1,6 +1,4 @@
 import { observer } from 'mobx-react';
-import PropTypes from 'prop-types';
-import exact from 'prop-types-exact';
 import { Trans as T, useTranslation } from 'react-i18next';
 import { Main } from '@flumens';
 import {
@@ -11,15 +9,16 @@ import {
   IonLabel,
 } from '@ionic/react';
 import countries from 'common/countries';
+import { AppModel } from 'common/models/app';
 
-const getCountriesOptions = t => {
-  const alphabetically = (country1, country2) =>
+const getCountriesOptions = (t: any) => {
+  const alphabetically = (country1: any, country2: any) =>
     country1.label === 'Other'
       ? 1
       : t(country1.label).localeCompare(t(country2.label));
 
-  const getCountry = ({ value, label }) => (
-    <IonItem key={value} className="rounded">
+  const getCountry = ({ value, label }: any) => (
+    <IonItem key={value} className="rounded-list">
       <IonLabel>
         <T>{label}</T>
       </IonLabel>
@@ -30,7 +29,12 @@ const getCountriesOptions = t => {
   return countries.sort(alphabetically).map(getCountry);
 };
 
-function SelectCountryContainer({ appModel, onSelect }) {
+type Props = {
+  appModel: AppModel;
+  onSelect: any;
+};
+
+function SelectCountryContainer({ appModel, onSelect }: Props) {
   const { t } = useTranslation();
   const currentValue = appModel.attrs.country;
 
@@ -38,7 +42,7 @@ function SelectCountryContainer({ appModel, onSelect }) {
     <Main>
       <IonList>
         <IonRadioGroup
-          className="radio-input-attr "
+          className="radio-input-attr"
           onIonChange={onSelect}
           value={currentValue}
         >
@@ -48,10 +52,5 @@ function SelectCountryContainer({ appModel, onSelect }) {
     </Main>
   );
 }
-
-SelectCountryContainer.propTypes = exact({
-  appModel: PropTypes.object.isRequired,
-  onSelect: PropTypes.func.isRequired,
-});
 
 export default observer(SelectCountryContainer);

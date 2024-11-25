@@ -1,3 +1,7 @@
+## 3.2.0
+
+- Framework upgrade.
+
 ## 3.1.1
 
 - Improved user verification flow.

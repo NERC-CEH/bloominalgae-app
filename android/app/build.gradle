@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     namespace "uk.ac.ceh.algae"
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "uk.ac.ceh.algae"
         minSdkVersion rootProject.ext.minSdkVersion

@@ -49,14 +49,14 @@ function Home() {
     <Page id="home-info">
       <Header />
 
-      <Main forceOverscroll="false">
+      <Main forceOverscroll={false}>
         <div
           className="app-home-background"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
           <img className="app-logo" src={appLogo} alt="" />
           <IonItemGroup>
-            <IonRouterLink routerLink="/survey/start" routerDirection="none">
+            <IonRouterLink routerLink="/survey/main" routerDirection="none">
               <IonItem className="pretty-button" detail>
                 <IonLabel>
                   <T>Record</T>

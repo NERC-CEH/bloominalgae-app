@@ -1,7 +1,7 @@
 import { informationCircle } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
 import { Page, InfoMessage } from '@flumens';
-import { IonItemDivider, IonContent } from '@ionic/react';
+import { IonItemDivider, IonContent, IonIcon } from '@ionic/react';
 import Header from 'Components/Header';
 import Card from './Component/Card';
 import img1 from './images/image1.jpg';
@@ -52,8 +52,8 @@ const nonBgCards = [
   },
 ];
 
-const getCards = data => {
-  const showCards = card => <Card key={card.text} card={card} />;
+const getCards = (data: any) => {
+  const showCards = (card: any) => <Card key={card.text} card={card} />;
 
   return data.map(showCards);
 };
@@ -63,7 +63,11 @@ function Guide() {
     <Page id="guide">
       <Header title="Identify" styleId="none" />
       <IonContent>
-        <InfoMessage icon={informationCircle}>
+        <InfoMessage
+          prefix={<IonIcon src={informationCircle} className="size-6" />}
+          color="tertiary"
+          className="m-2"
+        >
           If you are still not sure after looking at this guide please submit
           the record anyway
         </InfoMessage>

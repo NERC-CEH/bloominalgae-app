@@ -1,119 +1,103 @@
+@import '@ionic/core/css/ionic.bundle.css';
 @import '@flumens/ionic/dist/themes/rounded.css';
-@import './themeAccessibility.scss';
 
-:root {
-  --ion-color-primary: #098b5c;
-  --ion-color-primary-rgb: 9, 139, 92;
-  --ion-color-primary-contrast: #ffffff;
-  --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #087a51;
-  --ion-color-primary-very-dark: #095338;
-  --ion-color-primary-tint: #22976c;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  --ion-color-secondary: #a4cc38;
-  --ion-color-secondary-rgb: 164, 204, 56;
-  --ion-color-secondary-contrast: #ffffff;
-  --ion-color-secondary-contrast-rgb: 0, 0, 0;
-  --ion-color-secondary-shade: #90b431;
-  --ion-color-secondary-tint: #add14c;
-
-  --ion-color-tertiary: #008eec;
-  --ion-color-tertiary-rgb: 82, 96, 255;
-  --ion-color-tertiary-contrast: #ffffff;
-  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
-  --ion-color-tertiary-shade: #1574b3;
-  --ion-color-tertiary-tint: #5bbdff;
-
-  --ion-color-success: #00bd1a;
-  --ion-color-success-rgb: 0, 189, 26;
-  --ion-color-success-contrast: #ffffff;
-  --ion-color-success-contrast-rgb: 255, 255, 255;
-  --ion-color-success-shade: #00a617;
-  --ion-color-success-tint: #1ac431;
-
-  --ion-color-warning: #e0b500;
-  --ion-color-warning-rgb: 255, 206, 0;
-  --ion-color-warning-contrast: #ffffff;
-  --ion-color-warning-contrast-rgb: 255, 255, 255;
-  --ion-color-warning-shade: #c7a100;
-  --ion-color-warning-tint: #ffd31a;
-
-  --ion-color-danger: #f04141;
-  --ion-color-danger-rgb: 245, 61, 61;
-  --ion-color-danger-contrast: #ffffff;
-  --ion-color-danger-contrast-rgb: 255, 255, 255;
-  --ion-color-danger-shade: #d33939;
-  --ion-color-danger-tint: #f25454;
-
-  --ion-color-dark: #222428;
-  --ion-color-dark-rgb: 34, 34, 34;
-  --ion-color-dark-contrast: #ffffff;
-  --ion-color-dark-contrast-rgb: 255, 255, 255;
-  --ion-color-dark-shade: #1e2023;
-  --ion-color-dark-tint: #383a3e;
-
-  --ion-color-medium: #92949c;
-  --ion-color-medium-rgb: 146, 148, 156;
-  --ion-color-medium-contrast: #ffffff;
-  --ion-color-medium-contrast-rgb: 255, 255, 255;
-  --ion-color-medium-shade: #808289;
-  --ion-color-medium-tint: #9d9fa6;
-
-  --ion-color-light: #ffffff;
-  --ion-color-light-rgb: 244, 245, 248;
-  --ion-color-light-contrast: #000000;
-  --ion-color-light-contrast-rgb: 0, 0, 0;
-  --ion-color-light-shade: #e6e6e6;
-  --ion-color-light-tint: #f5f6f9;
-
-  --ion-page-background: #fbfffc;
+@layer base {
+  a:not([role='button']) {
+    // change link colours
+    color: var(--ion-color-primary);
+  }
+  h1 {
+    // tailwind is loaded later than ionic so resets some of the ionic's base styles
+    @apply mt-5 text-2xl;
+  }
 }
 
 :root {
+  --ion-color-primary: var(--color-primary);
+  --ion-color-primary-rgb: var(--color-primary-rgb);
+  --ion-color-primary-contrast: var(--color-primary-50);
+  --ion-color-primary-contrast-rgb: var(--color-primary-50-rgb);
+  --ion-color-primary-shade: var(--color-primary-800);
+  --ion-color-primary-tint: var(--color-primary-500);
+  --ion-color-primary-dark: var(--color-primary-950);
+
+  --ion-color-secondary: var(--color-secondary);
+  --ion-color-secondary-rgb: var(--color-secondary-rgb);
+  --ion-color-secondary-contrast: var(--color-secondary-50);
+  --ion-color-secondary-contrast-rgb: var(--color-secondary-50-rgb);
+  --ion-color-secondary-shade: var(--color-secondary-700);
+  --ion-color-secondary-tint: var(--color-secondary-500);
+  --ion-color-secondary-dark: var(--color-secondary-950);
+
+  --ion-color-tertiary: var(--color-tertiary);
+  --ion-color-tertiary-rgb: var(--color-tertiary-rgb);
+  --ion-color-tertiary-contrast: var(--color-tertiary-50);
+  --ion-color-tertiary-contrast-rgb: var(--color-tertiary-50-rgb);
+  --ion-color-tertiary-shade: var(--color-tertiary-700);
+  --ion-color-tertiary-tint: var(--color-tertiary-500);
+  --ion-color-tertiary-dark: var(--color-tertiary-950);
+
+  --ion-color-success: var(--color-success);
+  --ion-color-success-rgb: var(--color-success-rgb);
+  --ion-color-success-contrast: var(--color-success-50);
+  --ion-color-success-contrast-rgb: var(--color-success-50-rgb);
+  --ion-color-success-shade: var(--color-success-700);
+  --ion-color-success-tint: var(--color-success-500);
+  --ion-color-success-dark: var(--color-success-950);
+
+  --ion-color-warning: var(--color-warning);
+  --ion-color-warning-rgb: var(--color-warning-rgb);
+  --ion-color-warning-contrast: var(--color-warning-50);
+  --ion-color-warning-contrast-rgb: var(--color-warning-50-rgb);
+  --ion-color-warning-shade: var(--color-warning-700);
+  --ion-color-warning-tint: var(--color-warning-500);
+  --ion-color-warning-dark: var(--color-warning-900);
+
+  --ion-color-danger: var(--color-danger);
+  --ion-color-danger-rgb: var(--color-danger-rgb);
+  --ion-color-danger-contrast: var(--color-danger-50);
+  --ion-color-danger-contrast-rgb: var(--color-danger-50-rgb);
+  --ion-color-danger-shade: var(--color-danger-700);
+  --ion-color-danger-tint: var(--color-danger-500);
+  --ion-color-danger-dark: var(--color-danger-950);
+
+  --ion-color-dark: var(--color-slate-900);
+  --ion-color-dark-contrast: var(--color-slate-50);
+  --ion-color-dark-shade: var(--color-slate-950);
+  --ion-color-dark-tint: var(--color-slate-800);
+
+  --ion-color-medium: var(--color-slate-400);
+  --ion-color-medium-contrast: var(--color-slate-50);
+  --ion-color-medium-shade: var(--color-slate-500);
+  --ion-color-medium-tint: var(--color-slate-300);
+
+  --ion-color-light: var(--color-white);
+  --ion-color-light-contrast: var(--color-slate-950);
+  --ion-color-light-shade: var(--color-slate-200);
+  --ion-color-light-tint: var(--color-white);
+
+  --ion-page-background: #f6f9f5;
+
   --ion-headings-font-weight: 300;
-  // --ion-item-border-color: red;
   --ion-item-border-color: rgb(0, 0, 0, 0.2);
-}
 
-.ios,
-.md {
   --ion-toolbar-background: var(--ion-color-primary);
   --ion-toolbar-color: #fff;
   --ion-toolbar-color-activated: #fff;
-}
 
-ion-toolbar {
-  --min-height: 54px;
-}
-
-a {
-  text-decoration: none;
-}
-
-ion-textarea {
-  --padding-start: 10px !important;
-}
-
-ion-item-divider {
-  background-color: #f9f9f9d9;
-  color: var(--ion-color-primary);
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.menu-note-item {
-  --inner-padding-start: 20px;
-  --inner-padding-end: 20px;
-  --inner-padding-top: 10px;
-  --inner-padding-bottom: 10px;
+  --form-value-color: rgba(var(--color-tertiary-800-rgb), 0.85);
 }
 
 .location-map .alert-wrapper .alert-message {
   padding: 0;
 
   p {
-    padding: 0 10px;
     margin: 0;
+    padding: 0 10px;
   }
 }
 
@@ -121,37 +105,9 @@ ion-item-divider {
   --background: var(--ion-color-light-tint);
 }
 
-.attr-page .info-message,
-#guide .info-message {
-  --background: var(--ion-color-tertiary);
-  ion-note {
-    color: var(--ion-color-tertiary-contrast);
-  }
-  ion-icon {
-    color: var(--ion-color-tertiary-contrast) !important;
-  }
-}
-
-ion-content {
-  --background: var(--ion-page-background);
-}
-
-ion-list.apps-section {
-  background: transparent;
-  padding: 0; // not working
-}
-
-.apps-section * {
-  --background: transparent;
-}
-
-ion-list {
-  padding: 0 !important;
-}
-
-ion-list,
-ion-item-divider {
-  background: transparent !important;
+// info messages
+.attr-page .info-message {
+  @apply border-tertiary-300/40 bg-tertiary-50 text-tertiary-900;
 }
 
 .photo-picker {
@@ -168,12 +124,12 @@ ion-item-divider {
     border-right: none;
 
     ion-button {
-      background: #3aa3644a;
-      margin: 5px;
-      height: calc(80px - 10px);
-      width: calc(80px - 10px);
-      border-radius: 15px;
       transform: none;
+      margin: 5px;
+      border-radius: 15px;
+      background: #3aa3644a;
+      width: calc(80px - 10px);
+      height: calc(80px - 10px);
     }
   }
 }
@@ -184,9 +140,9 @@ html.plt-tablet {
   .item-datetime,
   ion-list,
   ion-textarea {
-    max-width: 600px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
   }
 }
 
@@ -199,30 +155,104 @@ ion-list + ion-list > .rounded {
   margin-top: 0 !important;
 }
 
-// subtle borders around rounded items
+/** Ionic 7 fixes START **/
+
+// Fix chip outline
+.chip-outline {
+  border-width: 1px;
+  border-color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.32);
+}
+
+// Fix end-slot label placement
+ion-label[slot='end'] {
+  text-align: right;
+}
+
+// Fix cropped radio button icons
+ion-radio {
+  padding-right: 1px;
+}
+
+ion-list.apps-section {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.checkbox-input-attr .hasIcon ion-checkbox {
+  max-width: 85%;
+}
+
+ion-item.menu-attr-item ion-label[slot='end'] {
+  max-width: 33%;
+}
+
+/** Ionic 7 fixes END **/
+
+// list item picture
+.list-avatar {
+  @apply flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-md bg-neutral-100;
+}
+
+// top of the list title
+.list-title {
+  @apply mx-2 mb-3 mt-5 flex items-center text-[1.0625rem] text-primary-950;
+}
+
+// top of the list item
+.list-divider {
+  @apply flex items-center justify-between bg-neutral-200/70 p-1 px-2 text-sm text-neutral-600;
+}
+
+// Make Android icons dark, same as iOS
+ion-icon[slot='start'].md {
+  color: var(--ion-text-color, #000);
+}
+
+// unify icon strokes and widths
+ion-icon.size-5,
+ion-icon.size-6,
+.menu-attr-item ion-icon[slot='start'],
+ion-item > ion-icon[slot='start'],
+.single-photo-picker ion-icon[slot='start'] {
+  --ionicon-stroke-width: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+// Makes iOS menu items same height as Android
+ion-item .sc-ion-label-ios-h.sc-ion-label-ios-s.ios {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+// Add padding to pages
+ion-content {
+  --padding-top: 5px;
+  --padding-bottom: 30px;
+}
+
+// Make menu item value colours same as form values, e.g. Settings page
+ion-item .sc-ion-label-md-h.sc-ion-label-md-s.md[slot='end'],
+ion-item .sc-ion-label-ios-h.sc-ion-label-ios-s.ios[slot='end'] {
+  color: var(--form-value-color);
+}
+
 .search-result:nth-child(odd),
 .survey-list-item,
 .slider-input-attr,
+.text-input,
 .input-list-attr .input-list-attr-item,
 .radio-input-attr ion-item,
 #suggestions .empty,
 .taxa-filter-edit-dialog-form ion-item,
-.rounded:not(:empty) {
-  border: 1px solid #ebecebe3;
+.rounded-list:not(:empty) {
+  border: 1px solid rgba(235, 236, 235, 0.8901960784);
   border-radius: var(--theme-border-radius);
 }
 
-// subtle borders around rounded radio items
-ion-radio-group .item-radio-checked:not(.radio-input-default-option) {
-  border: 1px #dce0d5 solid;
-}
-
-// subtle borders around rounded checkbox items
-.checkbox-input-attr > ion-item {
-  border: 1px #dce0d5 solid;
-}
-
-// subtle borders around rounded checkbox items
-ion-textarea.textarea-attr {
-  border: 1px #dce0d5 solid;
+div[role='group'] > .field-label {
+  padding: 10px;
+  padding-left: 15px;
+  color: var(--ion-color-primary);
+  font-weight: bold;
 }

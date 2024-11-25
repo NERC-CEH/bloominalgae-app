@@ -1,4 +1,4 @@
-import { FC, useContext } from 'react';
+import { useContext } from 'react';
 import { observer } from 'mobx-react';
 import { Trans as T, useTranslation } from 'react-i18next';
 import { useRouteMatch } from 'react-router-dom';
@@ -15,7 +15,7 @@ type Props = {
   sample: Sample;
 };
 
-const SurveyHome: FC<Props> = ({ sample }) => {
+const SurveyHome = ({ sample }: Props) => {
   const { navigate } = useContext(NavContext);
   const match = useRouteMatch();
   const { t } = useTranslation();

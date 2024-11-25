@@ -1,14 +1,14 @@
 /* eslint-disable no-param-reassign */
 
 /* eslint-disable camelcase */
-import { observable, set } from 'mobx';
+import { set } from 'mobx';
 import axios, { AxiosRequestConfig } from 'axios';
 import { device, isAxiosNetworkError } from '@flumens';
 import CONFIG from 'common/config';
 import { AppModel } from 'models/app';
+import SavedSamplesProps from 'models/collections/samples';
 import Occurrence from 'models/occurrence';
 import Sample from 'models/sample';
-import SavedSamplesProps from 'models/savedSamples';
 import { UserModel } from 'models/user';
 import surveyConfig from 'Survey/config';
 
@@ -223,13 +223,12 @@ function updateLocalOccurrences(
 
 function getEarliestTimestamp(savedSamples: typeof SavedSamplesProps) {
   const byTime = (s1: Sample, s2: Sample) =>
-    new Date(s1.metadata.createdOn).getTime() -
-    new Date(s2.metadata.createdOn).getTime();
+    new Date(s1.createdAt).getTime() - new Date(s2.createdAt).getTime();
 
   const [firstSample] = [...savedSamples].sort(byTime);
   if (!firstSample) return new Date().getTime(); // should never happen
 
-  let earliestTimestamp = new Date(firstSample.metadata.createdOn);
+  let earliestTimestamp = new Date(firstSample.createdAt);
 
   const oneMonthAgo = new Date();
   oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
@@ -246,9 +245,6 @@ async function init(
   userModel: UserModel,
   appModel: AppModel
 ) {
-  // in-memory observable to use in reports and other views
-  savedSamples.verified = observable({ updated: [], timestamp: null });
-
   const originalResetDefaults = savedSamples.resetDefaults;
   // eslint-disable-next-line @getify/proper-arrows/name
   savedSamples.resetDefaults = () => {

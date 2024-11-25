@@ -1,21 +1,21 @@
 #guide {
   ion-item-divider {
-    padding: 20px 0;
-    background: #ffffff;
-    color: var(--ion-color-dark);
     display: block;
-    width: 100%;
-    padding: 20px 20px 10px;
-    border-bottom: none;
-    max-width: 600px;
     margin: 0 auto;
-    font-size: 1.1em;
+    border-bottom: none;
+    background: #ffffff;
+    padding: 20px 0;
+    padding: 20px 20px 10px;
+    width: 100%;
+    max-width: 600px;
+    color: var(--ion-color-dark);
     font-weight: 400;
+    font-size: 1.1em;
   }
 
   #card {
-    max-width: 600px;
     margin: 0 auto;
+    max-width: 600px;
   }
 
   ion-item-divider.ios {

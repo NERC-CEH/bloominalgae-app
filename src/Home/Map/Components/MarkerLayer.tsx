@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Layer, LayerProps, useMap } from 'react-map-gl';
 
 type Props = {
@@ -7,7 +7,7 @@ type Props = {
   paint?: any;
 };
 
-const MarkerLayer: FC<Props> = ({ source, onClick: onClickProp, paint }) => {
+const MarkerLayer = ({ source, onClick: onClickProp, paint }: Props) => {
   const layer: LayerProps = {
     id: 'points',
     source,

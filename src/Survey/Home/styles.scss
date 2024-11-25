@@ -1,8 +1,8 @@
 #survey-edit {
   ion-header ion-toolbar {
     ion-button {
-      background: var(--ion-color-secondary);
       border-radius: 10px;
+      background: var(--ion-color-secondary);
       padding: 0 10px;
     }
   }
@@ -54,23 +54,24 @@
 
   .uploaded-message {
     --border-width: 0;
-    border: 1px #dce0d5 solid;
     margin: 10px 0;
+    border: 1px #dce0d5 solid;
 
     ion-label {
       padding: 10px 0;
     }
   }
 
+  .choice-input-block ion-icon,
   ion-item > ion-icon {
     color: var(--ion-color-primary);
   }
 
   .app-logo {
-    max-width: 65%;
-    border: 0;
-    margin: 20px auto;
     display: block;
+    margin: 20px auto;
+    border: 0;
+    max-width: 65%;
   }
 }
 

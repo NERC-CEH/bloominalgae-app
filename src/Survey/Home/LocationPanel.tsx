@@ -1,4 +1,4 @@
-import { FC, useRef } from 'react';
+import { useRef } from 'react';
 import { observer } from 'mobx-react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import MapboxMap, { MapRef, Marker } from 'react-map-gl';
@@ -11,10 +11,12 @@ type Props = {
   longitude: number;
 };
 
-const LocationPanel: FC<Props> = ({ latitude, longitude }) => {
+const LocationPanel = ({ latitude, longitude }: Props) => {
   const mapRef = useRef<MapRef>();
 
-  const resizeMap = () => mapRef.current?.resize();
+  const resizeMap = () => {
+    mapRef.current?.resize();
+  };
   useIonViewDidEnter(resizeMap);
 
   return (

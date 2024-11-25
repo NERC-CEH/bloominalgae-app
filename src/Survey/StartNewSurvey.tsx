@@ -1,16 +1,16 @@
 import { useEffect, useContext } from 'react';
-import PropTypes from 'prop-types';
-import exact from 'prop-types-exact';
 import { Trans as T } from 'react-i18next';
 import { useAlert } from '@flumens';
 import { NavContext } from '@ionic/react';
-import Occurrence from 'common/models/occurrence';
-import Sample from 'common/models/sample';
-import savedSamples from 'common/models/savedSamples';
+import samples from 'common/models/collections/samples';
 import appModel from 'models/app';
+import Sample from 'models/sample';
+import { Survey } from './Survey';
 
-async function showDraftAlert(alert) {
-  const alertWrap = resolve => {
+type SurveyDraftKeys = any;
+
+async function showDraftAlert(alert: any) {
+  const showDraftDialog = (resolve: any) => {
     alert({
       header: 'Draft',
       message: (
@@ -34,27 +34,15 @@ async function showDraftAlert(alert) {
       ],
     });
   };
-  return new Promise(alertWrap);
+  return new Promise(showDraftDialog);
 }
 
-async function getNewSample(survey, draftIdKey) {
-  const sample = await survey.create(Sample, Occurrence);
-  await sample.save();
-
-  savedSamples.push(sample);
-  appModel.attrs[draftIdKey] = sample.cid;
-  await appModel.save();
-
-  return sample;
-}
-
-async function getDraft(draftIdKey, alert) {
-  const draftID = appModel.attrs[draftIdKey];
-
+async function getDraft(draftIdKey: keyof SurveyDraftKeys, alert: any) {
+  const draftID = (appModel as any).attrs[draftIdKey];
   if (draftID) {
-    const byId = ({ cid }) => cid === draftID;
-    const draftSample = savedSamples.find(byId);
-    if (draftSample) {
+    const draftById = ({ cid }: Sample) => cid === draftID;
+    const draftSample = samples.find(draftById);
+    if (draftSample && !draftSample.isDisabled()) {
       const continueDraftRecord = await showDraftAlert(alert);
       if (continueDraftRecord) {
         return draftSample;
@@ -67,10 +55,26 @@ async function getDraft(draftIdKey, alert) {
   return null;
 }
 
-function StartNewSurvey({ match, survey }) {
+async function getNewSample(survey: Survey, draftIdKey: keyof SurveyDraftKeys) {
+  const sample = await survey.create!({ Sample });
+  await sample.save();
+
+  samples.push(sample);
+
+  (appModel as any).attrs[draftIdKey] = sample.cid;
+
+  return sample;
+}
+
+type Props = {
+  survey: Survey;
+};
+
+function StartNewSurvey({ survey }: Props) {
   const context = useContext(NavContext);
   const alert = useAlert();
 
+  const baseURL = `/survey/${survey.name}`;
   const draftIdKey = `draftId:${survey.name}`;
 
   const pickDraftOrCreateSampleWrap = () => {
@@ -82,28 +86,20 @@ function StartNewSurvey({ match, survey }) {
         sample = await getNewSample(survey, draftIdKey);
       }
 
-      const url = `${match.url}/${sample.cid}`;
-      context.navigate(url, 'none', 'replace');
+      context.navigate(`${baseURL}/${sample.cid}`, 'forward', 'replace');
     })();
   };
-
-  useEffect(pickDraftOrCreateSampleWrap, [match.url]);
+  useEffect(pickDraftOrCreateSampleWrap, []);
 
   return null;
 }
 
-StartNewSurvey.propTypes = exact({
-  match: PropTypes.object.isRequired,
-  survey: PropTypes.object.isRequired,
-});
-
 // eslint-disable-next-line @getify/proper-arrows/name
-StartNewSurvey.with = survey => {
-  const StartNewSurveyWrap = params => (
+StartNewSurvey.with = (survey: Survey) => {
+  const StartNewSurveyWithRouter = (params: any) => (
     <StartNewSurvey survey={survey} {...params} />
   );
-
-  return StartNewSurveyWrap;
+  return StartNewSurveyWithRouter;
 };
 
 export default StartNewSurvey;

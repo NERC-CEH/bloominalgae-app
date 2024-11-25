@@ -1,9 +1,9 @@
-import { FC, useContext } from 'react';
+import { useContext } from 'react';
 import { observer } from 'mobx-react';
 import { Page, Header, useToast, useLoader } from '@flumens';
 import { NavContext } from '@ionic/react';
 import appModel from 'models/app';
-import savedSamples from 'models/savedSamples';
+import savedSamples from 'models/collections/samples';
 import userModel from 'models/user';
 import Main from './Main';
 
@@ -48,7 +48,7 @@ function onToggle(setting: string, checked: boolean) {
   appModel.save();
 }
 
-const MenuController: FC = () => {
+const MenuController = () => {
   const { sendAnalytics, language, country } = appModel.attrs;
   const toast = useToast();
   const deleteUser = useDeleteUser();

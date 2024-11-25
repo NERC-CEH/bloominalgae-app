@@ -1,15 +1,14 @@
 import { useContext } from 'react';
 import { observer } from 'mobx-react';
-import PropTypes from 'prop-types';
-import exact from 'prop-types-exact';
 import { Page, Header } from '@flumens';
 import { NavContext } from '@ionic/react';
+import appModel from 'common/models/app';
 import Main from './Main';
 
-function SelectCountry({ appModel }) {
+function SelectCountry() {
   const navigate = useContext(NavContext);
 
-  const onSelect = e => {
+  const onSelect = (e: any) => {
     appModel.attrs.country = e.target.value; // eslint-disable-line no-param-reassign
     appModel.save();
     navigate.goBack();
@@ -22,9 +21,5 @@ function SelectCountry({ appModel }) {
     </Page>
   );
 }
-
-SelectCountry.propTypes = exact({
-  appModel: PropTypes.object.isRequired,
-});
 
 export default observer(SelectCountry);

@@ -1,15 +1,15 @@
-import { useRef, FC, useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { observer } from 'mobx-react';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { Trans as T } from 'react-i18next';
-import MapboxMap, { MapRef, Source } from 'react-map-gl';
-import { Main, useAlert } from '@flumens';
-import { IonSpinner, useIonViewDidEnter } from '@ionic/react';
+import { Source } from 'react-map-gl';
+import { Main, MapContainer, useAlert } from '@flumens';
+import { IonSpinner } from '@ionic/react';
 import CONFIG from 'common/config';
 import { countriesByKey as countries } from 'common/countries';
 import appModel from 'models/app';
 import MarkerClusterLayer from './Components/ClusterLayer';
-import GPSButton from './Components/GPSButton';
+import GeolocateButton from './Components/GeolocateButton';
 import MarkerLayer from './Components/MarkerLayer';
 
 const getGeoJSONfromRecords = (records?: Record[]): any => {
@@ -96,47 +96,28 @@ const useRecordPopup = (records: Record[]) => {
   return showRecordPopup;
 };
 
-const DEFAULT_LOCATED_ZOOM = 12;
-
 type Props = {
   records: Record[];
   onMoveEnd: any;
   isFetchingRecords?: boolean;
 };
 
-const MapComponent: FC<Props> = ({
+const MapComponent = ({
   records,
   onMoveEnd: onMoveEndProp,
   isFetchingRecords,
-}) => {
-  const mapRef = useRef<MapRef>();
-  const showRecordPopup = useRecordPopup(records);
-  const [currentLocation, setCurrentLocation] = useState<any>(null);
-  const setCurrentLocationWithTimestamp = (newLocation: any) =>
-    setCurrentLocation({
-      ...newLocation,
-      timestamp: Date.now(), // map re-centering - cache-busting
-    });
+}: Props) => {
+  const [mapRef, setMapRef] = useState<any>();
 
-  const resizeMap = () => mapRef.current?.resize();
-  useIonViewDidEnter(resizeMap);
+  const showRecordPopup = useRecordPopup(records);
 
   const { country } = appModel.attrs;
   const initialViewState =
     (countries as any)[country]?.location || countries.uk.location;
 
-  const centerToCurrentLocation = () => {
-    if (!currentLocation) return;
-
-    mapRef.current?.flyTo({
-      center: [currentLocation.longitude, currentLocation.latitude],
-      zoom: DEFAULT_LOCATED_ZOOM,
-    });
-  };
-  useEffect(centerToCurrentLocation, [currentLocation]);
-
   const onMoveEnd = () => {
-    const bounds = mapRef.current?.getBounds();
+    const bounds = mapRef?.getBounds();
+    if (!bounds) return;
     // bounds.pad(0.5); // +50%
 
     onMoveEndProp(bounds);
@@ -148,19 +129,24 @@ const MapComponent: FC<Props> = ({
     [records]
   );
 
-  return (
-    <Main>
-      <GPSButton onChange={setCurrentLocationWithTimestamp} />
+  const onMapReady = (newMapRef: any) => {
+    setMapRef(newMapRef);
+    onMoveEndProp(newMapRef.getBounds());
+  };
 
-      <MapboxMap
-        ref={mapRef as any}
+  return (
+    <Main className="[--padding-bottom:0] [--padding-top:0]">
+      <MapContainer
+        onReady={onMapReady}
         initialViewState={initialViewState}
         maxZoom={17}
         mapStyle="mapbox://styles/mapbox/satellite-streets-v11"
         minZoom={3}
         onMoveEnd={onMoveEnd}
-        mapboxAccessToken={CONFIG.map.mapboxApiKey}
+        accessToken={CONFIG.map.mapboxApiKey}
       >
+        <GeolocateButton />
+
         <Source
           id="records"
           type="geojson"
@@ -189,8 +175,14 @@ const MapComponent: FC<Props> = ({
           />
         </Source>
 
-        {isFetchingRecords && <IonSpinner className="records-loader" />}
-      </MapboxMap>
+        <MapContainer.Control>
+          {isFetchingRecords ? (
+            <IonSpinner color="medium" className="mx-auto block" />
+          ) : (
+            <div />
+          )}
+        </MapContainer.Control>
+      </MapContainer>
     </Main>
   );
 };

@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { useState } from 'react';
 import { observer } from 'mobx-react';
 import { helpCircleOutline } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
@@ -27,7 +27,7 @@ const useDurationOfRecordsAlert = () => {
   return showDurationOfRecordsAlert;
 };
 
-const HomeMap: FC = () => {
+const HomeMap = () => {
   const [isFetchingRecords, setIsFetchingRecords] = useState(false);
   const [isLongPeriod, setIsLongPeriod] = useState(false);
   const [records, setRecords] = useState([]);

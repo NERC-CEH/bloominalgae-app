@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { observer } from 'mobx-react';
 import clsx from 'clsx';
 import {
@@ -7,19 +6,28 @@ import {
   checkmarkCircle,
   helpCircle,
   closeCircle,
+  informationCircle,
 } from 'ionicons/icons';
 import { useRouteMatch } from 'react-router-dom';
 import {
   Main,
+  Block,
   MenuAttrItemFromModel,
   MenuAttrItem,
   InfoMessage,
   InfoButton,
 } from '@flumens';
-import { IonList } from '@ionic/react';
+import { IonIcon, IonList } from '@ionic/react';
 import Sample from 'models/sample';
-import PhotoPicker from 'Components/PhotoPicker';
-import GridRefValue from 'Survey/Components/GridRefValue';
+import {
+  activitiesAttr,
+  activitiesGroupAttr,
+  commentAttr,
+  sizeAttr,
+  userActivitiesAttr,
+} from 'Survey/config';
+import GridRefValue from '../Components/GridRefValue';
+import PhotoPicker from '../Components/PhotoPicker';
 import logo from './app_logo_dark.png';
 import './styles.scss';
 
@@ -157,7 +165,7 @@ type Props = {
   sample: Sample;
 };
 
-const HomeSurveyMain: FC<Props> = ({ sample }) => {
+const SurveyMain = ({ sample }: Props) => {
   const isDisabled = sample.isUploaded();
   const match = useRouteMatch();
 
@@ -189,36 +197,48 @@ const HomeSurveyMain: FC<Props> = ({ sample }) => {
     return (
       <InfoMessage
         className={clsx('verification-message', status)}
-        icon={icons[status]}
+        prefix={<IonIcon icon={icons[status]} size="6" />}
       >
         {text}
       </InfoMessage>
     );
   };
 
-  const { activities } = sample.attrs;
+  const activities: any = [
+    ...(sample.attrs[activitiesAttr.id] || []),
+    ...(sample.attrs[userActivitiesAttr.id]! || []),
+  ];
   const [occ] = sample.occurrences;
 
   const prettyGridRef = <GridRefValue sample={sample} />;
 
+  const recordAttrs = {
+    record: sample.attrs,
+    isDisabled,
+  };
+
   return (
     <Main>
-      <IonList lines="full">
-        {!isDisabled && <img className="app-logo" src={logo} alt="logo" />}
+      {!isDisabled && <img className="app-logo" src={logo} alt="logo" />}
 
+      <IonList lines="full" className="flex flex-col gap-5">
         {getVerificationMessage()}
 
         {isDisabled && (
-          <InfoMessage className="uploaded-message">
+          <InfoMessage
+            prefix={<IonIcon src={informationCircle} className="size-6" />}
+            color="tertiary"
+            className="m-2"
+          >
             This record has been uploaded and can not be edited.
           </InfoMessage>
         )}
 
-        <div className="rounded">
+        <div className="rounded-list">
           <PhotoPicker model={occ} />
         </div>
 
-        <div className="rounded">
+        <div className="rounded-list">
           <MenuAttrItem
             routerLink={`${match.url}/location`}
             value={prettyGridRef}
@@ -229,10 +249,10 @@ const HomeSurveyMain: FC<Props> = ({ sample }) => {
           />
 
           <MenuAttrItemFromModel attr="date" model={sample} />
-          <MenuAttrItemFromModel attr="size" model={sample} />
+          <Block block={sizeAttr} {...recordAttrs} />
 
           <MenuAttrItem
-            routerLink={`${match.url}/activities`}
+            routerLink={`${match.url}/${activitiesGroupAttr.id}`}
             value={activities.length}
             label="Activities"
             icon={bicycleOutline}
@@ -240,16 +260,18 @@ const HomeSurveyMain: FC<Props> = ({ sample }) => {
             disabled={isDisabled}
           />
 
-          <MenuAttrItemFromModel
-            attr="comment"
-            model={occ}
-            skipValueTranslation
-            routerLink={`${match.url}/${occ.cid}/comment`}
+          <Block
+            block={commentAttr}
+            record={occ.attrs}
+            isDisabled={isDisabled}
           />
+          <InfoMessage inline>
+            Please add any extra info about this record.
+          </InfoMessage>
         </div>
       </IonList>
     </Main>
   );
 };
 
-export default observer(HomeSurveyMain);
+export default observer(SurveyMain);

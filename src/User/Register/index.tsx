@@ -1,31 +1,25 @@
-import { FC, useContext } from 'react';
+import { useContext } from 'react';
 import { Trans as T } from 'react-i18next';
+import { TypeOf } from 'zod';
 import { Page, Header, device, useToast, useAlert, useLoader } from '@flumens';
 import { NavContext } from '@ionic/react';
-import userModel from 'models/user';
+import userModel, { UserModel } from 'models/user';
 import Main from './Main';
-import './styles.scss';
 
-export type Details = {
-  password: string;
-  email: string;
-  firstName?: string | undefined;
-  secondName?: string | undefined;
-};
+type Details = TypeOf<typeof UserModel.registerSchema>;
 
-const RegisterContainer: FC = () => {
+const RegisterContainer = () => {
   const context = useContext(NavContext);
   const alert = useAlert();
   const toast = useToast();
   const loader = useLoader();
 
   const onSuccess = () => {
-    context.navigate('/home/surveys', 'root');
+    context.navigate('/home/landing', 'root');
   };
 
   async function onRegister(details: Details) {
-    const email = details.email.trim();
-    const { password, firstName, secondName } = details;
+    const { email, password, firstName, secondName } = details;
 
     const otherDetails = {
       field_first_name: [{ value: firstName?.trim() }],
@@ -41,8 +35,9 @@ const RegisterContainer: FC = () => {
     try {
       await userModel.register(email, password, otherDetails);
 
-      userModel.attrs.firstName = firstName; // eslint-disable-line
-      userModel.attrs.secondName = secondName; // eslint-disable-line
+      userModel.attrs.firstName = details.firstName; // eslint-disable-line
+      userModel.attrs.secondName = details.secondName; // eslint-disable-line
+
       userModel.save();
 
       alert({
@@ -71,7 +66,7 @@ const RegisterContainer: FC = () => {
   return (
     <Page id="user-register">
       <Header className="ion-no-border" />
-      <Main schema={userModel.registerSchema} onSubmit={onRegister} />
+      <Main onSubmit={onRegister} />
     </Page>
   );
 };

@@ -1,11 +1,10 @@
-import { FC } from 'react';
 import { Trans as T } from 'react-i18next';
 import { Page, Main, Header, Section, TLink } from '@flumens';
 import './styles.scss';
 
 const { P } = Section;
 
-const About: FC = () => (
+const About = () => (
   <Page id="about">
     <Header title="About Bloomin’ Algae" />
     <Main className="ion-padding">

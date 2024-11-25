@@ -8,17 +8,22 @@ import {
   SampleAttrs,
   SampleOptions,
   SampleMetadata,
-  getDeepErrorMessage,
   device,
   useAlert,
+  ModelValidationMessage,
+  ChoiceValues,
 } from '@flumens';
 import config from 'common/config';
 import userModel from 'models/user';
-import surveyConfig from 'Survey/config';
+import { Survey } from 'Survey/Survey';
+import surveyConfig, {
+  activitiesAttr,
+  userActivitiesAttr,
+} from 'Survey/config';
 import Media from './media';
 import Occurrence from './occurrence';
 import GPSExtension from './sampleGPSExt';
-import { modelStore } from './store';
+import { samplesStore } from './store';
 
 type Location = {
   latitude?: string;
@@ -30,7 +35,8 @@ type Location = {
 
 type Attrs = SampleAttrs & {
   location?: Location;
-  activities?: any;
+  [activitiesAttr.id]?: ChoiceValues<typeof activitiesAttr.choices>[];
+  [userActivitiesAttr.id]?: ChoiceValues<typeof userActivitiesAttr.choices>[];
 };
 
 type Metadata = SampleMetadata & {
@@ -48,7 +54,7 @@ type Metadata = SampleMetadata & {
 
 export default class Sample extends SampleOriginal<Attrs, Metadata> {
   static fromJSON(json: any) {
-    return super.fromJSON(json, Occurrence, Sample, Media);
+    return super.fromJSON(json, Occurrence, Sample, Media) as Sample;
   }
 
   declare occurrences: IObservableArray<Occurrence>;
@@ -59,7 +65,7 @@ export default class Sample extends SampleOriginal<Attrs, Metadata> {
 
   declare parent?: Sample;
 
-  declare survey: any;
+  declare survey: Survey;
 
   declare toggleGPStracking: any;
 
@@ -74,9 +80,9 @@ export default class Sample extends SampleOriginal<Attrs, Metadata> {
     ...options
   }: SampleOptions & { isSubSample?: boolean }) {
     // only top samples should have the store, otherwise sync() will save sub-samples on attr change.
-    const store = isSubSample ? undefined : modelStore; // eventually remove this once using a SubSample class.
+    const store = isSubSample ? undefined : samplesStore; // eventually remove this once using a SubSample class.
 
-    super({ ...options, store });
+    super({ store, ...options });
 
     this.remote.url = `${config.backend.indicia.url}/index.php/services/rest`;
     // eslint-disable-next-line
@@ -150,24 +156,13 @@ export const useValidateCheck = (sample: Sample) => {
   const alert = useAlert();
   const { t } = useTranslation();
 
-  const showValidateCheck = () => {
+  return () => {
     const invalids = sample.validateRemote();
     if (invalids) {
       alert({
         header: t('Survey incomplete'),
         skipTranslation: true,
-        // TODO: remove the replace once the flumens lib is fixed
-        message: (
-          <>
-            <div>
-              {getDeepErrorMessage(invalids)
-                .split('<br/>')
-                .map(val => (
-                  <div> {val}</div>
-                ))}
-            </div>
-          </>
-        ),
+        message: <ModelValidationMessage {...invalids} />,
         buttons: [
           {
             text: t('Got it'),
@@ -179,6 +174,4 @@ export const useValidateCheck = (sample: Sample) => {
     }
     return true;
   };
-
-  return showValidateCheck;
 };
