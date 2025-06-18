@@ -1,7 +1,11 @@
 # 
+# Translators:
+# Patrick Otuo Wanguche, 2025
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
+"Last-Translator: Patrick Otuo Wanguche, 2025\n"
 "Language-Team: Swahili (Kenya) (https://app.transifex.com/ceh/teams/116164/sw_KE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -12,95 +16,102 @@ msgstr ""
 
 # Button title
 msgid "Back"
-msgstr ""
+msgstr "Nyuma"
 
 # Home page toolbar menu label
 msgid "Home"
-msgstr ""
+msgstr "Ukurasa wa mwanzo"
 
 # Home page toolbar menu label
 msgid "Map"
-msgstr ""
+msgstr "Ramani"
 
 # Home page toolbar menu label
 msgid "Guide"
-msgstr ""
+msgstr "Maelezo"
 
 # Home page toolbar menu label
 msgid "My Records"
-msgstr ""
+msgstr "Rekodi Zangu"
 
 # Guide page header title
 msgid "Identify"
-msgstr ""
+msgstr "Tambua"
 
 # Guide page information message
 msgid ""
 "If you are still not sure after looking at this guide please submit the "
 "record anyway"
 msgstr ""
+"Iwapo bado hauna uhakika hata baada ya kuangalia maelezo haya, tafadhali "
+"tuma tu ulionakili hata hivyo."
 
 # Guide page label
 msgid "Examples of blue-green algae blooms"
-msgstr ""
+msgstr "Mifano ya maua ya mwani wa buluu-kijani"
 
 # Guide page card label
 msgid "Usually green or blue-green in colour"
-msgstr ""
+msgstr "Kawaida huwa na rangi ya kijani au buluu-kijani"
 
 # Guide page card label
 msgid "Form paint-like surface scums often along shorelines"
 msgstr ""
+"Hutengeneza tabaka za juu kama rangi, mara nyingi kando ya mwambao ama "
+"ufuoni"
 
 # Guide page card label
 msgid ""
 "Tiny irregular-shaped clumps (less than 3 mm) suspended in water. May be "
 "small and round or tiny grass like flakes"
 msgstr ""
+"Vigundu vidogo visivyo na umbo maalum (chini ya mm 3) vimeshikizwa ndani ya "
+"maji. Inaweza kuwa vidogo na duara au vipande vidogo vinavyofanana na nyasi"
 
 # Guide page card label
 msgid "Turquoise colour sometimes visible when decaying"
-msgstr ""
+msgstr "Rangi ya turquoise wakati mwingine huonekana inapooza"
 
 # Guide page label
 msgid "Not blue-green algae - duckweed and harmless green algae"
 msgstr ""
+"Si mwani wa buluu-kijani—kwekwe bata na mwani wa kijani usio na madhara"
 
 # Guide page card label
 msgid "Plants that float but have solid structure such as leaves"
-msgstr ""
+msgstr "Mimea inayoelea lakini ina muundo thabiti kama majani"
 
 # Guide page card label
 msgid "Others are long and tubular the size of a little finger"
-msgstr ""
+msgstr "Nyingine ni ndefu na za mviringo, zikiwa na ukubwa wa kidole kidogo"
 
 # Guide page card label
 msgid "Some have very stringy, long hair-like strands"
-msgstr ""
+msgstr "Nyingine zina nyuzi ndefu zinazofanana na nywele"
 
 # Guide page card label
 msgid "Or fine green hairs attached to rocks and pebbles"
-msgstr ""
+msgstr "Au nywele laini za kijani zilizoshikamana na miamba na kokoto"
 
 # My Records page header title
 msgid "Pending"
-msgstr ""
+msgstr "Haijakamilishwa"
 
 # My Records page header title
 msgid "Uploaded"
-msgstr ""
+msgstr "Imepakiwa"
 
 # My Records page record info message
 msgid "Draft"
-msgstr ""
+msgstr "Rasimu"
 
 # My Records page record info message
 msgid "To delete any records swipe it to the left."
-msgstr ""
+msgstr "– Ili kufuta rekodi yoyote, telezesha kwenda upande wa kushoto."
 
 # About Bloomin’ Algae info page title
 msgid "About Bloomin’ Algae"
-msgstr ""
+msgstr "Kuhusu kuota kwa mwani"
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -110,6 +121,12 @@ msgid ""
 "animal health. You will receive feedback on the records you submit which can"
 " help you learn how to recognise the risks to you and pets."
 msgstr ""
+"Bloomin Algae ni programu ya sayansi ya raia kwa kuripoti uwezo wa mizio "
+"hatari ya mwani  ya buluu-kijani (pia inajulikana kama cyanobacteria). "
+"Rekodi unazotuma inasaidia kasi ya tahadhari ili kupunguza hatari kwa afya "
+"ya umma na wanyama. Utapokea mrejesho kuhusu rekodi unazotuma, ambao unaweza"
+" kukusaidia kujifunza jinsi ya kutambua hatari kwako na kwa wanyama wa "
+"kipenzi."
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -120,6 +137,12 @@ msgid ""
 "education, scientific research and other public benefit uses but contact "
 "details will not be shared."
 msgstr ""
+"Unapotuma rekodi, data huhifadhiwa kwenye 1 tovuti ya  iRecord 1, ambapo "
+"itaonyeshwa kwa watumiaji na kuchunguzwa na kuthibitishwa na mtaalamu. Ni "
+"rekodi zako pekee zinazoonekana kwa umma, si maelezo yako ya mawasiliano . "
+"Rekodi hizi zinaweza kukusanywa na kusambazwa kwa madhumuni ya elimu, "
+"utafiti wa kisayansi, na matumizi mengine ya manufaa ya umma, lakini maelezo"
+" ya mawasiliano hayatashirikiwa."
 
 # About Bloomin’ Algae info page content
 msgid ""
@@ -132,14 +155,22 @@ msgid ""
 "undertaken we hope to gain a better understanding of how harmful algal "
 "blooms are impacting recreational use of freshwaters."
 msgstr ""
+"Mbali na kutuma picha na maelezo ya eneo, tunakuomba uthibitishe shughuli za"
+" jumla unazofanya wewe au wengine ndani au karibu na maji (kama vile "
+"kutembea na mbwa). Hii ni kwa sababu mwani wa buluu-kijani unahatarisha "
+"zaidi shughuli za maji kama vile kuogelea au windsurfing, kuliko shughuli "
+"zisizo na mguso wa moja kwa moja na maji, kama kutembea. Mwani wa buluu-"
+"kijani unaweza kuwa hatari kubwa sana kwa wanyama wa kufugwa na mifugo. Kwa "
+"kukusanya maelezo ya shughuli zinazofanywa, tunatarajia kuelewa vyema jinsi "
+"maua hatari ya mwani yanavyoathiri matumizi ya burudani ya maji safi."
 
 # About Bloomin’ Algae info page content
 msgid "<0>Privacy policy</0>"
-msgstr ""
+msgstr "1 Sera ya Faragha 1"
 
 # What are blue-green algae info page title
 msgid "What are blue-green algae?"
-msgstr ""
+msgstr "Je, mwani samawati- kijani ni nini?"
 
 # What are blue-green algae info page content
 msgid ""
@@ -153,6 +184,18 @@ msgid ""
 "scums and surface blooms (see ID guide in app) pose severe health risks, "
 "particularly to animals that swim or drink the affected water."
 msgstr ""
+"Mwani wa buluu-kijani ni aina ya bakteria inayojulikana kama cyanobacteria, "
+"ambayo inaweza kutoa kemikali zenye sumu zinazoleta madhara makubwa kwa afya"
+" ya binadamu na wanyama. Mwani huu hutokea kiasili katika maji yote yasiyo "
+"na chumvi, hasa maziwa, mabwawa ya maji, mifereji, na mito inayotiririka "
+"polepole. Ni vidogo vya kimaikroskopu, lakini vinapokuwa vingi, hukua na "
+"kuonekana kama chembechembe ndogo za kijani au vipande vidogo. Katika hali "
+"ya hewa tulivu na yenye jua, vinaweza kupanda juu ya uso wa maji na kuunda "
+"mistari myembamba inayofanana na manyoya, au matabaka mazito yanayofanana na"
+" rangi juu ya maji ikiwa vitazidi kuwa vingi sana. Matabaka ya mwani kando "
+"ya mwambao na maua yanayoelea juu ya maji (angalia mwongozo wa utambuzi "
+"kwenye programu) yanaweza kusababisha hatari kubwa za kiafya, hasa kwa "
+"wanyama wanaoelea au kunywa maji yaliyoathirika"
 
 # What are blue-green algae info page content
 msgid ""
@@ -163,10 +206,18 @@ msgid ""
 "are seen on the water or along shorelines when the blooms start to decay. "
 "Some blooms are coloured red, dark brown or black."
 msgstr ""
+"Maua ya mwani wa buluu-kijani huonekana zaidi wakati wa majira ya joto na "
+"mapema katika msimu wa vuli, hasa katika hali ya hewa tulivu na yenye jua, "
+"lakini yanaweza kuendelea kuwepo kwenye maji safi hadi mwishoni mwa msimu wa"
+" vuli. Mara chache, yanaweza pia kutokea wakati wa baridi na msimu wa "
+"kuchipua. Mengi ya maua haya ni ya kijani, lakini wakati mwingine, madoa ya "
+"rangi ya turquoise yanaweza kuonekana juu ya maji au kando ya mwambao mwani "
+"unapoanza kuoza. Baadhi ya maua yanaweza kuwa na rangi nyekundu, kahawia au "
+"nyeusi."
 
 # Health Risk info page title
 msgid "Health risks"
-msgstr ""
+msgstr "Hatari za kiafya"
 
 # Health Risk info page title
 msgid ""
@@ -174,6 +225,10 @@ msgid ""
 "effects in people and animals. They cause skin rashes and much more severe "
 "symptoms if swallowed (fever, vomiting, liver damage)."
 msgstr ""
+"Sumu zinazotolewa na mwani wa buluu-kijani zinaweza kusababisha athari "
+"mbalimbali za kiafya kwa binadamu na wanyama. Husababisha vipele kwenye "
+"ngozi na dalili kali zaidi endapo zitamezwa (homa, kutapika, uharibifu wa "
+"ini). "
 
 # Health Risk info page title
 msgid ""
@@ -182,12 +237,18 @@ msgid ""
 " to avoid death. Blue-green algae have also caused the deaths of horses, "
 "cattle, birds and fish."
 msgstr ""
+"Mbwa wako kwenye hatari kubwa ikiwa watakunywa maji machafu, au wakijilamba "
+"manyoya baada ya kuogelea, na dalili kali zinazohitaji matibabu ya haraka "
+"kwa daktari wa mifugo ili kuepusha kifo. Mwani wa buluu-kijani umesababisha "
+"pia vifo vya farasi, ng’ombe, ndege, na samaki."
 
 # Health Risk info page title
 msgid ""
 "If you are a pet owner you can find further information from the <2>Blue "
 "Cross</2>."
 msgstr ""
+"Ikiwa wewe ni mmiliki wa mnyama kipenzi, unaweza kupata maelezo zaidi kutoka"
+" kwa 1 Blue Cross. 1"
 
 # Health Risk info page title
 msgid ""
@@ -195,14 +256,18 @@ msgid ""
 "contaminated with blue-green algae, we’d recommend you seek immediate "
 "medical or veterinary advice.</0>"
 msgstr ""
+"1 Ikiwa wewe au mnyama kipenzi wako mtakuwa na dalili za kuumwa baada ya "
+"kuwasiliana au kugusa maji yanayoshukiwa kuwa na mwani wa buluu-kijani, "
+"tunapendekeza utafute ushauri wa haraka wa kitabibu  au kutafuta ushauri wa "
+"daktari wa mifugo 1.  "
 
 # Further action and reporting harmful algal blooms info page title
 msgid "Report"
-msgstr ""
+msgstr "Ripiti ama taarifa"
 
 # Further action info page content
 msgid "Further action"
-msgstr ""
+msgstr "Hatua zaidi"
 
 # Further action info page content
 msgid ""
@@ -215,16 +280,26 @@ msgid ""
 "algal blooms or water pollution incidents to your environment regulatory "
 "authority:"
 msgstr ""
+"Wajibu wa kudhibiti maua ya mwani upo mikononi mwa mmiliki wa maji husika. "
+"Ikiwa kuna mwani umejitokeza na hakuna ishara za tahadhari zilizoonekana, "
+"tunapendekeza uwasiliane na idara ya afya ya mazingira ya mamlaka yako ya "
+"eneo husika. Afya ya mazingira itatathmini hatua zinazohitajika kulingana na"
+" miongozo husika na inaweza kuwasiliana na mamlaka ya udhibiti wa mazingira "
+"(EA, SEPA, NRW, NIEA) kwa vipimo vya ziada vya maji. Unaweza pia kuripoti "
+"matukio ya maua ya mwani au uchafuzi wa maji moja kwa moja kwa mamlaka ya "
+"udhibiti wa mazingira."
 
 # Further action info page content
 msgid ""
 "For more information and advice on algal blooms see:<br/><br/><3>England & "
 "Wales</3><br/><br/><6>Scotland</6>"
 msgstr ""
+"Kwa maelezo zaidi na ushauri kuhusu maua ya mwani, tembelea: England & Wales"
+" | Scotland"
 
 # BRC info page title
 msgid "BRC approved"
-msgstr ""
+msgstr "BRC Imeidhinishwa"
 
 # BRC info page content
 msgid ""
@@ -233,6 +308,10 @@ msgid ""
 "assurance; made available for conservation and research and preserved for "
 "long-term use."
 msgstr ""
+"Popote unapoona nembo hii kwenye programu ya kurekodi data za kibiolojia, "
+"unaweza kuwa na uhakika kuwa data unazowasilisha zitapatikana kwa: Wataalamu"
+" kwa ajili ya uhakiki wa ubora; Uhifadhi wa mazingira na utafiti; Matumizi "
+"ya muda mrefu."
 
 # BRC info page content
 msgid ""
@@ -242,10 +321,16 @@ msgid ""
 "of iRecord.</0><1>Quality assured data is passed onto Local Environmental "
 "Records Centres, National Recording Schemes and to the NBN Gateway.</1></1>"
 msgstr ""
+"Nembo hii inaonyesha kuwa data zako: 1 2 zinatumwa kwa Kituo cha Kurekodi "
+"Data za Kibiolojia (BRC) kupitia mfumo wa iRecord, ambapo zitapatikana kwako"
+" kama mrekodi, kwa jamii ya wataalamu wanaothibitisha data na kwa watumiaji "
+"wengine wa iRecord. 2 3 Data zilizo na uhakika wa ubora hutumwa kwa: Vituo "
+"vya Kumbukumbu za Mazingira vya Mitaa, Mipango ya Kitaifa ya Kurekodi Aina "
+"za Viumbe, Mfumo wa Taifa wa Biodiversity (NBN Gateway) 3 1 "
 
 # BRC info page label
 msgid "About BRC"
-msgstr ""
+msgstr "Kuhusu Kituo cha Kurekodi Data za Kibiolojia (BRC)"
 
 # BRC info page content
 msgid ""
@@ -257,10 +342,21 @@ msgid ""
 "for Ecology & Hydrology (UKCEH). The work of BRC is a major BRC of the "
 "National Biodiversity Network (NBN)."
 msgstr ""
+"Kituo cha Kurekodi Data za Kibiolojia (BRC) BRC, kilichoanzishwa mwaka 1964,"
+" ni kituo kikuu nchini Uingereza kwa ajili ya kurekodi spishi za viumbe vya "
+"nchi kavu na maji safi. Inafanya kazi kwa karibu na jamii za kurekodi data "
+"kwa hiari, hasa kwa kuunga mkono mipango ya kitaifa ya kurekodi spishi na "
+"jumuiya za kisayansi. BRC inasaidiwa na Kamati ya Pamoja ya Uhifadhi wa "
+"Mazingira (JNCC) na Kituo cha Ikolojia na Hydrology cha Uingereza (UKCEH). "
+"Utakapokua ukitumia programu yetu, unaweza kugundua kuwa baadhi ya programu "
+"za BRC zinaonyesha spishi zilezile? Tumetambulisha nembo ya BRC Approved ili"
+" kuhakikisha kuwa data kutoka kwa programu zetu zote zinaenda mahali pamoja."
+" Una uhuru wa kuchagua programu yoyote kurekodi spishi, na rekodi zote "
+"zitahifadhiwa katika mfumo uleule na kufuata viwango vya ubora vya BRC."
 
 # BRC info page content
 msgid "Which app should I use?"
-msgstr ""
+msgstr "Ni programu gani ninapaswa kutumia? "
 
 # BRC info page content
 msgid ""
@@ -271,10 +367,15 @@ msgid ""
 " same place, treated in the same way and will meet the established standards"
 " required by the Biological Record Centre."
 msgstr ""
+"Utakapokua ukitumia programu yetu, unaweza kugundua kuwa baadhi ya programu "
+"za BRC zinaonyesha spishi zilezile? Tumetambulisha nembo ya BRC Approved ili"
+" kuhakikisha kuwa data kutoka kwa programu zetu zote zinaenda mahali pamoja."
+" Una uhuru wa kuchagua programu yoyote kurekodi spishi, na rekodi zote "
+"zitahifadhiwa katika mfumo uleule na kufuata viwango vya ubora vya BRC."
 
 # Credit info page title
 msgid "Credits"
-msgstr ""
+msgstr "Shukrani"
 
 # Credit info page content
 msgid ""
@@ -284,10 +385,14 @@ msgid ""
 "England for their support, advice and guidance during the development of the"
 " app."
 msgstr ""
+"Tunapenda kuwashukuru UKCEH, NERC na Serikali ya Scotland kwa kufadhili "
+"utengenezaji wa programu hii, pamoja na wafanyakazi wa Shirika la Ulinzi wa "
+"Mazingira la Scotland (SEPA), Afya ya Umma Scotland, Shirika la Mazingira na"
+" Afya ya Umma England kwa msaada wao wakati wa utengenezaji wa programu."
 
 # Credit info page content
 msgid "We are grateful for all the people that helped to create this app:"
-msgstr ""
+msgstr "Tunawashukuru pia wote waliosaidia kuunda programu hii:"
 
 # Credit info page content
 msgid ""
@@ -295,168 +400,173 @@ msgid ""
 "at:<br/><br/><3>www.paintingbiology.com<br/></3> <br/>Twitter: "
 "@JuliaFpaintsbio<br/>email: paintingbiology@gmail.com"
 msgstr ""
+"Asante kwa Julia Ferguson kwa kubuni nembo. 1 2 3 Anaweza kupatikana "
+"kupitia: www.paintingbiology.com 4 3 5 Twitter: @JuliaFpaintsbio 6 Email: "
+"paintingbiology@gmail.com"
 
 # Settings page header title
 msgid "Settings"
-msgstr ""
+msgstr "Mipangilio"
 
 # Settings page label
 msgid "English"
-msgstr ""
+msgstr "Kiingereza"
 
 # Settings page label
 msgid "Language"
-msgstr ""
+msgstr "Lugha"
 
 # Settings page message
 msgid "Share app crash data so we can make the app more reliable."
-msgstr ""
+msgstr "Shiriki data za hitilafu za programu ili tuiimarishe zaidi."
 
 # Settings page label
 msgid "Reset App"
-msgstr ""
+msgstr "Weka upya programu"
 
 # Settings page label
 msgid "Share App Analytics"
-msgstr ""
+msgstr "Shiriki takwimu za matumizi ya programu"
 
 # Reset app alert button label
 msgid "Cancel"
-msgstr ""
+msgstr " Ghairi"
 
 # Reset app alert button label
 msgid "Reset"
-msgstr ""
+msgstr "Weka upya"
 
 # Reset app alert message
 msgid ""
 "Are you sure you want to reset the application to its initial "
 "state?<1><0>This will wipe all the locally stored app data!</0></1>"
 msgstr ""
+"Je, unahakikisha kuwa unataka kuweka programu upya hadi hali yake ya awali? "
+"1 2 Hii itafuta data zote zilizohifadhiwa kwenye kifaa chako! 2 1"
 
 # Start record draft title
 msgid "No uploaded records"
-msgstr ""
+msgstr "Hakuna rekodi zilizopakiwa"
 
 # Start record draft button label
 msgid "Discard"
-msgstr ""
+msgstr "Tupa"
 
 # Start record draft button label
 msgid "Continue"
-msgstr ""
+msgstr "Endelea"
 
 # Start record draft button message
 msgid "Previous record draft exists, would you like to continue it?"
-msgstr ""
+msgstr "Rasimu ya rekodi iliyopita ipo, ungependa kuendelea nayo?"
 
 # Record page label
 msgid "No photo has been added."
-msgstr ""
+msgstr "Hakuna picha iliyoongezwa."
 
 # Record page label
 msgid "Press <1></1> to add."
-msgstr ""
+msgstr "Bonyeza 1 1 ili kuongeza."
 
 # Record page label
 msgid "Location"
-msgstr ""
+msgstr "Mahali"
 
 # Record page label
 msgid "Today"
-msgstr ""
+msgstr "Leo"
 
 # Record page label
 msgid "Date"
-msgstr ""
+msgstr "Tarehe"
 
 # Record page label
 msgid "Bloom size"
-msgstr ""
+msgstr "Ukubwa wa maua ya mwani"
 
 # Record page label
 msgid "Activities"
-msgstr ""
+msgstr "Shughuli"
 
 # Record page label
 msgid "Comment"
-msgstr ""
+msgstr "Maoni"
 
 # Record comment information message
 msgid "Please add any extra info about this record."
-msgstr ""
+msgstr "Tafadhali ongeza maelezo ya ziada kuhusu rekodi hii."
 
 # Record comment placeholder message
 msgid "Enter more information here..."
-msgstr ""
+msgstr " Ingiza maelezo zaidi hapa... "
 
 # Record activities information message
 msgid "What activities were you doing?"
-msgstr ""
+msgstr "Ni shughuli gani ulikuwa unafanya?"
 
 # Record activities content
 msgid "Walking / Running"
-msgstr ""
+msgstr "Kutembea / Kukimbia"
 
 # Record activities content
 msgid "Dog-walking"
-msgstr ""
+msgstr " Kutembea na mbwa"
 
 # Record activities content
 msgid "Cycling"
-msgstr ""
+msgstr " Kuendesha baiskeli"
 
 # Record activities content
 msgid "Birdwatching"
-msgstr ""
+msgstr "Kutazama ndege "
 
 # Record activities content
 msgid "Fishing"
-msgstr ""
+msgstr "Kuvua samaki"
 
 # Record activities content
 msgid "Swimming"
-msgstr ""
+msgstr "Kuogelea "
 
 # Record activities content
 msgid "Boats / Watersports"
-msgstr ""
+msgstr "Boti / Michezo ya maji  "
 
 # Record activities content
 msgid "Other"
-msgstr ""
+msgstr "Nyingine"
 
 # Record activities content divider
 msgid "What activities are done at this location?"
-msgstr ""
+msgstr "Ni shughuli gani zinafanyika katika eneo hili?"
 
 # Record activities divider content
 msgid "Please select the activities type for this record."
-msgstr ""
+msgstr "Tafadhali chagua aina ya shughuli kwa rekodi hii."
 
 # Record bloom size content
 msgid "Doormat"
-msgstr ""
+msgstr " Mlalo wa mlango"
 
 # Record bloom size content
 msgid "Parking space"
-msgstr ""
+msgstr "Eneo la kuegeza gari"
 
 # Record bloom size content
 msgid "Tennis court"
-msgstr ""
+msgstr "Uwanja wa tenisi"
 
 # Record bloom size content
 msgid "Even bigger"
-msgstr ""
+msgstr "Hata kubwa zaidi"
 
 # Record bloom size information message
 msgid "Select the closest match below."
-msgstr ""
+msgstr "Chagua kinacholingana zaidi hapa chini. "
 
 # Splash screen content
 msgid "Warning"
-msgstr ""
+msgstr "Tahadhari"
 
 # Splash screen content
 msgid ""
@@ -465,70 +575,73 @@ msgid ""
 "bloom and do not allow pets or children to come into contact with, or "
 "swallow, the water."
 msgstr ""
+"Mwani wa buluu-kijani (cyanobacteria) unaweza kuwa hatari kwa afya ya "
+"binadamu na wanyama. USIGUSE au USIMEZE kitu chochote unachoshuku kuwa ni "
+"mwani, na usiruhusu watoto au wanyama kuwasiliana na maji yaliyoathirika."
 
 # Splash screen content
 msgid "Got it!"
-msgstr ""
+msgstr "Nimeelewa!"
 
 # Button label
 msgid "Delete"
-msgstr ""
+msgstr "Futa"
 
 # My records page background message
 msgid "No finished pending records."
-msgstr ""
+msgstr "Hakuna rekodi za kusubiri zilizokamilika."
 
 # Record location name message
 msgid "Location name e.g. lake, reservoir or pond name"
-msgstr ""
+msgstr " Jina la eneo, mfano: ziwa, bwawa au dimbwi "
 
 # Record incomplete pop up record message
 msgid "Please add a photo of the bloom"
-msgstr ""
+msgstr "Tafadhali ongeza picha ya maua ya mwani "
 
 # Record incomplete pop up record message
 msgid "Please select location."
-msgstr ""
+msgstr "Tafadhali chagua eneo "
 
 # Record incomplete pop up button label
 msgid "Got it"
-msgstr ""
+msgstr "Nimeielewa!"
 
 # Record incomplete pop up title
 msgid "Record incomplete"
-msgstr ""
+msgstr "Rekodi haijakamilika "
 
 # Record verify location button label
 msgid "Incorrect"
-msgstr ""
+msgstr "Si sahihi "
 
 # Record verify location button label
 msgid "Correct"
-msgstr ""
+msgstr "Sahihi"
 
 # Side menu label
 msgid "Navigate"
-msgstr ""
+msgstr "Ogelea au elekeza"
 
 # Side menu label
 msgid "Algal bloom info"
-msgstr ""
+msgstr "Elekeza Taarifa kuhusu maua ya mwani "
 
 # Side menu label
 msgid "Report a bloom"
-msgstr ""
+msgstr "Ripoti maua ya mwani"
 
 # Side menu content
 msgid "App version"
-msgstr ""
+msgstr "Toleo la programu"
 
 # Delete record alert message
 msgid "Are you sure you want to delete this record ?"
-msgstr ""
+msgstr "Je, unahakikisha kuwa unataka kufuta rekodi hii? "
 
 # More information info page title
 msgid "Using the app"
-msgstr ""
+msgstr "Kutumia Programu"
 
 # More information info page content
 msgid ""
@@ -536,10 +649,14 @@ msgid ""
 "service for records submitted in your area, please see the section on “Using"
 " the app” on the <2>Bloomin’ Algae website</2>."
 msgstr ""
+"Kwa maelezo zaidi kuhusu matumizi ya programu, ikiwa ni pamoja na jinsi ya "
+"kuweka taarifa za arifa kuhusu rekodi zilizowasilishwa katika eneo lako, "
+"tafadhali tembelea sehemu ya \"Kutumia programu\" kwenye tovuti ya Bloomin’ "
+"Algae."
 
 # What do we use your records for info page title
 msgid "What do we use your records for?"
-msgstr ""
+msgstr "Tunatumia rekodi zako kwa nini?"
 
 # What do we use your records for info page content
 msgid ""
@@ -551,48 +668,55 @@ msgid ""
 "environment agencies and water companies in water quality risk management "
 "and prevention.</4></0>"
 msgstr ""
+"1 2 Kuwajulisha mamlaka za mitaa na wamiliki wa ardhi ili kuharakisha "
+"uwekaji wa alama za tahadhari kwa umma. 2 3 4 Kusaidia utafiti wa kisayansi "
+"kuelewa muda na eneo la maua ya mwani, jinsi mabadiliko ya tabianchi "
+"yanavyoathiri ubora wa maji, na kutabiri athari za baadaye. 4 5 6 Kusaidia "
+"mamlaka za mazingira na makampuni ya maji katika usimamizi wa hatari za "
+"ubora wa maji na kuzuia uchafuzi wa maji. 6 1"
 
 # Record upload button label
 msgid "Upload"
-msgstr ""
+msgstr "Pakia"
 
 # Record button label
 msgid "OK"
-msgstr ""
+msgstr "Sawa"
 
 # part of record
 msgid "DD/MM/YYYY"
-msgstr ""
+msgstr "  DD/MM/YYYYY Siku/Mwezi/Mwaka)"
 
 # part of record
 msgid "Record"
-msgstr ""
+msgstr "Rekodi"
 
 # onBoarding page content
 msgid ""
 "By clicking “I Understand” you agree that you have read and understood this "
 "warning"
 msgstr ""
+"Kwa kubonyeza \"Nimeelewa\", unakubaliana kuwa umesoma na kuelewa onyo hiliI"
 
 # onBoarding page content
 msgid "I Understand"
-msgstr ""
+msgstr "Ninaelewa"
 
 # Settings reset alert message
 msgid "Done"
-msgstr ""
+msgstr "Imekamilika"
 
 # Info background message button label
 msgid "Hide"
-msgstr ""
+msgstr "Ficha"
 
 # Map page header label
 msgid "All Records"
-msgstr ""
+msgstr "Rekodi Zote"
 
 # onBoarding title
 msgid "Welcome to Bloomin’ Algae!"
-msgstr ""
+msgstr "Karibu kwenye Bloomin’ Algae!"
 
 # onBoarding content
 msgid ""
@@ -601,185 +725,193 @@ msgid ""
 "warnings to minimise risks to public and animal health. Thanks for taking "
 "part!"
 msgstr ""
+"Bloomin’ Algae ni programu ya Sayansi ya Kiraia kwa ajili ya kuripoti uwepo "
+"wa maua hatari ya mwani wa buluu-kijani. Rekodi unazotuma husaidia "
+"kuharakisha onyo ili kupunguza hatari kwa afya ya umma na wanyama. Asante "
+"kwa kushiriki!"
 
 # Record map toggle
 msgid "See past 12 months"
-msgstr ""
+msgstr "Tazama miezi 12 iliopita"
 
 # Record map toggle
 msgid "The default setting is the past 4 weeks of records."
-msgstr ""
+msgstr "Mipangilio chaguomsingi ni rekodi za wiki 4 zilizopita"
 
 # Record map toggle
 msgid "Please confirm this is your correct location."
-msgstr ""
+msgstr "Tafadhali dhibitisha kuwa hapa ni eneo ulipo"
 
 # Record alert image on a map
 msgid "This record has no images."
-msgstr ""
+msgstr "Rekodi hii haina picha"
 
 # A verification popup setting
 msgid "Do not show again"
-msgstr ""
+msgstr "Usionyeshe tena"
 
 # Record status on a map
 msgid "rejected"
-msgstr ""
+msgstr "Kukataliwa"
 
 # Record status on a map
 msgid "complete"
-msgstr ""
+msgstr "Kamili"
 
 # Record status on a map
 msgid "plausible"
-msgstr ""
+msgstr "Inayokubalika"
 
 # Record status on a map
 msgid "verified"
-msgstr ""
+msgstr "Imethibitishwa"
 
 # Part of User authentication page
 msgid "Register/Login"
-msgstr ""
+msgstr "Jisajili/Ingia"
 
 # Part of User authentication page
 msgid "Create a free account"
-msgstr ""
+msgstr " Tengeneza akaunti ya bure"
 
 # Part of User authentication page
 msgid "First name"
-msgstr ""
+msgstr "Jina la kwanza"
 
 # Part of User authentication page
 msgid "Last name"
-msgstr ""
+msgstr "Jina la mwisho "
 
 # Part of User authentication page
 msgid "Email"
-msgstr ""
+msgstr "Barua pepe "
 
 # Part of User authentication page
 msgid "Password"
-msgstr ""
+msgstr "Nenosiri"
 
 # Part of User authentication page
 msgid ""
 "By clicking Sign Up, you agree to our <2>Privacy Policy</2> and <6>Terms and"
 " Conditions</6>"
 msgstr ""
+"Kwa kubonyeza \"Jisajili\", unakubaliana na Sera Yetu ya Faragha na Sheria "
+"na Masharti yetu J"
 
 # Part of User authentication page
 msgid "Sign Up"
-msgstr ""
+msgstr "isajili"
 
 # Part of User authentication page
 msgid "I am already a member"
-msgstr ""
+msgstr "Tayari mimi ni mwanachama "
 
 # Part of User authentication page
 msgid "Sign In"
-msgstr ""
+msgstr "Ingia "
 
 # part of User authentication page
 msgid "Welcome back"
-msgstr ""
+msgstr "Karibu tena"
 
 # Part of User authentication page
 msgid "Sign in to your account to start"
-msgstr ""
+msgstr "Ingia kwenye akaunti yako ili kuanza "
 
 # Part of User authentication page
 msgid "Forgot password?"
-msgstr ""
+msgstr "Umesahau neno siri?"
 
 # Part of User authentication page
 msgid "firstName is a required field"
-msgstr ""
+msgstr "Jina la kwanza ni sharti"
 
 # Part of User authentication page
 msgid "Enter your email address to request a password reset."
-msgstr ""
+msgstr "Ingiza barua pepe yako ili kuomba kuweka upya nenosiri."
 
 # Part of User authentication page
 msgid "email is a required field"
-msgstr ""
+msgstr "Barua pepe ni sharti"
 
 # Part of User authentication page
 msgid "password is a required field"
-msgstr ""
+msgstr "Nenosiri ni sharti  "
 
 # Part of User authentication page
 msgid "secondName is a required field"
-msgstr ""
+msgstr "Jina la pili ni sharti "
 
 # User authentication alert
 msgid "Logout"
-msgstr ""
+msgstr "Toka kwenye akaunti "
 
 # User authentication alert
 msgid "Are you sure you want to logout?"
-msgstr ""
+msgstr "Je, unahakikisha unataka kutoka kwenye akaunti? "
 
 # User authentication alert
 msgid "Discard local data"
-msgstr ""
+msgstr "Futa data za ndani"
 
 # User authentication alert
 msgid "Please wait..."
-msgstr ""
+msgstr "Tafadhali subiri.."
 
 # Survey header button
 msgid "Finish"
-msgstr ""
+msgstr "Maliza"
 
 # Survey camera options
 msgid "Choose a method to upload a photo"
-msgstr ""
+msgstr " Chagua njia ya kupakia picha"
 
 # Camera empty input message
 msgid "No photo has been added.<br/>Press <4><0></0></4> to add."
-msgstr ""
+msgstr "Hakuna picha iliyoongezwa. 1 Bonyeza 2 3 3 2 ili kuongeza."
 
 # Survey camera options
 msgid "Gallery"
-msgstr ""
+msgstr "Kichanja cha picha "
 
 # Survey camera options
 msgid "Camera"
-msgstr ""
+msgstr "Kamera"
 
 # User-surveys page background message
 msgid "Please do not forget to upload any pending records!"
-msgstr ""
+msgstr "Tafadhali usisahau kupakia rekodi zozote zilizosalia! "
 
 # All records page tip
 msgid "OK, got it"
-msgstr ""
+msgstr "Sawa, nimeelewa"
 
 # Error messages from server for user account actions
 msgid "Sorry"
-msgstr ""
+msgstr "Samahani "
 
 # Error messages from server for user account actions
 msgid "Unauthorized"
-msgstr ""
+msgstr "Hujaruhusiwa"
 
 # Error messages from server for user account actions
 msgid "Not found"
-msgstr ""
+msgstr "Haijapatikana"
 
 # Error messages from server for user account actions
 msgid "Bad Request"
-msgstr ""
+msgstr " Ombi si sahihi"
 
 # Verification message
 msgid ""
 "Some of your records have been verified. Please check your records list."
 msgstr ""
+"Baadhi ya rekodi zako zimethibitishwa. Tafadhali angalia orodha ya rekodi "
+"zako."
 
 # Record date stamp
 msgid "Yesterday"
-msgstr ""
+msgstr "Jana"
 
 # Verification message
 msgid ""
@@ -797,14 +929,26 @@ msgid ""
 "app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
 "Hydrology</p></1></0>"
 msgstr ""
+"Asante sana kwa kutuma rekodi yako – hii inaonekana sana kama maua ya mwani "
+"wa buluu-kijani (pia hujulikana kama cyanobacteria), kwa hivyo "
+"tumethibitisha rekodi yako kama \"inayochukuliwa kuwa sahihi\". Mkusanyiko "
+"huu wa mwani juu ya maji unaleta hatari kubwa kwa afya ya umma na wanyama – "
+"hasa mbwa. Ikiwa hili ni eneo la umma, tafadhali angalia ikiwa kuna alama za"
+" tahadhari. Ikiwa hakuna, tafadhali wasiliana na afisa wa afya ya mazingira "
+"wa mamlaka yako ya eneo husika au shirika la ulinzi wa mazingira ili "
+"kumshauri mmiliki wa ardhi kuhusu alama sahihi ya tahadhari. Hatimaye, "
+"tafadhali epuka kugusa maji au tabaka lolote la mwani kwenye mwambao. Ikiwa "
+"wewe au mnyama wako mtapata dalili za kuumwa baada ya kugusana na maji, "
+"tunapendekeza utafute ushauri wa haraka wa kitabibu au wa mifugo. Asante "
+"tena kwa kutumia programu!"
 
 # Verification message
 msgid "READ MORE"
-msgstr ""
+msgstr "SOMA ZAIDI"
 
 # Verification message header
 msgid "Info"
-msgstr ""
+msgstr "Taarifa"
 
 # Verification message
 msgid ""
@@ -823,6 +967,21 @@ msgid ""
 "advice.</p><p>Thanks again for using the app!</p><p>The Bloomin'Algae team "
 "at the UK Centre for Ecology & Hydrology</p></2></0>"
 msgstr ""
+" 1 2 Asante kwa kutuma rekodi yako kwa kutumia programu ya Bloomin'Algae. 2 "
+"3 Kutokana na picha zako, hatuoni kuwa huu ni mwani wa buluu-kijani "
+"(cyanobacteria). 3 4 5 Hatuna uhakika kabisa kwamba mwani wa buluu-kijani "
+"haupo kabisa katika eneo hili, lakini hauonekani wazi kwenye picha. 5 6  "
+"Mwongozo wetu wa mwani katika programu una picha za kusaidia katika "
+"utambuzi. Tovuti yetu pia ina maelezo ya kipimo rahisi cha fimbo unachoweza "
+"kutumia kusaidia kutambua na kuondoa duckweed na blanket weed, ambavyo mara "
+"nyingi huchanganywa kimakosa na mwani wa buluu-kijani: "
+"https://www.ceh.ac.uk/algal-blooms/bloomin-algae 6 7  Ikiwa unashuku uwepo "
+"wa mwani mahali popote, tafadhali epuka kugusa maji au tabaka lolote la "
+"mwani kwenye mwambao. Ikiwa wewe au mnyama wako mtapata dalili za kuumwa "
+"baada ya kugusana na maji yanayoshukiwa kuwa na mwani wa buluu-kijani, "
+"tunapendekeza utafute ushauri wa haraka wa kitabibu au wa mifugo. 7 8  "
+"Asante tena kwa kutumia programu! Timu ya Bloomin'Algae katika Kituo cha "
+"Uingereza cha Ikolojia na Hydrology."
 
 # Verification message
 msgid ""
@@ -839,6 +998,18 @@ msgid ""
 "app!</p><p>The Bloomin'Algae team at the UK Centre for Ecology & "
 "Hydrology</p></2></0>"
 msgstr ""
+"1 2 Asante kwa kutuma rekodi yako kwa kutumia programu ya Bloomin'Algae. 2 3"
+" Tumekataa rekodi hii kwa sababu tunadhani eneo uliloweka si sahihi. 3 4 5 "
+"Tafadhali angalia rekodi yako na utume rekodi mpya iliyo na eneo sahihi. "
+"Tafadhali tembelea tovuti yetu kwa msaada zaidi kuhusu matumizi ya programu "
+"na utambuzi wa maua ya mwani wa buluu-kijani: https://www.ceh.ac.uk/algal-"
+"blooms/bloomin-algae. 5 6. Ikiwa unashuku uwepo wa mwani katika eneo lolote,"
+" tafadhali epuka kugusa maji au tabaka lolote la mwani kwenye mwambao. Ikiwa"
+" wewe au mnyama wako mtapata dalili za kuumwa baada ya kuwasiliana na maji "
+"yanayoshukiwa kuwa na mwani wa buluu-kijani, tunapendekeza utafute ushauri "
+"wa haraka wa kitabibu au wa mifugo. 6 7 Asante tena kwa kutumia programu! 7 "
+"8 Timu ya Bloomin'Algae katika Kituo cha Uingereza cha Ikolojia na "
+"Hydrology. 8 4 1 "
 
 # Verification message
 msgid ""
@@ -855,64 +1026,78 @@ msgid ""
 "again for using the app!</p><p>The Bloomin'Algae team at the UK Centre for "
 "Ecology & Hydrology</p></2></0>"
 msgstr ""
+"1 2 Asante kwa kutuma rekodi yako kwa kutumia programu ya Bloomin'Algae "
+"Samahani, picha yako haiko wazi vya kutosha kufanya uamuzi. 2 3 Tafadhali "
+"tuma rekodi mpya ikiwa na picha ya karibu ya maji (ikiwezekana, takribani "
+"30-50 cm kutoka kwenye uso wa maji na/au tabaka lolote la mwani). 3 4 5 "
+"Tafadhali tembelea tovuti yetu kwa msaada zaidi wa kutambua maua ya mwani wa"
+" buluu-kijani:  https://www.ceh.ac.uk/algal-blooms/bloomin-algae .Ikiwa "
+"unashuku uwepo wa mwani mahali popote, tafadhali epuka kugusa maji au tabaka"
+" lolote la mwani kwenye mwambao. Ikiwa wewe au mnyama wako mtapata dalili za"
+" kuumwa baada ya kugusana na maji yanayoshukiwa kuwa na mwani wa buluu-"
+"kijani, tunapendekeza utafute ushauri wa haraka wa kitabibu au wa mifugo. 6 "
+"7 Asante tena kwa kutumia programu! Timu ya Bloomin'Algae katika Kituo cha "
+"Uingereza cha Ikolojia na Hydrology."
 
 # Part of photo picker
 msgid "Are you sure you want to remove this photo?"
-msgstr ""
+msgstr "Je, una uhakika unataka kuondoa picha hii? "
 
 # Part of photo picker
 msgid "Note: it will remain in the gallery."
-msgstr ""
+msgstr "Kumbuka: Itabaki kwenye kichanja cha picha. "
 
 # Uploaded record message
 msgid "This record has been uploaded and can not be edited."
-msgstr ""
+msgstr "Rekodi hii imepakiwa na haiwezi kuhaririwa. "
 
 # Successfully logged in message
 msgid "Successfully logged in"
-msgstr ""
+msgstr "Umeingia kwa mafanikio "
 
 # User form validation message
 msgid "Please fill in"
-msgstr ""
+msgstr "Tafadhali jaza "
 
 # User form validation message
 msgid "email must be a valid email"
-msgstr ""
+msgstr "Barua pepe lazima iwe sahihi"
 
 # App Setting message
 msgid "You can reset the app data to its default settings."
-msgstr ""
+msgstr "Unaweza kuweka upya data za programu kwa mipangilio yake ya awali. "
 
 # Account option
 msgid "Delete account"
-msgstr ""
+msgstr "Futa akaunti "
 
 # Account option message
 msgid "You can delete your user account from the system."
-msgstr ""
+msgstr "Unaweza kufuta akaunti yako ya mtumiaji kutoka kwenye mfumo."
 
 # Account option message
 msgid "Account delete"
-msgstr ""
+msgstr "Kufuta akaunti "
 
 # Account option message
 msgid "Are you sure you want to delete your account?"
-msgstr ""
+msgstr "Je, una hakika unataka kufuta akaunti yako?"
 
 # Account option message
 msgid ""
 "This will remove your account on the iRecord website. You will lose access "
 "to any records that you have previously submitted using the app or website."
 msgstr ""
+" Hii itaondoa akaunti yako kwenye tovuti ya iRecord. Utapoteza ufikiaji wa "
+"rekodi zozote ulizowahi kuwasilisha kwa kutumia programu au tovuti."
 
 # Photo picker failed to pick photo error message
 msgid "Sorry, we couldn't get the image."
-msgstr ""
+msgstr "Samahani, hatukuweza kupata picha."
 
 # Successfully registration alert message
 msgid "Welcome aboard"
-msgstr ""
+msgstr "Karibu kwenye programu"
 
 # Language info popup
 msgid ""
@@ -920,61 +1105,71 @@ msgid ""
 "want to change the language go to \"Settings\" in the Bloomin' Algae app "
 "menu and select \"Language\""
 msgstr ""
+" Lugha itawekwa kuwa ile iliyopo kwenye mipangilio ya simu yako kwa "
+"chaguomsingi. Ikiwa unataka kubadilisha lugha, nenda kwenye \"Mipangilio\" "
+"katika menyu ya programu ya Bloomin' Algae na uchague \"Lugha\"."
 
 # Successfully registration alert message
 msgid ""
 "Before starting any records please check your email and click on the "
 "verification link."
 msgstr ""
+" Kabla ya kuanza rekodi yoyote, tafadhali angalia barua pepe yako na ubofye "
+"kiungo cha uthibitisho."
 
 # Country choice
 msgid "Country"
-msgstr ""
+msgstr "Nchi"
 
 # Country choice
 msgid "Belgium"
-msgstr ""
+msgstr "Ubelgiji"
 
 # Country choice
 msgid "Norway"
-msgstr ""
+msgstr "Norway"
 
 # Country choice
 msgid "Luxembourg"
-msgstr ""
+msgstr "Luxembourg"
 
 # Country choice
 msgid "Netherlands"
-msgstr ""
+msgstr "Uholanzi"
 
 # Country choice
 msgid "United Kingdom"
-msgstr ""
+msgstr "Uingereza"
 
 # User registration
 msgid "email is not valid"
-msgstr ""
+msgstr "Barua pepe si sahihi"
 
 # User verification messages
 msgid ""
 "Before starting any surveys please check your email and click on the "
 "verification link."
 msgstr ""
+"Kabla ya kuanza uchunguzi wowote, tafadhali angalia barua pepe yako na "
+"ubofye kiungo cha uthibitisho."
 
 # User verification messages
 msgid "Resend"
-msgstr ""
+msgstr "Tuma tena"
 
 # User verification messages
 msgid "Looks like your email hasn't been verified yet."
-msgstr ""
+msgstr "Inaonekana barua pepe yako bado haijathibitishwa."
 
 # User verification messages
 msgid "Should we resend the verification email?"
-msgstr ""
+msgstr "Je, tutume tena barua pepe ya uthibitisho? "
 
 # User verification messages
 msgid ""
 "A new verification email was successfully sent now. If you did not receive "
 "the email, then check your Spam or Junk email folders."
 msgstr ""
+"Barua pepe mpya ya uthibitisho imetumwa kwa mafanikio sasa. Ikiwa hujapokea "
+"barua pepe, tafadhali angalia folda ya barua taka au barua pepe "
+"zisizohitajika."
