@@ -11,12 +11,12 @@ const languages = {
   sw: { default: 'sw-KE' },
   'es-CL': 'Español',
   es: { default: 'es-CL' },
-  arn: 'Mapudungun',
 };
 
 const isDemo = !isPlatform('hybrid');
 if (isDemo) {
   Object.assign(languages, {
+    arn: 'Mapudungun',
     // demo-only languages
   });
 }
