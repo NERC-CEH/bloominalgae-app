@@ -158,7 +158,7 @@ const survey: Survey = {
 
     verify: (_: any, occ: OccurrenceClass) =>
       object({
-        // media: z.array(object({})).min(1, 'Please add a photo of the bloom'), // TODO:
+        media: z.array(object({})).min(1, 'Please add a photo of the bloom'),
       }).safeParse(occ).error,
   },
 

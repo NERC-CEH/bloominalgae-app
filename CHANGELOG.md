@@ -1,3 +1,7 @@
+## 3.2.1
+
+Fixed photo picker.
+
 ## 3.2.0
 
 - Framework upgrade.
