@@ -1,3 +1,7 @@
+## 3.2.2
+
+Fixed map report link.
+
 ## 3.2.1
 
 Fixed photo picker.

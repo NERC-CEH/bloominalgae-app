@@ -25,13 +25,10 @@ const fetchRecords = async (
 
   let newRecords: any = [];
   try {
-    const process = axios(
-      `https://eip.ceh.ac.uk/hydrology-ukscape/bloominAlgae`,
-      {
-        params,
-        cancelToken: requestCancelToken.token,
-      }
-    );
+    const process = axios(`https://bloominalgae.ceh.ac.uk/bloominalgae`, {
+      params,
+      cancelToken: requestCancelToken.token,
+    });
 
     const { data } = await process;
 

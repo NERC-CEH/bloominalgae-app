@@ -1,7 +1,7 @@
 {
   "name": "uk.ac.ceh.algae",
   "title": "Bloomin' Algae",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "scripts": {
     "start": "webpack serve --progress --port 8000",
     "build": "NODE_ENV=production webpack",
