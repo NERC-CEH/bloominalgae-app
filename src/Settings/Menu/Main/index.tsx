@@ -146,7 +146,9 @@ const MenuMain = ({
         <div className="destructive-item rounded-list">
           <IonItem onClick={showResetDialog}>
             <IonIcon icon={arrowUndoOutline} size="small" slot="start" />
-            <IonLabel>Reset app</IonLabel>
+            <IonLabel>
+              <T>Reset App</T>
+            </IonLabel>
           </IonItem>
           <InfoMessage>
             You can reset the app data to its default settings.

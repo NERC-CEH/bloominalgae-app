@@ -1,3 +1,7 @@
+## 3.2.3
+
+Updated translations.
+
 ## 3.2.2
 
 Fixed map report link.

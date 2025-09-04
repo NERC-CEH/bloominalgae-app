@@ -1,11 +1,12 @@
 # 
 # Translators:
 # Erica Zaja, 2025
+# Patricio Alejandro Sagredo curio, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Erica Zaja, 2025\n"
+"Last-Translator: Patricio Alejandro Sagredo curio, 2025\n"
 "Language-Team: Spanish (Chile) (https://app.transifex.com/ceh/teams/116164/es_CL/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1126,9 +1127,8 @@ msgid ""
 "want to change the language go to \"Settings\" in the Bloomin' Algae app "
 "menu and select \"Language\""
 msgstr ""
-"El idioma predeterminado será el idioma de la configuración de su teléfono. "
-"Si desea cambiar el idioma, vaya a \"Configuración\" en el menú de la "
-"aplicación Bloomin' Algae y seleccione \"Idioma\""
+"Elkunungeael ti kewün Tami wirrin mütrümwe. Welultuam ñi kewün pilelmi amulaymi\n"
+"\" küzawtuayiñ ti kiman mew\" blooming algae Ka ti \"kewün\"."
 
 # Successfully registration alert message
 msgid ""
