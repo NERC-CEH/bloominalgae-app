@@ -1,6 +1,7 @@
 ## 3.2.3
 
 Updated translations.
+Upgraded Capacitor.
 
 ## 3.2.2
 

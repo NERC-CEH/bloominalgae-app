@@ -3,12 +3,6 @@
 	"appName": "Bloomin' Algae",
 	"npmClient": "npm",
 	"webDir": "build",
-	"cordova": {},
-	"plugins": {
-		"SplashScreen": {
-			"androidScaleType": "CENTER_CROP"
-		}
-	},
 	"packageClassList": [
 		"CapacitorSQLitePlugin",
 		"AppPlugin",
