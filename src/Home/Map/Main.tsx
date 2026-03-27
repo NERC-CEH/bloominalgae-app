@@ -168,7 +168,7 @@ const MapComponent = ({
                 'V',
                 '#098b5c',
                 'R',
-                '#f04141',
+                '#8d8d8d',
                 /* other */ '#fff',
               ],
             }}

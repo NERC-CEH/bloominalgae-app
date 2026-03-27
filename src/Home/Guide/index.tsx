@@ -1,7 +1,7 @@
-import { informationCircle } from 'ionicons/icons';
+import { informationCircle, informationCircleOutline } from 'ionicons/icons';
 import { Trans as T } from 'react-i18next';
 import { Page, InfoMessage } from '@flumens';
-import { IonItemDivider, IonContent, IonIcon } from '@ionic/react';
+import { IonContent, IonIcon, IonItem, IonList } from '@ionic/react';
 import Header from 'Components/Header';
 import Card from './Component/Card';
 import img1 from './images/image1.jpg';
@@ -72,17 +72,28 @@ function Guide() {
           the record anyway
         </InfoMessage>
 
-        <IonItemDivider>
-          <T>Examples of blue-green algae blooms</T>
-        </IonItemDivider>
+        <IonList lines="none">
+          <div className="rounded-list">
+            <IonItem routerLink="/info/info">
+              <IonIcon icon={informationCircleOutline} slot="start" />
+              What are blue-green algae?
+            </IonItem>
+          </div>
+        </IonList>
 
-        {getCards(bgCards)}
+        <div className="5 mx-3 my-4 rounded-md border border-neutral-200 bg-white">
+          <div className="my-3 px-4 font-semibold">
+            <T>Examples of blue-green algae blooms</T>:
+          </div>
+          {getCards(bgCards)}
+        </div>
 
-        <IonItemDivider>
-          <T>Not blue-green algae - duckweed and harmless green algae</T>
-        </IonItemDivider>
-
-        {getCards(nonBgCards)}
+        <div className="5 mx-3 my-4 rounded-md border border-neutral-200 bg-white">
+          <div className="my-3 px-4 font-semibold">
+            <T>Not blue-green algae - duckweed and harmless green algae</T>:
+          </div>
+          {getCards(nonBgCards)}
+        </div>
       </IonContent>
     </Page>
   );

@@ -256,3 +256,7 @@ div[role='group'] > .field-label {
   color: var(--ion-color-primary);
   font-weight: bold;
 }
+
+.apps-section {
+  @apply overflow-hidden border border-neutral-200;
+}

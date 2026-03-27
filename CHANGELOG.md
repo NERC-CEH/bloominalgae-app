@@ -1,3 +1,7 @@
+## 3.2.4
+
+Updated map style, add links between pages and update UKCEH logo.
+
 ## 3.2.3
 
 Updated translations.
