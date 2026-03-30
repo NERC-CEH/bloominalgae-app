@@ -61,7 +61,7 @@ const getCards = (data: any) => {
 function Guide() {
   return (
     <Page id="guide">
-      <Header title="Identify" styleId="none" />
+      <Header title="Identification guide" styleId="none" />
       <IonContent>
         <InfoMessage
           prefix={<IonIcon src={informationCircle} className="size-6" />}
@@ -76,7 +76,7 @@ function Guide() {
           <div className="rounded-list">
             <IonItem routerLink="/info/info">
               <IonIcon icon={informationCircleOutline} slot="start" />
-              What are blue-green algae?
+              <T>What are blue-green algae?</T>
             </IonItem>
           </div>
         </IonList>

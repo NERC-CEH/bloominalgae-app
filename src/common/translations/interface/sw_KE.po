@@ -1,11 +1,11 @@
-# 
 # Translators:
 # Patrick Otuo Wanguche, 2025
+# Karolis, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: temp\n"
-"Last-Translator: Patrick Otuo Wanguche, 2025\n"
+"Last-Translator: Karolis, 2026\n"
 "Language-Team: Swahili (Kenya) (https://app.transifex.com/ceh/teams/116164/sw_KE/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +27,7 @@ msgid "Map"
 msgstr "Ramani"
 
 # Home page toolbar menu label
-msgid "Guide"
+msgid "Identification guide"
 msgstr "Maelezo"
 
 # Home page toolbar menu label

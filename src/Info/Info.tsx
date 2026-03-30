@@ -1,4 +1,5 @@
 import { informationCircleOutline } from 'ionicons/icons';
+import { Trans as T } from 'react-i18next';
 import { Page, Main, Header, Section } from '@flumens';
 import { IonIcon, IonItem, IonList } from '@ionic/react';
 
@@ -12,7 +13,7 @@ const Info = () => (
         <div className="rounded-list">
           <IonItem routerLink="/home/guide" routerDirection="none">
             <IonIcon icon={informationCircleOutline} slot="start" />
-            Guide
+            <T>Identification guide</T>
           </IonItem>
         </div>
       </IonList>

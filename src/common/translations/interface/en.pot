@@ -21,8 +21,8 @@ msgid "Map"
 msgstr "Map"
 
 # Home page toolbar menu label
-msgid "Guide"
-msgstr "Guide"
+msgid "Identification guide"
+msgstr "Identification guide"
 
 # Home page toolbar menu label
 msgid "My Records"
