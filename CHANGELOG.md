@@ -1,6 +1,7 @@
 ## 3.3.0
 
 Added Greece and Greek language.
+Added secchi depth field.
 Enabled multiple drafts.
 
 ## 3.2.4

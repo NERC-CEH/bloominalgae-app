@@ -1,4 +1,9 @@
-import { expandOutline, calendarOutline, bicycleOutline } from 'ionicons/icons';
+import {
+  expandOutline,
+  calendarOutline,
+  bicycleOutline,
+  arrowDownCircleOutline,
+} from 'ionicons/icons';
 import { z, object } from 'zod';
 import { dateFormat } from '@flumens';
 import { IonIcon } from '@ionic/react';
@@ -26,6 +31,14 @@ export const sizeAttr = {
   prefix: (<IonIcon src={expandOutline} className="size-6" />) as any,
   appearance: 'button',
   choices: bloomSizeValues,
+} as const;
+
+export const secchiDepthAttr = {
+  id: 'smpAttr:2074',
+  type: 'number_input',
+  title: 'Secchi depth',
+  appearance: 'counter',
+  prefix: (<IonIcon src={arrowDownCircleOutline} className="size-6" />) as any,
 } as const;
 
 const activitiesValues = [

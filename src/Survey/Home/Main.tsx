@@ -23,6 +23,7 @@ import {
   activitiesAttr,
   activitiesGroupAttr,
   commentAttr,
+  secchiDepthAttr,
   sizeAttr,
   userActivitiesAttr,
 } from 'Survey/config';
@@ -250,6 +251,7 @@ const SurveyMain = ({ sample }: Props) => {
 
           <MenuAttrItemFromModel attr="date" model={sample} />
           <Block block={sizeAttr} {...recordAttrs} />
+          <Block block={secchiDepthAttr} {...recordAttrs} />
 
           <MenuAttrItem
             routerLink={`${match.url}/${activitiesGroupAttr.id}`}
