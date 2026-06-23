@@ -1,5 +1,5 @@
 import { Trans as T } from 'react-i18next';
-import { Page, Main, Header, Section, TLink } from '@flumens';
+import { Page, Main, Header, Section } from '@flumens';
 
 const { P } = Section;
 
@@ -9,11 +9,11 @@ const MoreInformation = () => (
     <Main className="ion-padding">
       <Section>
         <P skipTranslation>
-          <T components={{ url: <TLink /> }}>
+          <T>
             For more information on using the app, including setting up a
             notification service for records submitted in your area, please see
             the section on “Using the app” on the{' '}
-            <a href="https://www.ceh.ac.uk/algal-blooms/bloomin-algae">
+            <a href="https://www.ceh.ac.uk/our-science/projects/bloomin-algae">
               Bloomin’ Algae website
             </a>
             .

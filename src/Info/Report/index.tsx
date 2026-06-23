@@ -1,5 +1,5 @@
 import { Trans as T } from 'react-i18next';
-import { Page, Main, Header, Section, TLink } from '@flumens';
+import { Page, Main, Header, Section } from '@flumens';
 import appModel from 'models/app';
 import './styles.scss';
 
@@ -150,7 +150,7 @@ const Report = () => (
     <Main className="ion-padding">
       <Section>
         <P skipTranslation>
-          <T components={{ url: <TLink /> }}>
+          <T>
             The responsibility to manage algal blooms lies with the owner of the
             water concerned. If a bloom is present and no warning signs are
             visible, we recommend you contact the environmental health

@@ -1,5 +1,5 @@
 import { Trans as T } from 'react-i18next';
-import { Page, Main, Header, Section, TLink } from '@flumens';
+import { Page, Main, Header, Section } from '@flumens';
 import './styles.scss';
 
 const { P } = Section;
@@ -10,7 +10,7 @@ const About = () => (
     <Main className="ion-padding">
       <Section>
         <P skipTranslation>
-          <T components={{ url: <TLink /> }}>
+          <T>
             Bloomin’ Algae is a Citizen Science app for reporting the presence
             of harmful algal blooms of blue-green algae (also known as
             cyanobacteria). The records you send in help speed up warnings to

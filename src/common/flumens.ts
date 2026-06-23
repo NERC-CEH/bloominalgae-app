@@ -84,7 +84,6 @@ export {
   prettyPrintLocation,
   updateModelLocation,
 } from '@flumens/utils/dist/location';
-export { TLink } from './Components/TranslationComponents';
 export {
   default as TailwindContext,
   type ContextValue as TailwindContextValue,

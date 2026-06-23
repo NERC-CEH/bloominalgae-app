@@ -1,5 +1,5 @@
 import { Trans as T } from 'react-i18next';
-import { Page, Main, Header, Section, TLink } from '@flumens';
+import { Page, Main, Header, Section } from '@flumens';
 import appModel from 'models/app';
 
 const { P } = Section;
@@ -34,7 +34,7 @@ const Risks = () => {
           </P>
 
           <P skipTranslation>
-            <T components={{ url: <TLink /> }}>
+            <T>
               If you are a pet owner you can find further information from the{' '}
               {isInNorway ? (
                 <a href="https://www.vetinst.no/sykdom-og-agens/cyanotoksiner-mikrocystiner">
