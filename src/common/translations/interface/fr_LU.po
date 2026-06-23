@@ -486,6 +486,10 @@ msgstr "Eliminer"
 msgid "Continue"
 msgstr "Continuer"
 
+# Start record draft button label
+msgid "Start new"
+msgstr ""
+
 # Start record draft button message
 msgid "Previous record draft exists, would you like to continue it?"
 msgstr "Des brouillons d'observation existent, voulez-vous les finaliser?"

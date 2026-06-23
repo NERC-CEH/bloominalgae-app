@@ -1,6 +1,7 @@
 ## 3.3.0
 
 Added Greece and Greek language.
+Enabled multiple drafts.
 
 ## 3.2.4
 

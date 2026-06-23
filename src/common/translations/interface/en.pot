@@ -452,6 +452,10 @@ msgstr "Discard"
 msgid "Continue"
 msgstr "Continue"
 
+# Start record draft button label
+msgid "Start new"
+msgstr "Start new"
+
 # Start record draft button message
 msgid "Previous record draft exists, would you like to continue it?"
 msgstr "Previous record draft exists, would you like to continue it?"

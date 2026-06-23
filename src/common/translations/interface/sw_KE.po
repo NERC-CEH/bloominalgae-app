@@ -472,6 +472,10 @@ msgstr "Tupa"
 msgid "Continue"
 msgstr "Endelea"
 
+# Start record draft button label
+msgid "Start new"
+msgstr ""
+
 # Start record draft button message
 msgid "Previous record draft exists, would you like to continue it?"
 msgstr "Rasimu ya rekodi iliyopita ipo, ungependa kuendelea nayo?"
