@@ -4,6 +4,7 @@
 
 /* eslint-disable camelcase */
 import arn from './interface/arn.po';
+import elGR from './interface/el_GR.po';
 import en from './interface/en.pot';
 import esCL from './interface/es_CL.po';
 import frBE from './interface/fr_BE.po';
@@ -54,6 +55,9 @@ export default {
   },
   nb: {
     interface: rawToKeyVal(nb),
+  },
+  'el-GR': {
+    interface: rawToKeyVal(elGR),
   },
   'es-CL': {
     interface: rawToKeyVal(esCL),

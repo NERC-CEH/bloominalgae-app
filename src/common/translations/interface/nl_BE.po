@@ -27,6 +27,22 @@ msgstr "Hoofdmenu"
 msgid "Map"
 msgstr "Kaart"
 
+# Context term
+msgid "Map Settings"
+msgstr ""
+
+# Context term
+msgid "Map Type"
+msgstr ""
+
+# Context term
+msgid "Standard"
+msgstr ""
+
+# Context term
+msgid "Satellite"
+msgstr ""
+
 # Home page toolbar menu label
 msgid "Identification guide"
 msgstr "Fotogids"
@@ -1141,6 +1157,18 @@ msgstr "Noorwegen"
 # Country choice
 msgid "Luxembourg"
 msgstr "Luxemburg"
+
+# Country choice
+msgid "Chile"
+msgstr ""
+
+# Country choice
+msgid "Kenya"
+msgstr ""
+
+# Country choice
+msgid "Greece"
+msgstr ""
 
 # Country choice
 msgid "Netherlands"

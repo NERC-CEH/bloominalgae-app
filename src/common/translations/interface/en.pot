@@ -20,6 +20,22 @@ msgstr "Home"
 msgid "Map"
 msgstr "Map"
 
+# Context term 
+msgid "Map Settings"
+msgstr "Map Settings"
+
+# Context term 
+msgid "Map Type"
+msgstr "Map Type"
+
+# Context term 
+msgid "Standard"
+msgstr "Standard"
+
+# Context term 
+msgid "Satellite"
+msgstr "Satellite"
+
 # Home page toolbar menu label
 msgid "Identification guide"
 msgstr "Identification guide"
@@ -1103,6 +1119,18 @@ msgstr "Norway"
 # Country choice
 msgid "Luxembourg"
 msgstr "Luxembourg"
+
+# Country choice
+msgid "Chile"
+msgstr "Chile"
+
+# Country choice
+msgid "Kenya"
+msgstr "Kenya"
+
+# Country choice
+msgid "Greece"
+msgstr "Greece"
 
 # Country choice
 msgid "Netherlands"

@@ -10,6 +10,8 @@ const languages = {
   'sw-KE': 'Swahili',
   sw: { default: 'sw-KE' },
   'es-CL': 'Español',
+  el: { default: 'el-GR' },
+  'el-GR': 'Ελληνικά',
   es: { default: 'es-CL' },
   arn: 'Mapudungun',
 };
