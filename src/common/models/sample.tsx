@@ -120,6 +120,14 @@ export default class Sample extends SampleOriginal<Attrs, Metadata> {
     return this.saveRemote();
   }
 
+  async saveRemote() {
+    try {
+      await super.saveRemote();
+    } catch (err) {
+      throw new Error('Failed to upload. Please try again later.');
+    }
+  }
+
   getVerificationStatus = () => {
     // const codes = {
     //   V: 'Accepted',
