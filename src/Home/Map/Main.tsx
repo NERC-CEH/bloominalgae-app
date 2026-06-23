@@ -18,7 +18,10 @@ const getGeoJSONfromRecords = (records?: Record[]): any => {
     properties: {
       id: record.id,
       type: 'record',
-      verification: record.verification.status_code,
+      verification:
+        record.verification.status_code === 'R'
+          ? `${record.verification.status_code}${record.verification.substatus_code || ''}`
+          : record.verification.status_code,
     },
     geometry: {
       type: 'Point',
@@ -60,8 +63,8 @@ const useRecordPopup = (records: Record[]) => {
     }
 
     const statuses = {
-      R: 'rejected',
-      V: 'verified',
+      R: 'Rejected',
+      V: 'Verified',
     };
 
     let statusText = (statuses as any)[record.verification.status_code];
@@ -70,7 +73,14 @@ const useRecordPopup = (records: Record[]) => {
       record.verification.status_code === 'C' &&
       record.verification.substatus_code === '3'
     ) {
-      statusText = 'plausible';
+      statusText = 'Plausible';
+    }
+
+    if (
+      record.verification.status_code === 'R' &&
+      record.verification.substatus_code === '4'
+    ) {
+      statusText = 'Unable to verify';
     }
 
     alert({
@@ -168,6 +178,10 @@ const MapComponent = ({
                 'V',
                 '#098b5c',
                 'R',
+                '#8d8d8d',
+                'R4',
+                '#9CC9F0',
+                'R5',
                 '#8d8d8d',
                 /* other */ '#fff',
               ],

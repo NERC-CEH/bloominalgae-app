@@ -783,20 +783,24 @@ msgid "Do not show again"
 msgstr "Niet meer weergeven"
 
 # Record status on a map
-msgid "rejected"
-msgstr "afgewezen"
+msgid "Rejected"
+msgstr "Afgewezen"
+
+# Context term
+msgid "Unable to verify"
+msgstr ""
+
+# Context term
+msgid "Verified"
+msgstr "Geverifieerd"
 
 # Record status on a map
 msgid "complete"
 msgstr "volledig"
 
 # Record status on a map
-msgid "plausible"
-msgstr "aannemelijk"
-
-# Record status on a map
-msgid "verified"
-msgstr "geverifieerd"
+msgid "Plausible"
+msgstr "Aannemelijk"
 
 # Part of User authentication page
 msgid "Register/Login"

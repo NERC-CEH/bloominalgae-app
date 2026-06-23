@@ -43,13 +43,12 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 22px;
+    padding: 22px 5px;
     width: 100%;
     max-width: 50%;
     overflow: hidden;
-    text-align: right;
+    text-align: center;
     text-overflow: ellipsis;
-    text-transform: capitalize;
     white-space: nowrap;
   }
 }

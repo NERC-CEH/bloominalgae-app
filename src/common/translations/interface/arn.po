@@ -753,20 +753,24 @@ msgid "Do not show again"
 msgstr "Pengel ngelayai"
 
 # Record status on a map
-msgid "rejected"
+msgid "Rejected"
 msgstr "Kümelay"
+
+# Context term
+msgid "Unable to verify"
+msgstr ""
+
+# Context term
+msgid "Verified"
+msgstr "Pengey"
 
 # Record status on a map
 msgid "complete"
 msgstr "Kom apoy"
 
 # Record status on a map
-msgid "plausible"
+msgid "Plausible"
 msgstr "Küme feley"
-
-# Record status on a map
-msgid "verified"
-msgstr "Pengey"
 
 # Part of User authentication page
 msgid "Register/Login"

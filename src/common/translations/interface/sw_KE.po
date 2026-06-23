@@ -775,20 +775,24 @@ msgid "Do not show again"
 msgstr "Usionyeshe tena"
 
 # Record status on a map
-msgid "rejected"
+msgid "Rejected"
 msgstr "Kukataliwa"
+
+# Context term
+msgid "Unable to verify"
+msgstr ""
+
+# Context term
+msgid "Verified"
+msgstr "Imethibitishwa"
 
 # Record status on a map
 msgid "complete"
 msgstr "Kamili"
 
 # Record status on a map
-msgid "plausible"
+msgid "Plausible"
 msgstr "Inayokubalika"
-
-# Record status on a map
-msgid "verified"
-msgstr "Imethibitishwa"
 
 # Part of User authentication page
 msgid "Register/Login"

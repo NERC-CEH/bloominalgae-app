@@ -786,20 +786,24 @@ msgid "Do not show again"
 msgstr "No volver a mostrar"
 
 # Record status on a map
-msgid "rejected"
-msgstr "rechazado"
+msgid "Rejected"
+msgstr "Rechazado"
+
+# Context term
+msgid "Unable to verify"
+msgstr ""
+
+# Context term
+msgid "Verified"
+msgstr "Verificado"
 
 # Record status on a map
 msgid "complete"
 msgstr "completo"
 
 # Record status on a map
-msgid "plausible"
-msgstr "verosímil"
-
-# Record status on a map
-msgid "verified"
-msgstr "verificado"
+msgid "Plausible"
+msgstr "Verosímil"
 
 # Part of User authentication page
 msgid "Register/Login"

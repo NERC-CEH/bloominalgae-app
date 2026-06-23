@@ -750,20 +750,24 @@ msgid "Do not show again"
 msgstr "Ikke vis igjen"
 
 # Record status on a map
-msgid "rejected"
-msgstr "avvist"
+msgid "Rejected"
+msgstr "Avvist"
+
+# Context term
+msgid "Unable to verify"
+msgstr ""
+
+# Context term
+msgid "Verified"
+msgstr "Bekreftet"
 
 # Record status on a map
 msgid "complete"
 msgstr "ferdig"
 
 # Record status on a map
-msgid "plausible"
-msgstr "plausibel"
-
-# Record status on a map
-msgid "verified"
-msgstr "bekreftet"
+msgid "Plausible"
+msgstr "Plausibel"
 
 # Part of User authentication page
 msgid "Register/Login"
