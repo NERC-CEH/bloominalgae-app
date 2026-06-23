@@ -460,6 +460,10 @@ msgstr "Start new"
 msgid "Previous record draft exists, would you like to continue it?"
 msgstr "Previous record draft exists, would you like to continue it?"
 
+# Record page label 
+msgid "Secchi depth"
+msgstr "Secchi depth"
+
 # Record page label
 msgid "No photo has been added."
 msgstr "No photo has been added."
@@ -545,16 +549,16 @@ msgid "Please select the activities type for this record."
 msgstr "Please select the activities type for this record."
 
 # Record bloom size content
-msgid "Doormat"
-msgstr "Doormat"
+msgid "Doormat (<1m x <1m)"
+msgstr "Doormat (<1m x <1m)"
 
 # Record bloom size content
-msgid "Parking space"
-msgstr "Parking space"
+msgid "Parking space (2.5m x 5m)"
+msgstr "Parking space (2.5m x 5m)"
 
 # Record bloom size content
-msgid "Tennis court"
-msgstr "Tennis court"
+msgid "Tennis court (24m x 11m)"
+msgstr "Tennis court (24m x 11m)"
 
 # Record bloom size content
 msgid "Even bigger"

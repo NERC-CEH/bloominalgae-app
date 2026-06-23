@@ -487,6 +487,10 @@ msgstr ""
 "graag mee verder gaan?"
 
 # Record page label
+msgid "Secchi depth"
+msgstr ""
+
+# Record page label
 msgid "No photo has been added."
 msgstr "Er zijn geen foto's toegevoegd."
 
@@ -571,16 +575,16 @@ msgid "Please select the activities type for this record."
 msgstr "Selecteer het type activiteit voor deze waarneming."
 
 # Record bloom size content
-msgid "Doormat"
-msgstr "Deurmat"
+msgid "Doormat (<1m x <1m)"
+msgstr "Deurmat (<1m x <1m)"
 
 # Record bloom size content
-msgid "Parking space"
-msgstr "Parkeerplaats"
+msgid "Parking space (2.5m x 5m)"
+msgstr "Parkeerplaats (2,5m x 5m)"
 
 # Record bloom size content
-msgid "Tennis court"
-msgstr "Tennisveld"
+msgid "Tennis court (24m x 11m)"
+msgstr "Tennisveld (24m x 11m)"
 
 # Record bloom size content
 msgid "Even bigger"

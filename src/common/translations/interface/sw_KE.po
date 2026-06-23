@@ -481,6 +481,10 @@ msgid "Previous record draft exists, would you like to continue it?"
 msgstr "Rasimu ya rekodi iliyopita ipo, ungependa kuendelea nayo?"
 
 # Record page label
+msgid "Secchi depth"
+msgstr ""
+
+# Record page label
 msgid "No photo has been added."
 msgstr "Hakuna picha iliyoongezwa."
 
@@ -565,16 +569,16 @@ msgid "Please select the activities type for this record."
 msgstr "Tafadhali chagua aina ya shughuli kwa rekodi hii."
 
 # Record bloom size content
-msgid "Doormat"
-msgstr " Mlalo wa mlango"
+msgid "Doormat (<1m x <1m)"
+msgstr "Mlalo wa mlango (<1m x <1m)"
 
 # Record bloom size content
-msgid "Parking space"
-msgstr "Eneo la kuegeza gari"
+msgid "Parking space (2.5m x 5m)"
+msgstr "Eneo la kuegeza gari (2.5m x 5m)"
 
 # Record bloom size content
-msgid "Tennis court"
-msgstr "Uwanja wa tenisi"
+msgid "Tennis court (24m x 11m)"
+msgstr "Uwanja wa tenisi (24m x 11m)"
 
 # Record bloom size content
 msgid "Even bigger"

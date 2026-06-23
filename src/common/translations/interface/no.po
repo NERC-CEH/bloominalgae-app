@@ -451,6 +451,10 @@ msgstr ""
 "Det finnes allerede utkast til registrering, vil du fortsette på denne?"
 
 # Record page label
+msgid "Secchi depth"
+msgstr ""
+
+# Record page label
 msgid "No photo has been added."
 msgstr "Bilde er ikke lagt til."
 
@@ -536,16 +540,16 @@ msgid "Please select the activities type for this record."
 msgstr "Vennligst velg aktivitetstypen for denne registreringen."
 
 # Record bloom size content
-msgid "Doormat"
-msgstr "Dørmatte"
+msgid "Doormat (<1m x <1m)"
+msgstr "Dørmatte (<1m x <1m)"
 
 # Record bloom size content
-msgid "Parking space"
-msgstr "Parkeringsplass"
+msgid "Parking space (2.5m x 5m)"
+msgstr "Parkeringsplass (2,5m x 5m)"
 
 # Record bloom size content
-msgid "Tennis court"
-msgstr "Tennisbane"
+msgid "Tennis court (24m x 11m)"
+msgstr "Tennisbane (24m x 11m)"
 
 # Record bloom size content
 msgid "Even bigger"

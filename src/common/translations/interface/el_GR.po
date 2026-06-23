@@ -497,6 +497,10 @@ msgstr ""
 "Υπάρχει προσχέδιο προηγούμενης καταγραφής, θα θέλατε να το συνεχίσετε;"
 
 # Record page label
+msgid "Secchi depth"
+msgstr ""
+
+# Record page label
 msgid "No photo has been added."
 msgstr "Δεν προστέθηκαν φωτογραφίες."
 
@@ -581,16 +585,16 @@ msgid "Please select the activities type for this record."
 msgstr "Παρακαλούμε επιλέξτε το είδος δραστηριοτήτων για αυτή την καταγραφή."
 
 # Record bloom size content
-msgid "Doormat"
-msgstr "Πυκνό στρώμα / Σαν τάπητας"
+msgid "Doormat (<1m x <1m)"
+msgstr "Πυκνό στρώμα / Σαν τάπητας (<1m x <1m)"
 
 # Record bloom size content
-msgid "Parking space"
-msgstr "Χώρος στάθμευσης"
+msgid "Parking space (2.5m x 5m)"
+msgstr "Χώρος στάθμευσης (2.5m x 5m)"
 
 # Record bloom size content
-msgid "Tennis court"
-msgstr "Γήπεδο τέννις"
+msgid "Tennis court (24m x 11m)"
+msgstr "Γήπεδο τέννις (24m x 11m)"
 
 # Record bloom size content
 msgid "Even bigger"

@@ -456,6 +456,10 @@ msgid "Previous record draft exists, would you like to continue it?"
 msgstr "Müley Ka zungü kangelu wirrin mew ayüymi ñi amuleael?"
 
 # Record page label
+msgid "Secchi depth"
+msgstr ""
+
+# Record page label
 msgid "No photo has been added."
 msgstr "Werkülaymün kiñe azentu rume"
 
@@ -540,16 +544,16 @@ msgid "Please select the activities type for this record."
 msgstr "Zullinge chem küzaw afuymi tufa"
 
 # Record bloom size content
-msgid "Doormat"
-msgstr "Kal kam kachu "
+msgid "Doormat (<1m x <1m)"
+msgstr "Kal kam kachu (<1m x <1m)"
 
 # Record bloom size content
-msgid "Parking space"
-msgstr "Lefün aukan tungeyüm "
+msgid "Parking space (2.5m x 5m)"
+msgstr "Lefün aukan tungeyüm (2.5m x 5m)"
 
 # Record bloom size content
-msgid "Tennis court"
-msgstr "Aukantun kangelu "
+msgid "Tennis court (24m x 11m)"
+msgstr "Aukantun kangelu (24m x 11m)"
 
 # Record bloom size content
 msgid "Even bigger"

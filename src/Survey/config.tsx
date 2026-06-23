@@ -18,9 +18,9 @@ export const commentAttr = {
 } as const;
 
 const bloomSizeValues = [
-  { title: 'Doormat', data_name: '10634' },
-  { title: 'Parking space', data_name: '10635' },
-  { title: 'Tennis court', data_name: '10636' },
+  { title: 'Doormat (<1m x <1m)', data_name: '10634' },
+  { title: 'Parking space (2.5m x 5m)', data_name: '10635' },
+  { title: 'Tennis court (24m x 11m)', data_name: '10636' },
   { title: 'Even bigger', data_name: '10637' },
 ];
 

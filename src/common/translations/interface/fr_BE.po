@@ -492,6 +492,10 @@ msgid "Previous record draft exists, would you like to continue it?"
 msgstr "Des brouillons d'observation existent, voulez-vous les finaliser?"
 
 # Record page label
+msgid "Secchi depth"
+msgstr ""
+
+# Record page label
 msgid "No photo has been added."
 msgstr "Aucune photo n'a été ajoutée"
 
@@ -579,16 +583,16 @@ msgstr ""
 "Veuillez sélectionner les types d'activités concernant cette observation"
 
 # Record bloom size content
-msgid "Doormat"
-msgstr "Paillasson"
+msgid "Doormat (<1m x <1m)"
+msgstr "Paillasson (<1m x <1m)"
 
 # Record bloom size content
-msgid "Parking space"
-msgstr "Place de parking"
+msgid "Parking space (2.5m x 5m)"
+msgstr "Place de parking (2,5m x 5m)"
 
 # Record bloom size content
-msgid "Tennis court"
-msgstr "Terrain de tennis"
+msgid "Tennis court (24m x 11m)"
+msgstr "Terrain de tennis (24m x 11m)"
 
 # Record bloom size content
 msgid "Even bigger"

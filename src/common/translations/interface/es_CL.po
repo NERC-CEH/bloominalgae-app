@@ -486,6 +486,10 @@ msgid "Previous record draft exists, would you like to continue it?"
 msgstr "Hay un borrador de registro anterior, ¿te gustaría continuarlo?"
 
 # Record page label
+msgid "Secchi depth"
+msgstr ""
+
+# Record page label
 msgid "No photo has been added."
 msgstr "No se ha añadido ninguna foto"
 
@@ -570,16 +574,16 @@ msgid "Please select the activities type for this record."
 msgstr "Seleccione el tipo de actividades para este registro."
 
 # Record bloom size content
-msgid "Doormat"
-msgstr "Felpudo "
+msgid "Doormat (<1m x <1m)"
+msgstr "Felpudo (<1m x <1m)"
 
 # Record bloom size content
-msgid "Parking space"
-msgstr "Zona de aparcamiento"
+msgid "Parking space (2.5m x 5m)"
+msgstr "Zona de aparcamiento (2.5m x 5m)"
 
 # Record bloom size content
-msgid "Tennis court"
-msgstr "Cancha de tenis"
+msgid "Tennis court (24m x 11m)"
+msgstr "Cancha de tenis (24m x 11m)"
 
 # Record bloom size content
 msgid "Even bigger"
