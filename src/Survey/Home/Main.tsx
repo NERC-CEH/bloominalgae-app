@@ -23,6 +23,7 @@ import {
   activitiesAttr,
   activitiesGroupAttr,
   commentAttr,
+  nonOccurrenceAttr,
   secchiDepthAttr,
   sizeAttr,
   userActivitiesAttr,
@@ -263,13 +264,15 @@ const SurveyMain = ({ sample }: Props) => {
           />
 
           <Block
+            block={nonOccurrenceAttr}
+            record={occ.attrs}
+            isDisabled={isDisabled}
+          />
+          <Block
             block={commentAttr}
             record={occ.attrs}
             isDisabled={isDisabled}
           />
-          <InfoMessage inline>
-            Please add any extra info about this record.
-          </InfoMessage>
         </div>
       </IonList>
     </Main>

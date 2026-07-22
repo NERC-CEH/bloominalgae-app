@@ -3,6 +3,7 @@ import {
   calendarOutline,
   bicycleOutline,
   arrowDownCircleOutline,
+  closeOutline,
 } from 'ionicons/icons';
 import { z, object } from 'zod';
 import { dateFormat } from '@flumens';
@@ -31,6 +32,14 @@ export const sizeAttr = {
   prefix: (<IonIcon src={expandOutline} className="size-6" />) as any,
   appearance: 'button',
   choices: bloomSizeValues,
+} as const;
+
+export const nonOccurrenceAttr = {
+  id: 'zeroAbundance',
+  type: 'yes_no_input',
+  title: 'No bloom observed',
+  prefix: (<IonIcon src={closeOutline} className="size-6" />) as any,
+  choices: [{ dataName: 'f' }, { dataName: 't' }] as any,
 } as const;
 
 export const secchiDepthAttr = {
@@ -169,10 +178,13 @@ const survey: Survey = {
       });
     },
 
-    verify: (_: any, occ: OccurrenceClass) =>
-      object({
+    verify: (_: any, occ: OccurrenceClass) => {
+      if (occ.attrs[nonOccurrenceAttr.id]) return null;
+
+      return object({
         media: z.array(object({})).min(1, 'Please add a photo of the bloom'),
-      }).safeParse(occ).error,
+      }).safeParse(occ).error;
+    },
   },
 
   verify: (attrs: any) =>
