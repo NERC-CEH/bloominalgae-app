@@ -23,6 +23,7 @@ const bloomSizeValues = [
   { title: 'Parking space (2.5m x 5m)', data_name: '10635' },
   { title: 'Tennis court (24m x 11m)', data_name: '10636' },
   { title: 'Even bigger', data_name: '10637' },
+  { title: 'None', data_name: '' },
 ];
 
 export const sizeAttr = {
@@ -47,6 +48,8 @@ export const secchiDepthAttr = {
   type: 'number_input',
   title: 'Secchi depth',
   appearance: 'counter',
+  validation: { min: 1 },
+  suffix: 'cm',
   prefix: (<IonIcon src={arrowDownCircleOutline} className="size-6" />) as any,
 } as const;
 
@@ -178,13 +181,17 @@ const survey: Survey = {
       });
     },
 
-    verify: (_: any, occ: OccurrenceClass) => {
-      if (occ.attrs[nonOccurrenceAttr.id]) return null;
-
-      return object({
-        media: z.array(object({})).min(1, 'Please add a photo of the bloom'),
-      }).safeParse(occ).error;
-    },
+    verify: (_: any, occ: OccurrenceClass) =>
+      object({
+        media: z
+          .array(object({}))
+          .min(
+            1,
+            !occ.attrs[nonOccurrenceAttr.id]
+              ? 'Please add a photo of the bloom'
+              : 'Please add a photo'
+          ),
+      }).safeParse(occ).error,
   },
 
   verify: (attrs: any) =>

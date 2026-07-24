@@ -1213,3 +1213,27 @@ msgstr ""
 "Barua pepe mpya ya uthibitisho imetumwa kwa mafanikio sasa. Ikiwa hujapokea "
 "barua pepe, tafadhali angalia folda ya barua taka au barua pepe "
 "zisizohitajika."
+
+# Survey
+msgid "No bloom observed"
+msgstr ""
+
+# Survey
+msgid "None"
+msgstr ""
+
+# Survey
+msgid "Survey incomplete"
+msgstr ""
+
+# Survey
+msgid "Please add a photo"
+msgstr ""
+
+# Map
+msgid "Confirmed bloom"
+msgstr ""
+
+# Map
+msgid "Not a bloom"
+msgstr ""

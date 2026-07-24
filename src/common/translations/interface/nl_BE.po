@@ -1221,3 +1221,27 @@ msgid ""
 msgstr ""
 "Een nieuwe verificatiemail werd met succes verstuurd. Controleer uw spam- of"
 " junkfolder indien u de mail niet ontvangen heeft. "
+
+# Survey
+msgid "No bloom observed"
+msgstr ""
+
+# Survey
+msgid "None"
+msgstr ""
+
+# Survey
+msgid "Survey incomplete"
+msgstr ""
+
+# Survey
+msgid "Please add a photo"
+msgstr ""
+
+# Map
+msgid "Confirmed bloom"
+msgstr ""
+
+# Map
+msgid "Not a bloom"
+msgstr ""

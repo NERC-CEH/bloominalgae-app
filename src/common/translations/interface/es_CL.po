@@ -1234,3 +1234,27 @@ msgstr ""
 "Ahora se ha enviado con éxito un nuevo correo electrónico de verificación. "
 "Si no recibió el correo electrónico, revise su carpeta de correo basura o "
 "correo no deseado."
+
+# Survey
+msgid "No bloom observed"
+msgstr ""
+
+# Survey
+msgid "None"
+msgstr ""
+
+# Survey
+msgid "Survey incomplete"
+msgstr ""
+
+# Survey
+msgid "Please add a photo"
+msgstr ""
+
+# Map
+msgid "Confirmed bloom"
+msgstr ""
+
+# Map
+msgid "Not a bloom"
+msgstr ""

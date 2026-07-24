@@ -63,8 +63,8 @@ const useRecordPopup = (records: Record[]) => {
     }
 
     const statuses = {
-      R: 'Rejected',
-      V: 'Verified',
+      R: 'Not a bloom',
+      V: 'Confirmed bloom',
     };
 
     let statusText = (statuses as any)[record.verification.status_code];

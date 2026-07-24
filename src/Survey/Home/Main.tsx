@@ -252,7 +252,14 @@ const SurveyMain = ({ sample }: Props) => {
 
           <MenuAttrItemFromModel attr="date" model={sample} />
           <Block block={sizeAttr} {...recordAttrs} />
-          <Block block={secchiDepthAttr} {...recordAttrs} />
+          <Block
+            block={secchiDepthAttr}
+            onChange={(val: any): any => {
+              if (!Number.isFinite(val) || val >= 0)
+                (sample as any).attrs[secchiDepthAttr.id] = val; // eslint-disable-line no-param-reassign
+            }}
+            {...recordAttrs}
+          />
 
           <MenuAttrItem
             routerLink={`${match.url}/${activitiesGroupAttr.id}`}

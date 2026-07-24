@@ -1255,3 +1255,27 @@ msgid ""
 msgstr ""
 "Ένα νέο email επιβεβαίωσης στάλθηκε επιτυχώς. Αν δεν το λάβατε, ελέγξτε τον "
 "φάκελο της Ανεπιθύμητης Αλληλογραφίας."
+
+# Survey
+msgid "No bloom observed"
+msgstr ""
+
+# Survey
+msgid "None"
+msgstr ""
+
+# Survey
+msgid "Survey incomplete"
+msgstr ""
+
+# Survey
+msgid "Please add a photo"
+msgstr ""
+
+# Map
+msgid "Confirmed bloom"
+msgstr ""
+
+# Map
+msgid "Not a bloom"
+msgstr ""
